@@ -3,9 +3,23 @@
         <title>我的全新 Hugo 网站</title>
         <link>https://rosefinch-midsummer.github.io/</link>
         <description>我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 16 Jul 2021 11:22:04 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 17 Jul 2021 22:57:51 &#43;0800</lastBuildDate>
             <atom:link href="https://rosefinch-midsummer.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Java学习笔记</title>
+    <link>https://rosefinch-midsummer.github.io/posts/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Sat, 17 Jul 2021 22:57:51 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://rosefinch-midsummer.github.io/posts/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[JRE: Java Runtime Environment（Java运行时环境） 包含JVM（Java虚拟机）+核心类库 JDK: Java Development Kit （Java开发工具包）包含开发工具+JRE 创]]></description>
+</item><item>
+    <title>Linux学习笔记</title>
+    <link>https://rosefinch-midsummer.github.io/posts/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Sat, 17 Jul 2021 22:56:01 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://rosefinch-midsummer.github.io/posts/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>First_post</title>
     <link>https://rosefinch-midsummer.github.io/posts/first_post/</link>
     <pubDate>Fri, 16 Jul 2021 11:22:04 &#43;0800</pubDate>
