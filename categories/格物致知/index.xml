@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>格物致知 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/categories/%E6%A0%BC%E7%89%A9%E8%87%B4%E7%9F%A5/</link>
+    <description>Recent content in 格物致知 on 天漢帝國復興錄</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 27 May 2023 18:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/categories/%E6%A0%BC%E7%89%A9%E8%87%B4%E7%9F%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TexStudio入门教程</title>
+      <link>https://rosefinch-midsummer.github.io/posts/life/texstudio%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sat, 27 May 2023 18:34:25 +0800</pubDate>
+      
+      <guid>https://rosefinch-midsummer.github.io/posts/life/texstudio%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</guid>
+      <description>下载地址 # TexStudio + MikTex 论文写作环境配置 简介 TeXstudio 是跨平台的免费软件，是专门用来编辑 .tex 文件的工具。 安装MikTex 安装过程简单 宏包自动安装、更新 集成保证</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>网络安全 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</link>
+    <description>Recent content in 网络安全 on 天漢帝國復興錄</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 20 May 2023 20:35:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>查看连接过的wifi密码</title>
+      <link>https://rosefinch-midsummer.github.io/posts/life/%E6%9F%A5%E7%9C%8B%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%9A%84wifi%E5%AF%86%E7%A0%81/</link>
+      <pubDate>Sat, 20 May 2023 20:35:25 +0800</pubDate>
+      
+      <guid>https://rosefinch-midsummer.github.io/posts/life/%E6%9F%A5%E7%9C%8B%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%9A%84wifi%E5%AF%86%E7%A0%81/</guid>
+      <description>Windows10 下查看连接过的wifi密码 win+R弹出框内输入cmd 然后命令行内输入netsh wlan show profiles 回车，把周围的所有WiFi名称都显示出来 最后再重新输</description>
+    </item>
+    
+  </channel>
+</rss>
