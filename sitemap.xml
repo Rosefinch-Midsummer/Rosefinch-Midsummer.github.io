@@ -2,14 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rosefinch-midsummer.github.io/posts/tech/</loc>
+    <lastmod>2023-07-21T18:34:25+08:00</lastmod>
+  </url><url>
     <loc>https://rosefinch-midsummer.github.io/posts/</loc>
-    <lastmod>2023-07-18T12:34:25+08:00</lastmod>
+    <lastmod>2023-07-21T18:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/categories/</loc>
-    <lastmod>2023-07-18T12:34:25+08:00</lastmod>
+    <lastmod>2023-07-21T18:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/categories/getting-started/</loc>
+    <lastmod>2023-07-21T18:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/posts/tech/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E5%AF%B9%E8%AF%9D%E5%BC%8Fai/</loc>
+    <lastmod>2023-07-21T18:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/tags/llama/</loc>
+    <lastmod>2023-07-21T18:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/tags/streamlit/</loc>
+    <lastmod>2023-07-21T18:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/tags/</loc>
-    <lastmod>2023-07-18T12:34:25+08:00</lastmod>
+    <lastmod>2023-07-21T18:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
+    <lastmod>2023-07-21T18:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/</loc>
+    <lastmod>2023-07-21T18:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/posts/life/</loc>
     <lastmod>2023-07-18T12:34:25+08:00</lastmod>
@@ -18,9 +39,6 @@
     <lastmod>2023-07-18T12:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/tags/%E7%BA%AA%E5%BD%95%E7%89%87/</loc>
-    <lastmod>2023-07-18T12:34:25+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/</loc>
     <lastmod>2023-07-18T12:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/categories/%E7%89%A9%E7%90%86/</loc>
@@ -107,9 +125,6 @@
     <loc>https://rosefinch-midsummer.github.io/tags/%E6%9E%81%E6%9D%83%E4%B8%BB%E4%B9%89%E7%9A%84%E8%B5%B7%E6%BA%90/</loc>
     <lastmod>2023-06-22T22:34:25+08:00</lastmod>
   </url><url>
-    <loc>https://rosefinch-midsummer.github.io/posts/tech/</loc>
-    <lastmod>2023-06-21T21:30:22+08:00</lastmod>
-  </url><url>
     <loc>https://rosefinch-midsummer.github.io/tags/python/</loc>
     <lastmod>2023-06-21T21:30:22+08:00</lastmod>
   </url><url>
@@ -175,9 +190,6 @@
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/categories/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
     <lastmod>2023-05-30T23:34:25+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/categories/getting-started/</loc>
-    <lastmod>2023-05-29T13:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/tags/pdfjs/</loc>
     <lastmod>2023-05-29T13:34:25+08:00</lastmod>
