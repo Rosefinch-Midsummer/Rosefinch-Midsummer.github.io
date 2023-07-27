@@ -2,7 +2,7 @@
 title: "KhanAcademy统计学课程"
 date: 2023-07-27T11:34:25+08:00
 draft: false
-math:true
+math: true
 categories:
 - 在线课程
 - 数学
