@@ -6,7 +6,16 @@
     <description>Recent content on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 21 Jul 2023 18:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Jul 2023 11:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KhanAcademy统计学课程</title>
+      <link>https://rosefinch-midsummer.github.io/posts/course/khanacademy%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E7%A8%8B/</link>
+      <pubDate>Thu, 27 Jul 2023 11:34:25 +0800</pubDate>
+      
+      <guid>https://rosefinch-midsummer.github.io/posts/course/khanacademy%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E7%A8%8B/</guid>
+      <description>在线计算器和解决数学问题 1均值、中位数、众数 均值mean、中位数median、众数mode 2极差、中程数 极差range、中程数mid-ran</description>
+    </item>
+    
     <item>
       <title>LangChain &#43; Streamlit&#43; Llama: 将对话式AI带到你的本地机器</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E5%AF%B9%E8%AF%9D%E5%BC%8Fai/</link>
