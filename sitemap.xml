@@ -2,22 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rosefinch-midsummer.github.io/posts/course/</loc>
+    <lastmod>2023-09-18T12:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/posts/</loc>
+    <lastmod>2023-09-18T12:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/categories/</loc>
+    <lastmod>2023-09-18T12:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/tags/</loc>
+    <lastmod>2023-09-18T12:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/tags/%E5%8E%86%E5%8F%B2/</loc>
+    <lastmod>2023-09-18T12:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/categories/%E5%8E%86%E5%8F%B2/</loc>
+    <lastmod>2023-09-18T12:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/tags/%E5%8F%B2%E8%AE%B0/</loc>
+    <lastmod>2023-09-18T12:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/</loc>
+    <lastmod>2023-09-18T12:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/categories/%E5%9C%A8%E7%BA%BF%E8%AF%BE%E7%A8%8B/</loc>
+    <lastmod>2023-09-18T12:34:25+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/posts/course/%E4%B8%AD%E5%9C%8B%E5%8F%A4%E4%BB%A3%E6%AD%B7%E5%8F%B2%E8%88%87%E4%BA%BA%E7%89%A9%E7%A7%A6%E5%A7%8B%E7%9A%87/</loc>
+    <lastmod>2023-09-18T12:34:25+08:00</lastmod>
+  </url><url>
     <loc>https://rosefinch-midsummer.github.io/posts/read/%E7%94%A8python%E5%AD%A6%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2023-09-02T12:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/posts/read/</loc>
     <lastmod>2023-09-02T12:34:25+08:00</lastmod>
   </url><url>
-    <loc>https://rosefinch-midsummer.github.io/posts/</loc>
-    <lastmod>2023-09-02T12:34:25+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/categories/</loc>
-    <lastmod>2023-09-02T12:34:25+08:00</lastmod>
-  </url><url>
     <loc>https://rosefinch-midsummer.github.io/tags/python/</loc>
-    <lastmod>2023-09-02T12:34:25+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/tags/</loc>
     <lastmod>2023-09-02T12:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
@@ -30,9 +51,6 @@
     <lastmod>2023-09-02T12:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/categories/%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2023-09-02T12:34:25+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/</loc>
     <lastmod>2023-09-02T12:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/posts/life/</loc>
@@ -68,16 +86,10 @@
     <loc>https://rosefinch-midsummer.github.io/posts/life/%E8%AE%B0%E5%BD%95%E7%89%87%E6%9C%89%E5%BA%8F%E4%B8%8E%E6%97%A0%E5%BA%8F/</loc>
     <lastmod>2023-08-03T12:34:25+08:00</lastmod>
   </url><url>
-    <loc>https://rosefinch-midsummer.github.io/posts/course/</loc>
-    <lastmod>2023-07-27T11:34:25+08:00</lastmod>
-  </url><url>
     <loc>https://rosefinch-midsummer.github.io/posts/course/khanacademy%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E7%A8%8B/</loc>
     <lastmod>2023-07-27T11:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/</loc>
-    <lastmod>2023-07-27T11:34:25+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/categories/%E5%9C%A8%E7%BA%BF%E8%AF%BE%E7%A8%8B/</loc>
     <lastmod>2023-07-27T11:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/posts/tech/</loc>
@@ -179,13 +191,7 @@
     <loc>https://rosefinch-midsummer.github.io/posts/life/%E8%AF%BB%E5%8F%B2%E4%BD%BF%E4%BA%BA%E6%98%8E%E5%BF%97%E5%A6%82%E4%BD%95%E4%BB%8E%E5%8F%B2%E4%B9%A6%E4%B8%AD%E6%B1%B2%E5%8F%96%E6%99%BA%E6%85%A7/</loc>
     <lastmod>2023-06-19T18:34:25+08:00</lastmod>
   </url><url>
-    <loc>https://rosefinch-midsummer.github.io/categories/%E5%8E%86%E5%8F%B2/</loc>
-    <lastmod>2023-06-19T18:34:25+08:00</lastmod>
-  </url><url>
     <loc>https://rosefinch-midsummer.github.io/tags/%E5%90%95%E4%B8%96%E6%B5%A9/</loc>
-    <lastmod>2023-06-19T18:34:25+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/tags/%E5%8F%B2%E8%AE%B0/</loc>
     <lastmod>2023-06-19T18:34:25+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/posts/tech/python%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95%E4%B8%8E%E5%BA%94%E7%94%A8%E7%AC%AC2%E7%AB%A0%E5%85%A5%E9%97%A8%E9%A2%98%E7%9B%AE%E8%A7%A3%E7%AD%94/</loc>
