@@ -6,7 +6,16 @@
     <description>Recent content on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 11 Nov 2023 18:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Nov 2023 18:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jupyter Notebook本地配置</title>
+      <link>https://rosefinch-midsummer.github.io/posts/life/jupyter-notebook%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sat, 18 Nov 2023 18:34:25 +0800</pubDate>
+      
+      <guid>https://rosefinch-midsummer.github.io/posts/life/jupyter-notebook%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE/</guid>
+      <description>安装 在cmd中输入pip install -i https://pypi.douban.com/simple/ jupyter 如何更改Jupyter Notebook的默认工作路径？ 1.在cmd中输入命令jupyter notebook --genera</description>
+    </item>
+    
     <item>
       <title>不Root删除Android系统自带软件</title>
       <link>https://rosefinch-midsummer.github.io/posts/life/%E4%B8%8Droot%E5%88%A0%E9%99%A4android%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%E8%BD%AF%E4%BB%B6/</link>

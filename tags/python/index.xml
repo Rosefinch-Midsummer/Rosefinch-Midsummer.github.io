@@ -6,7 +6,16 @@
     <description>Recent content in Python on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 02 Sep 2023 12:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Nov 2023 18:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jupyter Notebook本地配置</title>
+      <link>https://rosefinch-midsummer.github.io/posts/life/jupyter-notebook%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sat, 18 Nov 2023 18:34:25 +0800</pubDate>
+      
+      <guid>https://rosefinch-midsummer.github.io/posts/life/jupyter-notebook%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE/</guid>
+      <description>安装 在cmd中输入pip install -i https://pypi.douban.com/simple/ jupyter 如何更改Jupyter Notebook的默认工作路径？ 1.在cmd中输入命令jupyter notebook --genera</description>
+    </item>
+    
     <item>
       <title>《用Python学数学》</title>
       <link>https://rosefinch-midsummer.github.io/posts/read/%E7%94%A8python%E5%AD%A6%E6%95%B0%E5%AD%A6/</link>
