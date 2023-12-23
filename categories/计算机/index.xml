@@ -1,38 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>计算机 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
     <description>Recent content in 计算机 on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 09 Oct 2023 18:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Oct 2023 18:34:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一条命令即可激活Windows10和Office365</title>
       <link>https://rosefinch-midsummer.github.io/posts/life/%E4%B8%80%E6%9D%A1%E5%91%BD%E4%BB%A4%E5%8D%B3%E5%8F%AF%E6%BF%80%E6%B4%BBwindows10%E5%92%8Coffice365/</link>
       <pubDate>Mon, 09 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/life/%E4%B8%80%E6%9D%A1%E5%91%BD%E4%BB%A4%E5%8D%B3%E5%8F%AF%E6%BF%80%E6%B4%BBwindows10%E5%92%8Coffice365/</guid>
       <description>简易步骤： 1.windows+R 2.输入powershell 回车 3.输入 irm https://massgrave.dev/get |iex 自动下载激活脚本 4.输入数字“1”选择永久激活即可 详细步骤如下 windows中按快</description>
     </item>
-    
     <item>
       <title>ComputerCrashCourse</title>
       <link>https://rosefinch-midsummer.github.io/posts/course/computercrashcourse/</link>
       <pubDate>Thu, 28 Sep 2023 22:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/course/computercrashcourse/</guid>
       <description>前言 Bilibili视频 Youtube 原视频 GitHub笔记 1. 计算机早期历史-Early Computing 提到的设备：算盘 → 步进计算器 → 差分机 → 分析机 → 打孔卡片制表机 提</description>
     </item>
-    
     <item>
       <title>《用Python学数学》</title>
       <link>https://rosefinch-midsummer.github.io/posts/read/%E7%94%A8python%E5%AD%A6%E6%95%B0%E5%AD%A6/</link>
       <pubDate>Sat, 02 Sep 2023 12:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/read/%E7%94%A8python%E5%AD%A6%E6%95%B0%E5%AD%A6/</guid>
       <description>前言 Math Adventures with Python: An Illustrated Guide to Exploring Math with Code by Peter Farrell 这里介绍用Python来解决数学问题深化自己的计算思维，帮我自己成为数据格致家。 读这本书主要是想实现元胞自</description>
     </item>
-    
   </channel>
 </rss>

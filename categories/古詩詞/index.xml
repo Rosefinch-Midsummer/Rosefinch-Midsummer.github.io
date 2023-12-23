@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>古詩詞 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/categories/%E5%8F%A4%E8%A9%A9%E8%A9%9E/</link>
     <description>Recent content in 古詩詞 on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 30 Apr 2023 20:53:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/categories/%E5%8F%A4%E8%A9%A9%E8%A9%9E/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Apr 2023 20:53:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/categories/%E5%8F%A4%E8%A9%A9%E8%A9%9E/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>古詩詞</title>
       <link>https://rosefinch-midsummer.github.io/posts/read/%E5%8F%A4%E8%AF%97%E8%AF%8D/</link>
       <pubDate>Sun, 30 Apr 2023 20:53:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/read/%E5%8F%A4%E8%AF%97%E8%AF%8D/</guid>
       <description>前言 这篇博文用于收纳我觉得有收藏意义的诗词，给自己一个心灵安息之所。 有空会用Midjourney和Stable Diffusion等来为我喜爱</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,47 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>N.N Taleb on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/tags/n.n-taleb/</link>
     <description>Recent content in N.N Taleb on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 06 May 2023 15:58:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/tags/n.n-taleb/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 May 2023 15:58:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/tags/n.n-taleb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑天鹅：如何应对不可预知的未来》</title>
       <link>https://rosefinch-midsummer.github.io/posts/read/%E9%BB%91%E5%A4%A9%E9%B9%85%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E4%B8%8D%E5%8F%AF%E9%A2%84%E7%9F%A5%E7%9A%84%E6%9C%AA%E6%9D%A5/</link>
       <pubDate>Sat, 06 May 2023 15:58:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/read/%E9%BB%91%E5%A4%A9%E9%B9%85%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E4%B8%8D%E5%8F%AF%E9%A2%84%E7%9F%A5%E7%9A%84%E6%9C%AA%E6%9D%A5/</guid>
       <description>《黑天鹅》 Black swan : the impact of the highly improbable &amp;ndash;Nassim Nicholas Taleb 《非对称风险》 日期: 2023-05-06 &amp;nbsp; 标签: #非对称风险&amp;nbsp; #N.N Taleb&amp;nbsp; 《非对称风险》 Skin in the Game: Hidden Asymmetries in Daily Life&amp;amp;mdash;-N.N.Taleb 《非对称风险&amp;a</description>
     </item>
-    
     <item>
       <title>《非对称风险》</title>
       <link>https://rosefinch-midsummer.github.io/posts/read/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E9%A3%8E%E9%99%A9/</link>
       <pubDate>Sat, 06 May 2023 15:57:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/read/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E9%A3%8E%E9%99%A9/</guid>
       <description>《非对称风险》 Skin in the Game: Hidden Asymmetries in Daily Life&amp;mdash;-N.N.Taleb 《非对称风险&amp;ndash;风险共担， 应对现实世界中的不确定性》这本书共包含四个主题：不确定性以及知识的可靠性</description>
     </item>
-    
     <item>
       <title>《反脆弱性：从不确定中获益》</title>
       <link>https://rosefinch-midsummer.github.io/posts/read/%E5%8F%8D%E8%84%86%E5%BC%B1%E6%80%A7%E4%BB%8E%E4%B8%8D%E7%A1%AE%E5%AE%9A%E4%B8%AD%E8%8E%B7%E7%9B%8A/</link>
       <pubDate>Sat, 06 May 2023 15:56:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/read/%E5%8F%8D%E8%84%86%E5%BC%B1%E6%80%A7%E4%BB%8E%E4%B8%8D%E7%A1%AE%E5%AE%9A%E4%B8%AD%E8%8E%B7%E7%9B%8A/</guid>
       <description>《反脆弱性：从不确定中获益》 Antifragile: Things That Gain from Disorder 原作者：编程随想 核心 多难兴邦 相关链接 《非对称风险》 日期: 2023-05-06 &amp;nbsp; 标签: #非对称风险&amp;nbsp; #N.N Taleb&amp;nbsp; 《非对</description>
     </item>
-    
     <item>
       <title>《随机漫步的傻瓜》</title>
       <link>https://rosefinch-midsummer.github.io/posts/read/%E9%9A%8F%E6%9C%BA%E6%BC%AB%E6%AD%A5%E7%9A%84%E5%82%BB%E7%93%9C/</link>
       <pubDate>Sat, 06 May 2023 15:55:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/read/%E9%9A%8F%E6%9C%BA%E6%BC%AB%E6%AD%A5%E7%9A%84%E5%82%BB%E7%93%9C/</guid>
       <description>《随机漫步的傻瓜》 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets &amp;mdash;-N.N.Taleb 《非对称风险》 日期: 2023-05-06 &amp;nbsp; 标签: #非对称风险&amp;nbsp; #N.N Taleb&amp;nbsp; 《非对称风险》 Skin in the Game: Hidden Asymmetries in Daily Life&amp;amp;mdash;-N.N.Taleb 《</description>
     </item>
-    
   </channel>
 </rss>

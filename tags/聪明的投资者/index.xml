@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>聪明的投资者 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/tags/%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85/</link>
     <description>Recent content in 聪明的投资者 on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 24 May 2023 18:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/tags/%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 May 2023 18:34:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/tags/%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《聪明的投资者》</title>
       <link>https://rosefinch-midsummer.github.io/posts/read/%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85/</link>
       <pubDate>Wed, 24 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/read/%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85/</guid>
       <description>The Intelligent Investor————Benjamin Graham 有史以来，关于投资的最佳著作。——巴菲特 内容简介 本书首先明确了“投资”与“投机”的区别，指出聪</description>
     </item>
-    
   </channel>
 </rss>

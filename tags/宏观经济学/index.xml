@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>宏观经济学 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</link>
     <description>Recent content in 宏观经济学 on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 08 May 2023 23:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 May 2023 23:34:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>宏观经济学</title>
       <link>https://rosefinch-midsummer.github.io/posts/course/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</link>
       <pubDate>Mon, 08 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/course/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</guid>
       <description>宏观经济学 课程概述 宏观经济学是财经类专业必修的课程，教授给学生理解宏观经济运行和宏观经济政策的理论体系，让学生能够利用所学的原理和概念来理解</description>
     </item>
-    
   </channel>
 </rss>

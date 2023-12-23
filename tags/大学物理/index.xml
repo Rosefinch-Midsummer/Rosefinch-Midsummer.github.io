@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>大学物理 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/</link>
     <description>Recent content in 大学物理 on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 08 Jun 2023 17:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jun 2023 17:34:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>大学物理</title>
       <link>https://rosefinch-midsummer.github.io/posts/course/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/</link>
       <pubDate>Thu, 08 Jun 2023 17:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/course/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/</guid>
       <description>前言 原名：Physics for Scientists &amp;amp; Engineers with Modern Physics 作者：Giancoli Douglas C 第1章 引言 测量 估算 第2章 运动的描述 一维运动 第3章 二维或三维中的动力学 矢量 第4</description>
     </item>
-    
   </channel>
 </rss>

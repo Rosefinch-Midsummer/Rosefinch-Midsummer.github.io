@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>蒋文华 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/tags/%E8%92%8B%E6%96%87%E5%8D%8E/</link>
     <description>Recent content in 蒋文华 on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 09 May 2023 00:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/tags/%E8%92%8B%E6%96%87%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 May 2023 00:34:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/tags/%E8%92%8B%E6%96%87%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>博弈论基础</title>
       <link>https://rosefinch-midsummer.github.io/posts/course/%E5%8D%9A%E5%BC%88%E8%AE%BA%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Tue, 09 May 2023 00:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/course/%E5%8D%9A%E5%BC%88%E8%AE%BA%E5%9F%BA%E7%A1%80/</guid>
       <description>课程主页 核心思想：Tit-for-Tat重复博弈 课程大纲 第一讲 概述 知人者智，自知者明； 胜人者力，自胜者强； 小胜者术，大胜者德。 博弈是指在一定</description>
     </item>
-    
   </channel>
 </rss>

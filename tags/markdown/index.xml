@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markdown on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/tags/markdown/</link>
     <description>Recent content in Markdown on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 12 May 2023 23:15:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 May 2023 23:15:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown语法全览</title>
       <link>https://rosefinch-midsummer.github.io/posts/life/markdown%E8%AF%AD%E6%B3%95%E5%85%A8%E8%A7%88/</link>
       <pubDate>Fri, 12 May 2023 23:15:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/life/markdown%E8%AF%AD%E6%B3%95%E5%85%A8%E8%A7%88/</guid>
       <description>Markdown 简介 Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,425 +1,348 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/categories/</link>
     <description>Recent content in Categories on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 14 Dec 2023 18:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Dec 2023 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>外交</title>
+      <link>https://rosefinch-midsummer.github.io/categories/%E5%A4%96%E4%BA%A4/</link>
+      <pubDate>Sat, 23 Dec 2023 22:54:22 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/categories/%E5%A4%96%E4%BA%A4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>在綫課程</title>
+      <link>https://rosefinch-midsummer.github.io/categories/%E5%9C%A8%E7%B6%AB%E8%AA%B2%E7%A8%8B/</link>
+      <pubDate>Sat, 23 Dec 2023 22:54:22 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/categories/%E5%9C%A8%E7%B6%AB%E8%AA%B2%E7%A8%8B/</guid>
+      <description></description>
+    </item>
     <item>
       <title>讀書筆記</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E8%AE%80%E6%9B%B8%E7%AD%86%E8%A8%98/</link>
       <pubDate>Thu, 14 Dec 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E8%AE%80%E6%9B%B8%E7%AD%86%E8%A8%98/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>歷史</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%AD%B7%E5%8F%B2/</link>
       <pubDate>Thu, 14 Dec 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%AD%B7%E5%8F%B2/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>宋朝</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E5%AE%8B%E6%9C%9D/</link>
       <pubDate>Sun, 26 Nov 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E5%AE%8B%E6%9C%9D/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>工具包</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E5%B7%A5%E5%85%B7%E5%8C%85/</link>
       <pubDate>Sat, 18 Nov 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E5%B7%A5%E5%85%B7%E5%8C%85/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Android</title>
       <link>https://rosefinch-midsummer.github.io/categories/android/</link>
       <pubDate>Sat, 11 Nov 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/android/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>物理</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E7%89%A9%E7%90%86/</link>
       <pubDate>Sat, 28 Oct 2023 19:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E7%89%A9%E7%90%86/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>读书笔记</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sat, 28 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>伦理学</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E4%BC%A6%E7%90%86%E5%AD%A6/</link>
       <pubDate>Sat, 28 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E4%BC%A6%E7%90%86%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>古文</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E5%8F%A4%E6%96%87/</link>
       <pubDate>Tue, 24 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E5%8F%A4%E6%96%87/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>在线课程</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E5%9C%A8%E7%BA%BF%E8%AF%BE%E7%A8%8B/</link>
       <pubDate>Tue, 24 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E5%9C%A8%E7%BA%BF%E8%AF%BE%E7%A8%8B/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>计算机</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
       <pubDate>Mon, 09 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>英语</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E8%8B%B1%E8%AF%AD/</link>
       <pubDate>Sun, 08 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E8%8B%B1%E8%AF%AD/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>数学</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%95%B0%E5%AD%A6/</link>
       <pubDate>Mon, 02 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%95%B0%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>历史</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E5%8E%86%E5%8F%B2/</link>
       <pubDate>Thu, 28 Sep 2023 21:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E5%8E%86%E5%8F%B2/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>影视</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E5%BD%B1%E8%A7%86/</link>
       <pubDate>Wed, 09 Aug 2023 12:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E5%BD%B1%E8%A7%86/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>物理学</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E7%89%A9%E7%90%86%E5%AD%A6/</link>
       <pubDate>Mon, 07 Aug 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E7%89%A9%E7%90%86%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>游戏</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%B8%B8%E6%88%8F/</link>
       <pubDate>Fri, 04 Aug 2023 22:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%B8%B8%E6%88%8F/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>豫游之乐</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E8%B1%AB%E6%B8%B8%E4%B9%8B%E4%B9%90/</link>
       <pubDate>Fri, 04 Aug 2023 22:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E8%B1%AB%E6%B8%B8%E4%B9%8B%E4%B9%90/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Getting Started</title>
       <link>https://rosefinch-midsummer.github.io/categories/getting-started/</link>
       <pubDate>Fri, 21 Jul 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/getting-started/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>人工智能</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link>
       <pubDate>Fri, 21 Jul 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>英美</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E8%8B%B1%E7%BE%8E/</link>
       <pubDate>Mon, 03 Jul 2023 23:37:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E8%8B%B1%E7%BE%8E/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>政治学</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%94%BF%E6%B2%BB%E5%AD%A6/</link>
       <pubDate>Mon, 03 Jul 2023 23:37:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%94%BF%E6%B2%BB%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>法学</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%B3%95%E5%AD%A6/</link>
       <pubDate>Mon, 03 Jul 2023 22:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%B3%95%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>华夏</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E5%8D%8E%E5%A4%8F/</link>
       <pubDate>Thu, 29 Jun 2023 12:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E5%8D%8E%E5%A4%8F/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>投资学</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%8A%95%E8%B5%84%E5%AD%A6/</link>
       <pubDate>Fri, 16 Jun 2023 20:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%8A%95%E8%B5%84%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>教育学</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%95%99%E8%82%B2%E5%AD%A6/</link>
       <pubDate>Tue, 30 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%95%99%E8%82%B2%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>心理学</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E5%BF%83%E7%90%86%E5%AD%A6/</link>
       <pubDate>Tue, 30 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>格物致知</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%A0%BC%E7%89%A9%E8%87%B4%E7%9F%A5/</link>
       <pubDate>Sat, 27 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%A0%BC%E7%89%A9%E8%87%B4%E7%9F%A5/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>文献</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%96%87%E7%8C%AE/</link>
       <pubDate>Fri, 26 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%96%87%E7%8C%AE/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>机器学习</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Sun, 21 May 2023 14:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>可视化</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
       <pubDate>Sun, 21 May 2023 14:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>计算机网络</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
       <pubDate>Sat, 20 May 2023 20:35:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>网络安全</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</link>
       <pubDate>Sat, 20 May 2023 20:35:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>容器</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E5%AE%B9%E5%99%A8/</link>
       <pubDate>Wed, 17 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E5%AE%B9%E5%99%A8/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>管理学</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E7%AE%A1%E7%90%86%E5%AD%A6/</link>
       <pubDate>Mon, 15 May 2023 23:03:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E7%AE%A1%E7%90%86%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Linux</title>
       <link>https://rosefinch-midsummer.github.io/categories/linux/</link>
       <pubDate>Sun, 14 May 2023 16:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/linux/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>博客</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Fri, 12 May 2023 23:15:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E5%8D%9A%E5%AE%A2/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>经济学</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E7%BB%8F%E6%B5%8E%E5%AD%A6/</link>
       <pubDate>Tue, 09 May 2023 00:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E7%BB%8F%E6%B5%8E%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>CV</title>
       <link>https://rosefinch-midsummer.github.io/categories/cv/</link>
       <pubDate>Mon, 08 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/cv/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>深度学习</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Mon, 08 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Matplotlib</title>
       <link>https://rosefinch-midsummer.github.io/categories/matplotlib/</link>
       <pubDate>Sat, 06 May 2023 16:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/matplotlib/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>编程</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E7%BC%96%E7%A8%8B/</link>
       <pubDate>Sat, 06 May 2023 15:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E7%BC%96%E7%A8%8B/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>思想</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%80%9D%E6%83%B3/</link>
       <pubDate>Sat, 06 May 2023 15:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%80%9D%E6%83%B3/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>松乔之寿</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%9D%BE%E4%B9%94%E4%B9%8B%E5%AF%BF/</link>
       <pubDate>Fri, 05 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%9D%BE%E4%B9%94%E4%B9%8B%E5%AF%BF/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>文明冲突</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E6%96%87%E6%98%8E%E5%86%B2%E7%AA%81/</link>
       <pubDate>Wed, 03 May 2023 22:54:22 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E6%96%87%E6%98%8E%E5%86%B2%E7%AA%81/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>古詩詞</title>
       <link>https://rosefinch-midsummer.github.io/categories/%E5%8F%A4%E8%A9%A9%E8%A9%9E/</link>
       <pubDate>Sun, 30 Apr 2023 20:53:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/categories/%E5%8F%A4%E8%A9%A9%E8%A9%9E/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

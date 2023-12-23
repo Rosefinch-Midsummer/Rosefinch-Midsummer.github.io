@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>专业导论 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/tags/%E4%B8%93%E4%B8%9A%E5%AF%BC%E8%AE%BA/</link>
     <description>Recent content in 专业导论 on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 07 May 2023 23:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/tags/%E4%B8%93%E4%B8%9A%E5%AF%BC%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 May 2023 23:34:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/tags/%E4%B8%93%E4%B8%9A%E5%AF%BC%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数学专业专业导论</title>
       <link>https://rosefinch-midsummer.github.io/posts/life/%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E4%B8%93%E4%B8%9A%E5%AF%BC%E8%AE%BA/</link>
       <pubDate>Sun, 07 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/life/%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E4%B8%93%E4%B8%9A%E5%AF%BC%E8%AE%BA/</guid>
       <description>数学的重要性 世界上最杰出的数学家之一的弗里德里希·高斯（Friedrich Gauss）曾说数学是科学的王后，这便是他在强调数学的基础性和重要</description>
     </item>
-    
   </channel>
 </rss>

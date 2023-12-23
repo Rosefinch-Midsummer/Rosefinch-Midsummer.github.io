@@ -1,983 +1,782 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/tags/</link>
     <description>Recent content in Tags on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 14 Dec 2023 18:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Dec 2023 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>國際關係</title>
+      <link>https://rosefinch-midsummer.github.io/tags/%E5%9C%8B%E9%9A%9B%E9%97%9C%E4%BF%82/</link>
+      <pubDate>Sat, 23 Dec 2023 22:54:22 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/tags/%E5%9C%8B%E9%9A%9B%E9%97%9C%E4%BF%82/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>外交</title>
+      <link>https://rosefinch-midsummer.github.io/tags/%E5%A4%96%E4%BA%A4/</link>
+      <pubDate>Sat, 23 Dec 2023 22:54:22 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/tags/%E5%A4%96%E4%BA%A4/</guid>
+      <description></description>
+    </item>
     <item>
       <title>慈善</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%85%88%E5%96%84/</link>
       <pubDate>Thu, 14 Dec 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%85%88%E5%96%84/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>明代</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%98%8E%E4%BB%A3/</link>
       <pubDate>Thu, 14 Dec 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%98%8E%E4%BB%A3/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>文化</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%96%87%E5%8C%96/</link>
       <pubDate>Sun, 26 Nov 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%96%87%E5%8C%96/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Python</title>
       <link>https://rosefinch-midsummer.github.io/tags/python/</link>
       <pubDate>Sat, 18 Nov 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/python/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Android</title>
       <link>https://rosefinch-midsummer.github.io/tags/android/</link>
       <pubDate>Sat, 11 Nov 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/android/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>物理實驗</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E7%89%A9%E7%90%86%E5%AF%A6%E9%A9%97/</link>
       <pubDate>Sat, 28 Oct 2023 19:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E7%89%A9%E7%90%86%E5%AF%A6%E9%A9%97/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>密尔</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%AF%86%E5%B0%94/</link>
       <pubDate>Sat, 28 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%AF%86%E5%B0%94/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>效用</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%95%88%E7%94%A8/</link>
       <pubDate>Sat, 28 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%95%88%E7%94%A8/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>古文</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%8F%A4%E6%96%87/</link>
       <pubDate>Tue, 24 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%8F%A4%E6%96%87/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Windows</title>
       <link>https://rosefinch-midsummer.github.io/tags/windows/</link>
       <pubDate>Mon, 09 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/windows/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>英语</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%8B%B1%E8%AF%AD/</link>
       <pubDate>Sun, 08 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%8B%B1%E8%AF%AD/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>数学</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%95%B0%E5%AD%A6/</link>
       <pubDate>Mon, 02 Oct 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%95%B0%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>游戏设计</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Fri, 29 Sep 2023 13:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>计算机</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
       <pubDate>Thu, 28 Sep 2023 22:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>史记</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%8F%B2%E8%AE%B0/</link>
       <pubDate>Thu, 28 Sep 2023 21:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%8F%B2%E8%AE%B0/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>历史</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%8E%86%E5%8F%B2/</link>
       <pubDate>Mon, 18 Sep 2023 12:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%8E%86%E5%8F%B2/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>纪录片</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E7%BA%AA%E5%BD%95%E7%89%87/</link>
       <pubDate>Wed, 09 Aug 2023 12:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E7%BA%AA%E5%BD%95%E7%89%87/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>统计学</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/</link>
       <pubDate>Thu, 27 Jul 2023 11:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Llama</title>
       <link>https://rosefinch-midsummer.github.io/tags/llama/</link>
       <pubDate>Fri, 21 Jul 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/llama/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Streamlit</title>
       <link>https://rosefinch-midsummer.github.io/tags/streamlit/</link>
       <pubDate>Fri, 21 Jul 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/streamlit/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>数学纪录片</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%95%B0%E5%AD%A6%E7%BA%AA%E5%BD%95%E7%89%87/</link>
       <pubDate>Wed, 12 Jul 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%95%B0%E5%AD%A6%E7%BA%AA%E5%BD%95%E7%89%87/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>自由</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%87%AA%E7%94%B1/</link>
       <pubDate>Mon, 03 Jul 2023 23:37:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%87%AA%E7%94%B1/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>法律</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%B3%95%E5%BE%8B/</link>
       <pubDate>Mon, 03 Jul 2023 22:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%B3%95%E5%BE%8B/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>钱宾四先生</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E9%92%B1%E5%AE%BE%E5%9B%9B%E5%85%88%E7%94%9F/</link>
       <pubDate>Thu, 29 Jun 2023 12:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E9%92%B1%E5%AE%BE%E5%9B%9B%E5%85%88%E7%94%9F/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>文集选摘</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%96%87%E9%9B%86%E9%80%89%E6%91%98/</link>
       <pubDate>Thu, 29 Jun 2023 12:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%96%87%E9%9B%86%E9%80%89%E6%91%98/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>攻势现实主义</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%94%BB%E5%8A%BF%E7%8E%B0%E5%AE%9E%E4%B8%BB%E4%B9%89/</link>
       <pubDate>Sat, 24 Jun 2023 20:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%94%BB%E5%8A%BF%E7%8E%B0%E5%AE%9E%E4%B8%BB%E4%B9%89/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>国际关系理论</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%9B%BD%E9%99%85%E5%85%B3%E7%B3%BB%E7%90%86%E8%AE%BA/</link>
       <pubDate>Sat, 24 Jun 2023 20:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%9B%BD%E9%99%85%E5%85%B3%E7%B3%BB%E7%90%86%E8%AE%BA/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Peter Drucker</title>
       <link>https://rosefinch-midsummer.github.io/tags/peter-drucker/</link>
       <pubDate>Thu, 22 Jun 2023 22:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/peter-drucker/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>极权主义的起源</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%9E%81%E6%9D%83%E4%B8%BB%E4%B9%89%E7%9A%84%E8%B5%B7%E6%BA%90/</link>
       <pubDate>Thu, 22 Jun 2023 22:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%9E%81%E6%9D%83%E4%B8%BB%E4%B9%89%E7%9A%84%E8%B5%B7%E6%BA%90/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>数学建模</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</link>
       <pubDate>Wed, 21 Jun 2023 21:30:22 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>吕世浩</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%90%95%E4%B8%96%E6%B5%A9/</link>
       <pubDate>Mon, 19 Jun 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%90%95%E4%B8%96%E6%B5%A9/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>富爸爸</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%AF%8C%E7%88%B8%E7%88%B8/</link>
       <pubDate>Fri, 16 Jun 2023 20:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%AF%8C%E7%88%B8%E7%88%B8/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>大学物理</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/</link>
       <pubDate>Thu, 08 Jun 2023 17:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>高等代数</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/</link>
       <pubDate>Thu, 08 Jun 2023 12:29:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>20小时</title>
       <link>https://rosefinch-midsummer.github.io/tags/20%E5%B0%8F%E6%97%B6/</link>
       <pubDate>Tue, 30 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/20%E5%B0%8F%E6%97%B6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>pdfjs</title>
       <link>https://rosefinch-midsummer.github.io/tags/pdfjs/</link>
       <pubDate>Mon, 29 May 2023 13:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/pdfjs/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Mathematical Analysis</title>
       <link>https://rosefinch-midsummer.github.io/tags/mathematical-analysis/</link>
       <pubDate>Sat, 27 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/mathematical-analysis/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>TexStudio</title>
       <link>https://rosefinch-midsummer.github.io/tags/texstudio/</link>
       <pubDate>Sat, 27 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/texstudio/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>zotero</title>
       <link>https://rosefinch-midsummer.github.io/tags/zotero/</link>
       <pubDate>Fri, 26 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/zotero/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>文献管理工具</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Fri, 26 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Pual Graham</title>
       <link>https://rosefinch-midsummer.github.io/tags/pual-graham/</link>
       <pubDate>Wed, 24 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/pual-graham/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>财务报表分析</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%B4%A2%E5%8A%A1%E6%8A%A5%E8%A1%A8%E5%88%86%E6%9E%90/</link>
       <pubDate>Wed, 24 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%B4%A2%E5%8A%A1%E6%8A%A5%E8%A1%A8%E5%88%86%E6%9E%90/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>聪明的投资者</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85/</link>
       <pubDate>Wed, 24 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>《穷查理宝典》</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E7%A9%B7%E6%9F%A5%E7%90%86%E5%AE%9D%E5%85%B8/</link>
       <pubDate>Wed, 24 May 2023 15:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E7%A9%B7%E6%9F%A5%E7%90%86%E5%AE%9D%E5%85%B8/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>查理芒格</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%9F%A5%E7%90%86%E8%8A%92%E6%A0%BC/</link>
       <pubDate>Wed, 24 May 2023 15:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%9F%A5%E7%90%86%E8%8A%92%E6%A0%BC/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>数学建模竞赛</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B/</link>
       <pubDate>Tue, 23 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>MBTI</title>
       <link>https://rosefinch-midsummer.github.io/tags/mbti/</link>
       <pubDate>Mon, 22 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/mbti/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>matplotlib</title>
       <link>https://rosefinch-midsummer.github.io/tags/matplotlib/</link>
       <pubDate>Sun, 21 May 2023 14:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/matplotlib/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>sklearn</title>
       <link>https://rosefinch-midsummer.github.io/tags/sklearn/</link>
       <pubDate>Sun, 21 May 2023 14:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/sklearn/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>svm</title>
       <link>https://rosefinch-midsummer.github.io/tags/svm/</link>
       <pubDate>Sun, 21 May 2023 14:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/svm/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>wifi</title>
       <link>https://rosefinch-midsummer.github.io/tags/wifi/</link>
       <pubDate>Sat, 20 May 2023 20:35:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/wifi/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Peter Senge</title>
       <link>https://rosefinch-midsummer.github.io/tags/peter-senge/</link>
       <pubDate>Sat, 20 May 2023 19:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/peter-senge/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>第五项修炼</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC/</link>
       <pubDate>Sat, 20 May 2023 19:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Machiavelli</title>
       <link>https://rosefinch-midsummer.github.io/tags/machiavelli/</link>
       <pubDate>Sat, 20 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/machiavelli/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>君主论</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%90%9B%E4%B8%BB%E8%AE%BA/</link>
       <pubDate>Sat, 20 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%90%9B%E4%B8%BB%E8%AE%BA/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Isaiah Berlin</title>
       <link>https://rosefinch-midsummer.github.io/tags/isaiah-berlin/</link>
       <pubDate>Thu, 18 May 2023 20:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/isaiah-berlin/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>自由四论</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%87%AA%E7%94%B1%E5%9B%9B%E8%AE%BA/</link>
       <pubDate>Thu, 18 May 2023 20:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%87%AA%E7%94%B1%E5%9B%9B%E8%AE%BA/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>自由及其背叛</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%87%AA%E7%94%B1%E5%8F%8A%E5%85%B6%E8%83%8C%E5%8F%9B/</link>
       <pubDate>Thu, 18 May 2023 19:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%87%AA%E7%94%B1%E5%8F%8A%E5%85%B6%E8%83%8C%E5%8F%9B/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Benjamin Constant</title>
       <link>https://rosefinch-midsummer.github.io/tags/benjamin-constant/</link>
       <pubDate>Thu, 18 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/benjamin-constant/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>古代人的自由与现代人的自由</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%8F%A4%E4%BB%A3%E4%BA%BA%E7%9A%84%E8%87%AA%E7%94%B1%E4%B8%8E%E7%8E%B0%E4%BB%A3%E4%BA%BA%E7%9A%84%E8%87%AA%E7%94%B1/</link>
       <pubDate>Thu, 18 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%8F%A4%E4%BB%A3%E4%BA%BA%E7%9A%84%E8%87%AA%E7%94%B1%E4%B8%8E%E7%8E%B0%E4%BB%A3%E4%BA%BA%E7%9A%84%E8%87%AA%E7%94%B1/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Docker</title>
       <link>https://rosefinch-midsummer.github.io/tags/docker/</link>
       <pubDate>Wed, 17 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/docker/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Flask</title>
       <link>https://rosefinch-midsummer.github.io/tags/flask/</link>
       <pubDate>Wed, 17 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/flask/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>百家姓</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E7%99%BE%E5%AE%B6%E5%A7%93/</link>
       <pubDate>Tue, 16 May 2023 00:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E7%99%BE%E5%AE%B6%E5%A7%93/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>千字文</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%8D%83%E5%AD%97%E6%96%87/</link>
       <pubDate>Tue, 16 May 2023 00:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%8D%83%E5%AD%97%E6%96%87/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>三字经</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E4%B8%89%E5%AD%97%E7%BB%8F/</link>
       <pubDate>Tue, 16 May 2023 00:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E4%B8%89%E5%AD%97%E7%BB%8F/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>管理会计学</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E7%AE%A1%E7%90%86%E4%BC%9A%E8%AE%A1%E5%AD%A6/</link>
       <pubDate>Mon, 15 May 2023 23:03:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E7%AE%A1%E7%90%86%E4%BC%9A%E8%AE%A1%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Paul Graham</title>
       <link>https://rosefinch-midsummer.github.io/tags/paul-graham/</link>
       <pubDate>Mon, 15 May 2023 22:55:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/paul-graham/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>黑客与画家</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/</link>
       <pubDate>Mon, 15 May 2023 22:55:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>李泽尧</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%9D%8E%E6%B3%BD%E5%B0%A7/</link>
       <pubDate>Mon, 15 May 2023 22:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%9D%8E%E6%B3%BD%E5%B0%A7/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>wsl2</title>
       <link>https://rosefinch-midsummer.github.io/tags/wsl2/</link>
       <pubDate>Sun, 14 May 2023 16:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/wsl2/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Markdown</title>
       <link>https://rosefinch-midsummer.github.io/tags/markdown/</link>
       <pubDate>Fri, 12 May 2023 23:15:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/markdown/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Github Actions</title>
       <link>https://rosefinch-midsummer.github.io/tags/github-actions/</link>
       <pubDate>Fri, 12 May 2023 13:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/github-actions/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>mdbook</title>
       <link>https://rosefinch-midsummer.github.io/tags/mdbook/</link>
       <pubDate>Fri, 12 May 2023 13:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/mdbook/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>博弈论</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/</link>
       <pubDate>Tue, 09 May 2023 00:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>蒋文华</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%92%8B%E6%96%87%E5%8D%8E/</link>
       <pubDate>Tue, 09 May 2023 00:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%92%8B%E6%96%87%E5%8D%8E/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>微观经济学</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</link>
       <pubDate>Mon, 08 May 2023 23:54:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>宏观经济学</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</link>
       <pubDate>Mon, 08 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Google Colab</title>
       <link>https://rosefinch-midsummer.github.io/tags/google-colab/</link>
       <pubDate>Mon, 08 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/google-colab/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Stable Diffusion</title>
       <link>https://rosefinch-midsummer.github.io/tags/stable-diffusion/</link>
       <pubDate>Mon, 08 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/stable-diffusion/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>专业导论</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E4%B8%93%E4%B8%9A%E5%AF%BC%E8%AE%BA/</link>
       <pubDate>Sun, 07 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E4%B8%93%E4%B8%9A%E5%AF%BC%E8%AE%BA/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>2D</title>
       <link>https://rosefinch-midsummer.github.io/tags/2d/</link>
       <pubDate>Sat, 06 May 2023 16:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/2d/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>plt</title>
       <link>https://rosefinch-midsummer.github.io/tags/plt/</link>
       <pubDate>Sat, 06 May 2023 16:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/plt/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>N.N Taleb</title>
       <link>https://rosefinch-midsummer.github.io/tags/n.n-taleb/</link>
       <pubDate>Sat, 06 May 2023 15:58:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/n.n-taleb/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>黑天鹅</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E9%BB%91%E5%A4%A9%E9%B9%85/</link>
       <pubDate>Sat, 06 May 2023 15:58:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E9%BB%91%E5%A4%A9%E9%B9%85/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>非对称风险</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E9%A3%8E%E9%99%A9/</link>
       <pubDate>Sat, 06 May 2023 15:57:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E9%A3%8E%E9%99%A9/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>反脆弱性</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%8F%8D%E8%84%86%E5%BC%B1%E6%80%A7/</link>
       <pubDate>Sat, 06 May 2023 15:56:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%8F%8D%E8%84%86%E5%BC%B1%E6%80%A7/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>随机漫步的傻瓜</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E9%9A%8F%E6%9C%BA%E6%BC%AB%E6%AD%A5%E7%9A%84%E5%82%BB%E7%93%9C/</link>
       <pubDate>Sat, 06 May 2023 15:55:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E9%9A%8F%E6%9C%BA%E6%BC%AB%E6%AD%A5%E7%9A%84%E5%82%BB%E7%93%9C/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>程序员修炼之道</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%BF%AE%E7%82%BC%E4%B9%8B%E9%81%93/</link>
       <pubDate>Sat, 06 May 2023 15:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%BF%AE%E7%82%BC%E4%B9%8B%E9%81%93/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>人月神话</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D/</link>
       <pubDate>Sat, 06 May 2023 15:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>PicGo</title>
       <link>https://rosefinch-midsummer.github.io/tags/picgo/</link>
       <pubDate>Fri, 05 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/picgo/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>图床</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%9B%BE%E5%BA%8A/</link>
       <pubDate>Fri, 05 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%9B%BE%E5%BA%8A/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Frederic Bastiat</title>
       <link>https://rosefinch-midsummer.github.io/tags/frederic-bastiat/</link>
       <pubDate>Fri, 05 May 2023 18:35:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/frederic-bastiat/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>看得见的与看不见的</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E7%9C%8B%E5%BE%97%E8%A7%81%E7%9A%84%E4%B8%8E%E7%9C%8B%E4%B8%8D%E8%A7%81%E7%9A%84/</link>
       <pubDate>Fri, 05 May 2023 18:35:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E7%9C%8B%E5%BE%97%E8%A7%81%E7%9A%84%E4%B8%8E%E7%9C%8B%E4%B8%8D%E8%A7%81%E7%9A%84/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Milton Friedman</title>
       <link>https://rosefinch-midsummer.github.io/tags/milton-friedman/</link>
       <pubDate>Fri, 05 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/milton-friedman/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>贝茨视力恢复法</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%B4%9D%E8%8C%A8%E8%A7%86%E5%8A%9B%E6%81%A2%E5%A4%8D%E6%B3%95/</link>
       <pubDate>Fri, 05 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%B4%9D%E8%8C%A8%E8%A7%86%E5%8A%9B%E6%81%A2%E5%A4%8D%E6%B3%95/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>近视</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%BF%91%E8%A7%86/</link>
       <pubDate>Fri, 05 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%BF%91%E8%A7%86/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>自由选择</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%87%AA%E7%94%B1%E9%80%89%E6%8B%A9/</link>
       <pubDate>Fri, 05 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%87%AA%E7%94%B1%E9%80%89%E6%8B%A9/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>《是大臣》</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%98%AF%E5%A4%A7%E8%87%A3/</link>
       <pubDate>Wed, 03 May 2023 22:54:22 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%98%AF%E5%A4%A7%E8%87%A3/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>《是首相》</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E6%98%AF%E9%A6%96%E7%9B%B8/</link>
       <pubDate>Wed, 03 May 2023 22:54:22 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E6%98%AF%E9%A6%96%E7%9B%B8/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Alastair Smith</title>
       <link>https://rosefinch-midsummer.github.io/tags/alastair-smith/</link>
       <pubDate>Wed, 03 May 2023 22:54:22 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/alastair-smith/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Bruce Bueno de Mesquita</title>
       <link>https://rosefinch-midsummer.github.io/tags/bruce-bueno-de-mesquita/</link>
       <pubDate>Wed, 03 May 2023 22:54:22 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/bruce-bueno-de-mesquita/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>独裁者手册</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E7%8B%AC%E8%A3%81%E8%80%85%E6%89%8B%E5%86%8C/</link>
       <pubDate>Wed, 03 May 2023 22:54:22 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E7%8B%AC%E8%A3%81%E8%80%85%E6%89%8B%E5%86%8C/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>英劇</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%8B%B1%E5%8A%87/</link>
       <pubDate>Wed, 03 May 2023 22:54:22 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%8B%B1%E5%8A%87/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>风龙云虎</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E9%A3%8E%E9%BE%99%E4%BA%91%E8%99%8E/</link>
       <pubDate>Tue, 02 May 2023 18:31:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E9%A3%8E%E9%BE%99%E4%BA%91%E8%99%8E/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>皇漢</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E7%9A%87%E6%BC%A2/</link>
       <pubDate>Tue, 02 May 2023 18:31:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E7%9A%87%E6%BC%A2/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hugo静态博客</title>
       <link>https://rosefinch-midsummer.github.io/tags/hugo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sun, 30 Apr 2023 20:53:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/hugo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>古詩詞</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E5%8F%A4%E8%A9%A9%E8%A9%9E/</link>
       <pubDate>Sun, 30 Apr 2023 20:53:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E5%8F%A4%E8%A9%A9%E8%A9%9E/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>贫穷的本质</title>
       <link>https://rosefinch-midsummer.github.io/tags/%E8%B4%AB%E7%A9%B7%E7%9A%84%E6%9C%AC%E8%B4%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/tags/%E8%B4%AB%E7%A9%B7%E7%9A%84%E6%9C%AC%E8%B4%A8/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

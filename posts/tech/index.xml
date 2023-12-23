@@ -1,110 +1,89 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>👨🏻‍💻技術 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/posts/tech/</link>
     <description>Recent content in 👨🏻‍💻技術 on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 21 Jul 2023 18:34:25 +0800</lastBuildDate><atom:link href="https://rosefinch-midsummer.github.io/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jul 2023 18:34:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/posts/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LangChain &#43; Streamlit&#43; Llama: 将对话式AI带到你的本地机器</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E5%AF%B9%E8%AF%9D%E5%BC%8Fai/</link>
       <pubDate>Fri, 21 Jul 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/tech/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E5%AF%B9%E8%AF%9D%E5%BC%8Fai/</guid>
       <description>相关链接 🦜️ LangChain + Streamlit🔥+ Llama 🦙: Bringing Conversational AI to Your Local Machine 🤯 LangChain + Streamlit+ Llama: 将对话式AI带到你的本地机器 准备 1 2 3 4 5 6 7 8 9 10 11 !wget https://huggingface.co/TheBloke/LLaMa-7B-GGML/resolve/main/llama-7b.ggmlv3.q4_0.bin !pip install llama-cpp-python !pip install langchain !wget</description>
     </item>
-    
     <item>
       <title>Python数学建模算法与应用第4章线性规划和整数规划模型</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/python%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95%E4%B8%8E%E5%BA%94%E7%94%A8%E7%AC%AC4%E7%AB%A0%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%92%8C%E6%95%B4%E6%95%B0%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/</link>
       <pubDate>Wed, 21 Jun 2023 21:30:22 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/tech/python%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95%E4%B8%8E%E5%BA%94%E7%94%A8%E7%AC%AC4%E7%AB%A0%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%92%8C%E6%95%B4%E6%95%B0%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/</guid>
       <description>第4章 线性规划和整数规划模型 4.1求解最大值的线性规划问题 $max z = 72x_1+64x_2$ s.t.$$\begin{cases} x_1+x_2\leq 50,\\ 12x_1+8x_2\leq 480,\\ 3x_1\leq 100,\\ x_1 ,x_2\geq 0 \end{cases} $$ 用Python软件求得最优解$x_1=20,x_2</description>
     </item>
-    
     <item>
       <title>Python数学建模算法与应用第3章线性代数模型解答</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/python%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95%E4%B8%8E%E5%BA%94%E7%94%A8%E7%AC%AC3%E7%AB%A0%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E6%A8%A1%E5%9E%8B%E8%A7%A3%E7%AD%94/</link>
       <pubDate>Tue, 20 Jun 2023 19:30:22 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/tech/python%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95%E4%B8%8E%E5%BA%94%E7%94%A8%E7%AC%AC3%E7%AB%A0%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E6%A8%A1%E5%9E%8B%E8%A7%A3%E7%AD%94/</guid>
       <description>这块习题主要是差分方程和马尔科夫链应用。 差分方程 差分方程是在离散的时间点上描述对象动态变化规律的数学表达式。有的实际问题本身就是以离散形式出</description>
     </item>
-    
     <item>
       <title>Python数学建模算法与应用第2章入门题目解答</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/python%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95%E4%B8%8E%E5%BA%94%E7%94%A8%E7%AC%AC2%E7%AB%A0%E5%85%A5%E9%97%A8%E9%A2%98%E7%9B%AE%E8%A7%A3%E7%AD%94/</link>
       <pubDate>Sun, 18 Jun 2023 16:30:22 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/tech/python%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95%E4%B8%8E%E5%BA%94%E7%94%A8%E7%AC%AC2%E7%AB%A0%E5%85%A5%E9%97%A8%E9%A2%98%E7%9B%AE%E8%A7%A3%E7%AD%94/</guid>
       <description>2.1画出双曲函数和指数函数图形 在同一个图形界面上画出如下三个函数的图形并进行标注。 $$y=chx,y=shx,y=\frac{1}{2} e^{x}$$ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 import pylab as plt import numpy as np p</description>
     </item>
-    
     <item>
       <title>银行用户数据分析</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/%E9%93%B6%E8%A1%8C%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</link>
       <pubDate>Sun, 21 May 2023 14:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/tech/%E9%93%B6%E8%A1%8C%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</guid>
       <description>数据预处理 获取数据 !wget https://raw.githubusercontent.com/Rosefinch-Midsummer/Rosefinch-Midsummer.github.io/main/content/posts/file/bankpep.csv 读入数据并以id为索引，展示前五个数据 1 2 3 4 import pandas as pd import matplotlib.pyplot as plt df = pd.read_csv(&amp;#39;bankpep.csv&amp;#39;,index_col=&amp;#39;id&amp;#39;) print(df.head(5)) 把字符型数据替换成数值型数据 1 2 3 4 5 6 7 8 9 10</description>
     </item>
-    
     <item>
       <title>制作一个Flask应用的Docker镜像教程</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AAflask%E5%BA%94%E7%94%A8%E7%9A%84docker%E9%95%9C%E5%83%8F%E6%95%99%E7%A8%8B/</link>
       <pubDate>Wed, 17 May 2023 23:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/tech/%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AAflask%E5%BA%94%E7%94%A8%E7%9A%84docker%E9%95%9C%E5%83%8F%E6%95%99%E7%A8%8B/</guid>
       <description>使用Docker部署应用以及容器数据卷Volume Docker是一个广泛使用的容器化平台，可用于部署和运行各种应用程序。使用Docker，我</description>
     </item>
-    
     <item>
       <title>WSL2入门教程</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/wsl2%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</link>
       <pubDate>Sun, 14 May 2023 16:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/tech/wsl2%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</guid>
       <description>日常开发常用到Ubuntu等Linux操作系统，通常的选择如下： 双系统 用VMware、VirtualBox等安装相应的虚拟机 使用微软开发的适</description>
     </item>
-    
     <item>
       <title>用mdbook&#43;GitHub Pages创建在线电子书</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/%E7%94%A8mdbook&#43;github-pages%E5%88%9B%E5%BB%BA%E5%9C%A8%E7%BA%BF%E7%94%B5%E5%AD%90%E4%B9%A6/</link>
       <pubDate>Fri, 12 May 2023 13:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/tech/%E7%94%A8mdbook&#43;github-pages%E5%88%9B%E5%BB%BA%E5%9C%A8%E7%BA%BF%E7%94%B5%E5%AD%90%E4%B9%A6/</guid>
       <description>GitHub Actions for mdBook (rust-lang/mdBook) ⚡️ Setup mdBook quickly and build your site fast. Linux (Ubuntu), macOS, and Windows are supported. 准备工作 新建public仓库然后打开读写权限，具体步骤如下： Settings——&amp;gt;Acti</description>
     </item>
-    
     <item>
       <title>用Google colab 玩 Stable Diffusion</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/%E7%94%A8google-colab-%E7%8E%A9-stable-diffusion/</link>
       <pubDate>Mon, 08 May 2023 18:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/tech/%E7%94%A8google-colab-%E7%8E%A9-stable-diffusion/</guid>
       <description>注册谷歌账号 实测用Firefox浏览器挂VPN能成功注册谷歌账号了，+86号码可用，如果不可用，可以用在线号码接收网站# 便宜的虚拟电话号码辅</description>
     </item>
-    
     <item>
       <title>Matplotlib-pyplot绘图基础</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/matplotlib-pyplot%E7%BB%98%E5%9B%BE%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sat, 06 May 2023 16:34:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/tech/matplotlib-pyplot%E7%BB%98%E5%9B%BE%E5%9F%BA%E7%A1%80/</guid>
       <description>官网 中文官网 Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible. Create publication quality plots. Make interactive figures that can zoom, pan, update. Customize visual style and layout. Export to many file formats. Embed in JupyterLab and Graphical User Interfaces. Use a rich array of third-party packages built on Matplotlib. 展示</description>
     </item>
-    
     <item>
       <title>个人博客搭建大致流程</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%A4%A7%E8%87%B4%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Sun, 30 Apr 2023 20:53:25 +0800</pubDate>
-      
       <guid>https://rosefinch-midsummer.github.io/posts/tech/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%A4%A7%E8%87%B4%E6%B5%81%E7%A8%8B/</guid>
       <description>基本技术栈：GithubPages+Github Action+Hugo+PaperMod主题 首先安装Hugo、git和创建xxx.githu</description>
     </item>
-    
   </channel>
 </rss>
