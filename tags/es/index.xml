@@ -6,8 +6,15 @@
     <description>Recent content in ES on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 16 Aug 2021 18:34:25 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Aug 2021 19:34:25 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/tags/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python-elasticsearch基本用法</title>
+      <link>https://rosefinch-midsummer.github.io/posts/tech/python-elasticsearch%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Mon, 16 Aug 2021 19:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/tech/python-elasticsearch%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>Python-elasticsearch基本用法 官方文档：https://www.elastic.co/guide/en/elasticse</description>
+    </item>
     <item>
       <title>ElasticSearch教程</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/elasticsearch%E6%95%99%E7%A8%8B/</link>

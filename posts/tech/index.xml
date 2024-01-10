@@ -86,6 +86,13 @@
       <description>基本技术栈：GithubPages+Github Action+Hugo+PaperMod主题 首先安装Hugo、git和创建xxx.githu</description>
     </item>
     <item>
+      <title>Python-elasticsearch基本用法</title>
+      <link>https://rosefinch-midsummer.github.io/posts/tech/python-elasticsearch%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Mon, 16 Aug 2021 19:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/tech/python-elasticsearch%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>Python-elasticsearch基本用法 官方文档：https://www.elastic.co/guide/en/elasticse</description>
+    </item>
+    <item>
       <title>ElasticSearch教程</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/elasticsearch%E6%95%99%E7%A8%8B/</link>
       <pubDate>Mon, 16 Aug 2021 18:34:25 +0800</pubDate>

@@ -646,6 +646,13 @@
       <description>前言 这篇博文用于收纳我觉得有收藏意义的诗词，给自己一个心灵安息之所。 有空会用Midjourney和Stable Diffusion等来为我喜爱</description>
     </item>
     <item>
+      <title>Python-elasticsearch基本用法</title>
+      <link>https://rosefinch-midsummer.github.io/posts/tech/python-elasticsearch%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Mon, 16 Aug 2021 19:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/tech/python-elasticsearch%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>Python-elasticsearch基本用法 官方文档：https://www.elastic.co/guide/en/elasticse</description>
+    </item>
+    <item>
       <title>ElasticSearch教程</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/elasticsearch%E6%95%99%E7%A8%8B/</link>
       <pubDate>Mon, 16 Aug 2021 18:34:25 +0800</pubDate>
