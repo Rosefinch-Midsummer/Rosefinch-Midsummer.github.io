@@ -86,6 +86,13 @@
       <description>基本技术栈：GithubPages+Github Action+Hugo+PaperMod主题 首先安装Hugo、git和创建xxx.githu</description>
     </item>
     <item>
+      <title>ElasticSearch教程</title>
+      <link>https://rosefinch-midsummer.github.io/posts/tech/elasticsearch%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Mon, 16 Aug 2021 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/tech/elasticsearch%E6%95%99%E7%A8%8B/</guid>
+      <description>ElasticSearch教程 ES是高扩展的实时分布式全文检索引擎，基于Lucence，Restful API ELK技术：ES+logstash+</description>
+    </item>
+    <item>
       <title>elasticsearch安装教程</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/elasticsearch%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
       <pubDate>Fri, 06 Aug 2021 18:34:25 +0800</pubDate>
