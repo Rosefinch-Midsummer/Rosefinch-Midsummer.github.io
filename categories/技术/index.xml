@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on 天漢帝國復興錄</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 06 Aug 2021 18:34:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>elasticsearch安装教程</title>
+      <link>https://rosefinch-midsummer.github.io/posts/tech/elasticsearch%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Fri, 06 Aug 2021 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/tech/elasticsearch%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+      <description>ElasticSearch安装教程 官网 elasticsearch初学终极教程 - 第二章: 把Elastic Search在本地跑起来 命令速查 1 2 3</description>
+    </item>
+  </channel>
+</rss>
