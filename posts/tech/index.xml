@@ -128,6 +128,13 @@
       <description>ElasticSearch安装教程 官网 elasticsearch初学终极教程 - 第二章: 把Elastic Search在本地跑起来 命令速查 1 2 3</description>
     </item>
     <item>
+      <title>Redis教程</title>
+      <link>https://rosefinch-midsummer.github.io/posts/tech/redis%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Wed, 04 Aug 2021 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/tech/redis%E6%95%99%E7%A8%8B/</guid>
+      <description>Redis安装教程 REmote DIctionary Server(Redis) 是一个由 Salvatore Sanfilippo 写的 key-value 存储系统，是跨平台的非关系型数据库。 Redis 是一个开源的使用 ANSI C 语言编写、遵守 BSD 协议、支持网络、可基于内</description>
+    </item>
+    <item>
       <title>MongoDB安装教程</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/mongodb%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
       <pubDate>Wed, 04 Aug 2021 20:34:25 +0800</pubDate>
