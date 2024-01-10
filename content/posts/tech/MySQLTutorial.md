@@ -1,6 +1,6 @@
 ---
 title: "MySQLTutorial"
-date: 2021-08-16T18:34:25+08:00
+date: 2021-08-04T18:34:25+08:00
 lastmod: 2021-08-24T22:54:22+08:00
 draft: false
 categories:
