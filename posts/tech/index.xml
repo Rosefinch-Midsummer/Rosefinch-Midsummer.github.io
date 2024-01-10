@@ -100,6 +100,13 @@
       <description>ElasticSearch教程 ES是高扩展的实时分布式全文检索引擎，基于Lucence，Restful API ELK技术：ES+logstash+</description>
     </item>
     <item>
+      <title>MySQLTutorial</title>
+      <link>https://rosefinch-midsummer.github.io/posts/tech/mysqltutorial/</link>
+      <pubDate>Mon, 16 Aug 2021 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/tech/mysqltutorial/</guid>
+      <description>MySQL Tutorial MySQL 是最流行的关系型数据库管理系统，在 WEB 应用方面 MySQL 是最好的 RDBMS(Relational Database Management System：关系数据库管理系统)应用软件之一。 所谓的关系型数据库，是建立</description>
+    </item>
+    <item>
       <title>地图可视化工具folium教程</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/%E5%9C%B0%E5%9B%BE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B7%A5%E5%85%B7folium%E6%95%99%E7%A8%8B/</link>
       <pubDate>Fri, 13 Aug 2021 18:34:25 +0800</pubDate>
