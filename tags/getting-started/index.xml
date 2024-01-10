@@ -44,6 +44,13 @@
       <description>ElasticSearch安装教程 官网 elasticsearch初学终极教程 - 第二章: 把Elastic Search在本地跑起来 命令速查 1 2 3</description>
     </item>
     <item>
+      <title>Streamlit教程</title>
+      <link>https://rosefinch-midsummer.github.io/posts/tech/streamlit%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Wed, 04 Aug 2021 23:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/tech/streamlit%E6%95%99%E7%A8%8B/</guid>
+      <description>Streamlit教程 The fastest way to build and share data apps Streamlit 是一个开源 Python 库，可让您轻松创建和共享用于机器学习和数据科学的精美自定义 Web 应用程序。 Streamlit 的使用场景如：</description>
+    </item>
+    <item>
       <title>Redis教程</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/redis%E6%95%99%E7%A8%8B/</link>
       <pubDate>Wed, 04 Aug 2021 22:34:25 +0800</pubDate>

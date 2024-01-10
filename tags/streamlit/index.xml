@@ -15,5 +15,12 @@
       <guid>https://rosefinch-midsummer.github.io/posts/tech/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E5%AF%B9%E8%AF%9D%E5%BC%8Fai/</guid>
       <description>相关链接 🦜️ LangChain + Streamlit🔥+ Llama 🦙: Bringing Conversational AI to Your Local Machine 🤯 LangChain + Streamlit+ Llama: 将对话式AI带到你的本地机器 准备 1 2 3 4 5 6 7 8 9 10 11 !wget https://huggingface.co/TheBloke/LLaMa-7B-GGML/resolve/main/llama-7b.ggmlv3.q4_0.bin !pip install llama-cpp-python !pip install langchain !wget</description>
     </item>
+    <item>
+      <title>Streamlit教程</title>
+      <link>https://rosefinch-midsummer.github.io/posts/tech/streamlit%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Wed, 04 Aug 2021 23:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/tech/streamlit%E6%95%99%E7%A8%8B/</guid>
+      <description>Streamlit教程 The fastest way to build and share data apps Streamlit 是一个开源 Python 库，可让您轻松创建和共享用于机器学习和数据科学的精美自定义 Web 应用程序。 Streamlit 的使用场景如：</description>
+    </item>
   </channel>
 </rss>
