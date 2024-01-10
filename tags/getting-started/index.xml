@@ -16,6 +16,13 @@
       <description>ElasticSearch教程 ES是高扩展的实时分布式全文检索引擎，基于Lucence，Restful API ELK技术：ES+logstash+</description>
     </item>
     <item>
+      <title>Cron定时任务表达式手册</title>
+      <link>https://rosefinch-midsummer.github.io/posts/tech/cron%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Wed, 11 Aug 2021 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/tech/cron%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%89%8B%E5%86%8C/</guid>
+      <description>Cron定时任务表达式手册 Cron 定时任务表达式手册 Cron 表达式，是应用在 Unix 和类 Unix 操作系统之中，让脚本、任务定时进行周期性重复的执行。Cron 表达式有</description>
+    </item>
+    <item>
       <title>elasticsearch安装教程</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/elasticsearch%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
       <pubDate>Fri, 06 Aug 2021 18:34:25 +0800</pubDate>
