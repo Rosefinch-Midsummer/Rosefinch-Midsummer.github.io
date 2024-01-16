@@ -1,6 +1,7 @@
 ---
 title: "用pdfjs在线预览pdf书籍教程"
 date: 2023-05-29T13:34:25+08:00
+lastmod: 2024-01-16T12:54:22+08:00
 draft: false
 categories:
 - 豫游之乐
@@ -68,6 +69,39 @@ and the repository exists.
 开启github pages功能：
 
 ![](https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230529133821.png)
+
+[将你的文件上传到 GitHub](https://developer.mozilla.org/zh-CN/docs/Learn/Common_questions/Tools_and_setup/Using_GitHub_pages#%E5%B0%86%E4%BD%A0%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0_github)
+
+1. 在当前页面上，你可能对本节的这部分感兴趣“**_…or push an existing repository from the command line_**（或者从命令行推送一个现有存储库）”。你应该看到本节中列出的两行代码。复制整个第一行，将其粘贴到命令行中，然后按 Enter 键。命令应该看起来像是这样的：
+    
+    BASHCopy to Clipboard
+    
+    ```
+    git remote add origin https://github.com/chrisdavidmills/my-repository.git
+    ```
+    
+2. 接下来，键入以下两个命令，每个命令之后按 Enter。这些指令将会把代码上传到 GitHub，并要求 Git 管理这些文件。
+    
+    BASHCopy to Clipboard
+    
+    ```
+    git add --all
+    git commit -m 'adding my files to my repository'
+    ```
+    
+3. 最后，将代码推送到 GitHub，通过你正在访问的 GitHub 网页，然后输入我们看到的两个命令中的第二个命令“ **…or push an existing repository from the command line**（或从命令行部分推入现有存储库）部分”：
+    
+    BASHCopy to Clipboard
+    
+    ```
+    git push -u origin master
+    ```
+    
+4. 现在你需要为你的仓库开启 GitHub pages 分支。为此，其在仓库的主页中选择 _Settings_，然后从左侧的侧边栏中选择 _Pages_。在 _Source_ 下选择“main”分支。页面应该会自动刷新。
+5. 重新回到 _GitHub Pages_ 部分，你应该会看到形式为“Your site is ready to be published at `https://xxxxxx`.”的一行内容。
+6. 如果你点击这个 URL，你应该会跳转到你的示例的实时演示版本，提供的主页名为 `index.html`——这是默认的入口点。如果你的网站的入口点不是这个，例如 `myPage.html`，你需要访问 `https://xxxxxx/myPage.html`。
+
+
 
 Suppose your personal website is hosted in a Github page as follows:
 
