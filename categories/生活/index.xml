@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生活 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/categories/%E7%94%9F%E6%B4%BB/</link>
+    <description>Recent content in 生活 on 天漢帝國復興錄</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 18 Jan 2024 18:34:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>媲美 uTools 的免费、效率工具 Rubick</title>
+      <link>https://rosefinch-midsummer.github.io/posts/life/%E5%AA%B2%E7%BE%8E-utools-%E7%9A%84%E5%85%8D%E8%B4%B9%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7-rubick/</link>
+      <pubDate>Thu, 18 Jan 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/life/%E5%AA%B2%E7%BE%8E-utools-%E7%9A%84%E5%85%8D%E8%B4%B9%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7-rubick/</guid>
+      <description>媲美 uTools 的免费、效率工具 Rubick 本文来源 作者：muwoo 2023 年 11 月 09 日 不知不觉，Rubick 从 2021 年开源到现在已经更新到 v4.x 版本了，目前整体来看不管是交互</description>
+    </item>
+  </channel>
+</rss>
