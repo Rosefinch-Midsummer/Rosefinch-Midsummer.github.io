@@ -6,8 +6,15 @@
     <description>Recent content in 🏖生活 on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 01 Mar 2024 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 12 Mar 2024 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/posts/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>简历导航栏目</title>
+      <link>https://rosefinch-midsummer.github.io/posts/life/%E7%AE%80%E5%8E%86%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9B%AE/</link>
+      <pubDate>Tue, 12 Mar 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/life/%E7%AE%80%E5%8E%86%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9B%AE/</guid>
+      <description>简历导航栏目 前言 最近要写实习简历，顺便找了的简历相关的资源。 资源列表 Awesome Resume for Chinese适合中文的简历模板 Chinese Resume in Typst Markdown 简历模版 程序员简历如何写</description>
+    </item>
     <item>
       <title>CS自救指南（转载）</title>
       <link>https://rosefinch-midsummer.github.io/posts/life/cs%E8%87%AA%E6%95%91%E6%8C%87%E5%8D%97%E8%BD%AC%E8%BD%BD/</link>
