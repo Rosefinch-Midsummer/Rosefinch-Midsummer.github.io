@@ -6,8 +6,22 @@
     <description>Recent content on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 12 Mar 2024 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2024 12:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>魔法上网工具推荐</title>
+      <link>https://rosefinch-midsummer.github.io/posts/life/%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Sat, 16 Mar 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/life/%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</guid>
+      <description>前言 收集一波工具，防止失联。。 不推荐用机场，国内的都不可信。 免费VPN：推荐及指南（2024最新免费VPN） 免费VPN为什么免费？ 大家都听说</description>
+    </item>
+    <item>
+      <title>提示词工程指北——26条原则</title>
+      <link>https://rosefinch-midsummer.github.io/posts/life/%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B%E6%8C%87%E5%8C%9726%E6%9D%A1%E5%8E%9F%E5%88%99/</link>
+      <pubDate>Sat, 16 Mar 2024 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/life/%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B%E6%8C%87%E5%8C%9726%E6%9D%A1%E5%8E%9F%E5%88%99/</guid>
+      <description>前言 最近打算部署一个属于自己的 ChatGPT 网页服务，顺便提升一下自己写提示词的能力，于是便有了下面这篇文章。 发号施令 26 条准则 Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4 指令原</description>
+    </item>
     <item>
       <title>简历导航栏目</title>
       <link>https://rosefinch-midsummer.github.io/posts/life/%E7%AE%80%E5%8E%86%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9B%AE/</link>
