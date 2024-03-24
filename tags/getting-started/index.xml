@@ -6,8 +6,15 @@
     <description>Recent content in Getting Started on 天漢帝國復興錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 24 Aug 2021 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Mar 2024 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/tags/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deeplearning-ChatGPT-Prompts-Tutorial</title>
+      <link>https://rosefinch-midsummer.github.io/posts/course/deeplearning-chatgpt-prompts-tutorial/</link>
+      <pubDate>Sun, 24 Mar 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/course/deeplearning-chatgpt-prompts-tutorial/</guid>
+      <description>前言 这里的代码因为 API 变化无法直接运行。。 这里的内容值得参考。。 注意： 1 You tried to access openai.ChatCompletion, but this is no longer supported in openai&amp;gt;=1.0.0 - see the README at [https://github.com/openai/openai-python](https://github.com/openai/openai-python) for the API. You can run `openai migrate` to automatically upgrade your codebase to use the</description>
+    </item>
     <item>
       <title>Python-elasticsearch基本用法</title>
       <link>https://rosefinch-midsummer.github.io/posts/tech/python-elasticsearch%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
