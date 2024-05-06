@@ -6,8 +6,15 @@
     <description>Recent content on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.112.7</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 01 May 2024 21:28:22 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 May 2024 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何彻底关闭 Antimalware Service Executable 降低内存占用 ?</title>
+      <link>https://rosefinch-midsummer.github.io/posts/life/%E5%A6%82%E4%BD%95%E5%BD%BB%E5%BA%95%E5%85%B3%E9%97%AD-antimalware-service-executable-%E9%99%8D%E4%BD%8E%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8-/</link>
+      <pubDate>Mon, 06 May 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/life/%E5%A6%82%E4%BD%95%E5%BD%BB%E5%BA%95%E5%85%B3%E9%97%AD-antimalware-service-executable-%E9%99%8D%E4%BD%8E%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8-/</guid>
+      <description>如何彻底关闭 Antimalware Service Executable 降低内存占用 ? 【系统篇】彻底禁用Antimalware Service Executable服务 Windows 10 彻底关闭 Antimalware Service Executable 降低内存占用 前言 很多同学</description>
+    </item>
     <item>
       <title>游戏《上古卷轴V：天际》</title>
       <link>https://rosefinch-midsummer.github.io/posts/life/%E6%B8%B8%E6%88%8F%E4%B8%8A%E5%8F%A4%E5%8D%B7%E8%BD%B4v%E5%A4%A9%E9%99%85/</link>
