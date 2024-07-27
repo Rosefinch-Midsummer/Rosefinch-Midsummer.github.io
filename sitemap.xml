@@ -2,7 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rosefinch-midsummer.github.io/posts/%E7%9D%A1%E7%9C%A0%E9%9D%A9%E5%91%BD/</loc>
+    <loc>https://rosefinch-midsummer.github.io/posts/read/%E7%9D%A1%E7%9C%A0%E9%9D%A9%E5%91%BD/</loc>
+    <lastmod>2024-07-27T22:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/posts/read/</loc>
     <lastmod>2024-07-27T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/posts/</loc>
@@ -27,9 +30,6 @@
     <lastmod>2024-07-27T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/posts/read/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A/</loc>
-    <lastmod>2024-07-25T22:54:22+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/posts/read/</loc>
     <lastmod>2024-07-25T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/tags/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A/</loc>
