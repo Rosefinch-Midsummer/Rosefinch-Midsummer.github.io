@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>虚拟机 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+    <description>Recent content in 虚拟机 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.112.7</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 02 Sep 2024 13:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH 连接 VirtualBox Ubuntu 虚拟机</title>
+      <link>https://rosefinch-midsummer.github.io/posts/tech/ssh-%E8%BF%9E%E6%8E%A5-virtualbox-ubuntu-%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+      <pubDate>Mon, 02 Sep 2024 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/tech/ssh-%E8%BF%9E%E6%8E%A5-virtualbox-ubuntu-%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
+      <description>SSH 连接 VirtualBox Ubuntu 虚拟机 工具 VirtualBox Ubuntu 虚拟机 Termius 终端 官网： https://termius.com/ Termius 不仅仅是一个 SSH 客户端，而是一个完整的命令行解决方案，重新定义远程访问。远比 XShell、Put</description>
+    </item>
+  </channel>
+</rss>
