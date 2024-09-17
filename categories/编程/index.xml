@@ -6,8 +6,15 @@
     <description>Recent content in 编程 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.112.7</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 06 May 2023 15:34:25 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Sep 2024 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>（转载）部署React-Vite Application</title>
+      <link>https://rosefinch-midsummer.github.io/posts/tech/%E8%BD%AC%E8%BD%BD%E9%83%A8%E7%BD%B2react-vite-application/</link>
+      <pubDate>Tue, 17 Sep 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/posts/tech/%E8%BD%AC%E8%BD%BD%E9%83%A8%E7%BD%B2react-vite-application/</guid>
+      <description>Deploying a React Vite Application on Render 前言 原文链接 作者：Tushar Mahajan 发布时间：Apr 10, 2024 When it comes to deployment, Render.com provides a user-friendly platform that integrates seamlessly with your Git workflow. This article will guide you through the process of deploying your React Vite application to Render.com, ensuring a smooth and</description>
+    </item>
     <item>
       <title>程序员内功心法</title>
       <link>https://rosefinch-midsummer.github.io/posts/read/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%86%85%E5%8A%9F%E5%BF%83%E6%B3%95/</link>
