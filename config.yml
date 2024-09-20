@@ -149,11 +149,11 @@ params:
     #         SiteVerificationTag: "XYZabc"
 
     assets:
-      favicon: "img/三辰旗.jpg"
-      favicon16x16: "img/三辰旗.jpg"
-      favicon32x32: "img/三辰旗.jpg"
-      apple_touch_icon: "img/三辰旗.jpg"
-      safari_pinned_tab: "img/三辰旗.jpg"
+      favicon: "img/favicon.ico"
+      favicon16x16: "img/favicon-16x16.png"
+      favicon32x32: "img/favicon-32x32.png"
+      apple_touch_icon: "img/apple-touch-icon.png"
+      safari_pinned_tab: "img/android-chrome-192x192.png"
 
     # cover:
     #     hidden: true # hide everywhere but not in structured data
