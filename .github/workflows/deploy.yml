@@ -30,10 +30,11 @@ jobs:
       - name: Update theme to Latest commit
         run: git submodule update --remote
 
-      - name: Setup hugo
-        uses: peaceiris/actions-hugo@v2
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.112.7"
+          hugo-version: '0.119.0'
+          # extended: true
 
       - name: Build
         run: hugo --theme=PaperMod --buildDrafts --gc --verbose --minify
