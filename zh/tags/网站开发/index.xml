@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>网站开发 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 网站开发 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.138.0</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 19 Sep 2024 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Favicon.im自动获取网站图标</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8favicon.im%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</link>
+      <pubDate>Thu, 19 Sep 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8favicon.im%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</guid>
+      <description>&lt;h1 id=&#34;一键自动获取任意网站favicon图标批量优化导航站点与web项目的必备工具指南&#34;&gt;一键自动获取任意网站Favicon图标：批量优化导航站点与Web项目的必备工具指南&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.axiaoxin.com/post/auto-fetch-favicon/&#34;&gt;https://blog.axiaoxin.com/post/auto-fetch-favicon/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2024-08-27  |  3 分钟  |  1362 字  |  110 阅读  |  0 评论&lt;/p&gt;
+&lt;p&gt;在现代 Web 开发中，favicon（网站图标）不仅仅是一个美观的小图标，更是提升品牌识别度和用户体验的重要元素。&lt;strong&gt;如果您正在构建导航站点、开发浏览器扩展，或只是想提高网站的视觉吸引力&lt;/strong&gt;，快速获取多个网站的 favicon 图标显得尤为重要。本文将为您介绍一种便捷的方法，使用 &lt;a href=&#34;https://favicon.im/?hmsr=blog.axiaoxin.com&amp;utm_source=blog.axiaoxin.com&amp;utm_medium=referral&#34;&gt;Favicon.im&lt;/a&gt; 自动获取任意网站的 favicon 图标。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

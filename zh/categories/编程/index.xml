@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>编程 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/categories/%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 编程 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.138.0</generator>
+    <language>zh</language>
+    <lastBuildDate>Tue, 01 Oct 2024 15:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MERN全栈项目——Netflix-clone简介</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/mern%E5%85%A8%E6%A0%88%E9%A1%B9%E7%9B%AEnetflix-clone%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Tue, 01 Oct 2024 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/mern%E5%85%A8%E6%A0%88%E9%A1%B9%E7%9B%AEnetflix-clone%E7%AE%80%E4%BB%8B/</guid>
+      <description>&lt;h1 id=&#34;netflix-clone&#34;&gt;Netflix-clone&lt;/h1&gt;
+&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gRroBZczKAU&amp;t=415s&#34;&gt;How To Build a Netflix Clone with MERN Stack in 2024 - Full Course&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/burakorkmez/mern-netflix-clone&#34;&gt;burakorkmez/mern-netflix-clone&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/drive/u/0/folders/18FzSOPrw40T4lzGimv7QazSznCx-H4Ds&#34;&gt;相关资源&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;注意：要把资源中&lt;code&gt;avatar2.jpg&lt;/code&gt;改成&lt;code&gt;avatar2.png&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://netflix-tianhan.onrender.com/&#34;&gt;在线试用&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;特色&#34;&gt;特色&lt;/h2&gt;
+&lt;p&gt;About This Course:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;⚛️ Tech Stack: React.js, Node.js, Express.js, MongoDB, Tailwind&lt;/li&gt;
+&lt;li&gt;🔐 Authentication with JWT&lt;/li&gt;
+&lt;li&gt;📱 Responsive UI&lt;/li&gt;
+&lt;li&gt;🎬 Fetch Movies and Tv Show&lt;/li&gt;
+&lt;li&gt;🔎 Search for Actors and Movies&lt;/li&gt;
+&lt;li&gt;🎥 Watch Trailers&lt;/li&gt;
+&lt;li&gt;🔥  Fetch Search History&lt;/li&gt;
+&lt;li&gt;🐱‍👤 Get  Similar Movies/Tv Shows&lt;/li&gt;
+&lt;li&gt;💙 Awesome Landing Page&lt;/li&gt;
+&lt;li&gt;🌐 Deployment&lt;/li&gt;
+&lt;li&gt;🚀 And Many More Cool Features&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;本地使用&#34;&gt;本地使用&lt;/h2&gt;
+&lt;p&gt;Setup .env file&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>使用Favicon.im自动获取网站图标</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8favicon.im%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</link>
+      <pubDate>Thu, 19 Sep 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8favicon.im%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</guid>
+      <description>&lt;h1 id=&#34;一键自动获取任意网站favicon图标批量优化导航站点与web项目的必备工具指南&#34;&gt;一键自动获取任意网站Favicon图标：批量优化导航站点与Web项目的必备工具指南&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.axiaoxin.com/post/auto-fetch-favicon/&#34;&gt;https://blog.axiaoxin.com/post/auto-fetch-favicon/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2024-08-27  |  3 分钟  |  1362 字  |  110 阅读  |  0 评论&lt;/p&gt;
+&lt;p&gt;在现代 Web 开发中，favicon（网站图标）不仅仅是一个美观的小图标，更是提升品牌识别度和用户体验的重要元素。&lt;strong&gt;如果您正在构建导航站点、开发浏览器扩展，或只是想提高网站的视觉吸引力&lt;/strong&gt;，快速获取多个网站的 favicon 图标显得尤为重要。本文将为您介绍一种便捷的方法，使用 &lt;a href=&#34;https://favicon.im/?hmsr=blog.axiaoxin.com&amp;utm_source=blog.axiaoxin.com&amp;utm_medium=referral&#34;&gt;Favicon.im&lt;/a&gt; 自动获取任意网站的 favicon 图标。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>（转载）部署React-Vite Application</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%BD%AC%E8%BD%BD%E9%83%A8%E7%BD%B2react-vite-application/</link>
+      <pubDate>Tue, 17 Sep 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%BD%AC%E8%BD%BD%E9%83%A8%E7%BD%B2react-vite-application/</guid>
+      <description>&lt;h1 id=&#34;deploying-a-react-vite-application-on-render&#34;&gt;Deploying a React Vite Application on Render&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/technogise/deploying-a-react-vite-application-on-render-8eb9caeaa502&#34;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者：Tushar Mahajan&lt;/p&gt;
+&lt;p&gt;发布时间：Apr 10, 2024&lt;/p&gt;
+&lt;p&gt;When it comes to deployment, Render.com provides a user-friendly platform that integrates seamlessly with your Git workflow. This article will guide you through the process of deploying your React Vite application to Render.com, ensuring a smooth and efficient transition from development to production.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MERN-STACK-CHATAPP-详情说明</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/mern-stack-chatapp-%E8%AF%A6%E6%83%85%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Tue, 17 Sep 2024 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/mern-stack-chatapp-%E8%AF%A6%E6%83%85%E8%AF%B4%E6%98%8E/</guid>
+      <description>&lt;h1 id=&#34;build-and-deploy-a-complete-chat-app-with-mern-stack--jwt-socketio-mongodb--beginner-friendly&#34;&gt;Build and Deploy a Complete Chat App with MERN Stack | JWT, Socket.io, MongoDB | Beginner Friendly&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://chatapp-tianhan.onrender.com&#34;&gt;在线试用&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=HwCqsOis894&#34;&gt;Youtube视频链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/burakorkmez/mern-chat-app&#34;&gt;原作者GitHub仓库链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Rosefinch-Midsummer/ChatAPP&#34;&gt;本人Github仓库链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;Build a Realtime Chat App with MERN Stack. Completely beginner friendly.&lt;/p&gt;
+&lt;p&gt;Some Features of This App:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🌟 Tech stack: MERN + Socket.io + TailwindCSS + Daisy UI&lt;/li&gt;
+&lt;li&gt;🎃 Authentication &amp;amp;&amp;amp; Authorization with JWT&lt;/li&gt;
+&lt;li&gt;👾 Real-time messaging with Socket.io&lt;/li&gt;
+&lt;li&gt;🚀 Online user status (Socket.io and React Context)&lt;/li&gt;
+&lt;li&gt;👌  Global state management with Zustand&lt;/li&gt;
+&lt;li&gt;🐞 Error handling both on the server and on the client&lt;/li&gt;
+&lt;li&gt;⭐ At the end Deployment like a pro for FREE!&lt;/li&gt;
+&lt;li&gt;⏳ And much more!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;项目使用说明&#34;&gt;项目使用说明&lt;/h2&gt;
+&lt;p&gt;Setup .env file&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>程序员内功心法</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/read/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%86%85%E5%8A%9F%E5%BF%83%E6%B3%95/</link>
+      <pubDate>Sat, 06 May 2023 15:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/read/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%86%85%E5%8A%9F%E5%BF%83%E6%B3%95/</guid>
+      <description>&lt;h1 id=&#34;程序员修炼之道从小工到专家&#34;&gt;《程序员修炼之道：从小工到专家》&lt;/h1&gt;
+&lt;p&gt;English name : The Pragmatic Programmer: From Journeyman to Master&lt;/p&gt;
+&lt;p&gt;Authors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Andrew Hunt&lt;/li&gt;
+&lt;li&gt;David Thomas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Code Kata的概念是由David Thomas提出的，他是《程序员修炼之道：从小工到专家》的作者之一。这个概念主要指的是，针对某一种特定技术或技能进行重复性的练习，从而将其熟练掌握。——译者注&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

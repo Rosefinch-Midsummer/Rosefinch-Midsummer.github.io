@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Docker on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/categories/docker/</link>
+    <description>Recent content in Docker on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.138.0</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 18 Feb 2024 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker&#43;WSL2安装教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/docker&#43;wsl2%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sun, 18 Feb 2024 16:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/docker&#43;wsl2%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;日常开发常用到Ubuntu等Linux操作系统，通常的选择如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;双系统&lt;/li&gt;
+&lt;li&gt;用VMware、VirtualBox等安装相应的虚拟机&lt;/li&gt;
+&lt;li&gt;使用微软开发的适用于 Linux 的 Windows 子系统 (WSL)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;前两种方式以前都进行过好几次，轻车熟路，最近开始使用wsl2开发，下面wsl2入门教程。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

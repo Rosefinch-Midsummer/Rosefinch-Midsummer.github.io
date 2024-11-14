@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>虚拟机 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+    <description>Recent content in 虚拟机 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.138.0</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 02 Sep 2024 13:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH 连接 VirtualBox Ubuntu 虚拟机</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/ssh-%E8%BF%9E%E6%8E%A5-virtualbox-ubuntu-%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+      <pubDate>Mon, 02 Sep 2024 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/ssh-%E8%BF%9E%E6%8E%A5-virtualbox-ubuntu-%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
+      <description>&lt;h1 id=&#34;ssh-连接-virtualbox-ubuntu-虚拟机&#34;&gt;SSH 连接 VirtualBox Ubuntu 虚拟机&lt;/h1&gt;
+&lt;h2 id=&#34;工具&#34;&gt;工具&lt;/h2&gt;
+&lt;p&gt;VirtualBox&lt;/p&gt;
+&lt;p&gt;Ubuntu 虚拟机&lt;/p&gt;
+&lt;p&gt;Termius 终端&lt;/p&gt;
+&lt;p&gt;官网： &lt;a href=&#34;https://termius.com/&#34;&gt;https://termius.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Termius 不仅仅是一个 SSH 客户端，而是一个完整的命令行解决方案，重新定义远程访问。远比 XShell、Putty 等传统 SSH 客户端美观；提供账户注册和数据同步功能，支持多种操作系统如 Windows、Linux、OSX，甚至支持 iOS、Android。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
