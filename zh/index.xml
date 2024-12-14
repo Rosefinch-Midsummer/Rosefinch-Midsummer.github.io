@@ -4,9 +4,9 @@
     <title>天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/</link>
     <description>Recent content on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.139.3</generator>
+    <generator>Hugo -- 0.139.4</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 08 Dec 2024 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2024 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自制在线电子档案索引</title>
@@ -68,6 +68,14 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/LiberalArts&#34;&gt;博雅教育&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Novels&#34;&gt;小说&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/English&#34;&gt;英语&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>基于区块链的投票系统设计</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%8A%95%E7%A5%A8%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Sat, 14 Dec 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%8A%95%E7%A5%A8%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</guid>
+      <description>&lt;h2 id=&#34;项目意义&#34;&gt;项目意义&lt;/h2&gt;
+&lt;p&gt;投票是现代民主社会的基石，确保选民的声音能够被公正、透明地表达。然而，近年来，投票过程中的各种乱象，如非法投票、选票篡改、技术故障等，严重威胁了民主制度的公信力和有效性。这些问题不仅影响了选举结果，还削弱了公众对民主制度的信任。因此，设计一个基于区块链的投票系统，将有助于提高投票过程的透明度和安全性。区块链技术的去中心化和不可篡改性能够确保每一票的真实性和有效性，减少欺诈行为，从而增强公众对选举的信心。&lt;/p&gt;</description>
     </item>
     <item>
       <title>INTJ人格特质</title>
@@ -201,7 +209,7 @@
       <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/mern%E5%85%A8%E6%A0%88%E9%A1%B9%E7%9B%AEnetflix-clone%E7%AE%80%E4%BB%8B/</guid>
       <description>&lt;h1 id=&#34;netflix-clone&#34;&gt;Netflix-clone&lt;/h1&gt;
 &lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gRroBZczKAU&amp;t=415s&#34;&gt;How To Build a Netflix Clone with MERN Stack in 2024 - Full Course&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gRroBZczKAU&amp;amp;t=415s&#34;&gt;How To Build a Netflix Clone with MERN Stack in 2024 - Full Course&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/burakorkmez/mern-netflix-clone&#34;&gt;burakorkmez/mern-netflix-clone&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://drive.google.com/drive/u/0/folders/18FzSOPrw40T4lzGimv7QazSznCx-H4Ds&#34;&gt;相关资源&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;注意：要把资源中&lt;code&gt;avatar2.jpg&lt;/code&gt;改成&lt;code&gt;avatar2.png&lt;/code&gt;&lt;/p&gt;
@@ -242,7 +250,7 @@
       <description>&lt;h1 id=&#34;一键自动获取任意网站favicon图标批量优化导航站点与web项目的必备工具指南&#34;&gt;一键自动获取任意网站Favicon图标：批量优化导航站点与Web项目的必备工具指南&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://blog.axiaoxin.com/post/auto-fetch-favicon/&#34;&gt;https://blog.axiaoxin.com/post/auto-fetch-favicon/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;2024-08-27  |  3 分钟  |  1362 字  |  110 阅读  |  0 评论&lt;/p&gt;
-&lt;p&gt;在现代 Web 开发中，favicon（网站图标）不仅仅是一个美观的小图标，更是提升品牌识别度和用户体验的重要元素。&lt;strong&gt;如果您正在构建导航站点、开发浏览器扩展，或只是想提高网站的视觉吸引力&lt;/strong&gt;，快速获取多个网站的 favicon 图标显得尤为重要。本文将为您介绍一种便捷的方法，使用 &lt;a href=&#34;https://favicon.im/?hmsr=blog.axiaoxin.com&amp;utm_source=blog.axiaoxin.com&amp;utm_medium=referral&#34;&gt;Favicon.im&lt;/a&gt; 自动获取任意网站的 favicon 图标。&lt;/p&gt;</description>
+&lt;p&gt;在现代 Web 开发中，favicon（网站图标）不仅仅是一个美观的小图标，更是提升品牌识别度和用户体验的重要元素。&lt;strong&gt;如果您正在构建导航站点、开发浏览器扩展，或只是想提高网站的视觉吸引力&lt;/strong&gt;，快速获取多个网站的 favicon 图标显得尤为重要。本文将为您介绍一种便捷的方法，使用 &lt;a href=&#34;https://favicon.im/?hmsr=blog.axiaoxin.com&amp;amp;utm_source=blog.axiaoxin.com&amp;amp;utm_medium=referral&#34;&gt;Favicon.im&lt;/a&gt; 自动获取任意网站的 favicon 图标。&lt;/p&gt;</description>
     </item>
     <item>
       <title>（转载）部署React-Vite Application</title>
@@ -559,7 +567,7 @@
       <guid>https://rosefinch-midsummer.github.io/zh/posts/read/%E9%A9%BC%E8%83%8C%E5%B0%86%E5%86%9B%E7%BE%8E%E5%9B%BD%E4%BA%BA%E8%8D%B7%E9%A9%AC%E6%9D%8E%E4%B8%8E%E8%BF%91%E4%BB%A3%E4%B8%AD%E5%9B%BD/</guid>
       <description>&lt;h1 id=&#34;驼背将军美国人荷马李与近代中国&#34;&gt;《驼背将军：美国人荷马李与近代中国》&lt;/h1&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.sunyat-sen.org/portal/article/index.html?id=25119&amp;cid=23&#34;&gt;荷马里（Homer lea)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.sunyat-sen.org/portal/article/index.html?id=25119&amp;amp;cid=23&#34;&gt;荷马里（Homer lea)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;或译作咸马里、郝门李等中文名字，军事研究家。1900年曾到华。支持康梁保皇活动，被任命为“中国维新军总司令”。荷马里与中国人的联系多是通过其合作者布思（Charles Boothe）、艾伦（W.W.Allen）进行的，其中间人为美籍华人容闳。1908年12月，容闳将中国各地秘密会党首领函告荷马里与布思，其中即有孙中山。荷马里等人对保皇派活动不满。1909年1月，艾伦函告布思有关其与容闳父子晤谈情形，认为孙是所有中国人士中最可信任的，并认定孙在广东的力量很强大，应赞助使他实现其理想与计划。艾伦与容闳乃提出以巨款及械弹支持孙中山的“中国红龙计划”。是年底，容闳电知布思，告以孙抵纽约，邀其与荷马里前来会商。1910年春，孙与荷马里在洛杉矶附近的长堤市举行了三次密谈，孙提出贷款及酬报条件。3月14日，孙以中国同盟会总理名义正式委任布思为“外国财政惟一代理人”。为筹得款项，布思他们要求孙提供各地首领签署的公认孙为领袖的文件，7月19日，布思收到孙从日本横滨挂号邮寄来的有17省代表签字的中国同盟会公文。荷马里检视这一文件无讹。但布思并未能从美国筹得孙中山所希望的款项。武昌起义后，孙仍在美国，荷马里则到了伦敦。1911年10月31日，孙致电荷马里，嘱其在英筹款，特授与各方接洽。但贷款始终未能如愿。孙抵伦敦后，即与荷马里会合，并一同返回中国。1912年1月，南京临时政府成立，荷马里被任命为高等军事顾问。旋因患中风症于4月15日返美治疗。6月27日，孙曾函荷马里夫人问疾。11月1日荷马里因病不治。孙闻讯致悼，除向荷马里夫人慰问外，6日发布《对荷马里将军的赞词》，刊在英文上海《大陆报》上，谓“他虽不是军人。却是一位伟大的军事哲学家，对革命问题有卓越的见解。在与革命有关的军事策略问题上，他给了我全面的帮助”；又谓“他为人真挚诚恳，为中国革命贡献了全部心力”。&lt;/p&gt;</description>
     </item>
     <item>
@@ -1053,12 +1061,12 @@
 &lt;p&gt;上物理課突發奇想，想要將來有空的時候動手做下實驗，也算是種樂子！做實驗挺有趣，但寫實驗報告是真的難搞！&lt;/p&gt;
 &lt;h1 id=&#34;西安交大版本&#34;&gt;西安交大版本&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://epc.xjtu.edu.cn/info/1088/1421.htm&#34;&gt;链接&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;绪论httpsepcxjtueducnsystemresourceimagesfiletypeimagesicon_pdfgif绪论pdfhttpsepcxjtueducnsystem_contentdownloadjspurltypenewsdownloadattachurlowner1577422019wbfileid4526677&#34;&gt;&lt;strong&gt;绪论&lt;/strong&gt; &lt;img loading=&#34;lazy&#34; src=&#34;https://epc.xjtu.edu.cn/system/resource/images/fileTypeImages/icon_pdf.gif&#34;&gt;&lt;a href=&#34;https://epc.xjtu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&amp;owner=1577422019&amp;wbfileid=4526677&#34;&gt;绪论.pdf&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;绪论httpsepcxjtueducnsystemresourceimagesfiletypeimagesicon_pdfgif绪论pdfhttpsepcxjtueducnsystem_contentdownloadjspurltypenewsdownloadattachurlowner1577422019wbfileid4526677&#34;&gt;&lt;strong&gt;绪论&lt;/strong&gt; &lt;img loading=&#34;lazy&#34; src=&#34;https://epc.xjtu.edu.cn/system/resource/images/fileTypeImages/icon_pdf.gif&#34;&gt;&lt;a href=&#34;https://epc.xjtu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&amp;amp;owner=1577422019&amp;amp;wbfileid=4526677&#34;&gt;绪论.pdf&lt;/a&gt;&lt;/h2&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;第一章-测量误差与数据处理httpsepcxjtueducnsystemresourceimagesfiletypeimagesicon_pdfgif测量误差与数据处理pdfhttpsepcxjtueducnsystem_contentdownloadjspurltypenewsdownloadattachurlowner1577422019wbfileid4526678&#34;&gt;&lt;strong&gt;第一章 测量误差与数据处理&lt;/strong&gt; &lt;img loading=&#34;lazy&#34; src=&#34;https://epc.xjtu.edu.cn/system/resource/images/fileTypeImages/icon_pdf.gif&#34;&gt;&lt;a href=&#34;https://epc.xjtu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&amp;owner=1577422019&amp;wbfileid=4526678&#34;&gt;测量误差与数据处理.pdf&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;第一章-测量误差与数据处理httpsepcxjtueducnsystemresourceimagesfiletypeimagesicon_pdfgif测量误差与数据处理pdfhttpsepcxjtueducnsystem_contentdownloadjspurltypenewsdownloadattachurlowner1577422019wbfileid4526678&#34;&gt;&lt;strong&gt;第一章 测量误差与数据处理&lt;/strong&gt; &lt;img loading=&#34;lazy&#34; src=&#34;https://epc.xjtu.edu.cn/system/resource/images/fileTypeImages/icon_pdf.gif&#34;&gt;&lt;a href=&#34;https://epc.xjtu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&amp;amp;owner=1577422019&amp;amp;wbfileid=4526678&#34;&gt;测量误差与数据处理.pdf&lt;/a&gt;&lt;/h2&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;第二章-基础物理实验&#34;&gt;&lt;strong&gt;第二章 基础物理实验&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;实验1 物体密度的测定 &lt;img loading=&#34;lazy&#34; src=&#34;https://epc.xjtu.edu.cn/system/resource/images/fileTypeImages/icon_pdf.gif&#34;&gt;&lt;a href=&#34;https://epc.xjtu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&amp;owner=1577422019&amp;wbfileid=4566012&#34;&gt;实验1 物体密度的测定.pdf&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;实验1 物体密度的测定 &lt;img loading=&#34;lazy&#34; src=&#34;https://epc.xjtu.edu.cn/system/resource/images/fileTypeImages/icon_pdf.gif&#34;&gt;&lt;a href=&#34;https://epc.xjtu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&amp;amp;owner=1577422019&amp;amp;wbfileid=4566012&#34;&gt;实验1 物体密度的测定.pdf&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>《功利主义》</title>

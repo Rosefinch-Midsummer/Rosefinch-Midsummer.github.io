@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Web3 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/categories/web3/</link>
+    <description>Recent content in Web3 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.139.4</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 14 Dec 2024 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/web3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基于区块链的投票系统设计</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%8A%95%E7%A5%A8%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Sat, 14 Dec 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%8A%95%E7%A5%A8%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</guid>
+      <description>&lt;h2 id=&#34;项目意义&#34;&gt;项目意义&lt;/h2&gt;
+&lt;p&gt;投票是现代民主社会的基石，确保选民的声音能够被公正、透明地表达。然而，近年来，投票过程中的各种乱象，如非法投票、选票篡改、技术故障等，严重威胁了民主制度的公信力和有效性。这些问题不仅影响了选举结果，还削弱了公众对民主制度的信任。因此，设计一个基于区块链的投票系统，将有助于提高投票过程的透明度和安全性。区块链技术的去中心化和不可篡改性能够确保每一票的真实性和有效性，减少欺诈行为，从而增强公众对选举的信心。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
