@@ -172,7 +172,7 @@
 </span><span class=lnt>3
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=line><span class=cl>cp /mnt/f/blog/blog2/blog2/myblog/ /home/xxxxx
 </span></span><span class=line><span class=cl>cp: -r not specified; omitting directory &#39;/mnt/f/blog/blog2/blog2/myblog/&#39;
-</span></span><span class=line><span class=cl>xxx@DESKTOP-ROR9E2L:~$ cp -r /mnt/f/blog/blog2/blog2/myblog/ /home/xxxx
+</span></span><span class=line><span class=cl>xxx<span class=ni>@DESKTOP</span>-ROR9E2L:~$ cp -r /mnt/f/blog/blog2/blog2/myblog/ /home/xxxx
 </span></span></code></pre></td></tr></table></div></div><h1 id=ubuntu换源>Ubuntu换源<a hidden class=anchor aria-hidden=true href=#ubuntu换源>#</a></h1><p><a href=https://blog.csdn.net/xiangxianghehe/article/details/122856771># Ubuntu 22.04换国内源 清华源 阿里源 中科大源 163源</a></p><p>注意：版本不对会报错</p><p>备份镜像源设置文件</p><p><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak</code></p><p>编辑镜像源设置文件</p><p><code>sudo vi /etc/apt/sources.list</code></p><p>复制下面的所有内容替换掉原文件中的所有内容(一次只可以选一个镜像源，根据你的情况选)</p><p>清华源：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
