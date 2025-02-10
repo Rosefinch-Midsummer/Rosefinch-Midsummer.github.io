@@ -6,7 +6,7 @@
     <description>Recent content on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 10 Feb 2025 12:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 15:00:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自制在线电子档案索引</title>
@@ -68,6 +68,29 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/LiberalArts&#34;&gt;博雅教育&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Novels&#34;&gt;小说&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/English&#34;&gt;英语&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python实现Bilibili网站视频和音频下载器</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E5%AE%9E%E7%8E%B0bilibili%E7%BD%91%E7%AB%99%E8%A7%86%E9%A2%91%E5%92%8C%E9%9F%B3%E9%A2%91%E4%B8%8B%E8%BD%BD%E5%99%A8/</link>
+      <pubDate>Mon, 10 Feb 2025 14:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E5%AE%9E%E7%8E%B0bilibili%E7%BD%91%E7%AB%99%E8%A7%86%E9%A2%91%E5%92%8C%E9%9F%B3%E9%A2%91%E4%B8%8B%E8%BD%BD%E5%99%A8/</guid>
+      <description>&lt;h1 id=&#34;python实现bilibili网站视频和音频下载器&#34;&gt;Python实现Bilibili网站视频和音频下载器&lt;/h1&gt;
+&lt;p&gt;注意：Bilibili网站数据中的视频（MP4）和音频（MP3）是分开的。&lt;/p&gt;
+&lt;h2 id=&#34;图形化用户界面最终效果&#34;&gt;图形化用户界面最终效果&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250210145433.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用说明&#34;&gt;使用说明&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;函数参数&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bv_id&lt;/code&gt;: Bilibili视频的BV ID。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cookie&lt;/code&gt;: 发送请求所需的cookie。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;media_type&lt;/code&gt;: 用于选择下载视频还是音频，默认为&lt;code&gt;video&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dir_path&lt;/code&gt;: 指定保存文件的目录。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;功能实现&lt;/strong&gt;：&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python程序打包入门教程</title>
