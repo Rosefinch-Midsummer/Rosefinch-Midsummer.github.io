@@ -6,8 +6,22 @@
     <description>Recent content in 计算机 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 10 Feb 2025 15:00:22 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 15:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python实现文章下载器</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E5%AE%9E%E7%8E%B0%E6%96%87%E7%AB%A0%E4%B8%8B%E8%BD%BD%E5%99%A8/</link>
+      <pubDate>Mon, 10 Feb 2025 15:01:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E5%AE%9E%E7%8E%B0%E6%96%87%E7%AB%A0%E4%B8%8B%E8%BD%BD%E5%99%A8/</guid>
+      <description>&lt;h1 id=&#34;python实现文章下载器&#34;&gt;Python实现文章下载器&lt;/h1&gt;
+&lt;h2 id=&#34;说明&#34;&gt;说明&lt;/h2&gt;
+&lt;p&gt;支持平台：知乎（回答、文章、专栏和视频）、CSDN、微信公众号&lt;/p&gt;
+&lt;p&gt;区别：是否下载图片到本地（有无Local）&lt;/p&gt;
+&lt;h2 id=&#34;图形化用户界面&#34;&gt;图形化用户界面&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250210152241.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;完整代码&#34;&gt;完整代码&lt;/h2&gt;
+&lt;p&gt;说明：下载知乎文章需要使用自己的Cookie&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Python实现Bilibili网站视频和音频下载器</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E5%AE%9E%E7%8E%B0bilibili%E7%BD%91%E7%AB%99%E8%A7%86%E9%A2%91%E5%92%8C%E9%9F%B3%E9%A2%91%E4%B8%8B%E8%BD%BD%E5%99%A8/</link>
