@@ -6,8 +6,20 @@
     <description>Recent content in 👨🏻‍💻技術 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 14 Dec 2024 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 12:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python程序打包入门教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8Bpython%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Mon, 10 Feb 2025 10:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8Bpython%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h1 id=&#34;python程序打包入门教程&#34;&gt;Python程序打包入门教程&lt;/h1&gt;
+&lt;h2 id=&#34;使用pyinstaller将代码打包成exe文件&#34;&gt;使用PyInstaller将代码打包成.exe文件&lt;/h2&gt;
+&lt;h3 id=&#34;只打包一个python文件&#34;&gt;只打包一个Python文件&lt;/h3&gt;
+&lt;p&gt;要将你的 Python 代码打包成一个可以直接执行的 &lt;code&gt;.exe&lt;/code&gt; 文件，可以使用 &lt;code&gt;PyInstaller&lt;/code&gt; 工具。以下是详细的步骤：&lt;/p&gt;
+&lt;h3 id=&#34;步骤-1-安装-pyinstaller&#34;&gt;步骤 1: 安装 PyInstaller&lt;/h3&gt;
+&lt;p&gt;首先，确保你的系统上安装了 &lt;code&gt;PyInstaller&lt;/code&gt;。可以使用以下命令通过 &lt;code&gt;pip&lt;/code&gt; 安装：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>基于区块链的投票系统设计</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%8A%95%E7%A5%A8%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link>
