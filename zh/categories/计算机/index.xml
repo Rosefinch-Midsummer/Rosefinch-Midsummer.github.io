@@ -47,9 +47,9 @@
     </item>
     <item>
       <title>Python程序打包入门教程</title>
-      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8Bpython%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</link>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</link>
       <pubDate>Mon, 10 Feb 2025 10:34:25 +0800</pubDate>
-      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8Bpython%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</guid>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</guid>
       <description>&lt;h1 id=&#34;python程序打包入门教程&#34;&gt;Python程序打包入门教程&lt;/h1&gt;
 &lt;h2 id=&#34;使用pyinstaller将代码打包成exe文件&#34;&gt;使用PyInstaller将代码打包成.exe文件&lt;/h2&gt;
 &lt;h3 id=&#34;只打包一个python文件&#34;&gt;只打包一个Python文件&lt;/h3&gt;
