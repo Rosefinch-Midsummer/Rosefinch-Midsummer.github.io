@@ -6,7 +6,7 @@
     <description>Recent content on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 10 Feb 2025 16:53:22 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自制在线电子档案索引</title>
@@ -68,6 +68,15 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/LiberalArts&#34;&gt;博雅教育&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Novels&#34;&gt;小说&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/English&#34;&gt;英语&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>《独生子女神话》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/read/%E7%8B%AC%E7%94%9F%E5%AD%90%E5%A5%B3%E7%A5%9E%E8%AF%9D/</link>
+      <pubDate>Thu, 13 Feb 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/read/%E7%8B%AC%E7%94%9F%E5%AD%90%E5%A5%B3%E7%A5%9E%E8%AF%9D/</guid>
+      <description>&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;本书书名挺大的，但没有什么有意义的内容。作者受限于视角和能力，无法预测到未来真正的变数，只能说些无关痛痒的话，甚至还很推崇计漢生育政策，和易富贤先生相比差得有点远。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python实现P站视频下载器</title>
