@@ -52,7 +52,12 @@ NJU-ICS
 更新: 2024-08-11 |
 字数: 179字 |
 时长: 1分钟 |
-RM</footer><a class=entry-link aria-label="post link to 自制在线电子档案索引" href=https://rosefinch-midsummer.github.io/zh/posts/life/%E8%87%AA%E5%88%B6%E5%9C%A8%E7%BA%BF%E7%94%B5%E5%AD%90%E6%A1%A3%E6%A1%88%E7%B4%A2%E5%BC%95/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>使用Python把MP4文件批量转换为MP3文件</h2></header><div class=entry-content><p>使用Python把MP4文件批量转换为MP3文件 前提：本地安装ffmpeg，可以选择安装pydub或是moviepy
+RM</footer><a class=entry-link aria-label="post link to 自制在线电子档案索引" href=https://rosefinch-midsummer.github.io/zh/posts/life/%E8%87%AA%E5%88%B6%E5%9C%A8%E7%BA%BF%E7%94%B5%E5%AD%90%E6%A1%A3%E6%A1%88%E7%B4%A2%E5%BC%95/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>雅思速成</h2></header><div class=entry-content><p>前言 学英语学了这么多年，也没能达到熟练应用的地步，这显然不符合我的利益和追求啊！法语、日语、德语当然还有古代汉语都只是学了点皮毛，甚至连皮毛都算不上，现在得好好学好一门语言，花费的时间经历要能产生价值。
+...</p></div><footer class=entry-footer>创建: 2025-03-09 |
+更新: 2025-03-09 |
+字数: 7673字 |
+时长: 16分钟 |
+RM</footer><a class=entry-link aria-label="post link to 雅思速成" href=https://rosefinch-midsummer.github.io/zh/posts/life/%E9%9B%85%E6%80%9D%E9%80%9F%E6%88%90/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>使用Python把MP4文件批量转换为MP3文件</h2></header><div class=entry-content><p>使用Python把MP4文件批量转换为MP3文件 前提：本地安装ffmpeg，可以选择安装pydub或是moviepy
 使用Python调用ffmpeg需要安装ffmpeg-python
 使用PyDub 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 import os from pydub import AudioSegment def convert_mp4_to_mp3(directory): for filename in os.listdir(directory): if filename.endswith('.mp4'): mp4_file_path = os.path.join(directory, filename) mp3_file_path = os.path.splitext(mp4_file_path)[0] + '.mp3' try: # 使用 pydub 转换 mp4 为 mp3 audio = AudioSegment.from_file(mp4_file_path, format='mp4') audio.export(mp3_file_path, format='mp3') # 删除原有的 mp4 文件 os.remove(mp4_file_path) print(f"Converted {mp4_file_path} to {mp3_file_path} and deleted original mp4 file.") except Exception as e: print(f"Error processing {mp4_file_path}: {e}") # 设置你的目标目录 target_directory = r'E:\Entertainment\100s' convert_mp4_to_mp3(target_directory) 使用MoviePy 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 import os from moviepy.editor import VideoFileClip def convert_mp4_to_mp3(directory): # 遍历目录 for filename in os.listdir(directory): if filename.endswith('.mp4'): mp4_file_path = os.path.join(directory, filename) mp3_file_path = os.path.splitext(mp4_file_path)[0] + '.mp3' try: # 使用 moviepy 转换视频为音频 video_clip = VideoFileClip(mp4_file_path) video_clip.audio.write_audiofile(mp3_file_path) video_clip.close() # 删除原有的 mp4 文件 os.remove(mp4_file_path) print(f"Converted {mp4_file_path} to {mp3_file_path} and deleted original mp4 file.") except Exception as e: print(f"Error processing {mp4_file_path}: {e}") # 设置你的目标目录 target_directory = r'E:\Entertainment\北流嘉措' convert_mp4_to_mp3(target_directory) 【最新】windows电脑FFmpeg安装教程手把手详解 windows电脑FFmpeg安装教程手把手详解教程来源
 ...</p></div><footer class=entry-footer>创建: 2025-02-07 |
@@ -108,17 +113,7 @@ RM</footer><a class=entry-link aria-label="post link to GitHub加速" href=https
 更新: 2024-08-31 |
 字数: 9793字 |
 时长: 20分钟 |
-RM</footer><a class=entry-link aria-label="post link to 影评《希特勒回来了》" href=https://rosefinch-midsummer.github.io/zh/posts/life/%E5%BD%B1%E8%AF%84%E5%B8%8C%E7%89%B9%E5%8B%92%E5%9B%9E%E6%9D%A5%E4%BA%86/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>电报（Telegram）入门</h2></header><div class=entry-content><p>安裝及使用事項 【2024最新】Telegram注册教程！中国大陆注册电报方法，解决telegram收不到短信验证码、电脑设置中文汉化，解除限制
-2024年6月23日
-中国大陆注册telegram方法，轻松解决电报收不到短信验证码问题，电报怎么注册,设置中文汉化教程。
-电报： https://telegram.org/apps
-GV号码： https://bit.ly/3KUbrpI
-电报汉化： https://t.me/txxdh1
-...</p></div><footer class=entry-footer>创建: 2024-08-28 |
-更新: 2024-08-28 |
-字数: 478字 |
-时长: 1分钟 |
-RM</footer><a class=entry-link aria-label="post link to 电报（Telegram）入门" href=https://rosefinch-midsummer.github.io/zh/posts/life/%E7%94%B5%E6%8A%A5telegram%E5%85%A5%E9%97%A8/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://rosefinch-midsummer.github.io/zh/posts/life/page/2/>下一頁&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://rosefinch-midsummer.github.io/zh/>天漢帝國復興錄</a></span>
+RM</footer><a class=entry-link aria-label="post link to 影评《希特勒回来了》" href=https://rosefinch-midsummer.github.io/zh/posts/life/%E5%BD%B1%E8%AF%84%E5%B8%8C%E7%89%B9%E5%8B%92%E5%9B%9E%E6%9D%A5%E4%BA%86/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://rosefinch-midsummer.github.io/zh/posts/life/page/2/>下一頁&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://rosefinch-midsummer.github.io/zh/>天漢帝國復興錄</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span><div class=busuanzi-footer><span id=busuanzi_container_site_pv>本站总访问量<span id=busuanzi_value_site_pv></span>次
