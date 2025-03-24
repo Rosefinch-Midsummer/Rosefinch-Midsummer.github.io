@@ -6,8 +6,20 @@
     <description>Recent content in 计算机 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 19 Mar 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Mar 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git 提交代码时一直提交不上去某个文件夹</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/git%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81%E6%97%B6%E4%B8%80%E7%9B%B4%E6%8F%90%E4%BA%A4%E4%B8%8D%E4%B8%8A%E5%8E%BB%E6%9F%90%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
+      <pubDate>Mon, 24 Mar 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/git%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81%E6%97%B6%E4%B8%80%E7%9B%B4%E6%8F%90%E4%BA%A4%E4%B8%8D%E4%B8%8A%E5%8E%BB%E6%9F%90%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
+      <description>&lt;h1 id=&#34;git-提交代码时一直提交不上去某个文件夹&#34;&gt;Git 提交代码时一直提交不上去某个文件夹&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/m0_55051386/article/details/124154771&#34;&gt;文章来源&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;这个文件夹是直接拷贝过去的，在提交到远程仓库是出现了问题。&lt;/p&gt;
+&lt;h2 id=&#34;问题分析&#34;&gt;问题分析&lt;/h2&gt;
+&lt;p&gt;直接拷贝过去的文件夹里面有个 .git 的文件，所以在执行 git status 的时候出现 modified: test (modified content, untracked content) 提示，这个提示存在的原因是 xxx目录是一个空目录，且里面有一个.git文件夹。就是因为这个.git文件夹导致这个提示。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>WSL2-NAT代理配置</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/wsl2-nat%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</link>
