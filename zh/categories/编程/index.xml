@@ -6,8 +6,19 @@
     <description>Recent content in 编程 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 24 Mar 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Mar 2025 23:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>低代码平台推荐（转载）</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90%E8%BD%AC%E8%BD%BD/</link>
+      <pubDate>Mon, 24 Mar 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90%E8%BD%AC%E8%BD%BD/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/495262462&#34;&gt;几分钟内上线一个网站，这些「低代码」神器太赞了！&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/people/githubdaily&#34;&gt;作者GitHub Daily&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;正文&#34;&gt;正文&lt;/h1&gt;
+&lt;p&gt;几个月前，我曾给大家分享过 GitHub 上几个可以快速完成网站开发、上线的低代码平台。近期，我又陆陆续续挖掘到一些与此相关的优质项目，便想着重新整理、更新，让诸位平时在闲暇之余，也可以上手把玩。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Git 提交代码时一直提交不上去某个文件夹</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/git%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81%E6%97%B6%E4%B8%80%E7%9B%B4%E6%8F%90%E4%BA%A4%E4%B8%8D%E4%B8%8A%E5%8E%BB%E6%9F%90%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
