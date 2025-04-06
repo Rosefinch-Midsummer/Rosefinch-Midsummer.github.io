@@ -6,8 +6,21 @@
     <description>Recent content in 计算机 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 24 Mar 2025 23:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 06 Apr 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>权限认证工具Clerk</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E6%9D%83%E9%99%90%E8%AE%A4%E8%AF%81%E5%B7%A5%E5%85%B7clerk/</link>
+      <pubDate>Sun, 06 Apr 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E6%9D%83%E9%99%90%E8%AE%A4%E8%AF%81%E5%B7%A5%E5%85%B7clerk/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;以前使用过Clerk，但没有写过相关内容。这次没用使用Clerk做权限认证，但仍有必要写点东西给自己留点记忆。&lt;/p&gt;
+&lt;h1 id=&#34;clerk简介&#34;&gt;Clerk简介&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://clerk.com/docs&#34;&gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;explore-by-frontend-framework&#34;&gt;&lt;a href=&#34;https://clerk.com/docs#explore-by-frontend-framework&#34;&gt;Explore by frontend framework&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;nextjs&#34;&gt;&lt;a href=&#34;https://clerk.com/docs/quickstarts/nextjs&#34;&gt;Next.js&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Easily add secure, beautiful, and fast authentication to Next.js with Clerk.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>低代码平台推荐（转载）</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90%E8%BD%AC%E8%BD%BD/</link>
