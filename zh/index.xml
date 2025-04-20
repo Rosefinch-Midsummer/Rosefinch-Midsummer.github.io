@@ -4,9 +4,9 @@
     <title>天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/</link>
     <description>Recent content on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.146.6</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 06 Apr 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 20 Apr 2025 23:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自制在线电子档案索引</title>
@@ -37,17 +37,14 @@
 &lt;h2 id=&#34;计算机&#34;&gt;计算机&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/DSA&#34;&gt;数据结构与算法&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Algorithm-Analysis-And-Design&#34;&gt;算法设计与分析&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/leetcode-master&#34;&gt;LeetCode-Master&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/leetcode-master&#34;&gt;算法旅程&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/toolkit&#34;&gt;工具库&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Software-Resources&#34;&gt;软件资源&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/java&#34;&gt;JavaTutorial&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/python&#34;&gt;PythonTutorial&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/cpp&#34;&gt;C++Tutorial&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/c&#34;&gt;CTutorial&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Programming&#34;&gt;Programming&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/assembly&#34;&gt;汇编语言&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/ML&#34;&gt;机器学习&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/MathModeling&#34;&gt;数学建模&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/NetSecurity&#34;&gt;网络安全&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Infomation-Security&#34;&gt;信息安全&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/DataScience&#34;&gt;数据分析&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/AI&#34;&gt;人工智能&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/OS&#34;&gt;操作系统&lt;/a&gt;&lt;/p&gt;
@@ -60,8 +57,11 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Guwen&#34;&gt;古文&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Gushici&#34;&gt;古诗词&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Diangu&#34;&gt;典故&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Entertainment&#34;&gt;豫游之乐&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Longetivity&#34;&gt;松乔之寿&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Yu-You-Zhi-Le&#34;&gt;豫游之乐&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Song-Qiao-Zhi-Shou&#34;&gt;松乔之寿&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/GourmetGallery&#34;&gt;美食画廊&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/LegendaryLives&#34;&gt;传奇人生&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/HeavenlyTimings&#34;&gt;天赐时刻&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/MythBusters&#34;&gt;流言终结者&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/ModernEssays&#34;&gt;现代佳文&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Psychology&#34;&gt;心理学&lt;/a&gt;&lt;/p&gt;
@@ -664,9 +664,9 @@
     </item>
     <item>
       <title>使用Favicon.im自动获取网站图标</title>
-      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8favicon.im%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</link>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8favicon/</link>
       <pubDate>Thu, 19 Sep 2024 18:34:25 +0800</pubDate>
-      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8favicon.im%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</guid>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8favicon/</guid>
       <description>&lt;h1 id=&#34;一键自动获取任意网站favicon图标批量优化导航站点与web项目的必备工具指南&#34;&gt;一键自动获取任意网站Favicon图标：批量优化导航站点与Web项目的必备工具指南&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://blog.axiaoxin.com/post/auto-fetch-favicon/&#34;&gt;https://blog.axiaoxin.com/post/auto-fetch-favicon/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;2024-08-27  |  3 分钟  |  1362 字  |  110 阅读  |  0 评论&lt;/p&gt;
