@@ -4,9 +4,9 @@
     <title>天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/</link>
     <description>Recent content on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.146.6</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 22 Apr 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Apr 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自制在线电子档案索引</title>
@@ -68,6 +68,15 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/LiberalArts&#34;&gt;博雅教育&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Novels&#34;&gt;小说&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/English&#34;&gt;英语&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows 11 下 Flutter 开发环境配置详解</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/windows-11-%E4%B8%8B-flutter-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Wed, 23 Apr 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/windows-11-%E4%B8%8B-flutter-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</guid>
+      <description>&lt;h1 id=&#34;windows-11-下-flutter-开发环境配置详解&#34;&gt;Windows 11 下 Flutter 开发环境配置详解&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;Flutter 是 Google 推出的开源 UI 框架，用于开发跨平台应用程序。它允许开发者使用一套代码库，构建适配 Android、iOS、Web 以及 Windows、macOS 与 Linux 等桌面平台的高性能原生应用。凭借其丰富的组件库和高效的渲染引擎，Flutter 正日益成为移动端及桌面端应用开发的热门选择。&lt;/p&gt;</description>
     </item>
     <item>
       <title>在Render平台上部署前后端分离项目教程</title>
@@ -673,9 +682,9 @@
     </item>
     <item>
       <title>使用Favicon.im自动获取网站图标</title>
-      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8favicon/</link>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8favicon.im%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</link>
       <pubDate>Thu, 19 Sep 2024 18:34:25 +0800</pubDate>
-      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8favicon/</guid>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8favicon.im%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</guid>
       <description>&lt;h1 id=&#34;一键自动获取任意网站favicon图标批量优化导航站点与web项目的必备工具指南&#34;&gt;一键自动获取任意网站Favicon图标：批量优化导航站点与Web项目的必备工具指南&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://blog.axiaoxin.com/post/auto-fetch-favicon/&#34;&gt;https://blog.axiaoxin.com/post/auto-fetch-favicon/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;2024-08-27  |  3 分钟  |  1362 字  |  110 阅读  |  0 评论&lt;/p&gt;
