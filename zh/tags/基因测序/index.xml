@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>基因测序 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/%E5%9F%BA%E5%9B%A0%E6%B5%8B%E5%BA%8F/</link>
+    <description>Recent content in 基因测序 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.146.7</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 24 Apr 2025 00:24:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/%E5%9F%BA%E5%9B%A0%E6%B5%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>生物信息学入门——第二代测序技术实践</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%85%A5%E9%97%A8%E7%AC%AC%E4%BA%8C%E4%BB%A3%E6%B5%8B%E5%BA%8F%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Thu, 24 Apr 2025 00:14:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%85%A5%E9%97%A8%E7%AC%AC%E4%BA%8C%E4%BB%A3%E6%B5%8B%E5%BA%8F%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;怀揣着对于基因检测的浓厚兴趣，在华大基因专家和生医学院妹子们的帮助下，我成功成为了基因测序实践课堂上最靓的仔！&lt;/p&gt;
+&lt;p&gt;这里介绍一些生物信息学和基因测序相关的理论，还加上课程中给出的一些图片和命令行代码，这会给我本人的未来带来一些成就感！&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
