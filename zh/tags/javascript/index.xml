@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>JavaScript on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/javascript/</link>
+    <description>Recent content in JavaScript on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.146.7</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 24 Apr 2025 23:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python和JavaScript时间显示中时区设置问题</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E5%92%8Cjavascript%E6%97%B6%E9%97%B4%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%97%B6%E5%8C%BA%E8%AE%BE%E7%BD%AE%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 24 Apr 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/python%E5%92%8Cjavascript%E6%97%B6%E9%97%B4%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%97%B6%E5%8C%BA%E8%AE%BE%E7%BD%AE%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;为了方便时间戳管理和按时区显示，后端统一生成UTC时间（格式为 ISO 8601 UTC ），前端可以根据时区跳转显示。&lt;/p&gt;
+&lt;p&gt;使用Python获取当前 UTC 时间（带时区信息）正确写法如下所示：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
