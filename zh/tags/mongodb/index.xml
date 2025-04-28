@@ -6,8 +6,22 @@
     <description>Recent content in MongoDB on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 24 Aug 2021 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Apr 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MongoDB 数据库同步</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/mongodb%E6%95%B0%E6%8D%AE%E5%BA%93%E5%90%8C%E6%AD%A5/</link>
+      <pubDate>Mon, 28 Apr 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/mongodb%E6%95%B0%E6%8D%AE%E5%BA%93%E5%90%8C%E6%AD%A5/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;为了实现数据在本地 MongoDB 和 MongoDB Atlas 之间的同步，同时避免 &lt;code&gt;DuplicateKeyError&lt;/code&gt; (E11000) 错误，我们需要按照以下要求编写三个 Python 脚本：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;清空指定集合中的所有数据。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;将本地数据迁移到 Atlas MongoDB，避免重复键，并记录重复的键。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;将 Atlas MongoDB 数据迁移到本地，避免重复键，并记录重复的键。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以下是实现这三个脚本的代码：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>MongoDB安装教程</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/mongodb%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
