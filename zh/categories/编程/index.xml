@@ -6,8 +6,28 @@
     <description>Recent content in 编程 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 28 Apr 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 29 Apr 2025 00:04:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>计算机视觉实验——基于SIFT的特征点检测与匹配实验</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E5%AE%9E%E9%AA%8C%E5%9F%BA%E4%BA%8Esift%E7%9A%84%E7%89%B9%E5%BE%81%E7%82%B9%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%8C%B9%E9%85%8D%E5%AE%9E%E9%AA%8C/</link>
+      <pubDate>Tue, 29 Apr 2025 00:02:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E5%AE%9E%E9%AA%8C%E5%9F%BA%E4%BA%8Esift%E7%9A%84%E7%89%B9%E5%BE%81%E7%82%B9%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%8C%B9%E9%85%8D%E5%AE%9E%E9%AA%8C/</guid>
+      <description>&lt;h1 id=&#34;实验名称&#34;&gt;实验名称&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;特征点检测与匹配实验&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;实验目的&#34;&gt;实验目的&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;理解并实践基于OpenCV的SIFT特征提取与匹配流程。&lt;/li&gt;
+&lt;li&gt;掌握特征点检测、描述符计算和匹配技术。&lt;/li&gt;
+&lt;li&gt;统计两张图像中提取的特征点数目，并绘制匹配前后的效果。&lt;/li&gt;
+&lt;li&gt;掌握两种常用匹配器：暴力匹配器（Brute-Force Matcher）和FLANN匹配器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;关键词详解&#34;&gt;关键词详解&lt;/h1&gt;
+&lt;h3 id=&#34;siftscale-invariant-feature-transform&#34;&gt;SIFT（Scale-Invariant Feature Transform）&lt;/h3&gt;
+&lt;p&gt;SIFT是一种经典的特征点检测与描述算法，能够检测出图像中的关键特征点，对尺度、旋转和亮度变化具有较强的健壮性。 它不仅找到特征点的位置，还计算其描述符，用于后续的匹配。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>MongoDB 数据库同步</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/mongodb%E6%95%B0%E6%8D%AE%E5%BA%93%E5%90%8C%E6%AD%A5/</link>
