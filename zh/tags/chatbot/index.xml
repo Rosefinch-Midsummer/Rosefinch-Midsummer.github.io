@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ChatBot on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/chatbot/</link>
+    <description>Recent content in ChatBot on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.147.2</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 07 May 2025 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/chatbot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Flutter 和 ChatGPT开发简易 Chatbot</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8flutter%E5%92%8Cchatgpt%E5%BC%80%E5%8F%91%E7%AE%80%E6%98%93chatbot/</link>
+      <pubDate>Wed, 07 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8flutter%E5%92%8Cchatgpt%E5%BC%80%E5%8F%91%E7%AE%80%E6%98%93chatbot/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;一直想做一个自己的聊天机器人APP来满足我本人的个性化需求，但一直没有行动。经过多天的努力，我终于完成了第一步——能够正常交互。后续会添加模型选择等功能。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

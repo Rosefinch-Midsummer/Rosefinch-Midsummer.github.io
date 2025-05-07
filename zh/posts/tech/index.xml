@@ -4,10 +4,18 @@
     <title>👨🏻‍💻技術 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/posts/tech/</link>
     <description>Recent content in 👨🏻‍💻技術 on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.147.2</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 29 Apr 2025 00:04:22 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 07 May 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Flutter 和 ChatGPT开发简易 Chatbot</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8flutter%E5%92%8Cchatgpt%E5%BC%80%E5%8F%91%E7%AE%80%E6%98%93chatbot/</link>
+      <pubDate>Wed, 07 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8flutter%E5%92%8Cchatgpt%E5%BC%80%E5%8F%91%E7%AE%80%E6%98%93chatbot/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;一直想做一个自己的聊天机器人APP来满足我本人的个性化需求，但一直没有行动。经过多天的努力，我终于完成了第一步——能够正常交互。后续会添加模型选择等功能。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>计算机视觉实验——基于SIFT的特征点检测与匹配实验</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E5%AE%9E%E9%AA%8C%E5%9F%BA%E4%BA%8Esift%E7%9A%84%E7%89%B9%E5%BE%81%E7%82%B9%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%8C%B9%E9%85%8D%E5%AE%9E%E9%AA%8C/</link>

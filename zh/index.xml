@@ -4,9 +4,9 @@
     <title>天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/</link>
     <description>Recent content on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.147.2</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 01 May 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 07 May 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自制在线电子档案索引</title>
@@ -68,6 +68,14 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/LiberalArts&#34;&gt;博雅教育&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Novels&#34;&gt;小说&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/English&#34;&gt;英语&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>使用 Flutter 和 ChatGPT开发简易 Chatbot</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8flutter%E5%92%8Cchatgpt%E5%BC%80%E5%8F%91%E7%AE%80%E6%98%93chatbot/</link>
+      <pubDate>Wed, 07 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BD%BF%E7%94%A8flutter%E5%92%8Cchatgpt%E5%BC%80%E5%8F%91%E7%AE%80%E6%98%93chatbot/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;一直想做一个自己的聊天机器人APP来满足我本人的个性化需求，但一直没有行动。经过多天的努力，我终于完成了第一步——能够正常交互。后续会添加模型选择等功能。&lt;/p&gt;</description>
     </item>
     <item>
       <title>《从一到无穷大》</title>
