@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>画廊 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/%E7%94%BB%E5%BB%8A/</link>
+    <description>Recent content in 画廊 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.147.4</generator>
+    <language>zh</language>
+    <lastBuildDate>Tue, 20 May 2025 12:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/%E7%94%BB%E5%BB%8A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Vue 3 &#43; Vite 结合 vue-gallery 创建响应式图片画廊并实现从文本文件读取图片 URL</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9F%BA%E4%BA%8Evue3%E7%9A%84%E5%9B%BE%E7%89%87%E7%94%BB%E5%BB%8A%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Tue, 20 May 2025 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9F%BA%E4%BA%8Evue3%E7%9A%84%E5%9B%BE%E7%89%87%E7%94%BB%E5%BB%8A%E5%AE%9E%E7%8E%B0/</guid>
+      <description>&lt;h1 id=&#34;使用-vue-3--vite-结合-vue-gallery-创建响应式图片画廊并实现从文本文件读取图片-url&#34;&gt;使用 Vue 3 + Vite 结合 vue-gallery 创建响应式图片画廊并实现从文本文件读取图片 URL&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在现代 Web 项目中，展示图片画廊是一项常见需求。&lt;code&gt;vue-gallery&lt;/code&gt; 是一个基于 Vue 的响应式、可定制的图片和视频画廊组件，内置轮播和灯箱效果，支持移动端和桌面端。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
