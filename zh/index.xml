@@ -4,9 +4,9 @@
     <title>天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/</link>
     <description>Recent content on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.147.4</generator>
+    <generator>Hugo -- 0.147.5</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 20 May 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 23 May 2025 12:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自制在线电子档案索引</title>
@@ -68,6 +68,14 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/LiberalArts&#34;&gt;博雅教育&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Novels&#34;&gt;小说&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/English&#34;&gt;英语&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python虚拟环境管理工具UV和JupyterNotebook联动</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7uv%E5%92%8Cjupyternotebook%E8%81%94%E5%8A%A8/</link>
+      <pubDate>Fri, 23 May 2025 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7uv%E5%92%8Cjupyternotebook%E8%81%94%E5%8A%A8/</guid>
+      <description>&lt;h1 id=&#34;python虚拟环境管理新利器uv全解析&#34;&gt;Python虚拟环境管理新利器——uv全解析&lt;/h1&gt;
+&lt;p&gt;Python项目开发中，虚拟环境和依赖管理一直是让人头疼的话题。今天给大家介绍一个极致高速、功能强大的Python包和项目管理工具——&lt;strong&gt;uv&lt;/strong&gt;，它由Rust语言编写，是由著名的&lt;a href=&#34;https://astral.sh/&#34;&gt;Astral&lt;/a&gt;团队打造，同时也是性能爆棚的&lt;a href=&#34;https://github.com/astral-sh/ruff&#34;&gt;代码检查工具Ruff&lt;/a&gt;的作者开发。&lt;/p&gt;</description>
     </item>
     <item>
       <title>相机标定及棋盘格标定法详解</title>
