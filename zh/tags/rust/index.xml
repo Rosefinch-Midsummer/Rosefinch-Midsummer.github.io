@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rust on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/rust/</link>
+    <description>Recent content in Rust on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 24 May 2025 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在Windows11上安装rust教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9C%A8windows11%E4%B8%8A%E5%AE%89%E8%A3%85rust%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sat, 24 May 2025 19:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9C%A8windows11%E4%B8%8A%E5%AE%89%E8%A3%85rust%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在Windows上安装和使用Rust时，很多新手可能会遇到“找不到Rustup”的问题。实际上，这通常是因为Rustup没有正确安装、没有将其路径加入环境变量，或者环境变量没生效。下面，我们就一步步讲解如何在Windows系统上解决这个问题，并确保你可以顺利运行Rust相关命令。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

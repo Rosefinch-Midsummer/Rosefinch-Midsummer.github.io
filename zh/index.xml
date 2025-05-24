@@ -79,6 +79,14 @@
 &lt;p&gt;&lt;em&gt;Tauri&lt;/em&gt; 是一款基于 Rust 的跨平台桌面应用开发框架，能够让开发者使用熟悉的前端技术（HTML、CSS、JavaScript 或现代框架如 React、Vue 等）来构建轻量级、高性能且安全的应用。相比 Electron，Tauri 打包体积更小（约4MB 对比 Electron 50MB），性能更优，占用资源更少。&lt;/p&gt;</description>
     </item>
     <item>
+      <title>在Windows11上安装rust教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9C%A8windows11%E4%B8%8A%E5%AE%89%E8%A3%85rust%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sat, 24 May 2025 19:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9C%A8windows11%E4%B8%8A%E5%AE%89%E8%A3%85rust%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在Windows上安装和使用Rust时，很多新手可能会遇到“找不到Rustup”的问题。实际上，这通常是因为Rustup没有正确安装、没有将其路径加入环境变量，或者环境变量没生效。下面，我们就一步步讲解如何在Windows系统上解决这个问题，并确保你可以顺利运行Rust相关命令。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>前端构建工具全解析：NPM、Yarn 和 PNPM</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%89%8D%E7%AB%AF%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7pnpm/</link>
       <pubDate>Sat, 24 May 2025 18:34:25 +0800</pubDate>
