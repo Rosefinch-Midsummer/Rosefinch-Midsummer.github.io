@@ -6,7 +6,7 @@
     <description>Recent content on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 24 May 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 24 May 2025 23:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自制在线电子档案索引</title>
@@ -68,6 +68,15 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/LiberalArts&#34;&gt;博雅教育&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Novels&#34;&gt;小说&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/English&#34;&gt;英语&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>跨平台桌面应用工具Tauri 2.0入门</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%E5%B7%A5%E5%85%B7tauri2.0%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sat, 24 May 2025 20:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%E5%B7%A5%E5%85%B7tauri2.0%E5%85%A5%E9%97%A8/</guid>
+      <description>&lt;h1 id=&#34;跨平台桌面应用工具tauri-20入门&#34;&gt;跨平台桌面应用工具Tauri 2.0入门&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Tauri&lt;/em&gt; 是一款基于 Rust 的跨平台桌面应用开发框架，能够让开发者使用熟悉的前端技术（HTML、CSS、JavaScript 或现代框架如 React、Vue 等）来构建轻量级、高性能且安全的应用。相比 Electron，Tauri 打包体积更小（约4MB 对比 Electron 50MB），性能更优，占用资源更少。&lt;/p&gt;</description>
     </item>
     <item>
       <title>前端构建工具全解析：NPM、Yarn 和 PNPM</title>
