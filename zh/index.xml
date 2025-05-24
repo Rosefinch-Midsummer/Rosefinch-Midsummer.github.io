@@ -6,7 +6,7 @@
     <description>Recent content on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 23 May 2025 12:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 24 May 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自制在线电子档案索引</title>
@@ -68,6 +68,15 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/LiberalArts&#34;&gt;博雅教育&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Novels&#34;&gt;小说&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/English&#34;&gt;英语&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>前端构建工具全解析：NPM、Yarn 和 PNPM</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%89%8D%E7%AB%AF%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7pnpm/</link>
+      <pubDate>Sat, 24 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%89%8D%E7%AB%AF%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7pnpm/</guid>
+      <description>&lt;h1 id=&#34;前端构建工具全解析npmyarn-和-pnpm&#34;&gt;前端构建工具全解析：NPM、Yarn 和 PNPM&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在现代前端开发中，包管理器（即构建工具）扮演着至关重要的角色。它们帮助开发者管理项目依赖包的安装、版本控制、脚本运行等任务，提高开发效率。本文将详细介绍三大主流的前端包管理器：&lt;strong&gt;NPM&lt;/strong&gt;、&lt;strong&gt;Yarn&lt;/strong&gt; 和 &lt;strong&gt;PNPM&lt;/strong&gt;，帮助你选择合适的工具迎接各种开发场景。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python虚拟环境管理工具UV和JupyterNotebook联动</title>
