@@ -6,8 +6,29 @@
     <description>Recent content in Tags on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 26 May 2025 12:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 May 2025 18:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MongoDB</title>
+      <link>https://rosefinch-midsummer.github.io/zh/tags/mongodb/</link>
+      <pubDate>Mon, 26 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/tags/mongodb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MySQL</title>
+      <link>https://rosefinch-midsummer.github.io/zh/tags/mysql/</link>
+      <pubDate>Mon, 26 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/tags/mysql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rust</title>
+      <link>https://rosefinch-midsummer.github.io/zh/tags/rust/</link>
+      <pubDate>Mon, 26 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/tags/rust/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Windows</title>
       <link>https://rosefinch-midsummer.github.io/zh/tags/windows/</link>
@@ -48,13 +69,6 @@
       <link>https://rosefinch-midsummer.github.io/zh/tags/tauri/</link>
       <pubDate>Sat, 24 May 2025 20:34:25 +0800</pubDate>
       <guid>https://rosefinch-midsummer.github.io/zh/tags/tauri/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rust</title>
-      <link>https://rosefinch-midsummer.github.io/zh/tags/rust/</link>
-      <pubDate>Sat, 24 May 2025 19:34:25 +0800</pubDate>
-      <guid>https://rosefinch-midsummer.github.io/zh/tags/rust/</guid>
       <description></description>
     </item>
     <item>
@@ -286,13 +300,6 @@
       <link>https://rosefinch-midsummer.github.io/zh/tags/%E7%89%B9%E5%BE%81%E7%82%B9%E6%A3%80%E6%B5%8B/</link>
       <pubDate>Tue, 29 Apr 2025 00:02:25 +0800</pubDate>
       <guid>https://rosefinch-midsummer.github.io/zh/tags/%E7%89%B9%E5%BE%81%E7%82%B9%E6%A3%80%E6%B5%8B/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MongoDB</title>
-      <link>https://rosefinch-midsummer.github.io/zh/tags/mongodb/</link>
-      <pubDate>Mon, 28 Apr 2025 18:34:25 +0800</pubDate>
-      <guid>https://rosefinch-midsummer.github.io/zh/tags/mongodb/</guid>
       <description></description>
     </item>
     <item>
@@ -1917,13 +1924,6 @@
       <link>https://rosefinch-midsummer.github.io/zh/tags/%E5%90%8E%E5%8F%B0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF/</link>
       <pubDate>Sun, 08 Aug 2021 18:34:25 +0800</pubDate>
       <guid>https://rosefinch-midsummer.github.io/zh/tags/%E5%90%8E%E5%8F%B0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MySQL</title>
-      <link>https://rosefinch-midsummer.github.io/zh/tags/mysql/</link>
-      <pubDate>Wed, 04 Aug 2021 18:34:25 +0800</pubDate>
-      <guid>https://rosefinch-midsummer.github.io/zh/tags/mysql/</guid>
       <description></description>
     </item>
     <item>
