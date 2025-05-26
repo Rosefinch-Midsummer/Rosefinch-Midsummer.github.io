@@ -6,8 +6,17 @@
     <description>Recent content in Windows on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 26 May 2025 12:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 May 2025 21:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 11 上配置多个 GitHub 账号的完整指南</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/windows11%E4%B8%8A%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AAgithub%E8%B4%A6%E5%8F%B7%E7%9A%84%E5%AE%8C%E6%95%B4%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 26 May 2025 21:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/windows11%E4%B8%8A%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AAgithub%E8%B4%A6%E5%8F%B7%E7%9A%84%E5%AE%8C%E6%95%B4%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;h1 id=&#34;windows-11-上配置多个-github-账号的完整指南&#34;&gt;Windows 11 上配置多个 GitHub 账号的完整指南&lt;/h1&gt;
+&lt;h2 id=&#34;0-前言&#34;&gt;0. 前言&lt;/h2&gt;
+&lt;p&gt;你是否和我一样，有两个 GitHub 账号？一个用于协作团队项目，另一个用于个人创作。想让它们在本地和远端完全隔离，互不干扰？&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Windows 批处理文件（.bat）应用详解与实用示例</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/windows%E6%89%B9%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6%E5%BA%94%E7%94%A8%E8%AF%A6%E8%A7%A3%E4%B8%8E%E5%AE%9E%E7%94%A8%E7%A4%BA%E4%BE%8B/</link>
