@@ -6,7 +6,7 @@
     <description>Recent content on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 25 May 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 May 2025 12:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自制在线电子档案索引</title>
@@ -68,6 +68,15 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/LiberalArts&#34;&gt;博雅教育&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Novels&#34;&gt;小说&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/English&#34;&gt;英语&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows 批处理文件（.bat）应用详解与实用示例</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/windows%E6%89%B9%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6%E5%BA%94%E7%94%A8%E8%AF%A6%E8%A7%A3%E4%B8%8E%E5%AE%9E%E7%94%A8%E7%A4%BA%E4%BE%8B/</link>
+      <pubDate>Mon, 26 May 2025 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/windows%E6%89%B9%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6%E5%BA%94%E7%94%A8%E8%AF%A6%E8%A7%A3%E4%B8%8E%E5%AE%9E%E7%94%A8%E7%A4%BA%E4%BE%8B/</guid>
+      <description>&lt;h1 id=&#34;windows-批处理文件bat应用详解与实用示例&#34;&gt;Windows 批处理文件（.bat）应用详解与实用示例&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在 Windows 环境下，批处理文件（Batch file，扩展名 &lt;code&gt;.bat&lt;/code&gt;）是自动执行一系列命令和任务的强大工具。无论是自动化重复性工作、简化日常操作，还是批量管理系统设置，批处理脚本都能显著提高效率，减少人为错误，特别适合 Windows 11 用户日常运维和办公自动化。&lt;/p&gt;</description>
     </item>
     <item>
       <title>免费开源的高效代码片段管理利器massCode</title>
