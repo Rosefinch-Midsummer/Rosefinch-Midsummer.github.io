@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vite on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/vite/</link>
+    <description>Recent content in Vite on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.147.6</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 30 May 2025 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/vite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue 项目环境变量配置详解</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/vue%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Fri, 30 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/vue%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</guid>
+      <description>&lt;h1 id=&#34;vue-项目环境变量配置详解--envenvdevelopmentenvproductionenvlocal-的区别与使用&#34;&gt;Vue 项目环境变量配置详解 —— .env、.env.development、.env.production、.env.local 的区别与使用&lt;/h1&gt;
+&lt;p&gt;在 Vue 项目开发中，经常会需要根据不同的环境配置不同的参数，比如接口地址、调试开关等。为了方便管理，Vue 支持通过一系列 &lt;code&gt;.env&lt;/code&gt; 文件来配置环境变量。本文将详细介绍四种常用 &lt;code&gt;.env&lt;/code&gt; 文件的区别、优先级、引用方式，以及在实际项目中如何正确配置和使用。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

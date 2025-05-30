@@ -4,10 +4,18 @@
     <title>Vue on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/tags/vue/</link>
     <description>Recent content in Vue on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.147.5</generator>
+    <generator>Hugo -- 0.147.6</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 20 May 2025 12:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 May 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue 项目环境变量配置详解</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/vue%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Fri, 30 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/vue%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</guid>
+      <description>&lt;h1 id=&#34;vue-项目环境变量配置详解--envenvdevelopmentenvproductionenvlocal-的区别与使用&#34;&gt;Vue 项目环境变量配置详解 —— .env、.env.development、.env.production、.env.local 的区别与使用&lt;/h1&gt;
+&lt;p&gt;在 Vue 项目开发中，经常会需要根据不同的环境配置不同的参数，比如接口地址、调试开关等。为了方便管理，Vue 支持通过一系列 &lt;code&gt;.env&lt;/code&gt; 文件来配置环境变量。本文将详细介绍四种常用 &lt;code&gt;.env&lt;/code&gt; 文件的区别、优先级、引用方式，以及在实际项目中如何正确配置和使用。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>使用 Vue 3 &#43; Vite 结合 vue-gallery 创建响应式图片画廊并实现从文本文件读取图片 URL</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9F%BA%E4%BA%8Evue3%E7%9A%84%E5%9B%BE%E7%89%87%E7%94%BB%E5%BB%8A%E5%AE%9E%E7%8E%B0/</link>
