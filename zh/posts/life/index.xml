@@ -6,7 +6,7 @@
     <description>Recent content in 🏖生活 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.7</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 26 May 2025 23:40:22 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/posts/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自制在线电子档案索引</title>
@@ -68,6 +68,15 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/LiberalArts&#34;&gt;博雅教育&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Novels&#34;&gt;小说&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/English&#34;&gt;英语&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>解除捆绑：轻松卸载 Windows 11 预装应用全攻略</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E8%A7%A3%E9%99%A4%E6%8D%86%E7%BB%91%E8%BD%BB%E6%9D%BE%E5%8D%B8%E8%BD%BDwindows11%E9%A2%84%E8%A3%85%E5%BA%94%E7%94%A8%E5%85%A8%E6%94%BB%E7%95%A5/</link>
+      <pubDate>Mon, 02 Jun 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E8%A7%A3%E9%99%A4%E6%8D%86%E7%BB%91%E8%BD%BB%E6%9D%BE%E5%8D%B8%E8%BD%BDwindows11%E9%A2%84%E8%A3%85%E5%BA%94%E7%94%A8%E5%85%A8%E6%94%BB%E7%95%A5/</guid>
+      <description>&lt;h1 id=&#34;解除捆绑轻松卸载-windows-11-预装应用全攻略&#34;&gt;解除捆绑：轻松卸载 Windows 11 预装应用全攻略&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;Windows 11 默认预装了不少微软的自带应用，但其中许多应用可能你根本用不上，占用系统资源和存储空间。本文将详细介绍如何利用 PowerShell 快速、安全地卸载这些捆绑应用，帮助你打造更简洁高效的系统环境。&lt;/p&gt;</description>
     </item>
     <item>
       <title>如何在 Word 中消除段落前面的“段落标记”（回车符）</title>
