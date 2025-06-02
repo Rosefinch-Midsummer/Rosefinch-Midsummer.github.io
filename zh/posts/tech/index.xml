@@ -4,10 +4,19 @@
     <title>👨🏻‍💻技術 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/posts/tech/</link>
     <description>Recent content in 👨🏻‍💻技術 on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.147.6</generator>
+    <generator>Hugo -- 0.147.7</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 30 May 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenSSL 详解及安装教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/openssl%E8%AF%A6%E8%A7%A3%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Mon, 02 Jun 2025 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/openssl%E8%AF%A6%E8%A7%A3%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h1 id=&#34;openssl详解及安装教程&#34;&gt;OpenSSL详解及安装教程&lt;/h1&gt;
+&lt;h2 id=&#34;一什么是openssl&#34;&gt;一、什么是OpenSSL？&lt;/h2&gt;
+&lt;p&gt;OpenSSL是一个开源且功能丰富的安全工具库，主要用于实现SSL/TLS协议，保障网络通信的机密性和完整性。它诞生于Netscape提出的SSL（Secure Sockets Layer）协议基础之上，现已成为互联网安全通信的工业标准。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Vue 项目环境变量配置详解</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/vue%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</link>
