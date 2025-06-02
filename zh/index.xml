@@ -70,6 +70,31 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/English&#34;&gt;英语&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>MySQL 8.0 公钥检索错误及解决方案</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/mysql8.0%E5%85%AC%E9%92%A5%E6%A3%80%E7%B4%A2%E9%94%99%E8%AF%AF%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Mon, 02 Jun 2025 19:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/mysql8.0%E5%85%AC%E9%92%A5%E6%A3%80%E7%B4%A2%E9%94%99%E8%AF%AF%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>&lt;h1 id=&#34;mysql-80-公钥检索错误及解决方案&#34;&gt;MySQL 8.0 公钥检索错误及解决方案&lt;/h1&gt;
+&lt;h2 id=&#34;一问题现象与错误背景&#34;&gt;一、问题现象与错误背景&lt;/h2&gt;
+&lt;p&gt;在使用 MySQL Connector/J 8.0 及以上版本连接 MySQL 8.0 数据库时，常见报错如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;典型触发场景&#34;&gt;典型触发场景&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;使用新版 JDBC 驱动（版本≥8.0）&lt;/li&gt;
+&lt;li&gt;未启用 SSL 加密连接&lt;/li&gt;
+&lt;li&gt;采用默认的 &lt;code&gt;caching_sha2_password&lt;/code&gt; 认证插件&lt;/li&gt;
+&lt;li&gt;连接字符串未显式允许公钥检索&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通过抓包工具（如 Wireshark）分析可以看到，客户端试图通过非加密通道请求服务器的 RSA 公钥，但请求被拒绝。此安全限制是 MySQL 8.0 引入的防御机制，目的是防止中间人攻击，保障身份验证的安全性。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>OpenSSL 详解及安装教程</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/openssl%E8%AF%A6%E8%A7%A3%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
       <pubDate>Mon, 02 Jun 2025 12:34:25 +0800</pubDate>
