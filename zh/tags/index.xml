@@ -9,6 +9,20 @@
     <lastBuildDate>Wed, 04 Jun 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>CV</title>
+      <link>https://rosefinch-midsummer.github.io/zh/tags/cv/</link>
+      <pubDate>Wed, 04 Jun 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/tags/cv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenCV</title>
+      <link>https://rosefinch-midsummer.github.io/zh/tags/opencv/</link>
+      <pubDate>Wed, 04 Jun 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/tags/opencv/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Tauri</title>
       <link>https://rosefinch-midsummer.github.io/zh/tags/tauri/</link>
       <pubDate>Wed, 04 Jun 2025 18:34:25 +0800</pubDate>
@@ -118,13 +132,6 @@
       <link>https://rosefinch-midsummer.github.io/zh/tags/python/</link>
       <pubDate>Fri, 23 May 2025 12:34:25 +0800</pubDate>
       <guid>https://rosefinch-midsummer.github.io/zh/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CV</title>
-      <link>https://rosefinch-midsummer.github.io/zh/tags/cv/</link>
-      <pubDate>Tue, 20 May 2025 18:34:25 +0800</pubDate>
-      <guid>https://rosefinch-midsummer.github.io/zh/tags/cv/</guid>
       <description></description>
     </item>
     <item>

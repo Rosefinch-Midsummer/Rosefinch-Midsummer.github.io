@@ -6,8 +6,20 @@
     <description>Recent content in CV on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.7</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 20 May 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 04 Jun 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/cv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基于OpenCV的自动对焦：多种图像清晰度评价算子的比较研究</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9F%BA%E4%BA%8Eopencv%E7%9A%84%E8%87%AA%E5%8A%A8%E5%AF%B9%E7%84%A6%E5%A4%9A%E7%A7%8D%E5%9B%BE%E5%83%8F%E6%B8%85%E6%99%B0%E5%BA%A6%E8%AF%84%E4%BB%B7%E7%AE%97%E5%AD%90%E7%9A%84%E6%AF%94%E8%BE%83%E7%A0%94%E7%A9%B6/</link>
+      <pubDate>Wed, 04 Jun 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E5%9F%BA%E4%BA%8Eopencv%E7%9A%84%E8%87%AA%E5%8A%A8%E5%AF%B9%E7%84%A6%E5%A4%9A%E7%A7%8D%E5%9B%BE%E5%83%8F%E6%B8%85%E6%99%B0%E5%BA%A6%E8%AF%84%E4%BB%B7%E7%AE%97%E5%AD%90%E7%9A%84%E6%AF%94%E8%BE%83%E7%A0%94%E7%A9%B6/</guid>
+      <description>&lt;h1 id=&#34;基于opencv的自动对焦多种图像清晰度评价算子的比较研究&#34;&gt;基于OpenCV的自动对焦：多种图像清晰度评价算子的比较研究&lt;/h1&gt;
+&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
+&lt;p&gt;作者：Moukthika&lt;/p&gt;
+&lt;p&gt;发布日期：2025年3月11日&lt;/p&gt;
+&lt;p&gt;分类：计算机视觉、OpenCV&lt;/p&gt;
+&lt;p&gt;标签：自动对焦，Brenner梯度，熵测量，拉普拉斯算子，局部方差法，Sobel+方差，Tenengrad&lt;/p&gt;</description>
+    </item>
     <item>
       <title>相机标定及棋盘格标定法详解</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8F%8A%E6%A3%8B%E7%9B%98%E6%A0%BC%E6%A0%87%E5%AE%9A%E6%B3%95%E8%AF%A6%E8%A7%A3/</link>
