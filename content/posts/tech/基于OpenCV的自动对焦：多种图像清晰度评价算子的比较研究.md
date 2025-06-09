@@ -1,7 +1,7 @@
 ---
 title: "基于OpenCV的自动对焦：多种图像清晰度评价算子的比较研究"
 date: 2025-06-04T22:34:25+08:00
-lastmod: 2025-06-04T22:54:22+08:00
+lastmod: 2025-06-10T07:40:22+08:00
 draft: false
 math: true
 categories:
@@ -105,7 +105,7 @@ disableShare: true # 底部不显示分享栏
 **原理：**  
 测量图像局部区域内的像素强度方差，假设清晰图像在区域内存在更大强度变化，从而更具对比度。
 
-![](https://setsailtowadsgalaxy.ip-ddns.com/blog/f3f4f140e8945173a9b162529d01f1fd.png)
+![](https://setsailtowardstianhan.ip-ddns.com/blog/f3f4f140e8945173a9b162529d01f1fd.png)
 
 **优点：**
 
@@ -126,7 +126,7 @@ disableShare: true # 底部不显示分享栏
 **原理：**  
 利用图像灰度级分布的熵值来衡量信息量，清晰图像由于细节丰富，通常熵值更高。
 
-![](https://setsailtowadsgalaxy.ip-ddns.com/blog/27510bbaf3a8ce62be8892b05a21735f.png)
+![](https://setsailtowardstianhan.ip-ddns.com/blog/27510bbaf3a8ce62be8892b05a21735f.png)
 
 **优点：**
 
@@ -147,7 +147,7 @@ disableShare: true # 底部不显示分享栏
 **原理：**  
 通过Sobel算子计算图像水平方向和垂直方向的梯度强度，边缘强度越大，图像越清晰。
 
-![](https://setsailtowadsgalaxy.ip-ddns.com/blog/38d838682bb4e94b73bc1ee0a3310ac9.png)
+![](https://setsailtowardstianhan.ip-ddns.com/blog/38d838682bb4e94b73bc1ee0a3310ac9.png)
 
 **优点：**
 
@@ -168,7 +168,7 @@ disableShare: true # 底部不显示分享栏
 **原理：**  
 计算相邻像素的强度差值，差异越大说明图像越清晰。
 
-![](https://setsailtowadsgalaxy.ip-ddns.com/blog/bca20076b7dbc5da45e26f9a2ba0df73.png)
+![](https://setsailtowardstianhan.ip-ddns.com/blog/bca20076b7dbc5da45e26f9a2ba0df73.png)
 
 **优点：**
 
@@ -189,7 +189,7 @@ disableShare: true # 底部不显示分享栏
 **原理：**  
 结合Sobel梯度和局部方差两种度量，同时考虑图像边缘强度和强度变化幅度，提高焦点测量的稳健性。
 
-![](https://setsailtowadsgalaxy.ip-ddns.com/blog/70cee6bf3dcd4535e9cb8419135bd914.png)
+![](https://setsailtowardstianhan.ip-ddns.com/blog/70cee6bf3dcd4535e9cb8419135bd914.png)
 
 **优点：**
 
@@ -210,7 +210,7 @@ disableShare: true # 底部不显示分享栏
 **原理：**  
 使用拉普拉斯二阶导数算子检测图像的高频细节，计算其响应方差，方差越大表示图像越清晰。
 
-![](https://setsailtowadsgalaxy.ip-ddns.com/blog/a909b2230225a1488c0f774dfff01caf.png)
+![](https://setsailtowardstianhan.ip-ddns.com/blog/a909b2230225a1488c0f774dfff01caf.png)
 
 **优点：**
 
