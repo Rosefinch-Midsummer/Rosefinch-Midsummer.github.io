@@ -1,7 +1,7 @@
 ---
 title: "解决 Windows Tauri 构建时 WiX 等打包文件下载失败问题详解"
-date: 2024-06-14T18:34:25+08:00
-lastmod: 2024-06-14T22:54:22+08:00
+date: 2025-06-14T18:34:25+08:00
+lastmod: 2025-06-14T22:54:22+08:00
 draft: false
 math: true
 categories:
