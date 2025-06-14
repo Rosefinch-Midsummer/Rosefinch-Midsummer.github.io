@@ -6,8 +6,17 @@
     <description>Recent content in Windows on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 03 Jun 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jun 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解决 Windows Tauri 构建时 WiX 等打包文件下载失败问题详解</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%A7%A3%E5%86%B3-windows-tauri-%E6%9E%84%E5%BB%BA%E6%97%B6-wix-%E7%AD%89%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Sat, 14 Jun 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%A7%A3%E5%86%B3-windows-tauri-%E6%9E%84%E5%BB%BA%E6%97%B6-wix-%E7%AD%89%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%AF%A6%E8%A7%A3/</guid>
+      <description>&lt;h1 id=&#34;解决-windows-tauri-构建时-wix-等打包文件下载失败问题详解&#34;&gt;解决 Windows Tauri 构建时 WiX 等打包文件下载失败问题详解&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在使用 Tauri 进行 Windows 应用构建时，经常会遇到 WiX、NSIS 等必需的打包工具及插件下载失败，导致构建过程超时或失败的情况。尤其是在有全局翻墙需求的环境中更为常见。本文总结了手动下载和配置这些依赖的方法，并附上实验验证的操作步骤，帮助大家顺利完成构建。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>解除捆绑：轻松卸载 Windows 11 预装应用全攻略</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E8%A7%A3%E9%99%A4%E6%8D%86%E7%BB%91%E8%BD%BB%E6%9D%BE%E5%8D%B8%E8%BD%BDwindows11%E9%A2%84%E8%A3%85%E5%BA%94%E7%94%A8%E5%85%A8%E6%94%BB%E7%95%A5/</link>
@@ -44,15 +53,6 @@
 &lt;p&gt;由于电脑C盘烧了，我为了把数据导出来折腾了好久，最后成功使用PE盘把最关键的资料拷贝出来。这里记录一下相关的工具。&lt;/p&gt;
 &lt;h2 id=&#34;winpe系统&#34;&gt;WinPE系统&lt;/h2&gt;
 &lt;p&gt;WinPE系统，是轻量级的Windows操作系统，可以安装到U盘里面。当电脑系统无法进入或崩溃时，可以作为紧急启动方式，对计算机进行系统重装或配置操作。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>解决 Windows Tauri 构建时 WiX 等打包文件下载失败问题详解</title>
-      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%A7%A3%E5%86%B3-windows-tauri-%E6%9E%84%E5%BB%BA%E6%97%B6-wix-%E7%AD%89%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%AF%A6%E8%A7%A3/</link>
-      <pubDate>Fri, 14 Jun 2024 18:34:25 +0800</pubDate>
-      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%A7%A3%E5%86%B3-windows-tauri-%E6%9E%84%E5%BB%BA%E6%97%B6-wix-%E7%AD%89%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%AF%A6%E8%A7%A3/</guid>
-      <description>&lt;h1 id=&#34;解决-windows-tauri-构建时-wix-等打包文件下载失败问题详解&#34;&gt;解决 Windows Tauri 构建时 WiX 等打包文件下载失败问题详解&lt;/h1&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;在使用 Tauri 进行 Windows 应用构建时，经常会遇到 WiX、NSIS 等必需的打包工具及插件下载失败，导致构建过程超时或失败的情况。尤其是在有全局翻墙需求的环境中更为常见。本文总结了手动下载和配置这些依赖的方法，并附上实验验证的操作步骤，帮助大家顺利完成构建。&lt;/p&gt;</description>
     </item>
     <item>
       <title>一条命令即可激活Windows10和Office365</title>
