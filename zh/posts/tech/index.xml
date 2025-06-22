@@ -6,8 +6,21 @@
     <description>Recent content in 👨🏻‍💻技術 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 19 Jun 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Jun 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git指北</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/git%E6%8C%87%E5%8C%97/</link>
+      <pubDate>Sun, 22 Jun 2025 19:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/git%E6%8C%87%E5%8C%97/</guid>
+      <description>&lt;h1 id=&#34;git指北&#34;&gt;Git指北&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;原本想写地详细点，但好像又没有意义，反正我也不看。&lt;/p&gt;
+&lt;p&gt;年年都学Git，这次算是真学好了！&lt;/p&gt;
+&lt;h2 id=&#34;git-快速入门&#34;&gt;Git 快速入门&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.runoob.com/git/git-tutorial.html&#34;&gt;Git 教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本站也提供了 Git 快速入门版本，你可以点击 &lt;a href=&#34;https://www.runoob.com/manual/git-guide/&#34;&gt;Git 简明指南&lt;/a&gt; 查看。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>12个炫酷的大屏可视化开源项目推荐，太高级了！</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/12%E4%B8%AA%E7%82%AB%E9%85%B7%E7%9A%84%E5%A4%A7%E5%B1%8F%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E6%8E%A8%E8%8D%90/</link>

@@ -6,8 +6,21 @@
     <description>Recent content in Git on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 24 Mar 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Jun 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git指北</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/git%E6%8C%87%E5%8C%97/</link>
+      <pubDate>Sun, 22 Jun 2025 19:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/git%E6%8C%87%E5%8C%97/</guid>
+      <description>&lt;h1 id=&#34;git指北&#34;&gt;Git指北&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;原本想写地详细点，但好像又没有意义，反正我也不看。&lt;/p&gt;
+&lt;p&gt;年年都学Git，这次算是真学好了！&lt;/p&gt;
+&lt;h2 id=&#34;git-快速入门&#34;&gt;Git 快速入门&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.runoob.com/git/git-tutorial.html&#34;&gt;Git 教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本站也提供了 Git 快速入门版本，你可以点击 &lt;a href=&#34;https://www.runoob.com/manual/git-guide/&#34;&gt;Git 简明指南&lt;/a&gt; 查看。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Git 提交代码时一直提交不上去某个文件夹</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/git%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81%E6%97%B6%E4%B8%80%E7%9B%B4%E6%8F%90%E4%BA%A4%E4%B8%8D%E4%B8%8A%E5%8E%BB%E6%9F%90%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
