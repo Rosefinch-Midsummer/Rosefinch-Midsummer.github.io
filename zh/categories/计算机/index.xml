@@ -9,6 +9,34 @@
     <lastBuildDate>Sun, 22 Jun 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Docker命令指北</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/docker%E5%91%BD%E4%BB%A4%E6%8C%87%E5%8C%97/</link>
+      <pubDate>Sun, 22 Jun 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/docker%E5%91%BD%E4%BB%A4%E6%8C%87%E5%8C%97/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;每年都学Docker，我都对自己有点无语了~&lt;/p&gt;
+&lt;p&gt;这次应该算是学好了，后续应该会接着看K8s和podman相关的内容。&lt;/p&gt;
+&lt;p&gt;相关链接：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.runoob.com/docker/docker-tutorial.html&#34;&gt;Runoob-Docker&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;docker-资源汇总&#34;&gt;Docker 资源汇总&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;docker-资源&#34;&gt;Docker 资源&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker 官方主页: &lt;a href=&#34;https://www.docker.com/&#34;&gt;https://www.docker.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Docker 官方博客: &lt;a href=&#34;https://blog.docker.com/&#34;&gt;https://blog.docker.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Docker 官方文档: &lt;a href=&#34;https://docs.docker.com/&#34;&gt;https://docs.docker.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Docker Store: &lt;a href=&#34;https://store.docker.com/&#34;&gt;https://store.docker.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Docker Cloud: &lt;a href=&#34;https://cloud.docker.com/&#34;&gt;https://cloud.docker.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Docker Hub: &lt;a href=&#34;https://hub.docker.com/&#34;&gt;https://hub.docker.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Docker 的源代码仓库: &lt;a href=&#34;https://github.com/moby/moby&#34;&gt;https://github.com/moby/moby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Docker 发布版本历史: &lt;a href=&#34;https://docs.docker.com/release-notes/&#34;&gt;https://docs.docker.com/release-notes/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Docker 常见问题: &lt;a href=&#34;https://docs.docker.com/engine/faq/&#34;&gt;https://docs.docker.com/engine/faq/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Docker 远端应用 API: &lt;a href=&#34;https://docs.docker.com/develop/sdk/&#34;&gt;https://docs.docker.com/develop/sdk/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;docker-国内镜像&#34;&gt;Docker 国内镜像&lt;/h3&gt;
+&lt;p&gt;阿里云的加速器：&lt;a href=&#34;https://help.aliyun.com/document_detail/60750.html&#34;&gt;https://help.aliyun.com/document_detail/60750.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Git指北</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/git%E6%8C%87%E5%8C%97/</link>
       <pubDate>Sun, 22 Jun 2025 19:34:25 +0800</pubDate>
