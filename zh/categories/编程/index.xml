@@ -4,10 +4,18 @@
     <title>编程 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/categories/%E7%BC%96%E7%A8%8B/</link>
     <description>Recent content in 编程 on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.147.8</generator>
+    <generator>Hugo -- 0.147.9</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 22 Jun 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2025 09:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解决 Pinia 中 Store 数据更新但组件不渲染的问题</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%A7%A3%E5%86%B3-pinia-%E4%B8%AD-store-%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0%E4%BD%86%E7%BB%84%E4%BB%B6%E4%B8%8D%E6%B8%B2%E6%9F%93%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 25 Jun 2025 09:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%A7%A3%E5%86%B3-pinia-%E4%B8%AD-store-%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0%E4%BD%86%E7%BB%84%E4%BB%B6%E4%B8%8D%E6%B8%B2%E6%9F%93%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;h1 id=&#34;解决-pinia-中-store-数据更新但组件不渲染的问题&#34;&gt;解决 Pinia 中 Store 数据更新但组件不渲染的问题&lt;/h1&gt;
+&lt;p&gt;在使用 Vue 3 + Pinia 进行状态管理时，遇到&lt;strong&gt;修改store中的数据后，组件没有自动更新渲染&lt;/strong&gt;的情况是常见的坑。本文将详细剖析这个问题的根源，介绍核心工具 &lt;code&gt;storeToRefs&lt;/code&gt; 和 &lt;code&gt;computed&lt;/code&gt; 的使用技巧，帮助你写出既优雅又响应式的Pinia状态管理代码。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Docker命令指北</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/docker%E5%91%BD%E4%BB%A4%E6%8C%87%E5%8C%97/</link>
