@@ -6,7 +6,7 @@
     <description>Recent content on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 25 Jun 2025 09:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jun 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自制在线电子档案索引</title>
@@ -68,6 +68,14 @@
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/LiberalArts&#34;&gt;博雅教育&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/Novels&#34;&gt;小说&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rosefinch-midsummer.github.io/English&#34;&gt;英语&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>编程哲学</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/</link>
+      <pubDate>Sat, 28 Jun 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/</guid>
+      <description>&lt;h1 id=&#34;vibe-code&#34;&gt;Vibe Code&lt;/h1&gt;
+&lt;p&gt;近期，一个名为 “Vibe Coding”（氛围编程）的概念迅速升温，引发了广泛讨论。它不仅仅是一个时髦术语，更可能预示着软件开发方式的一次深刻变革。&lt;/p&gt;</description>
     </item>
     <item>
       <title>解决 Pinia 中 Store 数据更新但组件不渲染的问题</title>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>哲学 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/categories/%E5%93%B2%E5%AD%A6/</link>
+    <description>Recent content in 哲学 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 28 Jun 2025 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E5%93%B2%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>编程哲学</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/</link>
+      <pubDate>Sat, 28 Jun 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/</guid>
+      <description>&lt;h1 id=&#34;vibe-code&#34;&gt;Vibe Code&lt;/h1&gt;
+&lt;p&gt;近期，一个名为 “Vibe Coding”（氛围编程）的概念迅速升温，引发了广泛讨论。它不仅仅是一个时髦术语，更可能预示着软件开发方式的一次深刻变革。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

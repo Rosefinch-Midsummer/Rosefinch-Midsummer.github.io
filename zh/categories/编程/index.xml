@@ -6,8 +6,16 @@
     <description>Recent content in 编程 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 25 Jun 2025 09:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jun 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>编程哲学</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/</link>
+      <pubDate>Sat, 28 Jun 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6/</guid>
+      <description>&lt;h1 id=&#34;vibe-code&#34;&gt;Vibe Code&lt;/h1&gt;
+&lt;p&gt;近期，一个名为 “Vibe Coding”（氛围编程）的概念迅速升温，引发了广泛讨论。它不仅仅是一个时髦术语，更可能预示着软件开发方式的一次深刻变革。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>解决 Pinia 中 Store 数据更新但组件不渲染的问题</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E8%A7%A3%E5%86%B3-pinia-%E4%B8%AD-store-%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0%E4%BD%86%E7%BB%84%E4%BB%B6%E4%B8%8D%E6%B8%B2%E6%9F%93%E7%9A%84%E9%97%AE%E9%A2%98/</link>
