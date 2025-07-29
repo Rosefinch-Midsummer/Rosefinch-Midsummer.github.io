@@ -4,10 +4,62 @@
     <title>计算机 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
     <description>Recent content in 计算机 on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.148.1</generator>
+    <generator>Hugo -- 0.148.2</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 30 Jun 2025 09:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jul 2025 10:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从零开始实现区块链货币</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AE%9E%E7%8E%B0%E5%8C%BA%E5%9D%97%E9%93%BE%E8%B4%A7%E5%B8%81/</link>
+      <pubDate>Tue, 29 Jul 2025 10:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/tech/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AE%9E%E7%8E%B0%E5%8C%BA%E5%9D%97%E9%93%BE%E8%B4%A7%E5%B8%81/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+    &lt;style type=&#34;text/css&#34;&gt;
+        .bilibili_shortcodes {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 66%;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+        }
+        .bilibili_shortcodes iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+    &lt;/style&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&#34;bilibili_shortcodes&#34;&gt;
+    &lt;iframe
+            src=&#34;https://player.bilibili.com/player.html?bvid=BV14E411v7eS&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0&#34;
+            scrolling=&#34;no&#34;
+            border=&#34;0&#34;
+            frameborder=&#34;no&#34;
+            framespacing=&#34;0&#34;
+            allowfullscreen=&#34;true&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+
+
+
+
+&lt;p&gt;下面的代码和视频教程不一致，以下面的代码为准，截止到发文日期，下面代码可以正常运行。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Windows11提示应用程序无法正常启动0xc0000142解决办法</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/life/windows11%E6%8F%90%E7%A4%BA%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E5%90%AF%E5%8A%A80xc0000142%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
