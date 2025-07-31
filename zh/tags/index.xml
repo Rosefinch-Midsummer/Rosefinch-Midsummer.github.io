@@ -9,6 +9,20 @@
     <lastBuildDate>Thu, 31 Jul 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cache</title>
+      <link>https://rosefinch-midsummer.github.io/zh/tags/cache/</link>
+      <pubDate>Thu, 31 Jul 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/tags/cache/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redis</title>
+      <link>https://rosefinch-midsummer.github.io/zh/tags/redis/</link>
+      <pubDate>Thu, 31 Jul 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/tags/redis/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>管理</title>
       <link>https://rosefinch-midsummer.github.io/zh/tags/%E7%AE%A1%E7%90%86/</link>
       <pubDate>Thu, 31 Jul 2025 18:34:25 +0800</pubDate>
@@ -314,13 +328,6 @@
       <link>https://rosefinch-midsummer.github.io/zh/tags/%E5%9B%BE%E5%BA%8A/</link>
       <pubDate>Fri, 16 May 2025 18:34:25 +0800</pubDate>
       <guid>https://rosefinch-midsummer.github.io/zh/tags/%E5%9B%BE%E5%BA%8A/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Redis</title>
-      <link>https://rosefinch-midsummer.github.io/zh/tags/redis/</link>
-      <pubDate>Fri, 16 May 2025 12:34:25 +0800</pubDate>
-      <guid>https://rosefinch-midsummer.github.io/zh/tags/redis/</guid>
       <description></description>
     </item>
     <item>
