@@ -61,7 +61,6 @@ https://md2card.cn/zh/editor
 
 - [English](https://github.com/gcui-art/markdown-to-image/blob/main/README.md) | [中文](https://github.com/gcui-art/markdown-to-image/blob/main/README_CN.md)
 - [DEMO & WEB Editor](https://readpo.com/zh/poster)
-- [Deploy Editor with Vercel](https://vercel.com/new/clone?repository-url=https://github.com/gcui-art/markdown-to-image&root-directory=example&project-name=markdown-to-image&repository-name=markdown-to-image)
 - [NPM:markdown-to-image](https://www.npmjs.com/package/markdown-to-image)
 
 ⭐ 点击 Star 和 Watch 按钮，跟踪我们的最新进展。
@@ -149,7 +148,7 @@ return (
 
 #### 部署自己的在线编辑器
 
-这里使用Vercel进行部署，点击后一键部署：[部署 Editor 到 Vercel](https://vercel.com/new/clone?repository-url=https://github.com/gcui-art/markdown-to-image&root-directory=example&project-name=markdown-to-image&repository-name=markdown-to-image)
+这里使用Vercel进行部署，点击后一键部署。
 
 # Markdown To Image Serve
 
@@ -351,7 +350,6 @@ https://md2card.cn/zh/editor
 
 - [English](https://github.com/gcui-art/markdown-to-image/blob/main/README.md) | [中文](https://github.com/gcui-art/markdown-to-image/blob/main/README_CN.md)
 - [DEMO & WEB Editor](https://readpo.com/zh/poster)
-- [Deploy Editor with Vercel](https://vercel.com/new/clone?repository-url=https://github.com/gcui-art/markdown-to-image&root-directory=example&project-name=markdown-to-image&repository-name=markdown-to-image)
 - [NPM:markdown-to-image](https://www.npmjs.com/package/markdown-to-image)
 
 ⭐ 点击 Star 和 Watch 按钮，跟踪我们的最新进展。
@@ -439,7 +437,7 @@ return (
 
 #### 部署自己的在线编辑器
 
-这里使用Vercel进行部署，点击后一键部署：[部署 Editor 到 Vercel](https://vercel.com/new/clone?repository-url=https://github.com/gcui-art/markdown-to-image&root-directory=example&project-name=markdown-to-image&repository-name=markdown-to-image)
+这里使用Vercel进行部署，点击后一键部署。
 
 # Markdown To Image Serve
 
