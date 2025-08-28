@@ -46,16 +46,16 @@ RM</div><div class=meta-item>&nbsp·&nbsp
 </span><span class=lnt>12
 </span><span class=lnt>13
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=c>#指定要使用的基础镜像</span><span class=err>
-</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>FROM</span><span class=s> python:3.10-slim-buster</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>FROM</span><span class=w> </span><span class=s>python:3.10-slim-buster</span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 切换到/app目录并将应用文件全部复制到容器中</span><span class=err>
-</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>WORKDIR</span><span class=s> /app</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>WORKDIR</span><span class=w> </span><span class=s>/app</span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=k>COPY</span> . /app<span class=err>
 </span></span></span><span class=line><span class=cl><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c>#安装应用所需的依赖项</span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> pip install --no-cache-dir -r requirements.txt<span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c>#暴露应用进程的端口号</span><span class=err>
-</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>EXPOSE</span><span class=s> 5000</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>EXPOSE</span><span class=w> </span><span class=s>5000</span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c>#设置启动命令</span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=k>CMD</span> <span class=p>[</span><span class=s2>&#34;python&#34;</span><span class=p>,</span><span class=s2>&#34;app.py&#34;</span><span class=p>]</span><span class=err>
 </span></span></span></code></pre></td></tr></table></div></div><p>也可以配置所需环境变量，如下所示：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -73,15 +73,15 @@ RM</div><div class=meta-item>&nbsp·&nbsp
 </span><span class=lnt>13
 </span><span class=lnt>14
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=c># 使用官方 Python 基础镜像 </span><span class=err>
-</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>FROM</span><span class=s> python:3.8-slim-buster </span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>FROM</span><span class=w> </span><span class=s>python:3.8-slim-buster</span> <span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 将工作目录设置为 /app </span><span class=err>
-</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>WORKDIR</span><span class=s> /app </span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>WORKDIR</span><span class=w> </span><span class=s>/app</span> <span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 将当前目录中的内容复制到 /app 中 </span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=k>COPY</span> . /app <span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 安装应用程序所需的依赖项 </span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> pip install --no-cache-dir -r requirements.txt <span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 暴露容器的端口 </span><span class=err>
-</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>EXPOSE</span><span class=s> 5000 </span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>EXPOSE</span><span class=w> </span><span class=s>5000</span> <span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 定义环境变量 </span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=k>ENV</span> <span class=nv>FLASK_APP</span><span class=o>=</span>app.py <span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 在容器启动时运行应用程序 </span><span class=err>
@@ -107,10 +107,10 @@ RM</div><div class=meta-item>&nbsp·&nbsp
 </span><span class=lnt>19
 </span><span class=lnt>20
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=c># 使用官方提供的Python开发镜像作为基础镜像</span><span class=err>
-</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>FROM</span><span class=s> python:3.6-slim</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>FROM</span><span class=w> </span><span class=s>python:3.6-slim</span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 将工作目录切换为/app</span><span class=err>
-</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>WORKDIR</span><span class=s> /app</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>WORKDIR</span><span class=w> </span><span class=s>/app</span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 将当前目录下的所有内容复制到/app下</span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=k>ADD</span> . /app<span class=err>
@@ -119,7 +119,7 @@ RM</div><div class=meta-item>&nbsp·&nbsp
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> pip install --trusted-host pypi.python.org -r requirements.txt<span class=err>
 </span></span></span><span class=line><span class=cl><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 允许外界访问容器的80端口</span><span class=err>
-</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>EXPOSE</span><span class=s> 80</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>EXPOSE</span><span class=w> </span><span class=s>80</span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 设置环境变量</span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=k>ENV</span> NAME World<span class=err>
