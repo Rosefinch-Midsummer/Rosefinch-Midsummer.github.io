@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>古詩詞 on 天漢帝國復興錄</title>
+    <link>http://localhost:1313/zh/categories/%E5%8F%A4%E8%A9%A9%E8%A9%9E/</link>
+    <description>Recent content in 古詩詞 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 30 Apr 2023 20:53:25 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/categories/%E5%8F%A4%E8%A9%A9%E8%A9%9E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>古詩詞</title>
+      <link>http://localhost:1313/zh/posts/reprint/%E5%8F%A4%E8%AF%97%E8%AF%8D/</link>
+      <pubDate>Sun, 30 Apr 2023 20:53:25 +0800</pubDate>
+      <guid>http://localhost:1313/zh/posts/reprint/%E5%8F%A4%E8%AF%97%E8%AF%8D/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;这篇博文用于收纳我觉得有收藏意义的诗词，给自己一个心灵安息之所。&lt;/p&gt;
+&lt;p&gt;有空会用Midjourney和Stable Diffusion等来为我喜爱的诗词生成相应的插图。时间允许的话，我也会加上AI编曲相关的内容。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

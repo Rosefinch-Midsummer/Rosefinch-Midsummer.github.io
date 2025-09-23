@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>🧰百寶箱 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/</link>
+    <description>Recent content in 🧰百寶箱 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 22 Sep 2025 21:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/posts/toolkit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown 转海报编辑器系列</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/markdown%E8%BD%AC%E6%B5%B7%E6%8A%A5%E7%BC%96%E8%BE%91%E5%99%A8%E7%B3%BB%E5%88%97/</link>
+      <pubDate>Thu, 07 Aug 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/markdown%E8%BD%AC%E6%B5%B7%E6%8A%A5%E7%BC%96%E8%BE%91%E5%99%A8%E7%B3%BB%E5%88%97/</guid>
+      <description>&lt;h1 id=&#34;md2card基于markdown文档生成精美知识卡片&#34;&gt;MD2Card：基于Markdown文档生成精美知识卡片&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/horses/article/details/148693390&#34;&gt;MD2Card：基于Markdown文档生成精美知识卡片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://md2card.cn/zh&#34;&gt;MD2Card&lt;/a&gt; 是一个免费易用的 Markdown 转知识卡片工具，支持多种精美风格、长文自动拆分、一键导出图片，无论是学习笔记、知识整理还是内容分享，都能轻松搞定。&lt;/p&gt;
+&lt;h2 id=&#34;卡片风格&#34;&gt;卡片风格&lt;/h2&gt;
+&lt;p&gt;MD2Card 支持温暖柔和、玻璃拟态、简约高级灰、梦幻渐变、波普艺术、赛博朋克、清新自然等 20+ 主题风格。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>族谱制作软件推荐</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%97%8F%E8%B0%B1%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Sat, 28 Jun 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%97%8F%E8%B0%B1%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;由于我打算做个族谱制作平台，但缺乏深入的产品功能设计想法。我找到了几款不错的软件。&lt;/p&gt;
+&lt;p&gt;这里介绍了几款不错的族谱制作软件。&lt;/p&gt;
+&lt;p&gt;第一个软件&lt;code&gt;My Family Tree&lt;/code&gt;令我印象深刻的是中国的阴阳历（lunisolar calendar）以及族谱中添加数据的页面UI。这里可以添加图片。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GUI.for_Clash使用指南和免费v2ray节点订阅</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/gui.for_clash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E5%85%8D%E8%B4%B9v2ray%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85/</link>
+      <pubDate>Tue, 10 Jun 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/gui.for_clash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E5%85%8D%E8%B4%B9v2ray%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85/</guid>
+      <description>&lt;h1 id=&#34;guifor_clash使用指南和免费v2ray节点订阅&#34;&gt;GUI.for_Clash使用指南和免费v2ray节点订阅&lt;/h1&gt;
+&lt;h1 id=&#34;guiforclash颜值与功能兼备的clash图形界面客户端&#34;&gt;GUI.for.Clash：颜值与功能兼备的Clash图形界面客户端&lt;/h1&gt;
+&lt;p&gt;随着互联网的发展，网络安全和隐私保护越来越受重视。作为一款强大的代理工具，Clash在科学上网和网络访问控制中扮演了重要角色。然而，Clash基于命令行的操作不够直观，对普通用户而言有一定门槛。为此，&lt;strong&gt;GUI.for.Clash&lt;/strong&gt;借助现代技术，打造了一个美观且功能丰富的图形界面客户端，让用户轻松管理代理配置，提升使用体验。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>基于Cloudflare平台的精品导航网站开源项目</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%9F%BA%E4%BA%8Ecloudflare%E5%B9%B3%E5%8F%B0%E7%9A%84%E7%B2%BE%E5%93%81%E5%AF%BC%E8%88%AA%E7%BD%91%E7%AB%99%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Thu, 05 Jun 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%9F%BA%E4%BA%8Ecloudflare%E5%B9%B3%E5%8F%B0%E7%9A%84%E7%B2%BE%E5%93%81%E5%AF%BC%E8%88%AA%E7%BD%91%E7%AB%99%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</guid>
+      <description>&lt;h1 id=&#34;基于cloudflare平台的精品导航网站开源项目&#34;&gt;基于Cloudflare平台的精品导航网站开源项目&lt;/h1&gt;
+&lt;p&gt;导航网站不仅仅是简单的一组链接集合，它们更像是通向互联网世界各个角落的桥梁。通过清晰的分类、智能的搜索及个性化推荐，导航网站能够极大提升用户的浏览效率和体验。市面上许多导航项目通常需要传统服务器部署，但随着云端无服务器技术的发展，我们可以利用Cloudflare Worker和Pages这类现代平台，快速搭建免运维、极速访问的个人导航站点。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>免费开源的高效代码片段管理利器massCode</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E7%9A%84%E9%AB%98%E6%95%88%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E7%AE%A1%E7%90%86%E5%88%A9%E5%99%A8masscode/</link>
+      <pubDate>Sun, 25 May 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E7%9A%84%E9%AB%98%E6%95%88%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E7%AE%A1%E7%90%86%E5%88%A9%E5%99%A8masscode/</guid>
+      <description>&lt;h1 id=&#34;masscode免费开源的高效代码片段管理利器&#34;&gt;massCode：免费开源的高效代码片段管理利器&lt;/h1&gt;
+&lt;p&gt;对于开发者来说，代码片段的积累和管理是日常工作中重要的一环。一款优秀的代码片段管理工具不仅能帮你快速存取和复用代码，还能提升整体开发效率。今天要给大家介绍的是&lt;strong&gt;massCode&lt;/strong&gt;，一款免费且开源的跨平台代码片段管理软件，功能全面且便捷实用，深受广大开发者喜爱。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>探索高效手写体验——RNote 手写笔记软件详解</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/rnote%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Sun, 25 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/rnote%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6%E8%AF%A6%E8%A7%A3/</guid>
+      <description>&lt;h1 id=&#34;探索高效手写体验rnote-手写笔记软件详解&#34;&gt;探索高效手写体验——RNote 手写笔记软件详解&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;随着数字时代的到来，越来越多的人开始使用电子设备进行笔记和创作。作为一款专注于手写体验的笔记软件，&lt;strong&gt;RNote&lt;/strong&gt;以其独特的设计理念和强大功能，成为众多用户心中的优选。本文将从软件特点、使用体验、设计理念等方面，为大家全面介绍RNote，希望能够帮助你更好地了解和使用这款高效的手写笔记工具。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>开源音乐播放器推荐——MusicFree和LxMusic</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%BC%80%E6%BA%90%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A8%E8%8D%90musicfree%E5%92%8Clxmusic/</link>
+      <pubDate>Sat, 24 May 2025 23:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%BC%80%E6%BA%90%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A8%E8%8D%90musicfree%E5%92%8Clxmusic/</guid>
+      <description>&lt;h1 id=&#34;发现你的专属音乐空间deep定制的开源音乐播放器musicfree&#34;&gt;发现你的专属音乐空间：Deep定制的开源音乐播放器——MusicFree&lt;/h1&gt;
+&lt;p&gt;在日益繁忙的生活中，音乐成为许多人不可或缺的精神伴侣。想要一款既自由又灵活的音乐播放器？推荐你试试&lt;strong&gt;MusicFree&lt;/strong&gt;——一款开源、免费、极具可定制的本地音乐播放器，特别适合喜欢DIY、追求隐私和高自由度的音乐爱好者。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python虚拟环境管理工具UV和JupyterNotebook联动</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7uv%E5%92%8Cjupyternotebook%E8%81%94%E5%8A%A8/</link>
+      <pubDate>Fri, 23 May 2025 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7uv%E5%92%8Cjupyternotebook%E8%81%94%E5%8A%A8/</guid>
+      <description>&lt;h1 id=&#34;python虚拟环境管理新利器uv全解析&#34;&gt;Python虚拟环境管理新利器——uv全解析&lt;/h1&gt;
+&lt;p&gt;Python项目开发中，虚拟环境和依赖管理一直是让人头疼的话题。今天给大家介绍一个极致高速、功能强大的Python包和项目管理工具——&lt;strong&gt;uv&lt;/strong&gt;，它由Rust语言编写，是由著名的&lt;a href=&#34;https://astral.sh/&#34;&gt;Astral&lt;/a&gt;团队打造，同时也是性能爆棚的&lt;a href=&#34;https://github.com/astral-sh/ruff&#34;&gt;代码检查工具Ruff&lt;/a&gt;的作者开发。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anki入门教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/anki%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sat, 17 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/anki%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h1 id=&#34;如何更好地使用-anki&#34;&gt;如何更好地使用 Anki&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近要准备笔试和面试，要记忆好多内容。本来打算自己写一个的特制的Anki软件，但是时间精力显然不够。这个以后再说咯！&lt;/p&gt;
+&lt;p&gt;Anki 是语言学习、各类考试中不可或缺的强大工具。本文汇总了Anki相关的重要资源，帮助你更好地使用和扩展Anki。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI编程工具指北</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/ai%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E6%8C%87%E5%8C%97/</link>
+      <pubDate>Wed, 30 Apr 2025 21:29:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/ai%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E6%8C%87%E5%8C%97/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;虽然我平时最常用的是字节跳动出品的Trae，但在某种意义上，我也是最早使用Cursor的用户之一。&lt;/p&gt;
+&lt;p&gt;待我有空的时候，就打算开发一个基于Trae的Custom Agents Rules Generator，模拟类似的AI编程体验。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>低代码平台推荐</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Mon, 24 Mar 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/495262462&#34;&gt;几分钟内上线一个网站，这些「低代码」神器太赞了！&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/people/githubdaily&#34;&gt;作者GitHub Daily&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;正文&#34;&gt;正文&lt;/h1&gt;
+&lt;p&gt;几个月前，我曾给大家分享过 GitHub 上几个可以快速完成网站开发、上线的低代码平台。近期，我又陆陆续续挖掘到一些与此相关的优质项目，便想着重新整理、更新，让诸位平时在闲暇之余，也可以上手把玩。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MarkItDown完全指南</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/markitdown%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Tue, 04 Feb 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/markitdown%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;h1 id=&#34;markitdown完全指南微软ai驱动的全能文档转换工具-支持pdfoffice文档图片音频等多种格式转换可集成openai等ai模型实现智能描述&#34;&gt;MarkItDown完全指南：微软AI驱动的全能文档转换工具: 支持PDF、Office文档、图片、音频等多种格式转换,可集成OpenAI等AI模型实现智能描述&lt;/h1&gt;
+&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://stable-learn.com/zh/markitdown_use_guide/&#34;&gt;文章来源&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/microsoft/markitdown&#34;&gt;MarkItDown&lt;/a&gt; 是微软开源的一款强大的文档转换工具，可以将PDF、Office文档、图片等多种格式文件转换为Markdown格式。它还支持集成AI模型来智能处理图片描述。本文将详细介绍如何安装和使用这个工具。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>魔法上网工具推荐</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Sat, 16 Mar 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;收集一波工具，防止失联。。&lt;/p&gt;
+&lt;p&gt;不推荐用机场，国内的都不可信。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.fanqiangzhe.com/post/free-vpn-guide/&#34;&gt;免费VPN：推荐及指南（2024最新免费VPN）&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;免费vpn为什么免费&#34;&gt;免费VPN为什么免费？&lt;/h2&gt;
+&lt;p&gt;大家都听说过这句话：“天下没有免费的午餐”。就VPN来说，提供VPN服务需要很高的成本：架设、维护VPN服务器需要花钱、支付VPN用户的流量也需要花钱。那么为什么还有人愿意提供免费VPN呢？总结一下，免费VPN存在大概有以下几个原因：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>媲美 uTools 的免费、效率工具 Rubick</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%AA%B2%E7%BE%8Eutools%E7%9A%84%E5%85%8D%E8%B4%B9%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7rubick/</link>
+      <pubDate>Thu, 18 Jan 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%AA%B2%E7%BE%8Eutools%E7%9A%84%E5%85%8D%E8%B4%B9%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7rubick/</guid>
+      <description>&lt;h1 id=&#34;媲美-utools-的免费效率工具-rubick&#34;&gt;媲美 uTools 的免费、效率工具 Rubick&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://sspai.com/post/84177&#34;&gt;本文来源&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者：&lt;a href=&#34;https://sspai.com/u/sahtlexs/updates&#34;&gt;muwoo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2023 年 11 月 09 日&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不知不觉，&lt;code&gt;Rubick&lt;/code&gt; 从 2021 年开源到现在已经更新到 &lt;code&gt;v4.x&lt;/code&gt; 版本了，目前整体来看不管是交互形式还是操作便捷性，都达到了一个比较稳定的状态。所以，现在我准备正式的写一篇文章来介绍一下 &lt;code&gt;Rubick&lt;/code&gt; 了。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>文献管理工具——Zotero教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7zotero%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Fri, 26 May 2023 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7zotero%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.hjroyal.top/posts/tools/2020-09-zotero/&#34;&gt;文献管理工具 Zotero 介绍&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Zotero是一款自由及开放源代码的文献管理软件，用以管理书目信息及相关材料。其最著名的特性是作为浏览器插件、在线同步、与文档编辑软件如Microsoft Word、LibreOffice、OpenOffice.org Writer、NeoOffice等集成，可生成文内引用、生成页面脚注或文后的参考文献。日常使用中还可以搭配上海交大相关人员维护的&lt;a href=&#34;https://github.com/sjtug/SJTUThesis&#34;&gt; SJTUThesis LaTeX 模版&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
