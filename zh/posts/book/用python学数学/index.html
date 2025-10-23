@@ -1,0 +1,407 @@
+<!doctype html><html lang=zh dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>《用Python学数学》 | 天漢帝國復興錄</title><meta name=keywords content="Python,数学"><meta name=description content="概论
+前言
+这里介绍用Python来解决数学问题深化自己的计算思维，帮我自己成为数据格致家。
+读这本书主要是想实现元胞自动机，这个以前很想实现，但是一直拖延到了现在才行动，哎！本来打算暑假更完的，但没空更，先挖坑，以后再填。"><meta name=author content="RM"><link rel=canonical href=https://rosefinch-midsummer.github.io/zh/posts/book/%E7%94%A8python%E5%AD%A6%E6%95%B0%E5%AD%A6/><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><meta name=referrer content="no-referrer-when-downgrade"><link crossorigin=anonymous href=/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css integrity="sha256-IhHKMWS+eDACT2qtKzouUghDpk+PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as=style><link rel=icon href=https://rosefinch-midsummer.github.io/img/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://rosefinch-midsummer.github.io/img/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://rosefinch-midsummer.github.io/img/favicon-32x32.png><link rel=apple-touch-icon href=https://rosefinch-midsummer.github.io/img/apple-touch-icon.png><link rel=mask-icon href=https://rosefinch-midsummer.github.io/img/android-chrome-192x192.png><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=zh href=https://rosefinch-midsummer.github.io/zh/posts/book/%E7%94%A8python%E5%AD%A6%E6%95%B0%E5%AD%A6/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://rosefinch-midsummer.github.io/zh/posts/book/%E7%94%A8python%E5%AD%A6%E6%95%B0%E5%AD%A6/"><meta property="og:site_name" content="天漢帝國復興錄"><meta property="og:title" content="《用Python学数学》"><meta property="og:description" content="概论 前言 这里介绍用Python来解决数学问题深化自己的计算思维，帮我自己成为数据格致家。
+读这本书主要是想实现元胞自动机，这个以前很想实现，但是一直拖延到了现在才行动，哎！本来打算暑假更完的，但没空更，先挖坑，以后再填。"><meta property="og:locale" content="zh"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-09-02T12:34:25+08:00"><meta property="article:modified_time" content="2025-10-23T12:54:22+08:00"><meta property="article:tag" content="Python"><meta property="article:tag" content="数学"><meta name=twitter:card content="summary"><meta name=twitter:title content="《用Python学数学》"><meta name=twitter:description content="概论
+前言
+这里介绍用Python来解决数学问题深化自己的计算思维，帮我自己成为数据格致家。
+读这本书主要是想实现元胞自动机，这个以前很想实现，但是一直拖延到了现在才行动，哎！本来打算暑假更完的，但没空更，先挖坑，以后再填。"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"📚文章","item":"https://rosefinch-midsummer.github.io/zh/posts/"},{"@type":"ListItem","position":2,"name":"📕閱讀","item":"https://rosefinch-midsummer.github.io/zh/posts/book/"},{"@type":"ListItem","position":3,"name":"《用Python学数学》","item":"https://rosefinch-midsummer.github.io/zh/posts/book/%E7%94%A8python%E5%AD%A6%E6%95%B0%E5%AD%A6/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"《用Python学数学》","name":"《用Python学数学》","description":"概论 前言 这里介绍用Python来解决数学问题深化自己的计算思维，帮我自己成为数据格致家。\n读这本书主要是想实现元胞自动机，这个以前很想实现，但是一直拖延到了现在才行动，哎！本来打算暑假更完的，但没空更，先挖坑，以后再填。\n","keywords":["Python","数学"],"articleBody":"概论 前言 这里介绍用Python来解决数学问题深化自己的计算思维，帮我自己成为数据格致家。\n读这本书主要是想实现元胞自动机，这个以前很想实现，但是一直拖延到了现在才行动，哎！本来打算暑假更完的，但没空更，先挖坑，以后再填。\n书籍简介 作者: [美] 彼得·法雷尔\n出版社: 人民邮电出版社\n原作名: Math Adventures with Python: An Illustrated Guide to Exploring Math with Code\n译者: 严开\n出版年: 2021-6\n页数: 262\n定价: 109.80元\n装帧: 平装\nISBN: 9787115562425\n内容简介 本书向读者展示如何利用编程来让数学学习变得有意义并且充满乐趣。读者在探索代数学、几何学、三角学、矩阵和元胞自动机等领域的关键数学概念时，将学会在Python语言的帮助下使用代码可视化一系列数学问题的解决方案。用Python让数学活起来看得见动起来充满立体感的“活”数学，像魔法一样解决常见数学问题，不为解题，不记公式，彻底摆脱枯燥——纯粹好玩，自由发挥想象，自己动手制作趣味数学读完本书，读者还可以编写自己的程序来快速解方程，自动完成一些烦琐的任务，以及编写函数来绘制和操作形状，等等。\n作者简介 彼得·法雷尔（Peter Farrell）是数学和计算机科学教师，热衷于“定制”数学和技术教学。他开设了一门名为 Hacking Math 的课程，利用编程技术让学生见识“活生生”的数学，广受欢迎。本书是他近十年教学实践的结晶，手把手带你让数学“活”起来，真正体会数学之美。\n正文摘录 第一部分　搭上你的 Python 马车 第 1 章　用 turtle 模块绘制多边形 1.1Python的turtle模块\n1.1.1导入turtle模块\n1.1.2让小海龟动起来\n1.1.3改变方向\n1.2用循环使代码重复运行\n1.2.1使用for循环\n1.2.2运用for循环画一个正方形\n1.3用函数创建快捷操作\n1.4利用变量画出不同的图形\n1.4.1在函数中使用变量\n1.4.2变量错误\n1.5等边三角形\n1.5.1编写triangle()函数\n1.5.2让变量变起来\n第 2 章　用列表和循环把烦琐的算术变有趣 2.1基本运算符\n2.1.1变量运算\n2.1.2用运算符编写函数average()\n2.1.3注意运算顺序\n2.1.4结合使用括号和运算符\n2.2Python中的数据类型\n2.2.1整数和浮点数\n2.2.2字符串\n2.2.3布尔类型\n2.2.4查看数据类型\n2.3用列表存储值\n2.3.1向列表添加项\n2.3.2列表的运算\n2.3.3从列表中删除项\n2.4在循环中使用列表\n2.4.1使用列表索引访问单个项\n2.4.2用enumerate()函数获取索引和值\n2.4.3索引从0开始\n2.4.4访问一系列列表项\n2.4.5查找某项的索引\n2.4.6字符串也有索引\n2.5求和\n2.5.1创建running_sum变量\n2.5.2编写mySum()函数\n2.6求一列数的平均值\n第 3 章　用条件语句检验猜测 3.1比较运算符\n3.2用if和else语句做决定\n3.3使用条件语句求因数\n3.3.1编写factors.py程序\n3.3.2海龟漫步\n3.4制作一个猜数游戏\n3.4.1制作一个随机数生成器\n3.4.2读取用户输入\n3.4.3将用户输入转换成整数\n3.4.4用条件语句检查猜测是否正确\n3.4.5用循环给予更多猜测机会\n3.4.6猜数小提示\n3.5计算平方根\n3.5.1套用猜数游戏的逻辑\n3.5.2编写squareRoot()函数\n第二部分　奔向数学领域 第 4 章　用代数学变换和存储数 4.1解一次方程\n4.1.1一次方程的解法公式\n4.1.2编写equation()函数\n4.1.3用print()替换return\n4.2解更高次的方程\n4.2.1用quad()函数解二次方程\n4.2.2用plug()函数解三次方程\n4.3用作图法解方程\n4.3.1Processing入门\n4.3.2制作你自己的作图工具\n4.3.3绘制方程的图像\n4.3.4用“猜测检验法”求根\n4.3.5编写guess()函数\n第 5 章　用几何学变换形状 5.1画一个圆 1 2 3 4 def setup(): size(600,600) def draw(): ellipse(200,0,50,50) 5.2用坐标指定位置 计算机图形中坐标系和数学中坐标系不同\n5.3变换函数平移和旋转 1 2 3 4 5 6 7 def setup(): size(600,600) def draw(): translate(width/2,height/2)#不用具体数改变画布尺寸，移动坐标平面而非移动原点 #translate(200,200) rotate(radians(20))#20度 rect(20,40,50,50) 画一圈圆\n1 2 3 4 5 6 7 def setup(): size(600,600) def draw(): translate(width/2,height/2) for i in range(12): ellipse(200,0,50,50) rotate(radians(360/12)) 5.4使对象动画化 5.4.1创建变量t 1 2 3 4 5 6 7 8 9 10 11 12 t = 0 def setup(): size(600,600) def draw(): global t background(255)#背景设置为白色 translate(width/2,height/2) rotate(radians(t)) for i in range(12): ellipse(200,0,50,50) rotate(radians(360/12)) t +=0.1 5.4.2旋转各个正方形 在processing中旋转中心是(0,0)，我们在循环中先将其平移到每个正方形该在的位置，然后旋转，最后画出正方形。\n1 2 3 4 5 6 7 8 9 10 11 12 t = 0 def setup(): size(600,600) def draw(): global t background(255)#背景设置为白色 for i in range(12): translate(200,0) rotate(radians(t)) rect(0,0,50,50) rotate(radians(360/12)) t +=0.1 正方形不再绕画布中心旋转，而是整体在画布上不停移动。这是因为我们在不停的改变网格的位置和方向。在画完一个正方形后，我们需要在画下一个正方形之前将网格一会画布中心并转回之前的方向。\n5.4.3 用pushMatrix()和popMatrix()保存方位 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 t = 0 def setup(): rectMode(CENTER) size(600,600) def draw(): global t background(255)#背景设置为白色 # translate(width/2,height/2) # rotate(radians(t)) for i in range(12): pushMatrix()#保存当前方位 translate(200,500) rotate(radians(t)) rect(0,0,50,50) popMatrix()#回到保存的方位 rotate(radians(360/12)) t +=0.1 5.4.4 使正方形绕中心旋转 在Setup()函数中加入rectMode(CENTER)\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 t = 0 def setup(): rectMode(CENTER) size(600,600) def draw(): global t background(255)#背景设置为白色 translate(width/2,height/2) for i in range(12): pushMatrix()#保存当前方位 rotate(radians(t*5))#转速增加到原来的五倍 rect(0,0,50,50) popMatrix()#回到保存的方位 rotate(radians(360/12)) t +=0.1 5.6 制作一个可交互的彩虹网格 5.5.1画出呈网格状排列的对象 1 2 3 4 5 6 7 8 def setup(): size(600,600) def draw(): background(255) for x in range(20): for y in range(20): rect(30*x,30*y,25,25) 5.5.2 给对象涂上彩虹色 colorMode()有RGB和HSB两种色彩模式。HSB指色相Hue、饱和度Saturation和明度Brightness\n1 2 3 4 5 6 7 8 9 10 11 12 13 def setup(): size(600,600) rectMode(CENTER) colorMode(HSB) def draw(): background(0)#背景设置为黑色 translate(20,20) for x in range(30): for y in range(30): distance = dist(30*x,30*y,mouseX,mouseY)#左上角坐标和鼠标距离 fill(0.5*distance,255,255)#只用更改第一个值，后面两个值可以一直设置为255 rect(30*x,30*y,25,25) 5.6 用三角形画出复杂的图案 画一个旋转的三角形但不是等边三角形\n1 2 3 4 5 6 7 8 9 10 11 12 def setup(): size(600,600) rectMode(CENTER) t = 0 def draw(): global t translate(width/2,height/2) rotate(radians(t)) triangle(0,0,100,100,200,-200)#三个顶点坐标 t += 0.5 5.6.1 30-60-90三角形 5.6.2 画一个等边三角形 1 2 3 4 5 6 7 8 9 10 11 12 13 14 def setup(): size(600,600) rectMode(CENTER) t = 0 def draw(): global t translate(width/2,height/2) rotate(radians(t)) tri(200)#画等边三角形 t += 0.5 def tri(length): triangle(0,-length,-length*sqrt(3)/2,length/2,length*sqrt(3)/2,length/2)#以(0,0)为中心 5.6.3 画多个旋转的三角形 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 def setup(): size(600,600) rectMode(CENTER) t = 0 def draw(): global t background(255) translate(width/2,height/2) for i in range(90): #将三角形绕圆周等间距摆放 rotate(radians(360/90)) pushMatrix()#保存当前方位 #平移至圆周 translate(200,0) #旋转一定角度 rotate(radians(t)) tri(100)#画等边三角形 popMatrix()#回到保存的方位 t += 0.5 def tri(length): noFill()#设置三角形为透明 triangle(0,-length,-length*sqrt(3)/2,length/2,length*sqrt(3)/2,length/2)#以(0,0)为中心 5.6.4 给旋转加上相位偏移 引入相移(phase shift)改变三角形旋转的模式，它可以让每个三角形比上一个稍微慢一步，使草图呈现出波浪Wave或级联cascade效果。每个三角形都对应一个循环变量i，我们可以把i加入rotate(radians(t))中变成rotate(radians(t+i))。\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 def setup(): size(600,600) rectMode(CENTER) t = 0 def draw(): global t background(255) translate(width/2,height/2) for i in range(90): #将三角形绕圆周等间距摆放 rotate(radians(360/90)) pushMatrix()#保存当前方位 #平移至圆周 translate(200,0) #旋转一定角度 rotate(radians(t+i)) tri(100)#画等边三角形 popMatrix()#回到保存的方位 t += 0.5 def tri(length): noFill()#设置三角形为透明 triangle(0,-length,-length*sqrt(3)/2,length/2,length*sqrt(3)/2,length/2)#以(0,0)为中心 效果：\n右边有一处中断是因为最后一个三角形的下一个三角形的相位应该是t+90，它和第一个三角形的相位差是90，而两个看起来相同的等边三角形的相位差应该是120的整数倍。可以把rotate(radians(t+i))改成rotate(radians(t+i*360/90))。\n5.6.5 将图案画完 将i乘以2来改变相移，增大相邻三角形之间的相位差。\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 def setup(): size(600,600) rectMode(CENTER) t = 0 def draw(): global t background(255) translate(width/2,height/2) for i in range(90): #将三角形绕圆周等间距摆放 rotate(radians(360/90)) pushMatrix()#保存当前方位 #平移至圆周 translate(200,0) #旋转一定角度 rotate(radians(t+2*i*360/90)) tri(100)#画等边三角形 popMatrix()#回到保存的方位 t += 0.5 def tri(length): noFill()#设置三角形为透明 triangle(0,-length,-length*sqrt(3)/2,length/2,length*sqrt(3)/2,length/2)#以(0,0)为中心 用stroke()函数可以给每个三角形上色\n第 6 章　用三角学制造振荡 6.1用三角学做旋转和振荡\n6.2编写画多边形的函数\n6.2.1用循环画一个正六边形\n6.2.2画一个正三角形\n6.3画正弦波\n6.3.1圆过留痕\n6.3.2使用Python内置的enumerate()函数\n6.4编写万花尺程序\n6.4.1画小圆\n6.4.2旋转小圆\n6.5画谐波图\n6.5.1编写画谐波图的程序\n6.5.2瞬间填好列表\n6.5.3两个钟摆比一个强\n第 7 章　复数 7.1复数坐标系124\n7.2将复数相加124\n7.3将一个复数乘以i125\n7.4将两个复数相乘126\n7.5编写magnitude()函数127\n7.6创建芒德布罗集128\n7.6.1编写mandelbrot()函数130\n7.6.2给芒德布罗集上色134\n7.7创建茹利亚集135\n第 8 章　将矩阵用于计算机图形和方程组 8.1什么是矩阵138\n8.2矩阵相加139\n8.3矩阵相乘140\n8.4矩阵乘法中的顺序很重要144\n8.5画2D形状144\n8.6变换矩阵147\n8.7转置矩阵149\n8.8实时旋转矩阵152\n8.9制作3D形状154\n8.10制作旋转矩阵155\n8.11用矩阵解方程组159\n8.11.1高斯消元法159\n8.11.2编写gauss()函数161\n第三部分　开辟你自己的道路 第 9 章　用类构建对象 9.1弹跳球程序170\n9.1.1让小球动起来171\n9.1.2让小球从墙上弹回172\n9.1.3不用类创建多个小球173\n9.1.4用类创建对象174\n9.2“羊吃草”程序179\n9.2.1编写表示小羊的类179\n9.2.2让小羊四处走动.180\n9.2.3添加能量属性181\n9.2.4用类创建草182\n9.2.5让草被吃掉后变成棕色185\n9.2.6给每只小羊涂上随机的颜色187\n9.2.7让小羊繁殖188\n9.2.8让草再生189\n9.2.9给予进化优势190\n第 10 章　用递归制作分形 10.1海岸线的长度194\n10.1.1何为递归195\n10.1.2编写factorial()函数195\n10.1.3“种”一棵分形树196\n10.2科赫雪花200\n10.3谢尔宾斯基三角形205\n10.4正方形分形207\n10.5龙形曲线211\n第 11 章　元胞自动机 11.1创建一个元胞自动机217\n11.1.1编写一个细胞类219\n11.1.2调整细胞大小221\n11.1.3让CA生长222\n11.1.4将细胞放入一个矩阵223\n11.1.5创建细胞列表224\n11.2奇怪的Python列表225\n11.2.1列表切片226\n11.2.2让你的CA自动生长229\n11.3玩玩“生命游戏”229\n11.4初等元胞自动机232\n第 12 章　用遗传算法解决问题 12.1用遗传算法猜出句子239\n12.1.1编写makeList()函数239\n12.1.2测试makeList()函数240\n12.1.3编写score()函数241\n12.1.4编写mutate()函数241\n12.1.5生成随机数242\n12.2解决旅行商问题244\n12.2.1使用遗传算法245\n12.2.2编写calcLength()方法251\n12.2.3测试calcLength()方法251\n12.2.4随机路线252\n12.2.5运用猜句程序的突变思想255\n12.2.6突变列表中的两个数255\n12.2.7通过交叉改进路线259\n","wordCount":"5162","inLanguage":"zh","datePublished":"2023-09-02T12:34:25+08:00","dateModified":"2025-10-23T12:54:22+08:00","author":{"@type":"Person","name":"RM"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://rosefinch-midsummer.github.io/zh/posts/book/%E7%94%A8python%E5%AD%A6%E6%95%B0%E5%AD%A6/"},"publisher":{"@type":"Organization","name":"天漢帝國復興錄","logo":{"@type":"ImageObject","url":"https://rosefinch-midsummer.github.io/img/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://rosefinch-midsummer.github.io/zh/ accesskey=h title="天漢帝國復興錄 (Alt + H)">天漢帝國復興錄</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://rosefinch-midsummer.github.io/zh/ title=🏠主頁><span>🏠主頁</span></a></li><li><a href=https://rosefinch-midsummer.github.io/zh/posts title=📚文章><span>📚文章</span></a></li><li><a href=https://rosefinch-midsummer.github.io/zh/search title="🔍搜索 (Alt + /)" accesskey=/><span>🔍搜索</span></a></li><li><a href=https://rosefinch-midsummer.github.io/zh/archives title=⏱時間軸><span>⏱時間軸</span></a></li><li><a href=https://rosefinch-midsummer.github.io/zh/categories title=🧩分類><span>🧩分類</span></a></li><li><a href=https://rosefinch-midsummer.github.io/zh/tags title=🔖標簽><span>🔖標簽</span></a></li><li><a href=https://rosefinch-midsummer.github.io/zh/about title=🙋🏻‍♂️關于><span>🙋🏻‍♂️關于</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://rosefinch-midsummer.github.io/zh/>首頁</a>&nbsp;»&nbsp;<a href=https://rosefinch-midsummer.github.io/zh/posts/>📚文章</a>&nbsp;»&nbsp;<a href=https://rosefinch-midsummer.github.io/zh/posts/book/>📕閱讀</a></div><h1 class=post-title>《用Python学数学》</h1><div class=post-meta>创建: 2023-09-02 |
+更新: 2025-10-23 |
+字数: 5162字 |
+时长: 11分钟 |
+RM</div><div class=meta-item>&nbsp·&nbsp
+<span id=busuanzi_container_page_pv>本文阅读量<span id=busuanzi_value_page_pv></span>次</span></div></header><div class=toc><details open><summary accesskey=c title="(Alt + C)"><span class=details>目錄</span></summary><div class=inner><ul><li><a href=#%e6%a6%82%e8%ae%ba aria-label=概论>概论</a><ul><li><a href=#%e5%89%8d%e8%a8%80 aria-label=前言>前言</a></li><li><a href=#%e4%b9%a6%e7%b1%8d%e7%ae%80%e4%bb%8b aria-label=书籍简介>书籍简介</a></li><li><a href=#%e5%86%85%e5%ae%b9%e7%ae%80%e4%bb%8b aria-label=内容简介>内容简介</a></li><li><a href=#%e4%bd%9c%e8%80%85%e7%ae%80%e4%bb%8b aria-label=作者简介>作者简介</a></li></ul></li><li><a href=#%e6%ad%a3%e6%96%87%e6%91%98%e5%bd%95 aria-label=正文摘录>正文摘录</a><ul><li><a href=#%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86%e6%90%ad%e4%b8%8a%e4%bd%a0%e7%9a%84-python-%e9%a9%ac%e8%bd%a6 aria-label="第一部分　搭上你的 Python 马车">第一部分　搭上你的 Python 马车</a></li><li><a href=#%e7%ac%ac-1-%e7%ab%a0%e7%94%a8-turtle-%e6%a8%a1%e5%9d%97%e7%bb%98%e5%88%b6%e5%a4%9a%e8%be%b9%e5%bd%a2 aria-label="第 1 章　用 turtle 模块绘制多边形">第 1 章　用 turtle 模块绘制多边形</a></li><li><a href=#%e7%ac%ac-2-%e7%ab%a0%e7%94%a8%e5%88%97%e8%a1%a8%e5%92%8c%e5%be%aa%e7%8e%af%e6%8a%8a%e7%83%a6%e7%90%90%e7%9a%84%e7%ae%97%e6%9c%af%e5%8f%98%e6%9c%89%e8%b6%a3 aria-label="第 2 章　用列表和循环把烦琐的算术变有趣">第 2 章　用列表和循环把烦琐的算术变有趣</a></li><li><a href=#%e7%ac%ac-3-%e7%ab%a0%e7%94%a8%e6%9d%a1%e4%bb%b6%e8%af%ad%e5%8f%a5%e6%a3%80%e9%aa%8c%e7%8c%9c%e6%b5%8b aria-label="第 3 章　用条件语句检验猜测">第 3 章　用条件语句检验猜测</a></li><li><a href=#%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86%e5%a5%94%e5%90%91%e6%95%b0%e5%ad%a6%e9%a2%86%e5%9f%9f aria-label=第二部分　奔向数学领域>第二部分　奔向数学领域</a></li><li><a href=#%e7%ac%ac-4-%e7%ab%a0%e7%94%a8%e4%bb%a3%e6%95%b0%e5%ad%a6%e5%8f%98%e6%8d%a2%e5%92%8c%e5%ad%98%e5%82%a8%e6%95%b0 aria-label="第 4 章　用代数学变换和存储数">第 4 章　用代数学变换和存储数</a></li><li><a href=#%e7%ac%ac-5-%e7%ab%a0%e7%94%a8%e5%87%a0%e4%bd%95%e5%ad%a6%e5%8f%98%e6%8d%a2%e5%bd%a2%e7%8a%b6 aria-label="第 5 章　用几何学变换形状">第 5 章　用几何学变换形状</a><ul><li><a href=#51%e7%94%bb%e4%b8%80%e4%b8%aa%e5%9c%86 aria-label=5.1画一个圆>5.1画一个圆</a></li><li><a href=#52%e7%94%a8%e5%9d%90%e6%a0%87%e6%8c%87%e5%ae%9a%e4%bd%8d%e7%bd%ae aria-label=5.2用坐标指定位置>5.2用坐标指定位置</a></li><li><a href=#53%e5%8f%98%e6%8d%a2%e5%87%bd%e6%95%b0%e5%b9%b3%e7%a7%bb%e5%92%8c%e6%97%8b%e8%bd%ac aria-label=5.3变换函数平移和旋转>5.3变换函数平移和旋转</a></li><li><a href=#54%e4%bd%bf%e5%af%b9%e8%b1%a1%e5%8a%a8%e7%94%bb%e5%8c%96 aria-label=5.4使对象动画化>5.4使对象动画化</a><ul><li><a href=#541%e5%88%9b%e5%bb%ba%e5%8f%98%e9%87%8ft aria-label=5.4.1创建变量t>5.4.1创建变量t</a></li><li><a href=#542%e6%97%8b%e8%bd%ac%e5%90%84%e4%b8%aa%e6%ad%a3%e6%96%b9%e5%bd%a2 aria-label=5.4.2旋转各个正方形>5.4.2旋转各个正方形</a></li><li><a href=#543-%e7%94%a8pushmatrix%e5%92%8cpopmatrix%e4%bf%9d%e5%ad%98%e6%96%b9%e4%bd%8d aria-label="5.4.3 用pushMatrix()和popMatrix()保存方位">5.4.3 用pushMatrix()和popMatrix()保存方位</a></li><li><a href=#544-%e4%bd%bf%e6%ad%a3%e6%96%b9%e5%bd%a2%e7%bb%95%e4%b8%ad%e5%bf%83%e6%97%8b%e8%bd%ac aria-label="5.4.4 使正方形绕中心旋转">5.4.4 使正方形绕中心旋转</a></li></ul></li><li><a href=#56-%e5%88%b6%e4%bd%9c%e4%b8%80%e4%b8%aa%e5%8f%af%e4%ba%a4%e4%ba%92%e7%9a%84%e5%bd%a9%e8%99%b9%e7%bd%91%e6%a0%bc aria-label="5.6 制作一个可交互的彩虹网格">5.6 制作一个可交互的彩虹网格</a><ul><li><a href=#551%e7%94%bb%e5%87%ba%e5%91%88%e7%bd%91%e6%a0%bc%e7%8a%b6%e6%8e%92%e5%88%97%e7%9a%84%e5%af%b9%e8%b1%a1 aria-label=5.5.1画出呈网格状排列的对象>5.5.1画出呈网格状排列的对象</a></li><li><a href=#552-%e7%bb%99%e5%af%b9%e8%b1%a1%e6%b6%82%e4%b8%8a%e5%bd%a9%e8%99%b9%e8%89%b2 aria-label="5.5.2 给对象涂上彩虹色">5.5.2 给对象涂上彩虹色</a></li></ul></li><li><a href=#56-%e7%94%a8%e4%b8%89%e8%a7%92%e5%bd%a2%e7%94%bb%e5%87%ba%e5%a4%8d%e6%9d%82%e7%9a%84%e5%9b%be%e6%a1%88 aria-label="5.6 用三角形画出复杂的图案">5.6 用三角形画出复杂的图案</a><ul><li><a href=#561-30-60-90%e4%b8%89%e8%a7%92%e5%bd%a2 aria-label="5.6.1 30-60-90三角形">5.6.1 30-60-90三角形</a></li><li><a href=#562-%e7%94%bb%e4%b8%80%e4%b8%aa%e7%ad%89%e8%be%b9%e4%b8%89%e8%a7%92%e5%bd%a2 aria-label="5.6.2 画一个等边三角形">5.6.2 画一个等边三角形</a></li><li><a href=#563-%e7%94%bb%e5%a4%9a%e4%b8%aa%e6%97%8b%e8%bd%ac%e7%9a%84%e4%b8%89%e8%a7%92%e5%bd%a2 aria-label="5.6.3 画多个旋转的三角形">5.6.3 画多个旋转的三角形</a></li><li><a href=#564-%e7%bb%99%e6%97%8b%e8%bd%ac%e5%8a%a0%e4%b8%8a%e7%9b%b8%e4%bd%8d%e5%81%8f%e7%a7%bb aria-label="5.6.4 给旋转加上相位偏移">5.6.4 给旋转加上相位偏移</a></li><li><a href=#565-%e5%b0%86%e5%9b%be%e6%a1%88%e7%94%bb%e5%ae%8c aria-label="5.6.5 将图案画完">5.6.5 将图案画完</a></li></ul></li></ul></li><li><a href=#%e7%ac%ac-6-%e7%ab%a0%e7%94%a8%e4%b8%89%e8%a7%92%e5%ad%a6%e5%88%b6%e9%80%a0%e6%8c%af%e8%8d%a1 aria-label="第 6 章　用三角学制造振荡">第 6 章　用三角学制造振荡</a></li><li><a href=#%e7%ac%ac-7-%e7%ab%a0%e5%a4%8d%e6%95%b0 aria-label="第 7 章　复数">第 7 章　复数</a></li><li><a href=#%e7%ac%ac-8-%e7%ab%a0%e5%b0%86%e7%9f%a9%e9%98%b5%e7%94%a8%e4%ba%8e%e8%ae%a1%e7%ae%97%e6%9c%ba%e5%9b%be%e5%bd%a2%e5%92%8c%e6%96%b9%e7%a8%8b%e7%bb%84 aria-label="第 8 章　将矩阵用于计算机图形和方程组">第 8 章　将矩阵用于计算机图形和方程组</a></li><li><a href=#%e7%ac%ac%e4%b8%89%e9%83%a8%e5%88%86%e5%bc%80%e8%be%9f%e4%bd%a0%e8%87%aa%e5%b7%b1%e7%9a%84%e9%81%93%e8%b7%af aria-label=第三部分　开辟你自己的道路>第三部分　开辟你自己的道路</a></li><li><a href=#%e7%ac%ac-9-%e7%ab%a0%e7%94%a8%e7%b1%bb%e6%9e%84%e5%bb%ba%e5%af%b9%e8%b1%a1 aria-label="第 9 章　用类构建对象">第 9 章　用类构建对象</a></li><li><a href=#%e7%ac%ac-10-%e7%ab%a0%e7%94%a8%e9%80%92%e5%bd%92%e5%88%b6%e4%bd%9c%e5%88%86%e5%bd%a2 aria-label="第 10 章　用递归制作分形">第 10 章　用递归制作分形</a></li><li><a href=#%e7%ac%ac-11-%e7%ab%a0%e5%85%83%e8%83%9e%e8%87%aa%e5%8a%a8%e6%9c%ba aria-label="第 11 章　元胞自动机">第 11 章　元胞自动机</a></li><li><a href=#%e7%ac%ac-12-%e7%ab%a0%e7%94%a8%e9%81%97%e4%bc%a0%e7%ae%97%e6%b3%95%e8%a7%a3%e5%86%b3%e9%97%ae%e9%a2%98 aria-label="第 12 章　用遗传算法解决问题">第 12 章　用遗传算法解决问题</a></li></ul></li></ul></div></details></div><div class=post-content><h1 id=概论>概论<a hidden class=anchor aria-hidden=true href=#概论>#</a></h1><h2 id=前言>前言<a hidden class=anchor aria-hidden=true href=#前言>#</a></h2><p>这里介绍用Python来解决数学问题深化自己的计算思维，帮我自己成为数据格致家。</p><p>读这本书主要是想实现元胞自动机，这个以前很想实现，但是一直拖延到了现在才行动，哎！本来打算暑假更完的，但没空更，先挖坑，以后再填。</p><h2 id=书籍简介>书籍简介<a hidden class=anchor aria-hidden=true href=#书籍简介>#</a></h2><p><a href=https://img9.doubanio.com/view/subject/l/public/s33911885.jpg title=用Python学数学><img alt=用Python学数学 loading=lazy src=https://img9.doubanio.com/view/subject/s/public/s33911885.jpg title=点击看大图></a></p><p>作者: [美] 彼得·法雷尔</p><p>出版社: 人民邮电出版社</p><p>原作名: Math Adventures with Python: An Illustrated Guide to Exploring Math with Code</p><p>译者: 严开</p><p>出版年: 2021-6</p><p>页数: 262</p><p>定价: 109.80元</p><p>装帧: 平装</p><p>ISBN: 9787115562425</p><h2 id=内容简介>内容简介<a hidden class=anchor aria-hidden=true href=#内容简介>#</a></h2><p>本书向读者展示如何利用编程来让数学学习变得有意义并且充满乐趣。读者在探索代数学、几何学、三角学、矩阵和元胞自动机等领域的关键数学概念时，将学会在Python语言的帮助下使用代码可视化一系列数学问题的解决方案。用Python让数学活起来看得见动起来充满立体感的“活”数学，像魔法一样解决常见数学问题，不为解题，不记公式，彻底摆脱枯燥——纯粹好玩，自由发挥想象，自己动手制作趣味数学读完本书，读者还可以编写自己的程序来快速解方程，自动完成一些烦琐的任务，以及编写函数来绘制和操作形状，等等。</p><h2 id=作者简介>作者简介<a hidden class=anchor aria-hidden=true href=#作者简介>#</a></h2><p>彼得·法雷尔（Peter Farrell）是数学和计算机科学教师，热衷于“定制”数学和技术教学。他开设了一门名为 Hacking Math 的课程，利用编程技术让学生见识“活生生”的数学，广受欢迎。本书是他近十年教学实践的结晶，手把手带你让数学“活”起来，真正体会数学之美。</p><h1 id=正文摘录>正文摘录<a hidden class=anchor aria-hidden=true href=#正文摘录>#</a></h1><h2 id=第一部分搭上你的-python-马车>第一部分　搭上你的 Python 马车<a hidden class=anchor aria-hidden=true href=#第一部分搭上你的-python-马车>#</a></h2><h2 id=第-1-章用-turtle-模块绘制多边形>第 1 章　用 turtle 模块绘制多边形<a hidden class=anchor aria-hidden=true href=#第-1-章用-turtle-模块绘制多边形>#</a></h2><p>1.1Python的turtle模块</p><p>1.1.1导入turtle模块</p><p>1.1.2让小海龟动起来</p><p>1.1.3改变方向</p><p>1.2用循环使代码重复运行</p><p>1.2.1使用for循环</p><p>1.2.2运用for循环画一个正方形</p><p>1.3用函数创建快捷操作</p><p>1.4利用变量画出不同的图形</p><p>1.4.1在函数中使用变量</p><p>1.4.2变量错误</p><p>1.5等边三角形</p><p>1.5.1编写triangle()函数</p><p>1.5.2让变量变起来</p><h2 id=第-2-章用列表和循环把烦琐的算术变有趣>第 2 章　用列表和循环把烦琐的算术变有趣<a hidden class=anchor aria-hidden=true href=#第-2-章用列表和循环把烦琐的算术变有趣>#</a></h2><p>2.1基本运算符</p><p>2.1.1变量运算</p><p>2.1.2用运算符编写函数average()</p><p>2.1.3注意运算顺序</p><p>2.1.4结合使用括号和运算符</p><p>2.2Python中的数据类型</p><p>2.2.1整数和浮点数</p><p>2.2.2字符串</p><p>2.2.3布尔类型</p><p>2.2.4查看数据类型</p><p>2.3用列表存储值</p><p>2.3.1向列表添加项</p><p>2.3.2列表的运算</p><p>2.3.3从列表中删除项</p><p>2.4在循环中使用列表</p><p>2.4.1使用列表索引访问单个项</p><p>2.4.2用enumerate()函数获取索引和值</p><p>2.4.3索引从0开始</p><p>2.4.4访问一系列列表项</p><p>2.4.5查找某项的索引</p><p>2.4.6字符串也有索引</p><p>2.5求和</p><p>2.5.1创建running_sum变量</p><p>2.5.2编写mySum()函数</p><p>2.6求一列数的平均值</p><h2 id=第-3-章用条件语句检验猜测>第 3 章　用条件语句检验猜测<a hidden class=anchor aria-hidden=true href=#第-3-章用条件语句检验猜测>#</a></h2><p>3.1比较运算符</p><p>3.2用if和else语句做决定</p><p>3.3使用条件语句求因数</p><p>3.3.1编写factors.py程序</p><p>3.3.2海龟漫步</p><p>3.4制作一个猜数游戏</p><p>3.4.1制作一个随机数生成器</p><p>3.4.2读取用户输入</p><p>3.4.3将用户输入转换成整数</p><p>3.4.4用条件语句检查猜测是否正确</p><p>3.4.5用循环给予更多猜测机会</p><p>3.4.6猜数小提示</p><p>3.5计算平方根</p><p>3.5.1套用猜数游戏的逻辑</p><p>3.5.2编写squareRoot()函数</p><h2 id=第二部分奔向数学领域>第二部分　奔向数学领域<a hidden class=anchor aria-hidden=true href=#第二部分奔向数学领域>#</a></h2><h2 id=第-4-章用代数学变换和存储数>第 4 章　用代数学变换和存储数<a hidden class=anchor aria-hidden=true href=#第-4-章用代数学变换和存储数>#</a></h2><p>4.1解一次方程</p><p>4.1.1一次方程的解法公式</p><p>4.1.2编写equation()函数</p><p>4.1.3用print()替换return</p><p>4.2解更高次的方程</p><p>4.2.1用quad()函数解二次方程</p><p>4.2.2用plug()函数解三次方程</p><p>4.3用作图法解方程</p><p>4.3.1Processing入门</p><p>4.3.2制作你自己的作图工具</p><p>4.3.3绘制方程的图像</p><p>4.3.4用“猜测检验法”求根</p><p>4.3.5编写guess()函数</p><h2 id=第-5-章用几何学变换形状>第 5 章　用几何学变换形状<a hidden class=anchor aria-hidden=true href=#第-5-章用几何学变换形状>#</a></h2><h3 id=51画一个圆>5.1画一个圆<a hidden class=anchor aria-hidden=true href=#51画一个圆>#</a></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>ellipse</span><span class=p>(</span><span class=mi>200</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>50</span><span class=p>,</span><span class=mi>50</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=52用坐标指定位置>5.2用坐标指定位置<a hidden class=anchor aria-hidden=true href=#52用坐标指定位置>#</a></h3><p>计算机图形中坐标系和数学中坐标系不同</p><h3 id=53变换函数平移和旋转>5.3变换函数平移和旋转<a hidden class=anchor aria-hidden=true href=#53变换函数平移和旋转>#</a></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>translate</span><span class=p>(</span><span class=n>width</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>height</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span><span class=c1>#不用具体数改变画布尺寸，移动坐标平面而非移动原点</span>
+</span></span><span class=line><span class=cl>    <span class=c1>#translate(200,200)</span>
+</span></span><span class=line><span class=cl>    <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=mi>20</span><span class=p>))</span><span class=c1>#20度</span>
+</span></span><span class=line><span class=cl>    <span class=n>rect</span><span class=p>(</span><span class=mi>20</span><span class=p>,</span><span class=mi>40</span><span class=p>,</span><span class=mi>50</span><span class=p>,</span><span class=mi>50</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>画一圈圆</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>translate</span><span class=p>(</span><span class=n>width</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>height</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>12</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>ellipse</span><span class=p>(</span><span class=mi>200</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>50</span><span class=p>,</span><span class=mi>50</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=mi>360</span><span class=o>/</span><span class=mi>12</span><span class=p>))</span>
+</span></span></code></pre></td></tr></table></div></div><p><img loading=lazy src=https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230613235123.png></p><h3 id=54使对象动画化>5.4使对象动画化<a hidden class=anchor aria-hidden=true href=#54使对象动画化>#</a></h3><h4 id=541创建变量t>5.4.1创建变量t<a hidden class=anchor aria-hidden=true href=#541创建变量t>#</a></h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>t</span> <span class=o>=</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=k>global</span> <span class=n>t</span>
+</span></span><span class=line><span class=cl>    <span class=n>background</span><span class=p>(</span><span class=mi>255</span><span class=p>)</span><span class=c1>#背景设置为白色</span>
+</span></span><span class=line><span class=cl>    <span class=n>translate</span><span class=p>(</span><span class=n>width</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>height</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=n>t</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>12</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>ellipse</span><span class=p>(</span><span class=mi>200</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>50</span><span class=p>,</span><span class=mi>50</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=mi>360</span><span class=o>/</span><span class=mi>12</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=n>t</span> <span class=o>+=</span><span class=mf>0.1</span>
+</span></span></code></pre></td></tr></table></div></div><h4 id=542旋转各个正方形>5.4.2旋转各个正方形<a hidden class=anchor aria-hidden=true href=#542旋转各个正方形>#</a></h4><p>在processing中旋转中心是(0,0)，我们在循环中先将其平移到每个正方形该在的位置，然后旋转，最后画出正方形。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>t</span> <span class=o>=</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=k>global</span> <span class=n>t</span>
+</span></span><span class=line><span class=cl>    <span class=n>background</span><span class=p>(</span><span class=mi>255</span><span class=p>)</span><span class=c1>#背景设置为白色</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>12</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>translate</span><span class=p>(</span><span class=mi>200</span><span class=p>,</span><span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=n>t</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>rect</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>50</span><span class=p>,</span><span class=mi>50</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=mi>360</span><span class=o>/</span><span class=mi>12</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=n>t</span> <span class=o>+=</span><span class=mf>0.1</span>
+</span></span></code></pre></td></tr></table></div></div><p><img loading=lazy src=https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230614125924.png></p><p>正方形不再绕画布中心旋转，而是整体在画布上不停移动。这是因为我们在不停的改变网格的位置和方向。在画完一个正方形后，我们需要在画下一个正方形之前将网格一会画布中心并转回之前的方向。</p><h4 id=543-用pushmatrix和popmatrix保存方位>5.4.3 用pushMatrix()和popMatrix()保存方位<a hidden class=anchor aria-hidden=true href=#543-用pushmatrix和popmatrix保存方位>#</a></h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>t</span> <span class=o>=</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>rectMode</span><span class=p>(</span><span class=n>CENTER</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=k>global</span> <span class=n>t</span>
+</span></span><span class=line><span class=cl>    <span class=n>background</span><span class=p>(</span><span class=mi>255</span><span class=p>)</span><span class=c1>#背景设置为白色</span>
+</span></span><span class=line><span class=cl><span class=c1>#    translate(width/2,height/2)</span>
+</span></span><span class=line><span class=cl><span class=c1>#    rotate(radians(t))</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>12</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>pushMatrix</span><span class=p>()</span><span class=c1>#保存当前方位</span>
+</span></span><span class=line><span class=cl>        <span class=n>translate</span><span class=p>(</span><span class=mi>200</span><span class=p>,</span><span class=mi>500</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=n>t</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>rect</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>50</span><span class=p>,</span><span class=mi>50</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>popMatrix</span><span class=p>()</span><span class=c1>#回到保存的方位</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=mi>360</span><span class=o>/</span><span class=mi>12</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=n>t</span> <span class=o>+=</span><span class=mf>0.1</span>
+</span></span></code></pre></td></tr></table></div></div><h4 id=544-使正方形绕中心旋转>5.4.4 使正方形绕中心旋转<a hidden class=anchor aria-hidden=true href=#544-使正方形绕中心旋转>#</a></h4><p>在Setup()函数中加入rectMode(CENTER)</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>t</span> <span class=o>=</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>rectMode</span><span class=p>(</span><span class=n>CENTER</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=k>global</span> <span class=n>t</span>
+</span></span><span class=line><span class=cl>    <span class=n>background</span><span class=p>(</span><span class=mi>255</span><span class=p>)</span><span class=c1>#背景设置为白色</span>
+</span></span><span class=line><span class=cl>    <span class=n>translate</span><span class=p>(</span><span class=n>width</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>height</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>12</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>pushMatrix</span><span class=p>()</span><span class=c1>#保存当前方位</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=n>t</span><span class=o>*</span><span class=mi>5</span><span class=p>))</span><span class=c1>#转速增加到原来的五倍</span>
+</span></span><span class=line><span class=cl>        <span class=n>rect</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>50</span><span class=p>,</span><span class=mi>50</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>popMatrix</span><span class=p>()</span><span class=c1>#回到保存的方位</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=mi>360</span><span class=o>/</span><span class=mi>12</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=n>t</span> <span class=o>+=</span><span class=mf>0.1</span>
+</span></span></code></pre></td></tr></table></div></div><p><img loading=lazy src=https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230614130831.png></p><h3 id=56-制作一个可交互的彩虹网格>5.6 制作一个可交互的彩虹网格<a hidden class=anchor aria-hidden=true href=#56-制作一个可交互的彩虹网格>#</a></h3><h4 id=551画出呈网格状排列的对象>5.5.1画出呈网格状排列的对象<a hidden class=anchor aria-hidden=true href=#551画出呈网格状排列的对象>#</a></h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>background</span><span class=p>(</span><span class=mi>255</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>x</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>20</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>y</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>20</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>            <span class=n>rect</span><span class=p>(</span><span class=mi>30</span><span class=o>*</span><span class=n>x</span><span class=p>,</span><span class=mi>30</span><span class=o>*</span><span class=n>y</span><span class=p>,</span><span class=mi>25</span><span class=p>,</span><span class=mi>25</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><h4 id=552-给对象涂上彩虹色>5.5.2 给对象涂上彩虹色<a hidden class=anchor aria-hidden=true href=#552-给对象涂上彩虹色>#</a></h4><p>colorMode()有RGB和HSB两种色彩模式。HSB指色相Hue、饱和度Saturation和明度Brightness</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>rectMode</span><span class=p>(</span><span class=n>CENTER</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>colorMode</span><span class=p>(</span><span class=n>HSB</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>background</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span><span class=c1>#背景设置为黑色</span>
+</span></span><span class=line><span class=cl>    <span class=n>translate</span><span class=p>(</span><span class=mi>20</span><span class=p>,</span><span class=mi>20</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>x</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>30</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>y</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>30</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>            <span class=n>distance</span> <span class=o>=</span> <span class=n>dist</span><span class=p>(</span><span class=mi>30</span><span class=o>*</span><span class=n>x</span><span class=p>,</span><span class=mi>30</span><span class=o>*</span><span class=n>y</span><span class=p>,</span><span class=n>mouseX</span><span class=p>,</span><span class=n>mouseY</span><span class=p>)</span><span class=c1>#左上角坐标和鼠标距离</span>
+</span></span><span class=line><span class=cl>            <span class=n>fill</span><span class=p>(</span><span class=mf>0.5</span><span class=o>*</span><span class=n>distance</span><span class=p>,</span><span class=mi>255</span><span class=p>,</span><span class=mi>255</span><span class=p>)</span><span class=c1>#只用更改第一个值，后面两个值可以一直设置为255</span>
+</span></span><span class=line><span class=cl>            <span class=n>rect</span><span class=p>(</span><span class=mi>30</span><span class=o>*</span><span class=n>x</span><span class=p>,</span><span class=mi>30</span><span class=o>*</span><span class=n>y</span><span class=p>,</span><span class=mi>25</span><span class=p>,</span><span class=mi>25</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p><img loading=lazy src=https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230614232908.png></p><h3 id=56-用三角形画出复杂的图案>5.6 用三角形画出复杂的图案<a hidden class=anchor aria-hidden=true href=#56-用三角形画出复杂的图案>#</a></h3><p>画一个旋转的三角形但不是等边三角形</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>rectMode</span><span class=p>(</span><span class=n>CENTER</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>t</span> <span class=o>=</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=k>global</span> <span class=n>t</span>
+</span></span><span class=line><span class=cl>    <span class=n>translate</span><span class=p>(</span><span class=n>width</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>height</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=n>t</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=n>triangle</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=mi>100</span><span class=p>,</span><span class=mi>100</span><span class=p>,</span><span class=mi>200</span><span class=p>,</span><span class=o>-</span><span class=mi>200</span><span class=p>)</span><span class=c1>#三个顶点坐标</span>
+</span></span><span class=line><span class=cl>    <span class=n>t</span> <span class=o>+=</span> <span class=mf>0.5</span>
+</span></span></code></pre></td></tr></table></div></div><p><img loading=lazy src=https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230614233904.png></p><h4 id=561-30-60-90三角形>5.6.1 30-60-90三角形<a hidden class=anchor aria-hidden=true href=#561-30-60-90三角形>#</a></h4><h4 id=562-画一个等边三角形>5.6.2 画一个等边三角形<a hidden class=anchor aria-hidden=true href=#562-画一个等边三角形>#</a></h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>rectMode</span><span class=p>(</span><span class=n>CENTER</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>t</span> <span class=o>=</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=k>global</span> <span class=n>t</span>
+</span></span><span class=line><span class=cl>    <span class=n>translate</span><span class=p>(</span><span class=n>width</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>height</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=n>t</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=n>tri</span><span class=p>(</span><span class=mi>200</span><span class=p>)</span><span class=c1>#画等边三角形</span>
+</span></span><span class=line><span class=cl>    <span class=n>t</span> <span class=o>+=</span> <span class=mf>0.5</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>tri</span><span class=p>(</span><span class=n>length</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>triangle</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=o>-</span><span class=n>length</span><span class=p>,</span><span class=o>-</span><span class=n>length</span><span class=o>*</span><span class=n>sqrt</span><span class=p>(</span><span class=mi>3</span><span class=p>)</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>length</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>length</span><span class=o>*</span><span class=n>sqrt</span><span class=p>(</span><span class=mi>3</span><span class=p>)</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>length</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span><span class=c1>#以(0,0)为中心</span>
+</span></span></code></pre></td></tr></table></div></div><p><img loading=lazy src=https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230614234626.png></p><h4 id=563-画多个旋转的三角形>5.6.3 画多个旋转的三角形<a hidden class=anchor aria-hidden=true href=#563-画多个旋转的三角形>#</a></h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>rectMode</span><span class=p>(</span><span class=n>CENTER</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>t</span> <span class=o>=</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=k>global</span> <span class=n>t</span>
+</span></span><span class=line><span class=cl>    <span class=n>background</span><span class=p>(</span><span class=mi>255</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>translate</span><span class=p>(</span><span class=n>width</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>height</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>90</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=c1>#将三角形绕圆周等间距摆放</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=mi>360</span><span class=o>/</span><span class=mi>90</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>pushMatrix</span><span class=p>()</span><span class=c1>#保存当前方位</span>
+</span></span><span class=line><span class=cl>        <span class=c1>#平移至圆周</span>
+</span></span><span class=line><span class=cl>        <span class=n>translate</span><span class=p>(</span><span class=mi>200</span><span class=p>,</span><span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=c1>#旋转一定角度</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=n>t</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>tri</span><span class=p>(</span><span class=mi>100</span><span class=p>)</span><span class=c1>#画等边三角形</span>
+</span></span><span class=line><span class=cl>        <span class=n>popMatrix</span><span class=p>()</span><span class=c1>#回到保存的方位</span>
+</span></span><span class=line><span class=cl>    <span class=n>t</span> <span class=o>+=</span> <span class=mf>0.5</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>tri</span><span class=p>(</span><span class=n>length</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>noFill</span><span class=p>()</span><span class=c1>#设置三角形为透明</span>
+</span></span><span class=line><span class=cl>    <span class=n>triangle</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=o>-</span><span class=n>length</span><span class=p>,</span><span class=o>-</span><span class=n>length</span><span class=o>*</span><span class=n>sqrt</span><span class=p>(</span><span class=mi>3</span><span class=p>)</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>length</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>length</span><span class=o>*</span><span class=n>sqrt</span><span class=p>(</span><span class=mi>3</span><span class=p>)</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>length</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span><span class=c1>#以(0,0)为中心</span>
+</span></span></code></pre></td></tr></table></div></div><p><img loading=lazy src=https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230614235443.png></p><h4 id=564-给旋转加上相位偏移>5.6.4 给旋转加上相位偏移<a hidden class=anchor aria-hidden=true href=#564-给旋转加上相位偏移>#</a></h4><p>引入相移(phase shift)改变三角形旋转的模式，它可以让每个三角形比上一个稍微慢一步，使草图呈现出波浪Wave或级联cascade效果。每个三角形都对应一个循环变量i，我们可以把i加入rotate(radians(t))中变成rotate(radians(t+i))。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>rectMode</span><span class=p>(</span><span class=n>CENTER</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>t</span> <span class=o>=</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=k>global</span> <span class=n>t</span>
+</span></span><span class=line><span class=cl>    <span class=n>background</span><span class=p>(</span><span class=mi>255</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>translate</span><span class=p>(</span><span class=n>width</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>height</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>90</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=c1>#将三角形绕圆周等间距摆放</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=mi>360</span><span class=o>/</span><span class=mi>90</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>pushMatrix</span><span class=p>()</span><span class=c1>#保存当前方位</span>
+</span></span><span class=line><span class=cl>        <span class=c1>#平移至圆周</span>
+</span></span><span class=line><span class=cl>        <span class=n>translate</span><span class=p>(</span><span class=mi>200</span><span class=p>,</span><span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=c1>#旋转一定角度</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=n>t</span><span class=o>+</span><span class=n>i</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>tri</span><span class=p>(</span><span class=mi>100</span><span class=p>)</span><span class=c1>#画等边三角形</span>
+</span></span><span class=line><span class=cl>        <span class=n>popMatrix</span><span class=p>()</span><span class=c1>#回到保存的方位</span>
+</span></span><span class=line><span class=cl>    <span class=n>t</span> <span class=o>+=</span> <span class=mf>0.5</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>tri</span><span class=p>(</span><span class=n>length</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>noFill</span><span class=p>()</span><span class=c1>#设置三角形为透明</span>
+</span></span><span class=line><span class=cl>    <span class=n>triangle</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=o>-</span><span class=n>length</span><span class=p>,</span><span class=o>-</span><span class=n>length</span><span class=o>*</span><span class=n>sqrt</span><span class=p>(</span><span class=mi>3</span><span class=p>)</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>length</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>length</span><span class=o>*</span><span class=n>sqrt</span><span class=p>(</span><span class=mi>3</span><span class=p>)</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>length</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span><span class=c1>#以(0,0)为中心</span>
+</span></span></code></pre></td></tr></table></div></div><p>效果：</p><p><img loading=lazy src=https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230615000142.png></p><p>右边有一处中断是因为最后一个三角形的下一个三角形的相位应该是t+90，它和第一个三角形的相位差是90，而两个看起来相同的等边三角形的相位差应该是120的整数倍。可以把rotate(radians(t+i))改成rotate(radians(t+i*360/90))。</p><h4 id=565-将图案画完>5.6.5 将图案画完<a hidden class=anchor aria-hidden=true href=#565-将图案画完>#</a></h4><p>将i乘以2来改变相移，增大相邻三角形之间的相位差。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>setup</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>size</span><span class=p>(</span><span class=mi>600</span><span class=p>,</span><span class=mi>600</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>rectMode</span><span class=p>(</span><span class=n>CENTER</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>t</span> <span class=o>=</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>draw</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=k>global</span> <span class=n>t</span>
+</span></span><span class=line><span class=cl>    <span class=n>background</span><span class=p>(</span><span class=mi>255</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>translate</span><span class=p>(</span><span class=n>width</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>height</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>90</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=c1>#将三角形绕圆周等间距摆放</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=mi>360</span><span class=o>/</span><span class=mi>90</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>pushMatrix</span><span class=p>()</span><span class=c1>#保存当前方位</span>
+</span></span><span class=line><span class=cl>        <span class=c1>#平移至圆周</span>
+</span></span><span class=line><span class=cl>        <span class=n>translate</span><span class=p>(</span><span class=mi>200</span><span class=p>,</span><span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=c1>#旋转一定角度</span>
+</span></span><span class=line><span class=cl>        <span class=n>rotate</span><span class=p>(</span><span class=n>radians</span><span class=p>(</span><span class=n>t</span><span class=o>+</span><span class=mi>2</span><span class=o>*</span><span class=n>i</span><span class=o>*</span><span class=mi>360</span><span class=o>/</span><span class=mi>90</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>tri</span><span class=p>(</span><span class=mi>100</span><span class=p>)</span><span class=c1>#画等边三角形</span>
+</span></span><span class=line><span class=cl>        <span class=n>popMatrix</span><span class=p>()</span><span class=c1>#回到保存的方位</span>
+</span></span><span class=line><span class=cl>    <span class=n>t</span> <span class=o>+=</span> <span class=mf>0.5</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>tri</span><span class=p>(</span><span class=n>length</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>noFill</span><span class=p>()</span><span class=c1>#设置三角形为透明</span>
+</span></span><span class=line><span class=cl>    <span class=n>triangle</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=o>-</span><span class=n>length</span><span class=p>,</span><span class=o>-</span><span class=n>length</span><span class=o>*</span><span class=n>sqrt</span><span class=p>(</span><span class=mi>3</span><span class=p>)</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>length</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>length</span><span class=o>*</span><span class=n>sqrt</span><span class=p>(</span><span class=mi>3</span><span class=p>)</span><span class=o>/</span><span class=mi>2</span><span class=p>,</span><span class=n>length</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span><span class=c1>#以(0,0)为中心</span>
+</span></span></code></pre></td></tr></table></div></div><p><img loading=lazy src=https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230615000602.png></p><p>用stroke()函数可以给每个三角形上色</p><h2 id=第-6-章用三角学制造振荡>第 6 章　用三角学制造振荡<a hidden class=anchor aria-hidden=true href=#第-6-章用三角学制造振荡>#</a></h2><p>6.1用三角学做旋转和振荡</p><p>6.2编写画多边形的函数</p><p>6.2.1用循环画一个正六边形</p><p>6.2.2画一个正三角形</p><p>6.3画正弦波</p><p>6.3.1圆过留痕</p><p>6.3.2使用Python内置的enumerate()函数</p><p>6.4编写万花尺程序</p><p>6.4.1画小圆</p><p>6.4.2旋转小圆</p><p>6.5画谐波图</p><p>6.5.1编写画谐波图的程序</p><p>6.5.2瞬间填好列表</p><p>6.5.3两个钟摆比一个强</p><h2 id=第-7-章复数>第 7 章　复数<a hidden class=anchor aria-hidden=true href=#第-7-章复数>#</a></h2><p>7.1复数坐标系124</p><p>7.2将复数相加124</p><p>7.3将一个复数乘以i125</p><p>7.4将两个复数相乘126</p><p>7.5编写magnitude()函数127</p><p>7.6创建芒德布罗集128</p><p>7.6.1编写mandelbrot()函数130</p><p>7.6.2给芒德布罗集上色134</p><p>7.7创建茹利亚集135</p><h2 id=第-8-章将矩阵用于计算机图形和方程组>第 8 章　将矩阵用于计算机图形和方程组<a hidden class=anchor aria-hidden=true href=#第-8-章将矩阵用于计算机图形和方程组>#</a></h2><p>8.1什么是矩阵138</p><p>8.2矩阵相加139</p><p>8.3矩阵相乘140</p><p>8.4矩阵乘法中的顺序很重要144</p><p>8.5画2D形状144</p><p>8.6变换矩阵147</p><p>8.7转置矩阵149</p><p>8.8实时旋转矩阵152</p><p>8.9制作3D形状154</p><p>8.10制作旋转矩阵155</p><p>8.11用矩阵解方程组159</p><p>8.11.1高斯消元法159</p><p>8.11.2编写gauss()函数161</p><h2 id=第三部分开辟你自己的道路>第三部分　开辟你自己的道路<a hidden class=anchor aria-hidden=true href=#第三部分开辟你自己的道路>#</a></h2><h2 id=第-9-章用类构建对象>第 9 章　用类构建对象<a hidden class=anchor aria-hidden=true href=#第-9-章用类构建对象>#</a></h2><p>9.1弹跳球程序170</p><p>9.1.1让小球动起来171</p><p>9.1.2让小球从墙上弹回172</p><p>9.1.3不用类创建多个小球173</p><p>9.1.4用类创建对象174</p><p>9.2“羊吃草”程序179</p><p>9.2.1编写表示小羊的类179</p><p>9.2.2让小羊四处走动.180</p><p>9.2.3添加能量属性181</p><p>9.2.4用类创建草182</p><p>9.2.5让草被吃掉后变成棕色185</p><p>9.2.6给每只小羊涂上随机的颜色187</p><p>9.2.7让小羊繁殖188</p><p>9.2.8让草再生189</p><p>9.2.9给予进化优势190</p><h2 id=第-10-章用递归制作分形>第 10 章　用递归制作分形<a hidden class=anchor aria-hidden=true href=#第-10-章用递归制作分形>#</a></h2><p>10.1海岸线的长度194</p><p>10.1.1何为递归195</p><p>10.1.2编写factorial()函数195</p><p>10.1.3“种”一棵分形树196</p><p>10.2科赫雪花200</p><p>10.3谢尔宾斯基三角形205</p><p>10.4正方形分形207</p><p>10.5龙形曲线211</p><h2 id=第-11-章元胞自动机>第 11 章　元胞自动机<a hidden class=anchor aria-hidden=true href=#第-11-章元胞自动机>#</a></h2><p>11.1创建一个元胞自动机217</p><p>11.1.1编写一个细胞类219</p><p>11.1.2调整细胞大小221</p><p>11.1.3让CA生长222</p><p>11.1.4将细胞放入一个矩阵223</p><p>11.1.5创建细胞列表224</p><p>11.2奇怪的Python列表225</p><p>11.2.1列表切片226</p><p>11.2.2让你的CA自动生长229</p><p>11.3玩玩“生命游戏”229</p><p>11.4初等元胞自动机232</p><h2 id=第-12-章用遗传算法解决问题>第 12 章　用遗传算法解决问题<a hidden class=anchor aria-hidden=true href=#第-12-章用遗传算法解决问题>#</a></h2><p>12.1用遗传算法猜出句子239</p><p>12.1.1编写makeList()函数239</p><p>12.1.2测试makeList()函数240</p><p>12.1.3编写score()函数241</p><p>12.1.4编写mutate()函数241</p><p>12.1.5生成随机数242</p><p>12.2解决旅行商问题244</p><p>12.2.1使用遗传算法245</p><p>12.2.2编写calcLength()方法251</p><p>12.2.3测试calcLength()方法251</p><p>12.2.4随机路线252</p><p>12.2.5运用猜句程序的突变思想255</p><p>12.2.6突变列表中的两个数255</p><p>12.2.7通过交叉改进路线259</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://rosefinch-midsummer.github.io/zh/tags/python/>Python</a></li><li><a href=https://rosefinch-midsummer.github.io/zh/tags/%E6%95%B0%E5%AD%A6/>数学</a></li></ul><nav class=paginav><a class=prev href=https://rosefinch-midsummer.github.io/zh/posts/course/ntu%E4%B8%AD%E5%9C%8B%E5%8F%A4%E4%BB%A3%E6%AD%B7%E5%8F%B2%E8%88%87%E4%BA%BA%E7%89%A9%E7%A7%A6%E5%A7%8B%E7%9A%87/><span class=title>« 上一頁</span><br><span>NTU《中國古代歷史與人物：秦始皇》</span>
+</a><a class=next href=https://rosefinch-midsummer.github.io/zh/posts/pastime/%E8%AE%B0%E5%BD%95%E7%89%87%E6%B7%B7%E6%B2%8C%E4%B9%8B%E8%B0%9C/><span class=title>下一頁 »</span><br><span>记录片《混沌之谜》</span></a></nav></footer><div><div class=pagination__title><span class=pagination__title-h style=font-size:20px>评论</span><br></div><div id=tcomment></div><script src=https://utteranc.es/client.js repo=Rosefinch-Midsummer/comments_of_blog issue-term=title theme=github-light crossorigin=anonymous async></script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.body.className.includes("dark")?"github-light":"photon-dark",t={type:"set-theme",theme:e},n=document.querySelector(".utterances-frame");n.contentWindow.postMessage(t,"https://utteranc.es")})</script></div></article></main><footer class=footer><span>&copy; 2025 <a href=https://rosefinch-midsummer.github.io/zh/>天漢帝國復興錄</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span><div class=busuanzi-footer><span id=busuanzi_container_site_pv>本站总访问量<span id=busuanzi_value_site_pv></span>次
+</span><span id=busuanzi_container_site_uv>本站访客数<span id=busuanzi_value_site_uv></span>人次</span></div></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="複製";function s(){t.innerHTML="已複製！",setTimeout(()=>{t.innerHTML="複製"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

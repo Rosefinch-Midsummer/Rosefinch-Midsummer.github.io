@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>高等代数 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/</link>
+    <description>Recent content in 高等代数 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.152.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 20 Oct 2025 21:28:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TQU《高等代数》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/course/tqu%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/</link>
+      <pubDate>Thu, 08 Jun 2023 12:29:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/course/tqu%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1wt41147Q1/&#34;&gt;北大丘维声教授清华高等代数课程1080P高清修复版(全151集)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考教材：蓝以中《高等代数简明教程》、&lt;a href=&#34;https://www.math.pku.edu.cn/teachers/anjp/Qiu_Weisheng_2.pdf&#34;&gt;丘维声《高等代数》&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文中代码主要是用包含线性代数的函数的numpy.linalg模块。使用这个模块，可以计算矩阵逆、求特征值、解线性方程组以及求解行列式等。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

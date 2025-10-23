@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>VPN on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/vpn/</link>
+    <description>Recent content in VPN on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.152.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 16 Mar 2024 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>魔法上网工具推荐</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Sat, 16 Mar 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;收集一波工具，防止失联。。&lt;/p&gt;
+&lt;p&gt;不推荐用机场，国内的都不可信。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.fanqiangzhe.com/post/free-vpn-guide/&#34;&gt;免费VPN：推荐及指南（2024最新免费VPN）&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;免费vpn为什么免费&#34;&gt;免费VPN为什么免费？&lt;/h2&gt;
+&lt;p&gt;大家都听说过这句话：“天下没有免费的午餐”。就VPN来说，提供VPN服务需要很高的成本：架设、维护VPN服务器需要花钱、支付VPN用户的流量也需要花钱。那么为什么还有人愿意提供免费VPN呢？总结一下，免费VPN存在大概有以下几个原因：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

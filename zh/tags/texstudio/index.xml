@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>TexStudio on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/texstudio/</link>
+    <description>Recent content in TexStudio on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.152.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 22 Sep 2025 21:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/texstudio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TexStudio入门教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/texstudio%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sat, 27 May 2023 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/texstudio%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h1 id=&#34;texstudio入门教程&#34;&gt;TexStudio入门教程&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://texstudio.sourceforge.net/&#34;&gt;下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/576955891&#34;&gt;TexStudio + MikTex 论文写作环境配置&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;TeXstudio 是跨平台的免费软件，是专门用来编辑 &lt;code&gt;.tex&lt;/code&gt; 文件的工具。&lt;/p&gt;
+&lt;h2 id=&#34;安装miktex&#34;&gt;安装MikTex&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;安装过程简单&lt;/li&gt;
+&lt;li&gt;宏包自动安装、更新&lt;/li&gt;
+&lt;li&gt;集成保证理，若是需求，软件的集成保证理器会从Internet装载贫乏的组件。例如，LaTeX指令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;下载&#34;&gt;下载&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://miktex.org/download&#34;&gt;# Getting MiKTeX&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

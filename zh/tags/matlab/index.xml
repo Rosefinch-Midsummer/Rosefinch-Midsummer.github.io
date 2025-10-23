@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MatLab on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/matlab/</link>
+    <description>Recent content in MatLab on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.152.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 20 Jan 2025 09:17:25 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MatLab2024a安装教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/matlab2024a%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Mon, 20 Jan 2025 09:16:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/matlab2024a%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h1 id=&#34;最新matlab2024a安装教程&#34;&gt;最新matlab2024a安装教程&lt;/h1&gt;
+&lt;h2 id=&#34;教程來源&#34;&gt;教程來源&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/kstt20230206/article/details/140640484&#34;&gt;https://blog.csdn.net/kstt20230206/article/details/140640484&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;一软件领取&#34;&gt;一、软件领取&lt;/h2&gt;
+&lt;p&gt;领取方式：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pan.baidu.com/s/1TeH5F7ilPQVeLc9S9eDmSQ?pwd=qot6&#34;&gt;https://pan.baidu.com/s/1TeH5F7ilPQVeLc9S9eDmSQ?pwd=qot6&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二安装步骤&#34;&gt;二、安装步骤&lt;/h2&gt;
+&lt;p&gt;1、右击下载好的安装包，选择解压缩。（用电脑自带的解压功能或解压软件都可以，我这里用的电脑自带的）&lt;/p&gt;
+&lt;p&gt;2、打开解压后的文件夹，双击打开【Setup】文件夹&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

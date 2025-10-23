@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>文献 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/categories/%E6%96%87%E7%8C%AE/</link>
+    <description>Recent content in 文献 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.152.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 16 Oct 2025 23:34:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E6%96%87%E7%8C%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>编程随想博文分类汇总</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/wenxian/%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3%E5%8D%9A%E6%96%87%E5%88%86%E7%B1%BB%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Thu, 16 Oct 2025 23:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/wenxian/%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3%E5%8D%9A%E6%96%87%E5%88%86%E7%B1%BB%E6%B1%87%E6%80%BB/</guid>
+      <description>&lt;h1 id=&#34;编程随想博文分类汇总&#34;&gt;编程随想博文分类汇总&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://program-think.blogspot.com/2021/01/12-years-blogging.html&#34;&gt;开博12周年庆，博文分类汇总&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;每年一次的“周年庆”又到啦！根据历年来的惯例，俺在“周年庆”当天（或前后一天）进行【博文汇总】——把历史上的博文按照分类罗列出来，方便新来的读者了解旧博文。&lt;br&gt;
+顺便说一下：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>文献管理工具——Zotero教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7zotero%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Fri, 26 May 2023 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7zotero%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.hjroyal.top/posts/tools/2020-09-zotero/&#34;&gt;文献管理工具 Zotero 介绍&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Zotero是一款自由及开放源代码的文献管理软件，用以管理书目信息及相关材料。其最著名的特性是作为浏览器插件、在线同步、与文档编辑软件如Microsoft Word、LibreOffice、OpenOffice.org Writer、NeoOffice等集成，可生成文内引用、生成页面脚注或文后的参考文献。日常使用中还可以搭配上海交大相关人员维护的&lt;a href=&#34;https://github.com/sjtug/SJTUThesis&#34;&gt; SJTUThesis LaTeX 模版&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

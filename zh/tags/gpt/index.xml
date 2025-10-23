@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GPT on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/gpt/</link>
+    <description>Recent content in GPT on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.152.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 20 Mar 2024 12:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/gpt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何获得免费的 GPT-API ？</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%BE%97%E5%85%8D%E8%B4%B9%E7%9A%84gpt-api/</link>
+      <pubDate>Wed, 20 Mar 2024 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%BE%97%E5%85%8D%E8%B4%B9%E7%9A%84gpt-api/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/chatanywhere/GPT_API_free&#34;&gt;chatanywhere/GPT_API_free&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Free ChatGPT API Key，免费ChatGPT API，支持GPT4 API（免费），ChatGPT国内可用免费转发API，直连无需代理。可以搭配ChatBox等软件/插件使用，极大降低接口使用成本。国内即可无限制畅快聊天。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

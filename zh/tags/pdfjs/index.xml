@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pdfjs on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/pdfjs/</link>
+    <description>Recent content in Pdfjs on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.152.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 22 Sep 2025 21:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/pdfjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用pdfjs在线预览pdf书籍教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E7%94%A8pdfjs%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%A7%88pdf%E4%B9%A6%E7%B1%8D%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Mon, 29 May 2023 13:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E7%94%A8pdfjs%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%A7%88pdf%E4%B9%A6%E7%B1%8D%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;我打算做数学、物理等的教程便于自己将来阅读，但是上传latex公式和各种图像比较费时费力，于是乎我想到用图片来解决这个问题。然而，用typora结合picgo往github仓库里面上传图片总会有很多图片上传失败，而且图片过多影响博客加载速度，让我很受打击。睡前想到可以用在线pdf阅读的方式来进行这项事业，我于是第二天把准备好的图片先转成pdf文件，然后把pdf文件上传到github仓库，再通过开启github pages的功能获得在线预览的URL实现文件在线阅读。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

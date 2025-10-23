@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Polya on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/polya/</link>
+    <description>Recent content in Polya on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.152.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 23 Oct 2025 12:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/polya/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《怎样解题：数学思维的新方法》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E6%80%8E%E6%A0%B7%E8%A7%A3%E9%A2%98%E6%95%B0%E5%AD%A6%E6%80%9D%E7%BB%B4%E7%9A%84%E6%96%B0%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 02 Oct 2023 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/book/%E6%80%8E%E6%A0%B7%E8%A7%A3%E9%A2%98%E6%95%B0%E5%AD%A6%E6%80%9D%E7%BB%B4%E7%9A%84%E6%96%B0%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;本书主打启发式方法（heuristics），本书翻译成探索式方法，值得教育工作者阅读。&lt;/p&gt;
+&lt;p&gt;解题四阶段：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;我们必须理解该题目；我们必须清楚地看到所要求的是什么。&lt;/li&gt;
+&lt;li&gt;我们必须了解各个项目是如何相关的，未知量和数据之间有什么关系，已得到解题的思路，拟定一个方案。&lt;/li&gt;
+&lt;li&gt;我们执行我们的方案。&lt;/li&gt;
+&lt;li&gt;我们回顾所完成的解答，检查和讨论它。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/202310022259786.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

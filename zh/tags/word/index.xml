@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Word on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/word/</link>
+    <description>Recent content in Word on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.152.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 26 May 2025 23:40:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/word/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何在 Word 中消除段落前面的“段落标记”（回车符）</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E5%A6%82%E4%BD%95%E5%9C%A8word%E4%B8%AD%E6%B6%88%E9%99%A4%E6%AE%B5%E8%90%BD%E5%89%8D%E9%9D%A2%E7%9A%84%E6%AE%B5%E8%90%BD%E6%A0%87%E8%AE%B0%E5%9B%9E%E8%BD%A6%E7%AC%A6/</link>
+      <pubDate>Mon, 26 May 2025 23:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E5%A6%82%E4%BD%95%E5%9C%A8word%E4%B8%AD%E6%B6%88%E9%99%A4%E6%AE%B5%E8%90%BD%E5%89%8D%E9%9D%A2%E7%9A%84%E6%AE%B5%E8%90%BD%E6%A0%87%E8%AE%B0%E5%9B%9E%E8%BD%A6%E7%AC%A6/</guid>
+      <description>&lt;h1 id=&#34;如何在-word-中消除段落前面的段落标记回车符&#34;&gt;如何在 Word 中消除段落前面的“段落标记”（回车符）&lt;/h1&gt;
+&lt;p&gt;很多人在使用 Word 编辑文档时，注意到段落前面会出现一个特殊符号“¶”，我们称之为段落标记或段落柄。它代表了回车换行的位置，是 Word 用来显示编辑格式的不可见字符之一。有时候，这些标记会让文档看起来杂乱无章，尤其是在打印或展示文档时，我们希望它们不显示。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Word模板的创建与应用详解 —— 快速提升文档格式效率</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/word%E6%A8%A1%E6%9D%BF%E7%9A%84%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%BA%94%E7%94%A8%E8%AF%A6%E8%A7%A3--%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%87%E6%A1%A3%E6%A0%BC%E5%BC%8F%E6%95%88%E7%8E%87/</link>
+      <pubDate>Mon, 26 May 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/word%E6%A8%A1%E6%9D%BF%E7%9A%84%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%BA%94%E7%94%A8%E8%AF%A6%E8%A7%A3--%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%87%E6%A1%A3%E6%A0%BC%E5%BC%8F%E6%95%88%E7%8E%87/</guid>
+      <description>&lt;h1 id=&#34;word模板的创建与应用详解--快速提升文档格式效率&#34;&gt;Word模板的创建与应用详解 —— 快速提升文档格式效率&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;当我们经常写某一类文档，比如报告、论文或合同，往往都会有固定且类似的格式要求。如果每次都要重复手动调整，既浪费时间又容易出错。此时，&lt;strong&gt;Word模板（Template）&lt;/strong&gt; 就成为高效且规范化排版的利器。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

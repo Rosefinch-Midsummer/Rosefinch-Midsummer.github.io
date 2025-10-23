@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Clash on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/clash/</link>
+    <description>Recent content in Clash on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.152.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Tue, 10 Jun 2025 23:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/clash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GUI.for_Clash使用指南和免费v2ray节点订阅</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/gui.for_clash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E5%85%8D%E8%B4%B9v2ray%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85/</link>
+      <pubDate>Tue, 10 Jun 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/gui.for_clash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E5%85%8D%E8%B4%B9v2ray%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85/</guid>
+      <description>&lt;h1 id=&#34;guifor_clash使用指南和免费v2ray节点订阅&#34;&gt;GUI.for_Clash使用指南和免费v2ray节点订阅&lt;/h1&gt;
+&lt;h1 id=&#34;guiforclash颜值与功能兼备的clash图形界面客户端&#34;&gt;GUI.for.Clash：颜值与功能兼备的Clash图形界面客户端&lt;/h1&gt;
+&lt;p&gt;随着互联网的发展，网络安全和隐私保护越来越受重视。作为一款强大的代理工具，Clash在科学上网和网络访问控制中扮演了重要角色。然而，Clash基于命令行的操作不够直观，对普通用户而言有一定门槛。为此，&lt;strong&gt;GUI.for.Clash&lt;/strong&gt;借助现代技术，打造了一个美观且功能丰富的图形界面客户端，让用户轻松管理代理配置，提升使用体验。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

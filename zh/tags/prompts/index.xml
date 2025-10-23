@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Prompts on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/prompts/</link>
+    <description>Recent content in Prompts on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.152.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 24 Mar 2024 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/prompts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DeeplearningAI《Deeplearning-ChatGPT-Prompts-Tutorial》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/course/deeplearningaideeplearning-chatgpt-prompts-tutorial/</link>
+      <pubDate>Sun, 24 Mar 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/course/deeplearningaideeplearning-chatgpt-prompts-tutorial/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;这里的代码因为 API 变化无法直接运行。。&lt;/p&gt;
+&lt;p&gt;这里的内容值得参考。。&lt;/p&gt;
+&lt;p&gt;注意：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;You tried to access openai.ChatCompletion, but this is no longer supported in openai&amp;gt;=1.0.0 - see the README at [https://github.com/openai/openai-python](https://github.com/openai/openai-python) for the API. You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28` A detailed migration guide is available here: [https://github.com/openai/openai-python/discussions/742](https://github.com/openai/openai-python/discussions/742)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;现在可以使用的提示词可以参考下面的 GPT-Prompt-Tutorial。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
