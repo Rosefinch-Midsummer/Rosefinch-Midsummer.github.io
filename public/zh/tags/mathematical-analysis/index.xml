@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mathematical Analysis on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/mathematical-analysis/</link>
+    <description>Recent content in Mathematical Analysis on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 20 Oct 2025 21:28:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/mathematical-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TQU《数学分析》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/course/tqu%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</link>
+      <pubDate>Sat, 27 May 2023 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/course/tqu%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</guid>
+      <description>&lt;script src=&#34; https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.min.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;偶然发现一份网上教程，链接及简介如下。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bananaspace.org/wiki/%E8%AE%B2%E4%B9%89:%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90&#34;&gt;讲义: 数学分析&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本讲义是西元2018 年秋季学期起随课程编写的、丘成桐数学英才班试用的数学分析讲义. 上传后的讲义仍然有很多影响观感的排版疏漏或笔误, 甚至可能有一些数学错误, 具体请参见本页面的讨论.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

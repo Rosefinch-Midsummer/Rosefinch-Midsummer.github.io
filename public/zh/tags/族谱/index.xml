@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>族谱 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/%E6%97%8F%E8%B0%B1/</link>
+    <description>Recent content in 族谱 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 28 Jun 2025 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/%E6%97%8F%E8%B0%B1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>族谱制作软件推荐</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%97%8F%E8%B0%B1%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Sat, 28 Jun 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%97%8F%E8%B0%B1%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;由于我打算做个族谱制作平台，但缺乏深入的产品功能设计想法。我找到了几款不错的软件。&lt;/p&gt;
+&lt;p&gt;这里介绍了几款不错的族谱制作软件。&lt;/p&gt;
+&lt;p&gt;第一个软件&lt;code&gt;My Family Tree&lt;/code&gt;令我印象深刻的是中国的阴阳历（lunisolar calendar）以及族谱中添加数据的页面UI。这里可以添加图片。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

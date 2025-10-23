@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>工具包 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/categories/%E5%B7%A5%E5%85%B7%E5%8C%85/</link>
+    <description>Recent content in 工具包 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 22 Sep 2025 21:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E5%B7%A5%E5%85%B7%E5%8C%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jupyter Notebook本地配置</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/jupyter-notebook%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sat, 18 Nov 2023 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/jupyter-notebook%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;h1 id=&#34;安装&#34;&gt;安装&lt;/h1&gt;
+&lt;p&gt;在cmd中输入&lt;code&gt;pip install -i https://pypi.douban.com/simple/ jupyter&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&#34;如何更改jupyter-notebook的默认工作路径&#34;&gt;如何更改Jupyter Notebook的默认工作路径？&lt;/h1&gt;
+&lt;p&gt;1.在cmd中输入命令&lt;code&gt;jupyter notebook --generate-config&lt;/code&gt;使Jupyter产生配置文件：Jupyter_notebook_config.py&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

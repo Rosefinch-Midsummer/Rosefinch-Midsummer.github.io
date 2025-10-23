@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Zotero on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/zotero/</link>
+    <description>Recent content in Zotero on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 22 Sep 2025 21:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/zotero/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文献管理工具——Zotero教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7zotero%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Fri, 26 May 2023 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7zotero%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.hjroyal.top/posts/tools/2020-09-zotero/&#34;&gt;文献管理工具 Zotero 介绍&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Zotero是一款自由及开放源代码的文献管理软件，用以管理书目信息及相关材料。其最著名的特性是作为浏览器插件、在线同步、与文档编辑软件如Microsoft Word、LibreOffice、OpenOffice.org Writer、NeoOffice等集成，可生成文内引用、生成页面脚注或文后的参考文献。日常使用中还可以搭配上海交大相关人员维护的&lt;a href=&#34;https://github.com/sjtug/SJTUThesis&#34;&gt; SJTUThesis LaTeX 模版&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

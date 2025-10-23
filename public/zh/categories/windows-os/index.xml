@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Windows OS on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/categories/windows-os/</link>
+    <description>Recent content in Windows OS on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 06 May 2024 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/windows-os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何彻底关闭 Antimalware Service Executable 降低内存占用 ?</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E5%A6%82%E4%BD%95%E5%BD%BB%E5%BA%95%E5%85%B3%E9%97%ADantimalwareserviceexecutable%E9%99%8D%E4%BD%8E%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8/</link>
+      <pubDate>Mon, 06 May 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E5%A6%82%E4%BD%95%E5%BD%BB%E5%BA%95%E5%85%B3%E9%97%ADantimalwareserviceexecutable%E9%99%8D%E4%BD%8E%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8/</guid>
+      <description>&lt;h1 id=&#34;如何彻底关闭-antimalware-service-executable-降低内存占用-&#34;&gt;如何彻底关闭 Antimalware Service Executable 降低内存占用 ?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_43848873/article/details/119280792&#34;&gt;【系统篇】彻底禁用Antimalware Service Executable服务&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/rqcim/p/15183851.html&#34;&gt;Windows 10 彻底关闭 Antimalware Service Executable 降低内存占用&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;很多同学更新了Windows 10新版本以后，系统运行中出现了一个超级讨厌的Antimalware Service Executable进程，非常占运行内存&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

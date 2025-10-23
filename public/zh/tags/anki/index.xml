@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Anki on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/anki/</link>
+    <description>Recent content in Anki on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 17 May 2025 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/anki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anki入门教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/anki%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sat, 17 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/anki%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h1 id=&#34;如何更好地使用-anki&#34;&gt;如何更好地使用 Anki&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近要准备笔试和面试，要记忆好多内容。本来打算自己写一个的特制的Anki软件，但是时间精力显然不够。这个以后再说咯！&lt;/p&gt;
+&lt;p&gt;Anki 是语言学习、各类考试中不可或缺的强大工具。本文汇总了Anki相关的重要资源，帮助你更好地使用和扩展Anki。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

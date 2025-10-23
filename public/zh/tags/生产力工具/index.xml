@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>生产力工具 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 生产力工具 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 18 Jan 2024 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>媲美 uTools 的免费、效率工具 Rubick</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%AA%B2%E7%BE%8Eutools%E7%9A%84%E5%85%8D%E8%B4%B9%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7rubick/</link>
+      <pubDate>Thu, 18 Jan 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%AA%B2%E7%BE%8Eutools%E7%9A%84%E5%85%8D%E8%B4%B9%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7rubick/</guid>
+      <description>&lt;h1 id=&#34;媲美-utools-的免费效率工具-rubick&#34;&gt;媲美 uTools 的免费、效率工具 Rubick&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://sspai.com/post/84177&#34;&gt;本文来源&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者：&lt;a href=&#34;https://sspai.com/u/sahtlexs/updates&#34;&gt;muwoo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2023 年 11 月 09 日&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不知不觉，&lt;code&gt;Rubick&lt;/code&gt; 从 2021 年开源到现在已经更新到 &lt;code&gt;v4.x&lt;/code&gt; 版本了，目前整体来看不管是交互形式还是操作便捷性，都达到了一个比较稳定的状态。所以，现在我准备正式的写一篇文章来介绍一下 &lt;code&gt;Rubick&lt;/code&gt; 了。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

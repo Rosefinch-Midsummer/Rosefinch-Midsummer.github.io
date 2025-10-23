@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>效率工具 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 效率工具 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 25 May 2025 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>免费开源的高效代码片段管理利器massCode</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E7%9A%84%E9%AB%98%E6%95%88%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E7%AE%A1%E7%90%86%E5%88%A9%E5%99%A8masscode/</link>
+      <pubDate>Sun, 25 May 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E7%9A%84%E9%AB%98%E6%95%88%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E7%AE%A1%E7%90%86%E5%88%A9%E5%99%A8masscode/</guid>
+      <description>&lt;h1 id=&#34;masscode免费开源的高效代码片段管理利器&#34;&gt;massCode：免费开源的高效代码片段管理利器&lt;/h1&gt;
+&lt;p&gt;对于开发者来说，代码片段的积累和管理是日常工作中重要的一环。一款优秀的代码片段管理工具不仅能帮你快速存取和复用代码，还能提升整体开发效率。今天要给大家介绍的是&lt;strong&gt;massCode&lt;/strong&gt;，一款免费且开源的跨平台代码片段管理软件，功能全面且便捷实用，深受广大开发者喜爱。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>探索高效手写体验——RNote 手写笔记软件详解</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/rnote%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Sun, 25 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/rnote%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6%E8%AF%A6%E8%A7%A3/</guid>
+      <description>&lt;h1 id=&#34;探索高效手写体验rnote-手写笔记软件详解&#34;&gt;探索高效手写体验——RNote 手写笔记软件详解&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;随着数字时代的到来，越来越多的人开始使用电子设备进行笔记和创作。作为一款专注于手写体验的笔记软件，&lt;strong&gt;RNote&lt;/strong&gt;以其独特的设计理念和强大功能，成为众多用户心中的优选。本文将从软件特点、使用体验、设计理念等方面，为大家全面介绍RNote，希望能够帮助你更好地了解和使用这款高效的手写笔记工具。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MarkItDown完全指南</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/markitdown%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Tue, 04 Feb 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/markitdown%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;h1 id=&#34;markitdown完全指南微软ai驱动的全能文档转换工具-支持pdfoffice文档图片音频等多种格式转换可集成openai等ai模型实现智能描述&#34;&gt;MarkItDown完全指南：微软AI驱动的全能文档转换工具: 支持PDF、Office文档、图片、音频等多种格式转换,可集成OpenAI等AI模型实现智能描述&lt;/h1&gt;
+&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://stable-learn.com/zh/markitdown_use_guide/&#34;&gt;文章来源&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/microsoft/markitdown&#34;&gt;MarkItDown&lt;/a&gt; 是微软开源的一款强大的文档转换工具，可以将PDF、Office文档、图片等多种格式文件转换为Markdown格式。它还支持集成AI模型来智能处理图片描述。本文将详细介绍如何安装和使用这个工具。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Markdown 转海报编辑器系列 | 天漢帝國復興錄</title>
+<meta name="keywords" content="Markdown">
+<meta name="description" content="MD2Card：基于Markdown文档生成精美知识卡片
+MD2Card：基于Markdown文档生成精美知识卡片
+MD2Card 是一个免费易用的 Markdown 转知识卡片工具，支持多种精美风格、长文自动拆分、一键导出图片，无论是学习笔记、知识整理还是内容分享，都能轻松搞定。
+卡片风格
+MD2Card 支持温暖柔和、玻璃拟态、简约高级灰、梦幻渐变、波普艺术、赛博朋克、清新自然等 20&#43; 主题风格。">
+<meta name="author" content="RM">
+<link rel="canonical" href="https://rosefinch-midsummer.github.io/zh/posts/toolkit/markdown%E8%BD%AC%E6%B5%B7%E6%8A%A5%E7%BC%96%E8%BE%91%E5%99%A8%E7%B3%BB%E5%88%97/">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://rosefinch-midsummer.github.io/img/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rosefinch-midsummer.github.io/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rosefinch-midsummer.github.io/img/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://rosefinch-midsummer.github.io/img/apple-touch-icon.png">
+<link rel="mask-icon" href="https://rosefinch-midsummer.github.io/img/android-chrome-192x192.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://rosefinch-midsummer.github.io/zh/posts/toolkit/markdown%E8%BD%AC%E6%B5%B7%E6%8A%A5%E7%BC%96%E8%BE%91%E5%99%A8%E7%B3%BB%E5%88%97/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous"> 
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script> 
+	document.addEventListener("DOMContentLoaded", function() { 
+		renderMathInElement(document.body, { 
+			
+			
+			delimiters: [ 
+				{left: '$$', right: '$$', display: true}, 
+				{left: '$', right: '$', display: false}, 
+				{left: '\\(', right: '\\)', display: false}, 
+				{left: '\\[', right: '\\]', display: true} 
+			], 
+			
+			throwOnError : false 
+		}); 
+	}); 
+</script>
+
+
+
+
+
+
+
+<meta property="og:url" content="https://rosefinch-midsummer.github.io/zh/posts/toolkit/markdown%E8%BD%AC%E6%B5%B7%E6%8A%A5%E7%BC%96%E8%BE%91%E5%99%A8%E7%B3%BB%E5%88%97/">
+  <meta property="og:site_name" content="天漢帝國復興錄">
+  <meta property="og:title" content="Markdown 转海报编辑器系列">
+  <meta property="og:description" content="MD2Card：基于Markdown文档生成精美知识卡片 MD2Card：基于Markdown文档生成精美知识卡片
+MD2Card 是一个免费易用的 Markdown 转知识卡片工具，支持多种精美风格、长文自动拆分、一键导出图片，无论是学习笔记、知识整理还是内容分享，都能轻松搞定。
+卡片风格 MD2Card 支持温暖柔和、玻璃拟态、简约高级灰、梦幻渐变、波普艺术、赛博朋克、清新自然等 20&#43; 主题风格。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-07T18:34:25+08:00">
+    <meta property="article:modified_time" content="2025-08-07T20:54:22+08:00">
+    <meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown 转海报编辑器系列">
+<meta name="twitter:description" content="MD2Card：基于Markdown文档生成精美知识卡片
+MD2Card：基于Markdown文档生成精美知识卡片
+MD2Card 是一个免费易用的 Markdown 转知识卡片工具，支持多种精美风格、长文自动拆分、一键导出图片，无论是学习笔记、知识整理还是内容分享，都能轻松搞定。
+卡片风格
+MD2Card 支持温暖柔和、玻璃拟态、简约高级灰、梦幻渐变、波普艺术、赛博朋克、清新自然等 20&#43; 主题风格。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "📚文章",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "🧰百寶箱",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/toolkit/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Markdown 转海报编辑器系列",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/toolkit/markdown%E8%BD%AC%E6%B5%B7%E6%8A%A5%E7%BC%96%E8%BE%91%E5%99%A8%E7%B3%BB%E5%88%97/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Markdown 转海报编辑器系列",
+  "name": "Markdown 转海报编辑器系列",
+  "description": "MD2Card：基于Markdown文档生成精美知识卡片 MD2Card：基于Markdown文档生成精美知识卡片\nMD2Card 是一个免费易用的 Markdown 转知识卡片工具，支持多种精美风格、长文自动拆分、一键导出图片，无论是学习笔记、知识整理还是内容分享，都能轻松搞定。\n卡片风格 MD2Card 支持温暖柔和、玻璃拟态、简约高级灰、梦幻渐变、波普艺术、赛博朋克、清新自然等 20+ 主题风格。\n",
+  "keywords": [
+    "Markdown"
+  ],
+  "articleBody": "MD2Card：基于Markdown文档生成精美知识卡片 MD2Card：基于Markdown文档生成精美知识卡片\nMD2Card 是一个免费易用的 Markdown 转知识卡片工具，支持多种精美风格、长文自动拆分、一键导出图片，无论是学习笔记、知识整理还是内容分享，都能轻松搞定。\n卡片风格 MD2Card 支持温暖柔和、玻璃拟态、简约高级灰、梦幻渐变、波普艺术、赛博朋克、清新自然等 20+ 主题风格。\nMarkdown支持 MD2Card 支持标准 Markdown 语法和一些扩展语法，包括标题、列表、代码块、表格、数学公式、流程图、时序图等。同时还可以启用 MDX 语法支持和高级组件。\n实时转换 MD2Card 采用响应式设计，可以实时预览并快速将 Markdown 文档转换为精美的知识卡片；同时还支持分享和导出功能，导出格式支持 PNG、JPG、SVG、PDF、视频等。\n公众号排版 MD2Card 提供了公众号排版模式，支持直接复制到公众号文章功能。\nAPI 调用 高级用户可以使用 MD2Card API 或 MCP Server 生成精美的卡片，MD2Card 官方提供了 Coze 插件，相关功能可能需要消耗积分。\n在线使用 MD2Card 在线版本可以免费使用，输入以下网址：\nhttps://md2card.cn/zh/editor\nMarkdown-to-Image：开源的在线 Markdown 转海报编辑器 Markdown To Poster\n这个 React 组件用于将 Markdown 渲染为漂亮的社交媒体图片。此外，该项目还包括一个内置的 WEB Editor，一键部署后，可以当做 Markdown 转海报图片在线编辑器使用。\nEnglish | 中文 DEMO \u0026 WEB Editor NPM:markdown-to-image ⭐ 点击 Star 和 Watch 按钮，跟踪我们的最新进展。\n功能 将 Markdown 渲染为适合社交分享的海报图片 内置一个模板，支持模板扩展 支持自定义主题，并且已内置9个主题 支持复制为图像 支持一键部署到 Vercel 等 已集成图片跨域代理，可以方便的插入在线图片生成图文海报 支持复制为HTML 代码，可粘贴到电子邮件和一些编辑器中 更多内置模板 如何使用 有两种使用 markdown-to-image 的方式：\n在项目中集成：markdown-to-image 已导出为一个 React 组件，可以直接集成到您自己的项目中。 使用WEB UI：example路径中自带了一个 WEB Editor，部署后，可以当做在线编辑器使用。 在你的项目中集成 markdown-to-image导出了一个叫 Md2Poster 的组件以及其他三个子组件，你可以通过 npm 等安装使用。\n安装 用 npm 安装：\n1 npm i markdown-to-image 用 pnpm 安装：\n1 pnpm install markdown-to-image 用 yarn 安装：\n1 yarn install markdown-to-image 使用 简单开始：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 import 'markdown-to-image/dist/style.css' import { Md2Poster, Md2PosterContent, Md2PosterHeader, Md2PosterFooter } from 'markdown-to-image' ... const markdown = ` # AI Morning Updates \u003e On April 29th, what's the latest in the AI field that should be on your radar? ... ` ... return ( ... \u003cMd2Poster\u003e \u003cMd2PosterHeader\u003ePoster Header\u003c/Md2PosterHeader\u003e \u003cMd2PosterContent\u003e{markdown}\u003c/Md2PosterContent\u003e \u003cMd2PosterFooter\u003ePowered by ReadPo.com\u003c/Md2PosterFooter\u003e \u003c/Md2Poster\u003e ... ) 使用在线编辑器 使用官方部署的在线编辑器 👉 访问：ReadPo.com\n部署自己的在线编辑器 这里使用Vercel进行部署，点击后一键部署。\nMarkdown To Image Serve 一个基于 Next.js 和 Puppeteer 的 Markdown 转图片服务，支持 Docker 部署和 API 集成。A Markdown to Image Service based on Next.js and Puppeteer, supporting Vercel deployment and API integration.\n链接\n🚀 基于 Next.js 和 Puppeteer 的 Markdown 转图片服务 将 Markdown 内容高效转换为精美图片，提供开箱即用的 API 接口，支持 Docker 快速部署与二次开发。\n🎯 项目简介 Markdown To Image Serve 是一款开箱即用的 Markdown 转图片 API 服务，基于 Next.js 14 和 Puppeteer 构建，具备以下特性：\n✨ 核心优势 🚀 一键部署 - 支持 Docker Compose 快速部署 🔄 RESTful API - 简洁易用的 API 接口 🎨 多主题支持 - 内置 9 种精美主题 📱 响应式设计 - 适配移动端和桌面端 🌐 多平台兼容 - 支持 Docker、Railway、Render 等平台 🔒 安全防护 - 最新安全补丁和防护机制 ⚡ 性能优化 - 图片压缩、缓存优化 🛠️ 技术栈 前端: Next.js 14, React 18, TypeScript UI组件: Radix UI, Tailwind CSS Markdown: markdown-to-poster, react-md-editor 浏览器: Puppeteer Core, Chromium 部署: Docker, Railway, Render, Fly.io 🌟 核心功能 📝 内容转换 Markdown 文本一键转图片 支持代码高亮和语法高亮 表格渲染和数学公式支持 图片和链接处理 🎨 样式定制 9种内置主题: blue, pink, purple, green, yellow, gray, red, indigo, SpringGradientWave 自定义页眉页脚 Logo 和品牌元素 响应式布局适配 🔧 开发工具 实时预览编辑器 主题切换和参数调整 一键复制图片功能 批量处理支持 📦 API 服务 RESTful API 接口 图片生成和存储 错误处理和日志记录 健康检查机制 🌐 在线体验 在线服务（Vercel） GitHub 仓库 Markdown to Card(Vue) jorkun/md2card-v3\n一个纯前端工具，支持将 Markdown 文本实时渲染为美观的卡片，可导出为图片或 .md 文件。\n✨ 功能 实时 Markdown 编辑 + 卡片预览 支持 GFM 语法（表格、链接、列表等） 一键复制 / 下载 Markdown 导出预览图为 PNG 无后端，纯前端，部署即用 🚀 快速开始 1 2 pnpm install # 或 npm/yarn pnpm dev # 启动开发服务器 📦 打包部署 bash pnpm build 🛠️ 技术栈 Vue 3 + Vite Element Plus TailwindCSS + @tailwindcss/typography html2canvas MD2Card(React) MD2Card\nMD2Card 是一个简洁高效的 Markdown 转换工具，可以将 Markdown 文本转换为精美的卡片图片。\n✨ 功能特性 🚀 实时预览：编辑 Markdown 时即时查看渲染效果 🎨 主题切换：内置多种精美主题样式 📱 响应式设计：完美适配各种屏幕尺寸 💾 自动保存：编辑内容自动保存，无需担心丢失 📤 导出图片：一键将卡片导出为图片格式 🛠️ 技术栈 React + TypeScript Vite Tailwind CSS Monaco Editor Marked Zustand Styled Components TODO ✅ 实现自动分页功能 ✅ 支持更多 Markdown 语法 实现图片同源加载 优化性能 增加更多主题样式 支持导入导出 Markdown 文件 增加更多导出格式 📦 安装 1 2 3 4 5 6 7 8 # 使用 pnpm 安装依赖 pnpm install # 启动开发服务器 pnpm dev # 构建生产版本 pnpm build 🚀 使用方法 在左侧编辑器中输入 Markdown 文本 右侧实时预览渲染效果 使用顶部工具栏调整主题和样式 点击导出按钮保存为图片 📸 预览 MD2Card：基于Markdown文档生成精美知识卡片 MD2Card：基于Markdown文档生成精美知识卡片\nMD2Card 是一个免费易用的 Markdown 转知识卡片工具，支持多种精美风格、长文自动拆分、一键导出图片，无论是学习笔记、知识整理还是内容分享，都能轻松搞定。\n卡片风格 MD2Card 支持温暖柔和、玻璃拟态、简约高级灰、梦幻渐变、波普艺术、赛博朋克、清新自然等 20+ 主题风格。\nMarkdown支持 MD2Card 支持标准 Markdown 语法和一些扩展语法，包括标题、列表、代码块、表格、数学公式、流程图、时序图等。同时还可以启用 MDX 语法支持和高级组件。\n实时转换 MD2Card 采用响应式设计，可以实时预览并快速将 Markdown 文档转换为精美的知识卡片；同时还支持分享和导出功能，导出格式支持 PNG、JPG、SVG、PDF、视频等。\n公众号排版 MD2Card 提供了公众号排版模式，支持直接复制到公众号文章功能。\nAPI 调用 高级用户可以使用 MD2Card API 或 MCP Server 生成精美的卡片，MD2Card 官方提供了 Coze 插件，相关功能可能需要消耗积分。\n在线使用 MD2Card 在线版本可以免费使用，输入以下网址：\nhttps://md2card.cn/zh/editor\nMarkdown-to-Image：开源的在线 Markdown 转海报编辑器 Markdown To Poster\n这个 React 组件用于将 Markdown 渲染为漂亮的社交媒体图片。此外，该项目还包括一个内置的 WEB Editor，一键部署后，可以当做 Markdown 转海报图片在线编辑器使用。\nEnglish | 中文 DEMO \u0026 WEB Editor NPM:markdown-to-image ⭐ 点击 Star 和 Watch 按钮，跟踪我们的最新进展。\n功能 将 Markdown 渲染为适合社交分享的海报图片 内置一个模板，支持模板扩展 支持自定义主题，并且已内置9个主题 支持复制为图像 支持一键部署到 Vercel 等 已集成图片跨域代理，可以方便的插入在线图片生成图文海报 支持复制为HTML 代码，可粘贴到电子邮件和一些编辑器中 更多内置模板 如何使用 有两种使用 markdown-to-image 的方式：\n在项目中集成：markdown-to-image 已导出为一个 React 组件，可以直接集成到您自己的项目中。 使用WEB UI：example路径中自带了一个 WEB Editor，部署后，可以当做在线编辑器使用。 在你的项目中集成 markdown-to-image导出了一个叫 Md2Poster 的组件以及其他三个子组件，你可以通过 npm 等安装使用。\n安装 用 npm 安装：\n1 npm i markdown-to-image 用 pnpm 安装：\n1 pnpm install markdown-to-image 用 yarn 安装：\n1 yarn install markdown-to-image 使用 简单开始：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 import 'markdown-to-image/dist/style.css' import { Md2Poster, Md2PosterContent, Md2PosterHeader, Md2PosterFooter } from 'markdown-to-image' ... const markdown = ` # AI Morning Updates \u003e On April 29th, what's the latest in the AI field that should be on your radar? ... ` ... return ( ... \u003cMd2Poster\u003e \u003cMd2PosterHeader\u003ePoster Header\u003c/Md2PosterHeader\u003e \u003cMd2PosterContent\u003e{markdown}\u003c/Md2PosterContent\u003e \u003cMd2PosterFooter\u003ePowered by ReadPo.com\u003c/Md2PosterFooter\u003e \u003c/Md2Poster\u003e ... ) 使用在线编辑器 使用官方部署的在线编辑器 👉 访问：ReadPo.com\n部署自己的在线编辑器 这里使用Vercel进行部署，点击后一键部署。\nMarkdown To Image Serve 一个基于 Next.js 和 Puppeteer 的 Markdown 转图片服务，支持 Docker 部署和 API 集成。A Markdown to Image Service based on Next.js and Puppeteer, supporting Vercel deployment and API integration.\n链接\n🚀 基于 Next.js 和 Puppeteer 的 Markdown 转图片服务 将 Markdown 内容高效转换为精美图片，提供开箱即用的 API 接口，支持 Docker 快速部署与二次开发。\n🎯 项目简介 Markdown To Image Serve 是一款开箱即用的 Markdown 转图片 API 服务，基于 Next.js 14 和 Puppeteer 构建，具备以下特性：\n✨ 核心优势 🚀 一键部署 - 支持 Docker Compose 快速部署 🔄 RESTful API - 简洁易用的 API 接口 🎨 多主题支持 - 内置 9 种精美主题 📱 响应式设计 - 适配移动端和桌面端 🌐 多平台兼容 - 支持 Docker、Railway、Render 等平台 🔒 安全防护 - 最新安全补丁和防护机制 ⚡ 性能优化 - 图片压缩、缓存优化 🛠️ 技术栈 前端: Next.js 14, React 18, TypeScript UI组件: Radix UI, Tailwind CSS Markdown: markdown-to-poster, react-md-editor 浏览器: Puppeteer Core, Chromium 部署: Docker, Railway, Render, Fly.io 🌟 核心功能 📝 内容转换 Markdown 文本一键转图片 支持代码高亮和语法高亮 表格渲染和数学公式支持 图片和链接处理 🎨 样式定制 9种内置主题: blue, pink, purple, green, yellow, gray, red, indigo, SpringGradientWave 自定义页眉页脚 Logo 和品牌元素 响应式布局适配 🔧 开发工具 实时预览编辑器 主题切换和参数调整 一键复制图片功能 批量处理支持 📦 API 服务 RESTful API 接口 图片生成和存储 错误处理和日志记录 健康检查机制 🌐 在线体验 在线服务（Vercel） GitHub 仓库 Markdown to Card(Vue) jorkun/md2card-v3\n一个纯前端工具，支持将 Markdown 文本实时渲染为美观的卡片，可导出为图片或 .md 文件。\n✨ 功能 实时 Markdown 编辑 + 卡片预览 支持 GFM 语法（表格、链接、列表等） 一键复制 / 下载 Markdown 导出预览图为 PNG 无后端，纯前端，部署即用 🚀 快速开始 1 2 pnpm install # 或 npm/yarn pnpm dev # 启动开发服务器 📦 打包部署 bash pnpm build 🛠️ 技术栈 Vue 3 + Vite Element Plus TailwindCSS + @tailwindcss/typography html2canvas MD2Card(React) MD2Card\nMD2Card 是一个简洁高效的 Markdown 转换工具，可以将 Markdown 文本转换为精美的卡片图片。\n✨ 功能特性 🚀 实时预览：编辑 Markdown 时即时查看渲染效果 🎨 主题切换：内置多种精美主题样式 📱 响应式设计：完美适配各种屏幕尺寸 💾 自动保存：编辑内容自动保存，无需担心丢失 📤 导出图片：一键将卡片导出为图片格式 🛠️ 技术栈 React + TypeScript Vite Tailwind CSS Monaco Editor Marked Zustand Styled Components TODO ✅ 实现自动分页功能 ✅ 支持更多 Markdown 语法 实现图片同源加载 优化性能 增加更多主题样式 支持导入导出 Markdown 文件 增加更多导出格式 📦 安装 1 2 3 4 5 6 7 8 # 使用 pnpm 安装依赖 pnpm install # 启动开发服务器 pnpm dev # 构建生产版本 pnpm build 🚀 使用方法 在左侧编辑器中输入 Markdown 文本 右侧实时预览渲染效果 使用顶部工具栏调整主题和样式 点击导出按钮保存为图片 📸 预览 ",
+  "wordCount" : "3892",
+  "inLanguage": "zh",
+  "datePublished": "2025-08-07T18:34:25+08:00",
+  "dateModified": "2025-08-07T20:54:22+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "RM"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://rosefinch-midsummer.github.io/zh/posts/toolkit/markdown%E8%BD%AC%E6%B5%B7%E6%8A%A5%E7%BC%96%E8%BE%91%E5%99%A8%E7%B3%BB%E5%88%97/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "天漢帝國復興錄",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://rosefinch-midsummer.github.io/img/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://rosefinch-midsummer.github.io/zh/" accesskey="h" title="天漢帝國復興錄 (Alt + H)">天漢帝國復興錄</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/" title="🏠主頁">
+                    <span>🏠主頁</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/posts" title="📚文章">
+                    <span>📚文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/archives" title="⏱時間軸">
+                    <span>⏱時間軸</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/categories" title="🧩分類">
+                    <span>🧩分類</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/tags" title="🔖標簽">
+                    <span>🔖標簽</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/about" title="🙋🏻‍♂️關于">
+                    <span>🙋🏻‍♂️關于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://rosefinch-midsummer.github.io/zh/">首頁</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/">📚文章</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/toolkit/">🧰百寶箱</a></div>
+    <h1 class="post-title">
+      Markdown 转海报编辑器系列
+    </h1>
+    <div class="post-meta">
+    创建: 2025-08-07 |
+    更新: 2025-08-07 |
+    字数: 3892字 |
+    时长: 8分钟 |
+    RM
+
+
+</div>
+   
+<div  class="meta-item">&nbsp·&nbsp
+  <span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+</div>
+
+
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目錄</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#md2card%e5%9f%ba%e4%ba%8emarkdown%e6%96%87%e6%a1%a3%e7%94%9f%e6%88%90%e7%b2%be%e7%be%8e%e7%9f%a5%e8%af%86%e5%8d%a1%e7%89%87" aria-label="MD2Card：基于Markdown文档生成精美知识卡片">MD2Card：基于Markdown文档生成精美知识卡片</a><ul>
+                        
+                <li>
+                    <a href="#%e5%8d%a1%e7%89%87%e9%a3%8e%e6%a0%bc" aria-label="卡片风格">卡片风格</a></li>
+                <li>
+                    <a href="#markdown%e6%94%af%e6%8c%81" aria-label="Markdown支持">Markdown支持</a></li>
+                <li>
+                    <a href="#%e5%ae%9e%e6%97%b6%e8%bd%ac%e6%8d%a2" aria-label="实时转换">实时转换</a></li>
+                <li>
+                    <a href="#%e5%85%ac%e4%bc%97%e5%8f%b7%e6%8e%92%e7%89%88" aria-label="公众号排版">公众号排版</a></li>
+                <li>
+                    <a href="#api-%e8%b0%83%e7%94%a8" aria-label="API 调用">API 调用</a></li>
+                <li>
+                    <a href="#%e5%9c%a8%e7%ba%bf%e4%bd%bf%e7%94%a8" aria-label="在线使用">在线使用</a></li></ul>
+                </li>
+                <li>
+                    <a href="#markdown-to-image%e5%bc%80%e6%ba%90%e7%9a%84%e5%9c%a8%e7%ba%bf-markdown-%e8%bd%ac%e6%b5%b7%e6%8a%a5%e7%bc%96%e8%be%91%e5%99%a8" aria-label="Markdown-to-Image：开源的在线 Markdown 转海报编辑器">Markdown-to-Image：开源的在线 Markdown 转海报编辑器</a><ul>
+                        
+                <li>
+                    <a href="#%e5%8a%9f%e8%83%bd" aria-label="功能">功能</a></li>
+                <li>
+                    <a href="#%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8" aria-label="如何使用">如何使用</a><ul>
+                        
+                <li>
+                    <a href="#%e5%9c%a8%e4%bd%a0%e7%9a%84%e9%a1%b9%e7%9b%ae%e4%b8%ad%e9%9b%86%e6%88%90" aria-label="在你的项目中集成">在你的项目中集成</a><ul>
+                        
+                <li>
+                    <a href="#%e5%ae%89%e8%a3%85" aria-label="安装">安装</a></li>
+                <li>
+                    <a href="#%e4%bd%bf%e7%94%a8" aria-label="使用">使用</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%bd%bf%e7%94%a8%e5%9c%a8%e7%ba%bf%e7%bc%96%e8%be%91%e5%99%a8" aria-label="使用在线编辑器">使用在线编辑器</a><ul>
+                        
+                <li>
+                    <a href="#%e4%bd%bf%e7%94%a8%e5%ae%98%e6%96%b9%e9%83%a8%e7%bd%b2%e7%9a%84%e5%9c%a8%e7%ba%bf%e7%bc%96%e8%be%91%e5%99%a8" aria-label="使用官方部署的在线编辑器">使用官方部署的在线编辑器</a></li>
+                <li>
+                    <a href="#%e9%83%a8%e7%bd%b2%e8%87%aa%e5%b7%b1%e7%9a%84%e5%9c%a8%e7%ba%bf%e7%bc%96%e8%be%91%e5%99%a8" aria-label="部署自己的在线编辑器">部署自己的在线编辑器</a></li></ul>
+                </li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#markdown-to-image-serve" aria-label="Markdown To Image Serve">Markdown To Image Serve</a><ul>
+                        <ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#-%e5%9f%ba%e4%ba%8e-nextjs-%e5%92%8c-puppeteer-%e7%9a%84-markdown-%e8%bd%ac%e5%9b%be%e7%89%87%e6%9c%8d%e5%8a%a1" aria-label="🚀 基于 Next.js 和 Puppeteer 的 Markdown 转图片服务">🚀 基于 Next.js 和 Puppeteer 的 Markdown 转图片服务</a></li></ul>
+                    </ul>
+                    
+                <li>
+                    <a href="#-%e9%a1%b9%e7%9b%ae%e7%ae%80%e4%bb%8b" aria-label="🎯 项目简介">🎯 项目简介</a><ul>
+                        
+                <li>
+                    <a href="#-%e6%a0%b8%e5%bf%83%e4%bc%98%e5%8a%bf" aria-label="✨ 核心优势">✨ 核心优势</a></li>
+                <li>
+                    <a href="#-%e6%8a%80%e6%9c%af%e6%a0%88" aria-label="🛠️ 技术栈">🛠️ 技术栈</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-%e6%a0%b8%e5%bf%83%e5%8a%9f%e8%83%bd" aria-label="🌟 核心功能">🌟 核心功能</a><ul>
+                        
+                <li>
+                    <a href="#-%e5%86%85%e5%ae%b9%e8%bd%ac%e6%8d%a2" aria-label="📝 内容转换">📝 内容转换</a></li>
+                <li>
+                    <a href="#-%e6%a0%b7%e5%bc%8f%e5%ae%9a%e5%88%b6" aria-label="🎨 样式定制">🎨 样式定制</a></li>
+                <li>
+                    <a href="#-%e5%bc%80%e5%8f%91%e5%b7%a5%e5%85%b7" aria-label="🔧 开发工具">🔧 开发工具</a></li>
+                <li>
+                    <a href="#-api-%e6%9c%8d%e5%8a%a1" aria-label="📦 API 服务">📦 API 服务</a></li>
+                <li>
+                    <a href="#-%e5%9c%a8%e7%ba%bf%e4%bd%93%e9%aa%8c" aria-label="🌐 在线体验">🌐 在线体验</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#markdown-to-cardvue" aria-label="Markdown to Card(Vue)">Markdown to Card(Vue)</a><ul>
+                        
+                <li>
+                    <a href="#-%e5%8a%9f%e8%83%bd" aria-label="✨ 功能">✨ 功能</a></li>
+                <li>
+                    <a href="#-%e5%bf%ab%e9%80%9f%e5%bc%80%e5%a7%8b" aria-label="🚀 快速开始">🚀 快速开始</a></li>
+                <li>
+                    <a href="#-%e6%89%93%e5%8c%85%e9%83%a8%e7%bd%b2" aria-label="📦 打包部署">📦 打包部署</a></li>
+                <li>
+                    <a href="#-%e6%8a%80%e6%9c%af%e6%a0%88-1" aria-label="🛠️ 技术栈">🛠️ 技术栈</a></li></ul>
+                </li>
+                <li>
+                    <a href="#md2cardreact" aria-label="MD2Card(React)">MD2Card(React)</a><ul>
+                        
+                <li>
+                    <a href="#-%e5%8a%9f%e8%83%bd%e7%89%b9%e6%80%a7" aria-label="✨ 功能特性">✨ 功能特性</a></li>
+                <li>
+                    <a href="#-%e6%8a%80%e6%9c%af%e6%a0%88-2" aria-label="🛠️ 技术栈">🛠️ 技术栈</a></li>
+                <li>
+                    <a href="#todo" aria-label="TODO">TODO</a></li>
+                <li>
+                    <a href="#-%e5%ae%89%e8%a3%85" aria-label="📦 安装">📦 安装</a></li>
+                <li>
+                    <a href="#-%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95" aria-label="🚀 使用方法">🚀 使用方法</a></li>
+                <li>
+                    <a href="#-%e9%a2%84%e8%a7%88" aria-label="📸 预览">📸 预览</a></li></ul>
+                </li>
+                <li>
+                    <a href="#md2card%e5%9f%ba%e4%ba%8emarkdown%e6%96%87%e6%a1%a3%e7%94%9f%e6%88%90%e7%b2%be%e7%be%8e%e7%9f%a5%e8%af%86%e5%8d%a1%e7%89%87-1" aria-label="MD2Card：基于Markdown文档生成精美知识卡片">MD2Card：基于Markdown文档生成精美知识卡片</a><ul>
+                        
+                <li>
+                    <a href="#%e5%8d%a1%e7%89%87%e9%a3%8e%e6%a0%bc-1" aria-label="卡片风格">卡片风格</a></li>
+                <li>
+                    <a href="#markdown%e6%94%af%e6%8c%81-1" aria-label="Markdown支持">Markdown支持</a></li>
+                <li>
+                    <a href="#%e5%ae%9e%e6%97%b6%e8%bd%ac%e6%8d%a2-1" aria-label="实时转换">实时转换</a></li>
+                <li>
+                    <a href="#%e5%85%ac%e4%bc%97%e5%8f%b7%e6%8e%92%e7%89%88-1" aria-label="公众号排版">公众号排版</a></li>
+                <li>
+                    <a href="#api-%e8%b0%83%e7%94%a8-1" aria-label="API 调用">API 调用</a></li>
+                <li>
+                    <a href="#%e5%9c%a8%e7%ba%bf%e4%bd%bf%e7%94%a8-1" aria-label="在线使用">在线使用</a></li></ul>
+                </li>
+                <li>
+                    <a href="#markdown-to-image%e5%bc%80%e6%ba%90%e7%9a%84%e5%9c%a8%e7%ba%bf-markdown-%e8%bd%ac%e6%b5%b7%e6%8a%a5%e7%bc%96%e8%be%91%e5%99%a8-1" aria-label="Markdown-to-Image：开源的在线 Markdown 转海报编辑器">Markdown-to-Image：开源的在线 Markdown 转海报编辑器</a><ul>
+                        
+                <li>
+                    <a href="#%e5%8a%9f%e8%83%bd-1" aria-label="功能">功能</a></li>
+                <li>
+                    <a href="#%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8-1" aria-label="如何使用">如何使用</a><ul>
+                        
+                <li>
+                    <a href="#%e5%9c%a8%e4%bd%a0%e7%9a%84%e9%a1%b9%e7%9b%ae%e4%b8%ad%e9%9b%86%e6%88%90-1" aria-label="在你的项目中集成">在你的项目中集成</a><ul>
+                        
+                <li>
+                    <a href="#%e5%ae%89%e8%a3%85-1" aria-label="安装">安装</a></li>
+                <li>
+                    <a href="#%e4%bd%bf%e7%94%a8-1" aria-label="使用">使用</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%bd%bf%e7%94%a8%e5%9c%a8%e7%ba%bf%e7%bc%96%e8%be%91%e5%99%a8-1" aria-label="使用在线编辑器">使用在线编辑器</a><ul>
+                        
+                <li>
+                    <a href="#%e4%bd%bf%e7%94%a8%e5%ae%98%e6%96%b9%e9%83%a8%e7%bd%b2%e7%9a%84%e5%9c%a8%e7%ba%bf%e7%bc%96%e8%be%91%e5%99%a8-1" aria-label="使用官方部署的在线编辑器">使用官方部署的在线编辑器</a></li>
+                <li>
+                    <a href="#%e9%83%a8%e7%bd%b2%e8%87%aa%e5%b7%b1%e7%9a%84%e5%9c%a8%e7%ba%bf%e7%bc%96%e8%be%91%e5%99%a8-1" aria-label="部署自己的在线编辑器">部署自己的在线编辑器</a></li></ul>
+                </li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#markdown-to-image-serve-1" aria-label="Markdown To Image Serve">Markdown To Image Serve</a><ul>
+                        <ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#-%e5%9f%ba%e4%ba%8e-nextjs-%e5%92%8c-puppeteer-%e7%9a%84-markdown-%e8%bd%ac%e5%9b%be%e7%89%87%e6%9c%8d%e5%8a%a1-1" aria-label="🚀 基于 Next.js 和 Puppeteer 的 Markdown 转图片服务">🚀 基于 Next.js 和 Puppeteer 的 Markdown 转图片服务</a></li></ul>
+                    </ul>
+                    
+                <li>
+                    <a href="#-%e9%a1%b9%e7%9b%ae%e7%ae%80%e4%bb%8b-1" aria-label="🎯 项目简介">🎯 项目简介</a><ul>
+                        
+                <li>
+                    <a href="#-%e6%a0%b8%e5%bf%83%e4%bc%98%e5%8a%bf-1" aria-label="✨ 核心优势">✨ 核心优势</a></li>
+                <li>
+                    <a href="#-%e6%8a%80%e6%9c%af%e6%a0%88-3" aria-label="🛠️ 技术栈">🛠️ 技术栈</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-%e6%a0%b8%e5%bf%83%e5%8a%9f%e8%83%bd-1" aria-label="🌟 核心功能">🌟 核心功能</a><ul>
+                        
+                <li>
+                    <a href="#-%e5%86%85%e5%ae%b9%e8%bd%ac%e6%8d%a2-1" aria-label="📝 内容转换">📝 内容转换</a></li>
+                <li>
+                    <a href="#-%e6%a0%b7%e5%bc%8f%e5%ae%9a%e5%88%b6-1" aria-label="🎨 样式定制">🎨 样式定制</a></li>
+                <li>
+                    <a href="#-%e5%bc%80%e5%8f%91%e5%b7%a5%e5%85%b7-1" aria-label="🔧 开发工具">🔧 开发工具</a></li>
+                <li>
+                    <a href="#-api-%e6%9c%8d%e5%8a%a1-1" aria-label="📦 API 服务">📦 API 服务</a></li>
+                <li>
+                    <a href="#-%e5%9c%a8%e7%ba%bf%e4%bd%93%e9%aa%8c-1" aria-label="🌐 在线体验">🌐 在线体验</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#markdown-to-cardvue-1" aria-label="Markdown to Card(Vue)">Markdown to Card(Vue)</a><ul>
+                        
+                <li>
+                    <a href="#-%e5%8a%9f%e8%83%bd-1" aria-label="✨ 功能">✨ 功能</a></li>
+                <li>
+                    <a href="#-%e5%bf%ab%e9%80%9f%e5%bc%80%e5%a7%8b-1" aria-label="🚀 快速开始">🚀 快速开始</a></li>
+                <li>
+                    <a href="#-%e6%89%93%e5%8c%85%e9%83%a8%e7%bd%b2-1" aria-label="📦 打包部署">📦 打包部署</a></li>
+                <li>
+                    <a href="#-%e6%8a%80%e6%9c%af%e6%a0%88-4" aria-label="🛠️ 技术栈">🛠️ 技术栈</a></li></ul>
+                </li>
+                <li>
+                    <a href="#md2cardreact-1" aria-label="MD2Card(React)">MD2Card(React)</a><ul>
+                        
+                <li>
+                    <a href="#-%e5%8a%9f%e8%83%bd%e7%89%b9%e6%80%a7-1" aria-label="✨ 功能特性">✨ 功能特性</a></li>
+                <li>
+                    <a href="#-%e6%8a%80%e6%9c%af%e6%a0%88-5" aria-label="🛠️ 技术栈">🛠️ 技术栈</a></li>
+                <li>
+                    <a href="#todo-1" aria-label="TODO">TODO</a></li>
+                <li>
+                    <a href="#-%e5%ae%89%e8%a3%85-1" aria-label="📦 安装">📦 安装</a></li>
+                <li>
+                    <a href="#-%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95-1" aria-label="🚀 使用方法">🚀 使用方法</a></li>
+                <li>
+                    <a href="#-%e9%a2%84%e8%a7%88-1" aria-label="📸 预览">📸 预览</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="md2card基于markdown文档生成精美知识卡片">MD2Card：基于Markdown文档生成精美知识卡片<a hidden class="anchor" aria-hidden="true" href="#md2card基于markdown文档生成精美知识卡片">#</a></h1>
+<p><a href="https://blog.csdn.net/horses/article/details/148693390">MD2Card：基于Markdown文档生成精美知识卡片</a></p>
+<p><a href="https://md2card.cn/zh">MD2Card</a> 是一个免费易用的 Markdown 转知识卡片工具，支持多种精美风格、长文自动拆分、一键导出图片，无论是学习笔记、知识整理还是内容分享，都能轻松搞定。</p>
+<h2 id="卡片风格">卡片风格<a hidden class="anchor" aria-hidden="true" href="#卡片风格">#</a></h2>
+<p>MD2Card 支持温暖柔和、玻璃拟态、简约高级灰、梦幻渐变、波普艺术、赛博朋克、清新自然等 20+ 主题风格。</p>
+<h2 id="markdown支持">Markdown支持<a hidden class="anchor" aria-hidden="true" href="#markdown支持">#</a></h2>
+<p>MD2Card 支持标准 Markdown 语法和一些扩展语法，包括标题、列表、代码块、表格、数学公式、流程图、时序图等。同时还可以启用 MDX 语法支持和高级组件。</p>
+<h2 id="实时转换">实时转换<a hidden class="anchor" aria-hidden="true" href="#实时转换">#</a></h2>
+<p>MD2Card 采用响应式设计，可以实时预览并快速将 Markdown 文档转换为精美的知识卡片；同时还支持分享和导出功能，导出格式支持 PNG、JPG、SVG、PDF、视频等。</p>
+<h2 id="公众号排版">公众号排版<a hidden class="anchor" aria-hidden="true" href="#公众号排版">#</a></h2>
+<p>MD2Card 提供了公众号排版模式，支持直接复制到公众号文章功能。</p>
+<h2 id="api-调用">API 调用<a hidden class="anchor" aria-hidden="true" href="#api-调用">#</a></h2>
+<p>高级用户可以使用 MD2Card API 或 MCP Server 生成精美的卡片，MD2Card 官方提供了 Coze 插件，相关功能可能需要消耗积分。</p>
+<h2 id="在线使用">在线使用<a hidden class="anchor" aria-hidden="true" href="#在线使用">#</a></h2>
+<p>MD2Card 在线版本可以免费使用，输入以下网址：</p>
+<p><a href="https://md2card.cn/zh/editor">https://md2card.cn/zh/editor</a></p>
+<h1 id="markdown-to-image开源的在线-markdown-转海报编辑器">Markdown-to-Image：开源的在线 Markdown 转海报编辑器<a hidden class="anchor" aria-hidden="true" href="#markdown-to-image开源的在线-markdown-转海报编辑器">#</a></h1>
+<p><a href="https://github.com/gcui-art/markdown-to-image">Markdown To Poster</a></p>
+<p>这个 React 组件用于将 Markdown 渲染为漂亮的社交媒体图片。此外，该项目还包括一个内置的 WEB Editor，一键部署后，可以当做 Markdown 转海报图片在线编辑器使用。</p>
+<p><a href="https://github.com/gcui-art/markdown-to-image/blob/main/public/banner.jpg"><img alt="markdown-to-image banner" loading="lazy" src="https://github.com/gcui-art/markdown-to-image/raw/main/public/banner.jpg"></a></p>
+<ul>
+<li><a href="https://github.com/gcui-art/markdown-to-image/blob/main/README.md">English</a> | <a href="https://github.com/gcui-art/markdown-to-image/blob/main/README_CN.md">中文</a></li>
+<li><a href="https://readpo.com/zh/poster">DEMO &amp; WEB Editor</a></li>
+<li><a href="https://www.npmjs.com/package/markdown-to-image">NPM:markdown-to-image</a></li>
+</ul>
+<p>⭐ 点击 Star 和 Watch 按钮，跟踪我们的最新进展。</p>
+<h2 id="功能">功能<a hidden class="anchor" aria-hidden="true" href="#功能">#</a></h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox">  将 Markdown 渲染为适合社交分享的海报图片</li>
+<li><input checked="" disabled="" type="checkbox">  内置一个模板，支持模板扩展</li>
+<li><input checked="" disabled="" type="checkbox">  支持自定义主题，并且已内置9个主题</li>
+<li><input checked="" disabled="" type="checkbox">  支持复制为图像</li>
+<li><input checked="" disabled="" type="checkbox">  支持一键部署到 Vercel 等</li>
+<li><input checked="" disabled="" type="checkbox">  已集成图片跨域代理，可以方便的插入在线图片生成图文海报</li>
+<li><input checked="" disabled="" type="checkbox">  支持复制为HTML 代码，可粘贴到电子邮件和一些编辑器中</li>
+<li><input disabled="" type="checkbox">  更多内置模板</li>
+</ul>
+<h2 id="如何使用">如何使用<a hidden class="anchor" aria-hidden="true" href="#如何使用">#</a></h2>
+<p>有两种使用 markdown-to-image 的方式：</p>
+<ul>
+<li>在项目中集成：markdown-to-image 已导出为一个 React 组件，可以直接集成到您自己的项目中。</li>
+<li>使用WEB UI：example路径中自带了一个 WEB Editor，部署后，可以当做在线编辑器使用。</li>
+</ul>
+<h3 id="在你的项目中集成">在你的项目中集成<a hidden class="anchor" aria-hidden="true" href="#在你的项目中集成">#</a></h3>
+<p><code>markdown-to-image</code>导出了一个叫 Md2Poster 的组件以及其他三个子组件，你可以通过 npm 等安装使用。</p>
+<h4 id="安装">安装<a hidden class="anchor" aria-hidden="true" href="#安装">#</a></h4>
+<p>用 npm 安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npm i markdown-to-image
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>用 pnpm 安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pnpm install markdown-to-image
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>用 yarn 安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">yarn install markdown-to-image
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="使用">使用<a hidden class="anchor" aria-hidden="true" href="#使用">#</a></h4>
+<p>简单开始：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">import</span> <span class="s1">&#39;markdown-to-image/dist/style.css&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Md2Poster</span><span class="p">,</span> <span class="nx">Md2PosterContent</span><span class="p">,</span> <span class="nx">Md2PosterHeader</span><span class="p">,</span> <span class="nx">Md2PosterFooter</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;markdown-to-image&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">markdown</span> <span class="o">=</span> <span class="sb">`
+</span></span></span><span class="line"><span class="cl"><span class="sb"># AI Morning Updates
+</span></span></span><span class="line"><span class="cl"><span class="sb">&gt; On April 29th, what&#39;s the latest in the AI field that should be on your radar?
+</span></span></span><span class="line"><span class="cl"><span class="sb">...
+</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">Md2Poster</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">Md2PosterHeader</span><span class="o">&gt;</span><span class="nx">Poster</span> <span class="nx">Header</span><span class="o">&lt;</span><span class="err">/Md2PosterHeader&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">Md2PosterContent</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">markdown</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/Md2PosterContent&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">Md2PosterFooter</span><span class="o">&gt;</span><span class="nx">Powered</span> <span class="nx">by</span> <span class="nx">ReadPo</span><span class="p">.</span><span class="nx">com</span><span class="o">&lt;</span><span class="err">/Md2PosterFooter&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/Md2Poster&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="使用在线编辑器">使用在线编辑器<a hidden class="anchor" aria-hidden="true" href="#使用在线编辑器">#</a></h3>
+<h4 id="使用官方部署的在线编辑器">使用官方部署的在线编辑器<a hidden class="anchor" aria-hidden="true" href="#使用官方部署的在线编辑器">#</a></h4>
+<p>👉 访问：<a href="https://readpo.com/zh/poster">ReadPo.com</a></p>
+<h4 id="部署自己的在线编辑器">部署自己的在线编辑器<a hidden class="anchor" aria-hidden="true" href="#部署自己的在线编辑器">#</a></h4>
+<p>这里使用Vercel进行部署，点击后一键部署。</p>
+<h1 id="markdown-to-image-serve">Markdown To Image Serve<a hidden class="anchor" aria-hidden="true" href="#markdown-to-image-serve">#</a></h1>
+<p>一个基于 Next.js 和 Puppeteer 的 Markdown 转图片服务，支持 Docker 部署和 API 集成。A Markdown to Image Service based on Next.js and Puppeteer, supporting Vercel deployment and API integration.</p>
+<p><a href="https://markdown-to-image-plus.vercel.app/">链接</a></p>
+<h4 id="-基于-nextjs-和-puppeteer-的-markdown-转图片服务">🚀 基于 Next.js 和 Puppeteer 的 Markdown 转图片服务<a hidden class="anchor" aria-hidden="true" href="#-基于-nextjs-和-puppeteer-的-markdown-转图片服务">#</a></h4>
+<p>将 Markdown 内容高效转换为精美图片，提供开箱即用的 API 接口，支持 Docker 快速部署与二次开发。</p>
+<h2 id="-项目简介">🎯 项目简介<a hidden class="anchor" aria-hidden="true" href="#-项目简介">#</a></h2>
+<p><strong>Markdown To Image Serve</strong> 是一款开箱即用的 Markdown 转图片 API 服务，基于 Next.js 14 和 Puppeteer 构建，具备以下特性：</p>
+<h3 id="-核心优势">✨ 核心优势<a hidden class="anchor" aria-hidden="true" href="#-核心优势">#</a></h3>
+<ul>
+<li>🚀 <strong>一键部署</strong> - 支持 Docker Compose 快速部署</li>
+<li>🔄 <strong>RESTful API</strong> - 简洁易用的 API 接口</li>
+<li>🎨 <strong>多主题支持</strong> - 内置 9 种精美主题</li>
+<li>📱 <strong>响应式设计</strong> - 适配移动端和桌面端</li>
+<li>🌐 <strong>多平台兼容</strong> - 支持 Docker、Railway、Render 等平台</li>
+<li>🔒 <strong>安全防护</strong> - 最新安全补丁和防护机制</li>
+<li>⚡ <strong>性能优化</strong> - 图片压缩、缓存优化</li>
+</ul>
+<h3 id="-技术栈">🛠️ 技术栈<a hidden class="anchor" aria-hidden="true" href="#-技术栈">#</a></h3>
+<ul>
+<li><strong>前端</strong>: Next.js 14, React 18, TypeScript</li>
+<li><strong>UI组件</strong>: Radix UI, Tailwind CSS</li>
+<li><strong>Markdown</strong>: markdown-to-poster, react-md-editor</li>
+<li><strong>浏览器</strong>: Puppeteer Core, Chromium</li>
+<li><strong>部署</strong>: Docker, Railway, Render, Fly.io</li>
+</ul>
+<hr>
+<h2 id="-核心功能">🌟 核心功能<a hidden class="anchor" aria-hidden="true" href="#-核心功能">#</a></h2>
+<h3 id="-内容转换">📝 内容转换<a hidden class="anchor" aria-hidden="true" href="#-内容转换">#</a></h3>
+<ul>
+<li>Markdown 文本一键转图片</li>
+<li>支持代码高亮和语法高亮</li>
+<li>表格渲染和数学公式支持</li>
+<li>图片和链接处理</li>
+</ul>
+<h3 id="-样式定制">🎨 样式定制<a hidden class="anchor" aria-hidden="true" href="#-样式定制">#</a></h3>
+<ul>
+<li><strong>9种内置主题</strong>: blue, pink, purple, green, yellow, gray, red, indigo, SpringGradientWave</li>
+<li>自定义页眉页脚</li>
+<li>Logo 和品牌元素</li>
+<li>响应式布局适配</li>
+</ul>
+<h3 id="-开发工具">🔧 开发工具<a hidden class="anchor" aria-hidden="true" href="#-开发工具">#</a></h3>
+<ul>
+<li>实时预览编辑器</li>
+<li>主题切换和参数调整</li>
+<li>一键复制图片功能</li>
+<li>批量处理支持</li>
+</ul>
+<h3 id="-api-服务">📦 API 服务<a hidden class="anchor" aria-hidden="true" href="#-api-服务">#</a></h3>
+<ul>
+<li>RESTful API 接口</li>
+<li>图片生成和存储</li>
+<li>错误处理和日志记录</li>
+<li>健康检查机制</li>
+</ul>
+<hr>
+<h3 id="-在线体验">🌐 在线体验<a hidden class="anchor" aria-hidden="true" href="#-在线体验">#</a></h3>
+<ul>
+<li><a href="https://markdown-to-image-serve.jcommon.top/">在线服务（Vercel）</a></li>
+<li><a href="https://github.com/wxingheng/markdown-to-image-serve">GitHub 仓库</a></li>
+</ul>
+<h1 id="markdown-to-cardvue">Markdown to Card(Vue)<a hidden class="anchor" aria-hidden="true" href="#markdown-to-cardvue">#</a></h1>
+<p><a href="https://github.com/jorkun/md2card-v3">jorkun/md2card-v3</a></p>
+<p>一个纯前端工具，支持将 Markdown 文本实时渲染为美观的卡片，可导出为图片或 .md 文件。</p>
+<h2 id="-功能">✨ 功能<a hidden class="anchor" aria-hidden="true" href="#-功能">#</a></h2>
+<ul>
+<li>实时 Markdown 编辑 + 卡片预览</li>
+<li>支持 GFM 语法（表格、链接、列表等）</li>
+<li>一键复制 / 下载 Markdown</li>
+<li>导出预览图为 PNG</li>
+<li>无后端，纯前端，部署即用</li>
+</ul>
+<h2 id="-快速开始">🚀 快速开始<a hidden class="anchor" aria-hidden="true" href="#-快速开始">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pnpm install <span class="c1"># 或 npm/yarn </span>
+</span></span><span class="line"><span class="cl">pnpm dev <span class="c1"># 启动开发服务器</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="-打包部署">📦 打包部署<a hidden class="anchor" aria-hidden="true" href="#-打包部署">#</a></h2>
+<p><code>bash pnpm build </code></p>
+<h2 id="-技术栈-1">🛠️ 技术栈<a hidden class="anchor" aria-hidden="true" href="#-技术栈-1">#</a></h2>
+<ul>
+<li>Vue 3 + Vite</li>
+<li>Element Plus</li>
+<li>TailwindCSS + @tailwindcss/typography</li>
+<li>html2canvas</li>
+</ul>
+<h1 id="md2cardreact">MD2Card(React)<a hidden class="anchor" aria-hidden="true" href="#md2cardreact">#</a></h1>
+<p><a href="https://github.com/ittat/md2card">MD2Card</a></p>
+<p>MD2Card 是一个简洁高效的 Markdown 转换工具，可以将 Markdown 文本转换为精美的卡片图片。</p>
+<h2 id="-功能特性">✨ 功能特性<a hidden class="anchor" aria-hidden="true" href="#-功能特性">#</a></h2>
+<ul>
+<li>🚀 实时预览：编辑 Markdown 时即时查看渲染效果</li>
+<li>🎨 主题切换：内置多种精美主题样式</li>
+<li>📱 响应式设计：完美适配各种屏幕尺寸</li>
+<li>💾 自动保存：编辑内容自动保存，无需担心丢失</li>
+<li>📤 导出图片：一键将卡片导出为图片格式</li>
+</ul>
+<h2 id="-技术栈-2">🛠️ 技术栈<a hidden class="anchor" aria-hidden="true" href="#-技术栈-2">#</a></h2>
+<ul>
+<li>React + TypeScript</li>
+<li>Vite</li>
+<li>Tailwind CSS</li>
+<li>Monaco Editor</li>
+<li>Marked</li>
+<li>Zustand</li>
+<li>Styled Components</li>
+</ul>
+<h2 id="todo">TODO<a hidden class="anchor" aria-hidden="true" href="#todo">#</a></h2>
+<ul>
+<li>✅ 实现自动分页功能</li>
+<li>✅ 支持更多 Markdown 语法</li>
+<li><input disabled="" type="checkbox">  实现图片同源加载</li>
+<li><input disabled="" type="checkbox">  优化性能</li>
+<li><input disabled="" type="checkbox">  增加更多主题样式</li>
+<li><input disabled="" type="checkbox">  支持导入导出 Markdown 文件</li>
+<li><input disabled="" type="checkbox">  增加更多导出格式</li>
+</ul>
+<h2 id="-安装">📦 安装<a hidden class="anchor" aria-hidden="true" href="#-安装">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 使用 pnpm 安装依赖</span>
+</span></span><span class="line"><span class="cl">pnpm install
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 启动开发服务器</span>
+</span></span><span class="line"><span class="cl">pnpm dev
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 构建生产版本</span>
+</span></span><span class="line"><span class="cl">pnpm build
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="-使用方法">🚀 使用方法<a hidden class="anchor" aria-hidden="true" href="#-使用方法">#</a></h2>
+<ol>
+<li>在左侧编辑器中输入 Markdown 文本</li>
+<li>右侧实时预览渲染效果</li>
+<li>使用顶部工具栏调整主题和样式</li>
+<li>点击导出按钮保存为图片</li>
+</ol>
+<h2 id="-预览">📸 预览<a hidden class="anchor" aria-hidden="true" href="#-预览">#</a></h2>
+<p><img alt="项目预览" loading="lazy" src="https://github.com/ittat/md2card/raw/dev/src/assets/image.png"></p>
+<h1 id="md2card基于markdown文档生成精美知识卡片-1">MD2Card：基于Markdown文档生成精美知识卡片<a hidden class="anchor" aria-hidden="true" href="#md2card基于markdown文档生成精美知识卡片-1">#</a></h1>
+<p><a href="https://blog.csdn.net/horses/article/details/148693390">MD2Card：基于Markdown文档生成精美知识卡片</a></p>
+<p><a href="https://md2card.cn/zh">MD2Card</a> 是一个免费易用的 Markdown 转知识卡片工具，支持多种精美风格、长文自动拆分、一键导出图片，无论是学习笔记、知识整理还是内容分享，都能轻松搞定。</p>
+<h2 id="卡片风格-1">卡片风格<a hidden class="anchor" aria-hidden="true" href="#卡片风格-1">#</a></h2>
+<p>MD2Card 支持温暖柔和、玻璃拟态、简约高级灰、梦幻渐变、波普艺术、赛博朋克、清新自然等 20+ 主题风格。</p>
+<h2 id="markdown支持-1">Markdown支持<a hidden class="anchor" aria-hidden="true" href="#markdown支持-1">#</a></h2>
+<p>MD2Card 支持标准 Markdown 语法和一些扩展语法，包括标题、列表、代码块、表格、数学公式、流程图、时序图等。同时还可以启用 MDX 语法支持和高级组件。</p>
+<h2 id="实时转换-1">实时转换<a hidden class="anchor" aria-hidden="true" href="#实时转换-1">#</a></h2>
+<p>MD2Card 采用响应式设计，可以实时预览并快速将 Markdown 文档转换为精美的知识卡片；同时还支持分享和导出功能，导出格式支持 PNG、JPG、SVG、PDF、视频等。</p>
+<h2 id="公众号排版-1">公众号排版<a hidden class="anchor" aria-hidden="true" href="#公众号排版-1">#</a></h2>
+<p>MD2Card 提供了公众号排版模式，支持直接复制到公众号文章功能。</p>
+<h2 id="api-调用-1">API 调用<a hidden class="anchor" aria-hidden="true" href="#api-调用-1">#</a></h2>
+<p>高级用户可以使用 MD2Card API 或 MCP Server 生成精美的卡片，MD2Card 官方提供了 Coze 插件，相关功能可能需要消耗积分。</p>
+<h2 id="在线使用-1">在线使用<a hidden class="anchor" aria-hidden="true" href="#在线使用-1">#</a></h2>
+<p>MD2Card 在线版本可以免费使用，输入以下网址：</p>
+<p><a href="https://md2card.cn/zh/editor">https://md2card.cn/zh/editor</a></p>
+<h1 id="markdown-to-image开源的在线-markdown-转海报编辑器-1">Markdown-to-Image：开源的在线 Markdown 转海报编辑器<a hidden class="anchor" aria-hidden="true" href="#markdown-to-image开源的在线-markdown-转海报编辑器-1">#</a></h1>
+<p><a href="https://github.com/gcui-art/markdown-to-image">Markdown To Poster</a></p>
+<p>这个 React 组件用于将 Markdown 渲染为漂亮的社交媒体图片。此外，该项目还包括一个内置的 WEB Editor，一键部署后，可以当做 Markdown 转海报图片在线编辑器使用。</p>
+<p><a href="https://github.com/gcui-art/markdown-to-image/blob/main/public/banner.jpg"><img alt="markdown-to-image banner" loading="lazy" src="https://github.com/gcui-art/markdown-to-image/raw/main/public/banner.jpg"></a></p>
+<ul>
+<li><a href="https://github.com/gcui-art/markdown-to-image/blob/main/README.md">English</a> | <a href="https://github.com/gcui-art/markdown-to-image/blob/main/README_CN.md">中文</a></li>
+<li><a href="https://readpo.com/zh/poster">DEMO &amp; WEB Editor</a></li>
+<li><a href="https://www.npmjs.com/package/markdown-to-image">NPM:markdown-to-image</a></li>
+</ul>
+<p>⭐ 点击 Star 和 Watch 按钮，跟踪我们的最新进展。</p>
+<h2 id="功能-1">功能<a hidden class="anchor" aria-hidden="true" href="#功能-1">#</a></h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox">  将 Markdown 渲染为适合社交分享的海报图片</li>
+<li><input checked="" disabled="" type="checkbox">  内置一个模板，支持模板扩展</li>
+<li><input checked="" disabled="" type="checkbox">  支持自定义主题，并且已内置9个主题</li>
+<li><input checked="" disabled="" type="checkbox">  支持复制为图像</li>
+<li><input checked="" disabled="" type="checkbox">  支持一键部署到 Vercel 等</li>
+<li><input checked="" disabled="" type="checkbox">  已集成图片跨域代理，可以方便的插入在线图片生成图文海报</li>
+<li><input checked="" disabled="" type="checkbox">  支持复制为HTML 代码，可粘贴到电子邮件和一些编辑器中</li>
+<li><input disabled="" type="checkbox">  更多内置模板</li>
+</ul>
+<h2 id="如何使用-1">如何使用<a hidden class="anchor" aria-hidden="true" href="#如何使用-1">#</a></h2>
+<p>有两种使用 markdown-to-image 的方式：</p>
+<ul>
+<li>在项目中集成：markdown-to-image 已导出为一个 React 组件，可以直接集成到您自己的项目中。</li>
+<li>使用WEB UI：example路径中自带了一个 WEB Editor，部署后，可以当做在线编辑器使用。</li>
+</ul>
+<h3 id="在你的项目中集成-1">在你的项目中集成<a hidden class="anchor" aria-hidden="true" href="#在你的项目中集成-1">#</a></h3>
+<p><code>markdown-to-image</code>导出了一个叫 Md2Poster 的组件以及其他三个子组件，你可以通过 npm 等安装使用。</p>
+<h4 id="安装-1">安装<a hidden class="anchor" aria-hidden="true" href="#安装-1">#</a></h4>
+<p>用 npm 安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npm i markdown-to-image
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>用 pnpm 安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pnpm install markdown-to-image
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>用 yarn 安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">yarn install markdown-to-image
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="使用-1">使用<a hidden class="anchor" aria-hidden="true" href="#使用-1">#</a></h4>
+<p>简单开始：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">import</span> <span class="s1">&#39;markdown-to-image/dist/style.css&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Md2Poster</span><span class="p">,</span> <span class="nx">Md2PosterContent</span><span class="p">,</span> <span class="nx">Md2PosterHeader</span><span class="p">,</span> <span class="nx">Md2PosterFooter</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;markdown-to-image&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">markdown</span> <span class="o">=</span> <span class="sb">`
+</span></span></span><span class="line"><span class="cl"><span class="sb"># AI Morning Updates
+</span></span></span><span class="line"><span class="cl"><span class="sb">&gt; On April 29th, what&#39;s the latest in the AI field that should be on your radar?
+</span></span></span><span class="line"><span class="cl"><span class="sb">...
+</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">Md2Poster</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">Md2PosterHeader</span><span class="o">&gt;</span><span class="nx">Poster</span> <span class="nx">Header</span><span class="o">&lt;</span><span class="err">/Md2PosterHeader&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">Md2PosterContent</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">markdown</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/Md2PosterContent&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">Md2PosterFooter</span><span class="o">&gt;</span><span class="nx">Powered</span> <span class="nx">by</span> <span class="nx">ReadPo</span><span class="p">.</span><span class="nx">com</span><span class="o">&lt;</span><span class="err">/Md2PosterFooter&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/Md2Poster&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="使用在线编辑器-1">使用在线编辑器<a hidden class="anchor" aria-hidden="true" href="#使用在线编辑器-1">#</a></h3>
+<h4 id="使用官方部署的在线编辑器-1">使用官方部署的在线编辑器<a hidden class="anchor" aria-hidden="true" href="#使用官方部署的在线编辑器-1">#</a></h4>
+<p>👉 访问：<a href="https://readpo.com/zh/poster">ReadPo.com</a></p>
+<h4 id="部署自己的在线编辑器-1">部署自己的在线编辑器<a hidden class="anchor" aria-hidden="true" href="#部署自己的在线编辑器-1">#</a></h4>
+<p>这里使用Vercel进行部署，点击后一键部署。</p>
+<h1 id="markdown-to-image-serve-1">Markdown To Image Serve<a hidden class="anchor" aria-hidden="true" href="#markdown-to-image-serve-1">#</a></h1>
+<p>一个基于 Next.js 和 Puppeteer 的 Markdown 转图片服务，支持 Docker 部署和 API 集成。A Markdown to Image Service based on Next.js and Puppeteer, supporting Vercel deployment and API integration.</p>
+<p><a href="https://markdown-to-image-plus.vercel.app">链接</a></p>
+<h4 id="-基于-nextjs-和-puppeteer-的-markdown-转图片服务-1">🚀 基于 Next.js 和 Puppeteer 的 Markdown 转图片服务<a hidden class="anchor" aria-hidden="true" href="#-基于-nextjs-和-puppeteer-的-markdown-转图片服务-1">#</a></h4>
+<p>将 Markdown 内容高效转换为精美图片，提供开箱即用的 API 接口，支持 Docker 快速部署与二次开发。</p>
+<h2 id="-项目简介-1">🎯 项目简介<a hidden class="anchor" aria-hidden="true" href="#-项目简介-1">#</a></h2>
+<p><strong>Markdown To Image Serve</strong> 是一款开箱即用的 Markdown 转图片 API 服务，基于 Next.js 14 和 Puppeteer 构建，具备以下特性：</p>
+<h3 id="-核心优势-1">✨ 核心优势<a hidden class="anchor" aria-hidden="true" href="#-核心优势-1">#</a></h3>
+<ul>
+<li>🚀 <strong>一键部署</strong> - 支持 Docker Compose 快速部署</li>
+<li>🔄 <strong>RESTful API</strong> - 简洁易用的 API 接口</li>
+<li>🎨 <strong>多主题支持</strong> - 内置 9 种精美主题</li>
+<li>📱 <strong>响应式设计</strong> - 适配移动端和桌面端</li>
+<li>🌐 <strong>多平台兼容</strong> - 支持 Docker、Railway、Render 等平台</li>
+<li>🔒 <strong>安全防护</strong> - 最新安全补丁和防护机制</li>
+<li>⚡ <strong>性能优化</strong> - 图片压缩、缓存优化</li>
+</ul>
+<h3 id="-技术栈-3">🛠️ 技术栈<a hidden class="anchor" aria-hidden="true" href="#-技术栈-3">#</a></h3>
+<ul>
+<li><strong>前端</strong>: Next.js 14, React 18, TypeScript</li>
+<li><strong>UI组件</strong>: Radix UI, Tailwind CSS</li>
+<li><strong>Markdown</strong>: markdown-to-poster, react-md-editor</li>
+<li><strong>浏览器</strong>: Puppeteer Core, Chromium</li>
+<li><strong>部署</strong>: Docker, Railway, Render, Fly.io</li>
+</ul>
+<hr>
+<h2 id="-核心功能-1">🌟 核心功能<a hidden class="anchor" aria-hidden="true" href="#-核心功能-1">#</a></h2>
+<h3 id="-内容转换-1">📝 内容转换<a hidden class="anchor" aria-hidden="true" href="#-内容转换-1">#</a></h3>
+<ul>
+<li>Markdown 文本一键转图片</li>
+<li>支持代码高亮和语法高亮</li>
+<li>表格渲染和数学公式支持</li>
+<li>图片和链接处理</li>
+</ul>
+<h3 id="-样式定制-1">🎨 样式定制<a hidden class="anchor" aria-hidden="true" href="#-样式定制-1">#</a></h3>
+<ul>
+<li><strong>9种内置主题</strong>: blue, pink, purple, green, yellow, gray, red, indigo, SpringGradientWave</li>
+<li>自定义页眉页脚</li>
+<li>Logo 和品牌元素</li>
+<li>响应式布局适配</li>
+</ul>
+<h3 id="-开发工具-1">🔧 开发工具<a hidden class="anchor" aria-hidden="true" href="#-开发工具-1">#</a></h3>
+<ul>
+<li>实时预览编辑器</li>
+<li>主题切换和参数调整</li>
+<li>一键复制图片功能</li>
+<li>批量处理支持</li>
+</ul>
+<h3 id="-api-服务-1">📦 API 服务<a hidden class="anchor" aria-hidden="true" href="#-api-服务-1">#</a></h3>
+<ul>
+<li>RESTful API 接口</li>
+<li>图片生成和存储</li>
+<li>错误处理和日志记录</li>
+<li>健康检查机制</li>
+</ul>
+<hr>
+<h3 id="-在线体验-1">🌐 在线体验<a hidden class="anchor" aria-hidden="true" href="#-在线体验-1">#</a></h3>
+<ul>
+<li><a href="https://markdown-to-image-serve.jcommon.top/">在线服务（Vercel）</a></li>
+<li><a href="https://github.com/wxingheng/markdown-to-image-serve">GitHub 仓库</a></li>
+</ul>
+<h1 id="markdown-to-cardvue-1">Markdown to Card(Vue)<a hidden class="anchor" aria-hidden="true" href="#markdown-to-cardvue-1">#</a></h1>
+<p><a href="https://github.com/jorkun/md2card-v3">jorkun/md2card-v3</a></p>
+<p>一个纯前端工具，支持将 Markdown 文本实时渲染为美观的卡片，可导出为图片或 .md 文件。</p>
+<h2 id="-功能-1">✨ 功能<a hidden class="anchor" aria-hidden="true" href="#-功能-1">#</a></h2>
+<ul>
+<li>实时 Markdown 编辑 + 卡片预览</li>
+<li>支持 GFM 语法（表格、链接、列表等）</li>
+<li>一键复制 / 下载 Markdown</li>
+<li>导出预览图为 PNG</li>
+<li>无后端，纯前端，部署即用</li>
+</ul>
+<h2 id="-快速开始-1">🚀 快速开始<a hidden class="anchor" aria-hidden="true" href="#-快速开始-1">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pnpm install <span class="c1"># 或 npm/yarn </span>
+</span></span><span class="line"><span class="cl">pnpm dev <span class="c1"># 启动开发服务器</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="-打包部署-1">📦 打包部署<a hidden class="anchor" aria-hidden="true" href="#-打包部署-1">#</a></h2>
+<p><code>bash pnpm build </code></p>
+<h2 id="-技术栈-4">🛠️ 技术栈<a hidden class="anchor" aria-hidden="true" href="#-技术栈-4">#</a></h2>
+<ul>
+<li>Vue 3 + Vite</li>
+<li>Element Plus</li>
+<li>TailwindCSS + @tailwindcss/typography</li>
+<li>html2canvas</li>
+</ul>
+<h1 id="md2cardreact-1">MD2Card(React)<a hidden class="anchor" aria-hidden="true" href="#md2cardreact-1">#</a></h1>
+<p><a href="https://github.com/ittat/md2card">MD2Card</a></p>
+<p>MD2Card 是一个简洁高效的 Markdown 转换工具，可以将 Markdown 文本转换为精美的卡片图片。</p>
+<h2 id="-功能特性-1">✨ 功能特性<a hidden class="anchor" aria-hidden="true" href="#-功能特性-1">#</a></h2>
+<ul>
+<li>🚀 实时预览：编辑 Markdown 时即时查看渲染效果</li>
+<li>🎨 主题切换：内置多种精美主题样式</li>
+<li>📱 响应式设计：完美适配各种屏幕尺寸</li>
+<li>💾 自动保存：编辑内容自动保存，无需担心丢失</li>
+<li>📤 导出图片：一键将卡片导出为图片格式</li>
+</ul>
+<h2 id="-技术栈-5">🛠️ 技术栈<a hidden class="anchor" aria-hidden="true" href="#-技术栈-5">#</a></h2>
+<ul>
+<li>React + TypeScript</li>
+<li>Vite</li>
+<li>Tailwind CSS</li>
+<li>Monaco Editor</li>
+<li>Marked</li>
+<li>Zustand</li>
+<li>Styled Components</li>
+</ul>
+<h2 id="todo-1">TODO<a hidden class="anchor" aria-hidden="true" href="#todo-1">#</a></h2>
+<ul>
+<li>✅ 实现自动分页功能</li>
+<li>✅ 支持更多 Markdown 语法</li>
+<li><input disabled="" type="checkbox">  实现图片同源加载</li>
+<li><input disabled="" type="checkbox">  优化性能</li>
+<li><input disabled="" type="checkbox">  增加更多主题样式</li>
+<li><input disabled="" type="checkbox">  支持导入导出 Markdown 文件</li>
+<li><input disabled="" type="checkbox">  增加更多导出格式</li>
+</ul>
+<h2 id="-安装-1">📦 安装<a hidden class="anchor" aria-hidden="true" href="#-安装-1">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 使用 pnpm 安装依赖</span>
+</span></span><span class="line"><span class="cl">pnpm install
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 启动开发服务器</span>
+</span></span><span class="line"><span class="cl">pnpm dev
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 构建生产版本</span>
+</span></span><span class="line"><span class="cl">pnpm build
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="-使用方法-1">🚀 使用方法<a hidden class="anchor" aria-hidden="true" href="#-使用方法-1">#</a></h2>
+<ol>
+<li>在左侧编辑器中输入 Markdown 文本</li>
+<li>右侧实时预览渲染效果</li>
+<li>使用顶部工具栏调整主题和样式</li>
+<li>点击导出按钮保存为图片</li>
+</ol>
+<h2 id="-预览-1">📸 预览<a hidden class="anchor" aria-hidden="true" href="#-预览-1">#</a></h2>
+<p><img alt="项目预览" loading="lazy" src="https://github.com/ittat/md2card/raw/dev/src/assets/image.png"></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://rosefinch-midsummer.github.io/zh/tags/markdown/">Markdown</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://rosefinch-midsummer.github.io/zh/posts/book/%E5%8C%BA%E5%9D%97%E9%93%BE&#43;%E4%BB%8E%E5%85%A8%E7%90%8350%E4%B8%AA%E6%A1%88%E4%BE%8B%E7%9C%8B%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%8A%80%E6%9C%AF%E7%94%9F%E6%80%81%E9%80%9A%E8%AF%81%E7%BB%8F%E6%B5%8E%E5%92%8C%E7%A4%BE%E5%8C%BA%E8%87%AA%E6%B2%BB/">
+    <span class="title">« 上一頁</span>
+    <br>
+    <span>《区块链&#43;：从全球50个案例看区块链的技术生态、通证经济和社区自治》</span>
+  </a>
+  <a class="next" href="https://rosefinch-midsummer.github.io/zh/posts/book/%E8%80%81%E5%AE%9E%E4%BA%BA%E5%90%AF%E8%92%99/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>《老实人启蒙》</span>
+  </a>
+</nav>
+
+  </footer>
+<div>    
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">评论</span>
+        <br/>
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://utteranc.es/client.js"
+            repo="Rosefinch-Midsummer/comments_of_blog" 
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <script>
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            const theme = document.body.className.includes("dark")
+            ? "github-light"
+            : "photon-dark";
+            const message = {
+            type: "set-theme",
+            theme: theme,
+            };
+            const utteranc = document.querySelector(".utterances-frame");
+            utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+        });
+    </script>
+</div>
+
+
+
+
+
+
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://rosefinch-midsummer.github.io/zh/">天漢帝國復興錄</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+  
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </span>
+  <span id="busuanzi_container_site_uv">
+    本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '複製';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已複製！';
+            setTimeout(() => {
+                copybutton.innerHTML = '複製';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+
+
+</body>
+
+</html>

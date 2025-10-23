@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>提示词工程指北——26条原则 | 天漢帝國復興錄</title>
+<meta name="keywords" content="ChatGPT">
+<meta name="description" content="前言
+最近打算部署一个属于自己的 ChatGPT 网页服务，顺便提升一下自己写提示词的能力，于是便有了下面这篇文章。
+发号施令 26 条准则
+Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4
+指令原则大解锁！26条Prompt黄金法则，精准提问，显著提升ChatGPT输出质量！
+如何看待张同学投稿论文忘记删除GPT痕迹, 出现Certainly, here is a&hellip;&hellip;?">
+<meta name="author" content="RM">
+<link rel="canonical" href="https://rosefinch-midsummer.github.io/zh/posts/life/%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B%E6%8C%87%E5%8C%9726%E6%9D%A1%E5%8E%9F%E5%88%99/">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://rosefinch-midsummer.github.io/img/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rosefinch-midsummer.github.io/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rosefinch-midsummer.github.io/img/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://rosefinch-midsummer.github.io/img/apple-touch-icon.png">
+<link rel="mask-icon" href="https://rosefinch-midsummer.github.io/img/android-chrome-192x192.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://rosefinch-midsummer.github.io/zh/posts/life/%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B%E6%8C%87%E5%8C%9726%E6%9D%A1%E5%8E%9F%E5%88%99/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous"> 
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script> 
+	document.addEventListener("DOMContentLoaded", function() { 
+		renderMathInElement(document.body, { 
+			
+			
+			delimiters: [ 
+				{left: '$$', right: '$$', display: true}, 
+				{left: '$', right: '$', display: false}, 
+				{left: '\\(', right: '\\)', display: false}, 
+				{left: '\\[', right: '\\]', display: true} 
+			], 
+			
+			throwOnError : false 
+		}); 
+	}); 
+</script>
+
+
+
+
+
+
+
+<meta property="og:url" content="https://rosefinch-midsummer.github.io/zh/posts/life/%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B%E6%8C%87%E5%8C%9726%E6%9D%A1%E5%8E%9F%E5%88%99/">
+  <meta property="og:site_name" content="天漢帝國復興錄">
+  <meta property="og:title" content="提示词工程指北——26条原则">
+  <meta property="og:description" content="前言 最近打算部署一个属于自己的 ChatGPT 网页服务，顺便提升一下自己写提示词的能力，于是便有了下面这篇文章。
+发号施令 26 条准则 Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4
+指令原则大解锁！26条Prompt黄金法则，精准提问，显著提升ChatGPT输出质量！
+如何看待张同学投稿论文忘记删除GPT痕迹, 出现Certainly, here is a……?">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-03-16T12:34:25+08:00">
+    <meta property="article:modified_time" content="2024-03-17T12:54:22+08:00">
+    <meta property="article:tag" content="ChatGPT">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="提示词工程指北——26条原则">
+<meta name="twitter:description" content="前言
+最近打算部署一个属于自己的 ChatGPT 网页服务，顺便提升一下自己写提示词的能力，于是便有了下面这篇文章。
+发号施令 26 条准则
+Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4
+指令原则大解锁！26条Prompt黄金法则，精准提问，显著提升ChatGPT输出质量！
+如何看待张同学投稿论文忘记删除GPT痕迹, 出现Certainly, here is a&hellip;&hellip;?">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "📚文章",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "🏖生活",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/life/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "提示词工程指北——26条原则",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/life/%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B%E6%8C%87%E5%8C%9726%E6%9D%A1%E5%8E%9F%E5%88%99/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "提示词工程指北——26条原则",
+  "name": "提示词工程指北——26条原则",
+  "description": "前言 最近打算部署一个属于自己的 ChatGPT 网页服务，顺便提升一下自己写提示词的能力，于是便有了下面这篇文章。\n发号施令 26 条准则 Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4\n指令原则大解锁！26条Prompt黄金法则，精准提问，显著提升ChatGPT输出质量！\n如何看待张同学投稿论文忘记删除GPT痕迹, 出现Certainly, here is a\u0026hellip;\u0026hellip;?\n",
+  "keywords": [
+    "ChatGPT"
+  ],
+  "articleBody": "前言 最近打算部署一个属于自己的 ChatGPT 网页服务，顺便提升一下自己写提示词的能力，于是便有了下面这篇文章。\n发号施令 26 条准则 Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4\n指令原则大解锁！26条Prompt黄金法则，精准提问，显著提升ChatGPT输出质量！\n如何看待张同学投稿论文忘记删除GPT痕迹, 出现Certainly, here is a……?\nOverview The overview of principles is presented in Table 1. According to their unique nature, we group them into five categories as in Table 2: (1) Prompt Structure and Clarity, e.g., integrate the intended audience in the prompt such as the audience is an expert in the field; (2) Specificity and Information, e.g., Add to your prompt the following phrase “Ensure that your answer is unbiased and does not rely on stereotypes.”; (3) User Interaction and Engagement, e.g., Allow the model to elicit precise details and requirements from you by asking you questions until he has enough information to provide the needed output “From now on, I would like you to ask me questions to…”. (4) Content and Language Style, e.g., No need to be polite with LLM so there is no need to add phrases like “please”, “if you don’t mind”, “thank you”, “I would like to”, etc., and get straight to the point; (5) Complex Tasks and Coding Prompts, e.g., Break down complex tasks into a sequence of simpler prompts in an interactive conversation.\nDesign Principles In this study, a number of guiding principles are established for formulating prompts and instructions to elicit high-quality responses from pre-trained large language models:\nConciseness and Clarity: Generally, overly verbose or ambiguous prompts can confuse the model or lead to irrelevant responses. Thus, the prompt should be concise, avoiding unnecessary information that does not contribute to the task while being specific enough to guide the model. This is the basic principle guidance for prompt engineering.\nContextual Relevance: The prompt must provide relevant context that helps the model understand the background and domain of the task. Including keywords, domain-specific terminology, or situational descriptions can anchor the model’s responses in the correct context. We highlight this design philosophy in our presented principles.\nTask Alignment: The prompt should be closely aligned with the task at hand, using language and structure that clearly indicate the nature of the task to the model. This may involve phrasing the prompt as a question, a command, or a fill-in-the-blank statement that fits the task’s expected input and output format.\nExample Demonstrations: For more complex tasks, including examples within the prompt can demonstrate the desired format or type of response. This often involves showing input-output pairs, especially in “few-shot” or “zero-shot” learning scenarios. Avoiding Bias: Prompts should be designed to minimize the activation of biases inherent in the model due to its training data. Use neutral language and be mindful of potential ethical implications, especially for sensitive topics.\nIncremental Prompting: For tasks that require a sequence of steps, prompts can be structured to guide the model through the process incrementally. Break down the task into a series of prompts that build upon each other, guiding the model step-by-step. Also, prompts should be adjustable based on the performance of the model and iterative feedback, i.e., it needs to be well prepared to refine the prompt based on initial outputs and model behaviors. Moreover, prompts should be adjustable based on the performance and response of the model, and iterative human feedback and preference.\nFinally, more advanced prompts may incorporate programming-like logic to achieve complex tasks. For instance, use of conditional statements, logical operators, or even pseudo-code within the prompt to guide the model’s reasoning process. The design of prompts is an evolving field, especially as LLMs become more sophisticated. As researchers continue to explore the limits of what can be achieved through prompt engineering, these principles will likely be refined and expanded.\n26 项原则中文翻译 与LLM交流时，无需使用礼貌性语言，如“请”、“如果你不介意”、“谢谢”等，直接陈述要点。 在提示中整合预期的听众，例如“听众是该领域的专家”。 将复杂任务分解为一系列更简单的提示，并通过互动式对话进行。 使用肯定的指令，如“做”，避免使用否定语言，如“不要”。 当你需要清晰理解某个主题、想法或任何信息时，使用以下提示：简单地解释[具体主题]。像我是11岁的孩子一样向我解释。像我是[领域]新手一样向我解释。使用简单的英语写[论文/文本/段落]，就像你在向5岁的孩子解释一样。 添加“I’m going to tip $xxx for a better solution!”（我会给xxx小费以获得更好的解决方案！）。 实施示例驱动的提示（使用少数示例提示）。 在格式化提示时，首先使用‘###Instruction###’，然后是‘###Example###’或‘###Question###’（如果相关），然后呈现内容。使用一个或多个换行符来分隔指令、示例、问题、上下文和输入数据。 加入以下短语：“Your task is”（你的任务是）和“You MUST”（你必须）。 加入以下短语：“You will be penalized”（你将受到惩罚）。 在提示中使用短语“Answer a question in a natural human-like manner”（以自然的人类方式回答问题）。 使用引导性词汇，如写“think step by step”（逐步思考）。 在你的提示中添加以下短语：“Ensure that your answer is unbiased and does not rely on stereotypes”（确保你的回答是无偏见的，不依赖于刻板印象）。 允许模型通过向你提问直到获得足够的信息来提供所需输出，例如“From now on I would like you to ask me questions to…”（从现在开始，我希望你向我提问，直到…）。 要了解特定主题或想法或任何信息，并且你想测试你的理解，你可以使用以下短语：“Teach me the [Any theorem/topic/rule name] and include a test at the end but don’t give me the answers and then tell me if I got the answer right when I respond”（教我[任何定理/主题/规则名称]并在最后包括一个测试，但不要给我答案，然后在我回答时告诉我是否正确）。 为大语言模型分配一个角色。 使用分隔符。 在提示中多次重复特定单词或短语。 结合思维链（CoT）与少数示例提示。 使用输出引导器，它涉及以期望输出的开始结束你的提示。通过以预期响应的开始结束你的提示来使用输出引导器。 要编写详细的[论文/文本/段落/文章]或任何需要详细的文本类型：“为我详细写一篇关于[主题]的详细[论文/文本/段落]，添加所有必要的信息”。 要更正/更改特定文本而不改变其风格：“尝试修改用户发送的每个段落。你只应该改善用户的语法和词汇，确保它听起来自然。你不应该改变写作风格，例如将正式段落变得非正式”。 当你有一个可能涉及不同文件的复杂编码提示时：“从现在开始，每当你生成跨越多个文件的代码时，生成一个[编程语言]脚本，可以运行以自动创建指定的文件或对现有文件进行更改以插入生成的代码。[你的问题]”。 当你想使用特定单词、短语或句子开始或继续文本时，使用以下提示：我为你提供了开始[歌词/故事/段落/论文…]：[插入歌词/单词/句子]。根据提供的词汇完成它。保持流畅一致。（1）清楚地陈述模型必须遵循的要求，以产生关键词、规则、提示或指令形式的内容。（2）要编写任何文本，如论文或段落，其内容与提供的示例类似，包括以下指令：（3）请根据提供的段落[/标题/文本/论文/答案]使用相同的语言。 明确陈述模型必须遵循的要求，以便根据关键词、规则、提示或指令产生内容。 要写任何文本，如文章或段落，且内容与提供的样本相似，请包含以下指示：“请根据提供的段落[/标题/文本/文章/答案]使用相同的语言基础。” 提示工程指南 提示工程指南\n提示工程（Prompt Engineering）是一门较新的学科，关注提示词开发和优化，帮助用户将大语言模型（Large Language Model, LLM）用于各场景和研究领域。 掌握了提示工程相关技能将有助于用户更好地了解大型语言模型的能力和局限性。\n研究人员可利用提示工程来提升大语言模型处理复杂任务场景的能力，如问答和算术推理能力。开发人员可通过提示工程设计、研发强大的工程技术，实现和大语言模型或其他生态工具的高效接轨。\n提示工程不仅仅是关于设计和研发提示词。它包含了与大语言模型交互和研发的各种技能和技术。提示工程在实现和大语言模型交互、对接，以及理解大语言模型能力方面都起着重要作用。用户可以通过提示工程来提高大语言模型的安全性，也可以赋能大语言模型，比如借助专业领域知识和外部工具来增强大语言模型能力。\n基于对大语言模型的浓厚兴趣，我们编写了这份全新的提示工程指南，介绍了大语言模型相关的论文研究、学习指南、模型、讲座、参考资料、大语言模型能力以及与其他与提示工程相关的工具。\n",
+  "wordCount" : "2789",
+  "inLanguage": "zh",
+  "datePublished": "2024-03-16T12:34:25+08:00",
+  "dateModified": "2024-03-17T12:54:22+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "RM"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://rosefinch-midsummer.github.io/zh/posts/life/%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B%E6%8C%87%E5%8C%9726%E6%9D%A1%E5%8E%9F%E5%88%99/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "天漢帝國復興錄",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://rosefinch-midsummer.github.io/img/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://rosefinch-midsummer.github.io/zh/" accesskey="h" title="天漢帝國復興錄 (Alt + H)">天漢帝國復興錄</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/" title="🏠主頁">
+                    <span>🏠主頁</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/posts" title="📚文章">
+                    <span>📚文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/archives" title="⏱時間軸">
+                    <span>⏱時間軸</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/categories" title="🧩分類">
+                    <span>🧩分類</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/tags" title="🔖標簽">
+                    <span>🔖標簽</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/about" title="🙋🏻‍♂️關于">
+                    <span>🙋🏻‍♂️關于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://rosefinch-midsummer.github.io/zh/">首頁</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/">📚文章</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/life/">🏖生活</a></div>
+    <h1 class="post-title">
+      提示词工程指北——26条原则
+    </h1>
+    <div class="post-meta">
+    创建: 2024-03-16 |
+    更新: 2024-03-17 |
+    字数: 2789字 |
+    时长: 6分钟 |
+    RM
+
+
+</div>
+   
+<div  class="meta-item">&nbsp·&nbsp
+  <span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+</div>
+
+
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目錄</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%89%8d%e8%a8%80" aria-label="前言">前言</a></li>
+                <li>
+                    <a href="#%e5%8f%91%e5%8f%b7%e6%96%bd%e4%bb%a4-26-%e6%9d%a1%e5%87%86%e5%88%99" aria-label="发号施令 26 条准则">发号施令 26 条准则</a><ul>
+                        
+                <li>
+                    <a href="#overview" aria-label="Overview">Overview</a></li>
+                <li>
+                    <a href="#design-principles" aria-label="Design Principles">Design Principles</a></li>
+                <li>
+                    <a href="#26-%e9%a1%b9%e5%8e%9f%e5%88%99%e4%b8%ad%e6%96%87%e7%bf%bb%e8%af%91" aria-label="26 项原则中文翻译">26 项原则中文翻译</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e6%8f%90%e7%a4%ba%e5%b7%a5%e7%a8%8b%e6%8c%87%e5%8d%97" aria-label="提示工程指南">提示工程指南</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="前言">前言<a hidden class="anchor" aria-hidden="true" href="#前言">#</a></h1>
+<p>最近打算部署一个属于自己的 ChatGPT 网页服务，顺便提升一下自己写提示词的能力，于是便有了下面这篇文章。</p>
+<h1 id="发号施令-26-条准则">发号施令 26 条准则<a hidden class="anchor" aria-hidden="true" href="#发号施令-26-条准则">#</a></h1>
+<p><a href="https://arxiv.org/pdf/2312.16171.pdf">Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/675029625">指令原则大解锁！26条Prompt黄金法则，精准提问，显著提升ChatGPT输出质量！</a></p>
+<p><a href="https://www.zhihu.com/question/648660033/answer/3431876658">如何看待张同学投稿论文忘记删除GPT痕迹, 出现Certainly, here is a&hellip;&hellip;?</a></p>
+<h2 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
+<p>The overview of principles is presented in Table 1. According to their unique nature,
+we group them into five categories as in Table 2: (1) Prompt Structure and Clarity,
+e.g., integrate the intended audience in the prompt such as the audience is an expert
+in the field; (2) Specificity and Information, e.g., Add to your prompt the following
+phrase “Ensure that your answer is unbiased and does not rely on stereotypes.”; (3)
+User Interaction and Engagement, e.g., Allow the model to elicit precise details and
+requirements from you by asking you questions until he has enough information to
+provide the needed output “From now on, I would like you to ask me questions to&hellip;”. (4)
+Content and Language Style, e.g., No need to be polite with LLM so there is no need to
+add phrases like “please”, “if you don’t mind”, “thank you”, “I would like to”, etc.,
+and get straight to the point; (5) Complex Tasks and Coding Prompts, e.g., Break down
+complex tasks into a sequence of simpler prompts in an interactive conversation.</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost02/img/20240316134627.png">
+<img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost02/img/20240316134723.png"></p>
+<h2 id="design-principles">Design Principles<a hidden class="anchor" aria-hidden="true" href="#design-principles">#</a></h2>
+<p>In this study, a number of guiding principles are established for formulating prompts
+and instructions to elicit high-quality responses from pre-trained large language models:</p>
+<p>Conciseness and Clarity: Generally, overly verbose or ambiguous prompts can confuse
+the model or lead to irrelevant responses. Thus, the prompt should be concise, avoiding
+unnecessary information that does not contribute to the task while being specific enough
+to guide the model. This is the basic principle guidance for prompt engineering.</p>
+<p>Contextual Relevance: The prompt must provide relevant context that helps the model
+understand the background and domain of the task. Including keywords, domain-specific
+terminology, or situational descriptions can anchor the model’s responses in the correct
+context. We highlight this design philosophy in our presented principles.</p>
+<p>Task Alignment: The prompt should be closely aligned with the task at hand, using
+language and structure that clearly indicate the nature of the task to the model. This may
+involve phrasing the prompt as a question, a command, or a fill-in-the-blank statement
+that fits the task’s expected input and output format.</p>
+<p>Example Demonstrations: For more complex tasks, including examples within the
+prompt can demonstrate the desired format or type of response. This often involves
+showing input-output pairs, especially in “few-shot” or “zero-shot” learning scenarios.
+Avoiding Bias: Prompts should be designed to minimize the activation of biases inherent
+in the model due to its training data. Use neutral language and be mindful of potential
+ethical implications, especially for sensitive topics.</p>
+<p>Incremental Prompting: For tasks that require a sequence of steps, prompts can be
+structured to guide the model through the process incrementally. Break down the task
+into a series of prompts that build upon each other, guiding the model step-by-step.
+Also, prompts should be adjustable based on the performance of the model and iterative
+feedback, i.e., it needs to be well prepared to refine the prompt based on initial outputs
+and model behaviors. Moreover, prompts should be adjustable based on the performance
+and response of the model, and iterative human feedback and preference.</p>
+<p>Finally, more advanced prompts may incorporate programming-like logic to achieve
+complex tasks. For instance, use of conditional statements, logical operators, or even
+pseudo-code within the prompt to guide the model’s reasoning process. The design
+of prompts is an evolving field, especially as LLMs become more sophisticated. As
+researchers continue to explore the limits of what can be achieved through prompt
+engineering, these principles will likely be refined and expanded.</p>
+<h2 id="26-项原则中文翻译">26 项原则中文翻译<a hidden class="anchor" aria-hidden="true" href="#26-项原则中文翻译">#</a></h2>
+<ol>
+<li>与LLM交流时，无需使用礼貌性语言，如“请”、“如果你不介意”、“谢谢”等，直接陈述要点。</li>
+<li>在提示中整合预期的听众，例如“听众是该领域的专家”。</li>
+<li>将复杂任务分解为一系列更简单的提示，并通过互动式对话进行。</li>
+<li>使用肯定的指令，如“做”，避免使用否定语言，如“不要”。</li>
+<li>当你需要清晰理解某个主题、想法或任何信息时，使用以下提示：简单地解释[具体主题]。像我是11岁的孩子一样向我解释。像我是[领域]新手一样向我解释。使用简单的英语写[论文/文本/段落]，就像你在向5岁的孩子解释一样。</li>
+<li>添加“I’m going to tip $xxx for a better solution!”（我会给xxx小费以获得更好的解决方案！）。</li>
+<li>实施示例驱动的提示（使用少数示例提示）。</li>
+<li>在格式化提示时，首先使用‘###Instruction###’，然后是‘###Example###’或‘###Question###’（如果相关），然后呈现内容。使用一个或多个换行符来分隔指令、示例、问题、上下文和输入数据。</li>
+<li>加入以下短语：“Your task is”（你的任务是）和“You MUST”（你必须）。</li>
+<li>加入以下短语：“You will be penalized”（你将受到惩罚）。</li>
+<li>在提示中使用短语“Answer a question in a natural human-like manner”（以自然的人类方式回答问题）。</li>
+<li>使用引导性词汇，如写“think step by step”（逐步思考）。</li>
+<li>在你的提示中添加以下短语：“Ensure that your answer is unbiased and does not rely on stereotypes”（确保你的回答是无偏见的，不依赖于刻板印象）。</li>
+<li>允许模型通过向你提问直到获得足够的信息来提供所需输出，例如“From now on I would like you to ask me questions to&hellip;”（从现在开始，我希望你向我提问，直到&hellip;）。</li>
+<li>要了解特定主题或想法或任何信息，并且你想测试你的理解，你可以使用以下短语：“Teach me the [Any theorem/topic/rule name] and include a test at the end but don’t give me the answers and then tell me if I got the answer right when I respond”（教我[任何定理/主题/规则名称]并在最后包括一个测试，但不要给我答案，然后在我回答时告诉我是否正确）。</li>
+<li>为大语言模型分配一个角色。</li>
+<li>使用分隔符。</li>
+<li>在提示中多次重复特定单词或短语。</li>
+<li>结合思维链（CoT）与少数示例提示。</li>
+<li>使用输出引导器，它涉及以期望输出的开始结束你的提示。通过以预期响应的开始结束你的提示来使用输出引导器。</li>
+<li>要编写详细的[论文/文本/段落/文章]或任何需要详细的文本类型：“为我详细写一篇关于[主题]的详细[论文/文本/段落]，添加所有必要的信息”。</li>
+<li>要更正/更改特定文本而不改变其风格：“尝试修改用户发送的每个段落。你只应该改善用户的语法和词汇，确保它听起来自然。你不应该改变写作风格，例如将正式段落变得非正式”。</li>
+<li>当你有一个可能涉及不同文件的复杂编码提示时：“从现在开始，每当你生成跨越多个文件的代码时，生成一个[编程语言]脚本，可以运行以自动创建指定的文件或对现有文件进行更改以插入生成的代码。[你的问题]”。</li>
+<li>当你想使用特定单词、短语或句子开始或继续文本时，使用以下提示：我为你提供了开始[歌词/故事/段落/论文&hellip;]：[插入歌词/单词/句子]。根据提供的词汇完成它。保持流畅一致。（1）清楚地陈述模型必须遵循的要求，以产生关键词、规则、提示或指令形式的内容。（2）要编写任何文本，如论文或段落，其内容与提供的示例类似，包括以下指令：（3）请根据提供的段落[/标题/文本/论文/答案]使用相同的语言。</li>
+<li>明确陈述模型必须遵循的要求，以便根据关键词、规则、提示或指令产生内容。</li>
+<li>要写任何文本，如文章或段落，且内容与提供的样本相似，请包含以下指示：&ldquo;请根据提供的段落[/标题/文本/文章/答案]使用相同的语言基础。&rdquo;</li>
+</ol>
+<h1 id="提示工程指南">提示工程指南<a hidden class="anchor" aria-hidden="true" href="#提示工程指南">#</a></h1>
+<p><a href="https://www.promptingguide.ai/zh">提示工程指南</a></p>
+<p>提示工程（Prompt Engineering）是一门较新的学科，关注提示词开发和优化，帮助用户将大语言模型（Large Language Model, LLM）用于各场景和研究领域。 掌握了提示工程相关技能将有助于用户更好地了解大型语言模型的能力和局限性。</p>
+<p>研究人员可利用提示工程来提升大语言模型处理复杂任务场景的能力，如问答和算术推理能力。开发人员可通过提示工程设计、研发强大的工程技术，实现和大语言模型或其他生态工具的高效接轨。</p>
+<p>提示工程不仅仅是关于设计和研发提示词。它包含了与大语言模型交互和研发的各种技能和技术。提示工程在实现和大语言模型交互、对接，以及理解大语言模型能力方面都起着重要作用。用户可以通过提示工程来提高大语言模型的安全性，也可以赋能大语言模型，比如借助专业领域知识和外部工具来增强大语言模型能力。</p>
+<p>基于对大语言模型的浓厚兴趣，我们编写了这份全新的提示工程指南，介绍了大语言模型相关的论文研究、学习指南、模型、讲座、参考资料、大语言模型能力以及与其他与提示工程相关的工具。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://rosefinch-midsummer.github.io/zh/tags/chatgpt/">ChatGPT</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/">
+    <span class="title">« 上一頁</span>
+    <br>
+    <span>魔法上网工具推荐</span>
+  </a>
+  <a class="next" href="https://rosefinch-midsummer.github.io/zh/posts/life/%E7%AE%80%E5%8E%86%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9B%AE/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>简历导航栏目</span>
+  </a>
+</nav>
+
+  </footer>
+<div>    
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">评论</span>
+        <br/>
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://utteranc.es/client.js"
+            repo="Rosefinch-Midsummer/comments_of_blog" 
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <script>
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            const theme = document.body.className.includes("dark")
+            ? "github-light"
+            : "photon-dark";
+            const message = {
+            type: "set-theme",
+            theme: theme,
+            };
+            const utteranc = document.querySelector(".utterances-frame");
+            utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+        });
+    </script>
+</div>
+
+
+
+
+
+
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://rosefinch-midsummer.github.io/zh/">天漢帝國復興錄</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+  
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </span>
+  <span id="busuanzi_container_site_uv">
+    本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '複製';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已複製！';
+            setTimeout(() => {
+                copybutton.innerHTML = '複製';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+
+
+</body>
+
+</html>

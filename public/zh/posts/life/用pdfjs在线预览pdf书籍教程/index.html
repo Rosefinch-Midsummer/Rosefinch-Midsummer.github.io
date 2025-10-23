@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>用pdfjs在线预览pdf书籍教程 | 天漢帝國復興錄</title>
+<meta name="keywords" content="pdfjs">
+<meta name="description" content="前言
+我打算做数学、物理等的教程便于自己将来阅读，但是上传latex公式和各种图像比较费时费力，于是乎我想到用图片来解决这个问题。然而，用typora结合picgo往github仓库里面上传图片总会有很多图片上传失败，而且图片过多影响博客加载速度，让我很受打击。睡前想到可以用在线pdf阅读的方式来进行这项事业，我于是第二天把准备好的图片先转成pdf文件，然后把pdf文件上传到github仓库，再通过开启github pages的功能获得在线预览的URL实现文件在线阅读。">
+<meta name="author" content="RM">
+<link rel="canonical" href="https://rosefinch-midsummer.github.io/zh/posts/life/%E7%94%A8pdfjs%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%A7%88pdf%E4%B9%A6%E7%B1%8D%E6%95%99%E7%A8%8B/">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://rosefinch-midsummer.github.io/img/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rosefinch-midsummer.github.io/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rosefinch-midsummer.github.io/img/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://rosefinch-midsummer.github.io/img/apple-touch-icon.png">
+<link rel="mask-icon" href="https://rosefinch-midsummer.github.io/img/android-chrome-192x192.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://rosefinch-midsummer.github.io/zh/posts/life/%E7%94%A8pdfjs%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%A7%88pdf%E4%B9%A6%E7%B1%8D%E6%95%99%E7%A8%8B/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<meta property="og:url" content="https://rosefinch-midsummer.github.io/zh/posts/life/%E7%94%A8pdfjs%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%A7%88pdf%E4%B9%A6%E7%B1%8D%E6%95%99%E7%A8%8B/">
+  <meta property="og:site_name" content="天漢帝國復興錄">
+  <meta property="og:title" content="用pdfjs在线预览pdf书籍教程">
+  <meta property="og:description" content="前言 我打算做数学、物理等的教程便于自己将来阅读，但是上传latex公式和各种图像比较费时费力，于是乎我想到用图片来解决这个问题。然而，用typora结合picgo往github仓库里面上传图片总会有很多图片上传失败，而且图片过多影响博客加载速度，让我很受打击。睡前想到可以用在线pdf阅读的方式来进行这项事业，我于是第二天把准备好的图片先转成pdf文件，然后把pdf文件上传到github仓库，再通过开启github pages的功能获得在线预览的URL实现文件在线阅读。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-05-29T13:34:25+08:00">
+    <meta property="article:modified_time" content="2025-09-22T21:54:22+08:00">
+    <meta property="article:tag" content="Pdfjs">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="用pdfjs在线预览pdf书籍教程">
+<meta name="twitter:description" content="前言
+我打算做数学、物理等的教程便于自己将来阅读，但是上传latex公式和各种图像比较费时费力，于是乎我想到用图片来解决这个问题。然而，用typora结合picgo往github仓库里面上传图片总会有很多图片上传失败，而且图片过多影响博客加载速度，让我很受打击。睡前想到可以用在线pdf阅读的方式来进行这项事业，我于是第二天把准备好的图片先转成pdf文件，然后把pdf文件上传到github仓库，再通过开启github pages的功能获得在线预览的URL实现文件在线阅读。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "📚文章",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "🏖生活",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/life/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "用pdfjs在线预览pdf书籍教程",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/life/%E7%94%A8pdfjs%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%A7%88pdf%E4%B9%A6%E7%B1%8D%E6%95%99%E7%A8%8B/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "用pdfjs在线预览pdf书籍教程",
+  "name": "用pdfjs在线预览pdf书籍教程",
+  "description": "前言 我打算做数学、物理等的教程便于自己将来阅读，但是上传latex公式和各种图像比较费时费力，于是乎我想到用图片来解决这个问题。然而，用typora结合picgo往github仓库里面上传图片总会有很多图片上传失败，而且图片过多影响博客加载速度，让我很受打击。睡前想到可以用在线pdf阅读的方式来进行这项事业，我于是第二天把准备好的图片先转成pdf文件，然后把pdf文件上传到github仓库，再通过开启github pages的功能获得在线预览的URL实现文件在线阅读。\n",
+  "keywords": [
+    "pdfjs"
+  ],
+  "articleBody": "前言 我打算做数学、物理等的教程便于自己将来阅读，但是上传latex公式和各种图像比较费时费力，于是乎我想到用图片来解决这个问题。然而，用typora结合picgo往github仓库里面上传图片总会有很多图片上传失败，而且图片过多影响博客加载速度，让我很受打击。睡前想到可以用在线pdf阅读的方式来进行这项事业，我于是第二天把准备好的图片先转成pdf文件，然后把pdf文件上传到github仓库，再通过开启github pages的功能获得在线预览的URL实现文件在线阅读。\n加载时间过长可以通过边加载边渲染的方式进行，不过这实现难度有点高，我选择了用cdnjs库来加速加载过程。虽然这样加速效果明显，但是这种效果可能都是缓存作用的结果，而不是cdn加速的结果。我JS学得太差，暂时无从得知确切原因。\n最后我测试了下实际效果，在chrome浏览器上至少第二次加载速度特别快，但是Firefox浏览器和Android端chrome浏览器都只能下载文件而无法实现在线阅读。\nFirefox浏览器中不能在线浏览是IDM下载工具导致的，卸载IDM之后可以正常阅读。清理缓存后发现加速加载效果主要是靠缓存实现的，使用cndjs能加快加载速度但是不是瞬间开启。\n用安装Ubuntu系统的电脑上的chrome浏览器实测发现页面颜色会发生变化，不知原因。引用新的cndjs后Android端chrome浏览器仍旧不能在线阅读，只能下载文件。此外可以用分页的方式加快访问速度，但我不会编辑相应代码，我还能接受现在这种阅读方式。这些问题留待以后解决！\n创建pdf文档 # 将JPG合并为PDF——将多个JPG图片合并为一个PDF文件，而不是多个PDF文件\n简介：\n可添加最多100张图片，格式可以是JPG、PNG、GIF、WEBP或SVG等。 拖放图片以对图片进行排序。点击图片并点击删除按钮可将其从列表中删除。 设置选项，然后点击“开始合并”按钮。输出的PDF文件将会列在“输出文件”区域。| 下载生成的pdf文档时可以选择压缩pdf文档，因为在Github网页上上传文件大小上限是25MB。更大的文件需要用git-lfs从本地推送上去。\n新建github仓库 我原本用hugo-embed-pdf来实现在线阅读，这是工具通过把pdf文件渲染成图片来阅读，但是在双分支结构下文件路径不好处理，打开页面总显示404让我内心崩溃。此外我希望打开一个新界面显示pdf文件必要时好可以下载到本地，而不是在那块小小区域来阅读pdf书籍。我于是在github上创建了个新仓库book。以下是在WSL2（Linux操作系统同理）上的操作：\n1 2 3 4 5 6 7 8 9 10 11 12 mkdir book cd book mv /mnt/e/pdfjs /home/RM/book echo \"# book\" \u003e\u003e README.md git init git add README.md git commit -m \"first commit\" git branch -M main git remote add origin https://github.com/Rosefinch-Midsummer/book.git git push -u origin main 可能出现如下错误：\n1 2 3 4 5 fatal: 'origin' does not appear to be a git repository fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists. 错误显示本地仓库和远程仓库失去联系，因为提前执行了git remote add命令。按上面步骤即可正确推送。\n和Github Pages仓库联结 开启github pages功能：\n将你的文件上传到 GitHub\n在当前页面上，你可能对本节的这部分感兴趣“…or push an existing repository from the command line（或者从命令行推送一个现有存储库）”。你应该看到本节中列出的两行代码。复制整个第一行，将其粘贴到命令行中，然后按 Enter 键。命令应该看起来像是这样的：\nBASHCopy to Clipboard\n1 git remote add origin https://github.com/chrisdavidmills/my-repository.git 接下来，键入以下两个命令，每个命令之后按 Enter。这些指令将会把代码上传到 GitHub，并要求 Git 管理这些文件。\nBASHCopy to Clipboard\n1 2 git add --all git commit -m 'adding my files to my repository' 最后，将代码推送到 GitHub，通过你正在访问的 GitHub 网页，然后输入我们看到的两个命令中的第二个命令“ …or push an existing repository from the command line（或从命令行部分推入现有存储库）部分”：\nBASHCopy to Clipboard\n1 git push -u origin master 现在你需要为你的仓库开启 GitHub pages 分支。为此，其在仓库的主页中选择 Settings，然后从左侧的侧边栏中选择 Pages。在 Source 下选择“main”分支。页面应该会自动刷新。\n重新回到 GitHub Pages 部分，你应该会看到形式为“Your site is ready to be published at https://xxxxxx.”的一行内容。\n如果你点击这个 URL，你应该会跳转到你的示例的实时演示版本，提供的主页名为 index.html——这是默认的入口点。如果你的网站的入口点不是这个，例如 myPage.html，你需要访问 https://xxxxxx/myPage.html。\nSuppose your personal website is hosted in a Github page as follows:\n1 https://username.github.io The repository should be name as username.github.io. If you have a pdf file named document.pdf and you place it in the directory folder then you should be able to open it directly in the browser through the following link:\n1 https://username.github.io/folder/document.pdf To allow the user to open the pdf in a new window in the browser, you may use the following HTML, where “PDF” points to the link:\n1 PDF. 下载并上传相应的pdfjs文件夹 # PDF.js——A general-purpose, web standards-based platform for parsing and rendering PDFs.\n我在建立仓库时就提前上传pdfjs文件夹了，这里不再介绍。如果之前没上传，可以从上面链接下载解压后手动上传。\n调用cdnjs加速 cdnjs.cloudflare.com 是一个开放的免费 CDN（内容分发网络）服务，它提供了许多流行的前端库和框架，可以帮助开发人员更快速、高效地开发网站和应用程序。\njspdf PDF Document creation from JavaScript\njspdf 是一个 JavaScript 库，用于在浏览器中生成 PDF 文件。\n使用 cdnjs.cloudflare.com 上的 jspdf 库非常简单。只需在您的 HTML 页面中添加以下代码，就可以将该库包含到您的项目中：\npdfjs 下载地址\n在HTML页面直接调用下面的JS脚本即可。\nURL：\n1 \u003cscript src=\"https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.min.js\"\u003e\u003c/script\u003e Script Tag：\n1 \u003cscript src=\"https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.min.js\" integrity=\"sha512-KEoL9wKXt/fhlAfN+ZNXf3pI48aaQE9Qd5fihHY+5n5XLTSnyGJ0uKgUj//V6KAcjFwzAbCYYPKeGlFES/H5Ng==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"\u003e\u003c/script\u003e 主要有下面几种压缩后（压缩能加快加载速度）的脚本，但我不知道它们具体有什么区别👀。\n1 2 3 4 5 6 7 8 9 10 11 https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.min.js https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.sandbox.min.js https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.worker.entry.min.js https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.worker.min.js https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf_viewer.min.css https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf_viewer.min.js 这将从 CDN 中获取 jspdf 库的最新版本并将其添加到所需项目中。\n实测 简易语法\n1 2 3 \u003ca href=\"https://rosefinch-midsummer.github.io/book/file/the-dictators-handbook-pdfepub-free.pdf\" target=\"_blank\"\u003ePDF文件在线阅读\u003c/a\u003e \u003cscript src=\" https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.min.js\"\u003e \u003c/script\u003e 文件名最好用英语而不是汉语，便于解析。\n",
+  "wordCount" : "2330",
+  "inLanguage": "zh",
+  "datePublished": "2023-05-29T13:34:25+08:00",
+  "dateModified": "2025-09-22T21:54:22+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "RM"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://rosefinch-midsummer.github.io/zh/posts/life/%E7%94%A8pdfjs%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%A7%88pdf%E4%B9%A6%E7%B1%8D%E6%95%99%E7%A8%8B/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "天漢帝國復興錄",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://rosefinch-midsummer.github.io/img/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://rosefinch-midsummer.github.io/zh/" accesskey="h" title="天漢帝國復興錄 (Alt + H)">天漢帝國復興錄</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/" title="🏠主頁">
+                    <span>🏠主頁</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/posts" title="📚文章">
+                    <span>📚文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/archives" title="⏱時間軸">
+                    <span>⏱時間軸</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/categories" title="🧩分類">
+                    <span>🧩分類</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/tags" title="🔖標簽">
+                    <span>🔖標簽</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/about" title="🙋🏻‍♂️關于">
+                    <span>🙋🏻‍♂️關于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://rosefinch-midsummer.github.io/zh/">首頁</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/">📚文章</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/life/">🏖生活</a></div>
+    <h1 class="post-title">
+      用pdfjs在线预览pdf书籍教程
+    </h1>
+    <div class="post-meta">
+    创建: 2023-05-29 |
+    更新: 2025-09-22 |
+    字数: 2330字 |
+    时长: 5分钟 |
+    RM
+
+
+</div>
+   
+<div  class="meta-item">&nbsp·&nbsp
+  <span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+</div>
+
+
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目錄</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%89%8d%e8%a8%80" aria-label="前言">前言</a></li>
+                <li>
+                    <a href="#%e5%88%9b%e5%bb%bapdf%e6%96%87%e6%a1%a3" aria-label="创建pdf文档">创建pdf文档</a></li>
+                <li>
+                    <a href="#%e6%96%b0%e5%bb%bagithub%e4%bb%93%e5%ba%93" aria-label="新建github仓库">新建github仓库</a></li>
+                <li>
+                    <a href="#%e5%92%8cgithub-pages%e4%bb%93%e5%ba%93%e8%81%94%e7%bb%93" aria-label="和Github Pages仓库联结">和Github Pages仓库联结</a></li>
+                <li>
+                    <a href="#%e4%b8%8b%e8%bd%bd%e5%b9%b6%e4%b8%8a%e4%bc%a0%e7%9b%b8%e5%ba%94%e7%9a%84pdfjs%e6%96%87%e4%bb%b6%e5%a4%b9" aria-label="下载并上传相应的pdfjs文件夹">下载并上传相应的pdfjs文件夹</a></li>
+                <li>
+                    <a href="#%e8%b0%83%e7%94%a8cdnjs%e5%8a%a0%e9%80%9f" aria-label="调用cdnjs加速">调用cdnjs加速</a><ul>
+                        
+                <li>
+                    <a href="#jspdf" aria-label="jspdf">jspdf</a></li>
+                <li>
+                    <a href="#pdfjs" aria-label="pdfjs">pdfjs</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%ae%9e%e6%b5%8b" aria-label="实测">实测</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="前言">前言<a hidden class="anchor" aria-hidden="true" href="#前言">#</a></h2>
+<p>我打算做数学、物理等的教程便于自己将来阅读，但是上传latex公式和各种图像比较费时费力，于是乎我想到用图片来解决这个问题。然而，用typora结合picgo往github仓库里面上传图片总会有很多图片上传失败，而且图片过多影响博客加载速度，让我很受打击。睡前想到可以用在线pdf阅读的方式来进行这项事业，我于是第二天把准备好的图片先转成pdf文件，然后把pdf文件上传到github仓库，再通过开启github pages的功能获得在线预览的URL实现文件在线阅读。</p>
+<p>加载时间过长可以通过边加载边渲染的方式进行，不过这实现难度有点高，我选择了用cdnjs库来加速加载过程。虽然这样加速效果明显，但是这种效果可能都是缓存作用的结果，而不是cdn加速的结果。我JS学得太差，暂时无从得知确切原因。</p>
+<p>最后我测试了下实际效果，在chrome浏览器上至少第二次加载速度特别快，但是Firefox浏览器和Android端chrome浏览器都只能下载文件而无法实现在线阅读。</p>
+<p>Firefox浏览器中不能在线浏览是IDM下载工具导致的，卸载IDM之后可以正常阅读。清理缓存后发现加速加载效果主要是靠缓存实现的，使用cndjs能加快加载速度但是不是瞬间开启。</p>
+<p>用安装Ubuntu系统的电脑上的chrome浏览器实测发现页面颜色会发生变化，不知原因。引用新的cndjs后Android端chrome浏览器仍旧不能在线阅读，只能下载文件。此外可以用分页的方式加快访问速度，但我不会编辑相应代码，我还能接受现在这种阅读方式。这些问题留待以后解决！</p>
+<h2 id="创建pdf文档">创建pdf文档<a hidden class="anchor" aria-hidden="true" href="#创建pdf文档">#</a></h2>
+<p><a href="https://cdkm.com/cn/merge-jpg-to-pdf"># 将JPG合并为PDF——将多个JPG图片合并为一个PDF文件，而不是多个PDF文件</a></p>
+<p>简介：</p>
+<ol>
+<li>可添加最多100张图片，格式可以是JPG、PNG、GIF、WEBP或SVG等。</li>
+<li>拖放图片以对图片进行排序。点击图片并点击删除按钮可将其从列表中删除。</li>
+<li>设置选项，然后点击“开始合并”按钮。输出的PDF文件将会列在“输出文件”区域。|</li>
+</ol>
+<p>下载生成的pdf文档时可以选择压缩pdf文档，因为在Github网页上上传文件大小上限是25MB。更大的文件需要用git-lfs从本地推送上去。</p>
+<h2 id="新建github仓库">新建github仓库<a hidden class="anchor" aria-hidden="true" href="#新建github仓库">#</a></h2>
+<p>我原本用hugo-embed-pdf来实现在线阅读，这是工具通过把pdf文件渲染成图片来阅读，但是在双分支结构下文件路径不好处理，打开页面总显示404让我内心崩溃。此外我希望打开一个新界面显示pdf文件必要时好可以下载到本地，而不是在那块小小区域来阅读pdf书籍。我于是在github上创建了个新仓库book。以下是在WSL2（Linux操作系统同理）上的操作：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir book
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> book
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mv   /mnt/e/pdfjs /home/RM/book
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;# book&#34;</span> &gt;&gt; README.md
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git add README.md
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;first commit&#34;</span>
+</span></span><span class="line"><span class="cl">git branch -M main
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/Rosefinch-Midsummer/book.git
+</span></span><span class="line"><span class="cl">git push -u origin main
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可能出现如下错误：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">fatal: &#39;origin&#39; does not appear to be a git repository
+</span></span><span class="line"><span class="cl">fatal: Could not read from remote repository.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Please make sure you have the correct access rights
+</span></span><span class="line"><span class="cl">and the repository exists.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>错误显示本地仓库和远程仓库失去联系，因为提前执行了git remote add命令。按上面步骤即可正确推送。</p>
+<h2 id="和github-pages仓库联结">和Github Pages仓库联结<a hidden class="anchor" aria-hidden="true" href="#和github-pages仓库联结">#</a></h2>
+<p>开启github pages功能：</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230529133821.png"></p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/Common_questions/Tools_and_setup/Using_GitHub_pages#%E5%B0%86%E4%BD%A0%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0_github">将你的文件上传到 GitHub</a></p>
+<ol>
+<li>
+<p>在当前页面上，你可能对本节的这部分感兴趣“<strong><em>…or push an existing repository from the command line</em></strong>（或者从命令行推送一个现有存储库）”。你应该看到本节中列出的两行代码。复制整个第一行，将其粘贴到命令行中，然后按 Enter 键。命令应该看起来像是这样的：</p>
+<p>BASHCopy to Clipboard</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git remote add origin https://github.com/chrisdavidmills/my-repository.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>接下来，键入以下两个命令，每个命令之后按 Enter。这些指令将会把代码上传到 GitHub，并要求 Git 管理这些文件。</p>
+<p>BASHCopy to Clipboard</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add --all
+</span></span><span class="line"><span class="cl">git commit -m &#39;adding my files to my repository&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>最后，将代码推送到 GitHub，通过你正在访问的 GitHub 网页，然后输入我们看到的两个命令中的第二个命令“ <strong>…or push an existing repository from the command line</strong>（或从命令行部分推入现有存储库）部分”：</p>
+<p>BASHCopy to Clipboard</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git push -u origin master
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>现在你需要为你的仓库开启 GitHub pages 分支。为此，其在仓库的主页中选择 <em>Settings</em>，然后从左侧的侧边栏中选择 <em>Pages</em>。在 <em>Source</em> 下选择“main”分支。页面应该会自动刷新。</p>
+</li>
+<li>
+<p>重新回到 <em>GitHub Pages</em> 部分，你应该会看到形式为“Your site is ready to be published at <code>https://xxxxxx</code>.”的一行内容。</p>
+</li>
+<li>
+<p>如果你点击这个 URL，你应该会跳转到你的示例的实时演示版本，提供的主页名为 <code>index.html</code>——这是默认的入口点。如果你的网站的入口点不是这个，例如 <code>myPage.html</code>，你需要访问 <code>https://xxxxxx/myPage.html</code>。</p>
+</li>
+</ol>
+<p>Suppose your personal website is hosted in a Github page as follows:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://username.github.io
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The repository should be name as <strong>username.github.io</strong>. If you have a pdf file named <strong>document.pdf</strong> and you place it in the directory <strong>folder</strong> then you should be able to open it directly in the browser through the following link:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://username.github.io/folder/document.pdf
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>To allow the user to open the pdf in a new window in the browser, you may use the following HTML, where &ldquo;PDF&rdquo; points to the link:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;a href=&#34;https://username.github.io/folder/document.pdf&#34; target=&#34;_blank&#34;&gt;PDF.&lt;/a&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="下载并上传相应的pdfjs文件夹">下载并上传相应的pdfjs文件夹<a hidden class="anchor" aria-hidden="true" href="#下载并上传相应的pdfjs文件夹">#</a></h2>
+<p><a href="https://mozilla.github.io/pdf.js/"># PDF.js——A general-purpose, web standards-based platform for parsing and rendering PDFs.</a></p>
+<p>我在建立仓库时就提前上传pdfjs文件夹了，这里不再介绍。如果之前没上传，可以从上面链接下载解压后手动上传。</p>
+<h2 id="调用cdnjs加速">调用cdnjs加速<a hidden class="anchor" aria-hidden="true" href="#调用cdnjs加速">#</a></h2>
+<p>cdnjs.cloudflare.com 是一个开放的免费 CDN（内容分发网络）服务，它提供了许多流行的前端库和框架，可以帮助开发人员更快速、高效地开发网站和应用程序。</p>
+<h3 id="jspdf">jspdf<a hidden class="anchor" aria-hidden="true" href="#jspdf">#</a></h3>
+<p><a href="https://cdnjs.com/libraries/jspdf">PDF Document creation from JavaScript</a></p>
+<p>jspdf 是一个 JavaScript 库，用于在浏览器中生成 PDF 文件。</p>
+<p>使用 cdnjs.cloudflare.com 上的 jspdf 库非常简单。只需在您的 HTML 页面中添加以下代码，就可以将该库包含到您的项目中：</p>
+<p><code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js&quot; integrity=&quot;sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;&gt;&lt;/script&gt;</code></p>
+<h3 id="pdfjs">pdfjs<a hidden class="anchor" aria-hidden="true" href="#pdfjs">#</a></h3>
+<p><a href="https://cdnjs.com/libraries/pdf.js">下载地址</a></p>
+<p>在HTML页面直接调用下面的JS脚本即可。</p>
+<p>URL：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.min.js&#34;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Script Tag：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.min.js&#34;</span> <span class="nx">integrity</span><span class="o">=</span><span class="s2">&#34;sha512-KEoL9wKXt/fhlAfN+ZNXf3pI48aaQE9Qd5fihHY+5n5XLTSnyGJ0uKgUj//V6KAcjFwzAbCYYPKeGlFES/H5Ng==&#34;</span> <span class="nx">crossorigin</span><span class="o">=</span><span class="s2">&#34;anonymous&#34;</span> <span class="nx">referrerpolicy</span><span class="o">=</span><span class="s2">&#34;no-referrer&#34;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>主要有下面几种压缩后（压缩能加快加载速度）的脚本，但我不知道它们具体有什么区别👀。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.min.js
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.sandbox.min.js
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.worker.entry.min.js
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.worker.min.js
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf_viewer.min.css
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf_viewer.min.js
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这将从 CDN 中获取 jspdf 库的最新版本并将其添加到所需项目中。</p>
+<h2 id="实测">实测<a hidden class="anchor" aria-hidden="true" href="#实测">#</a></h2>
+<p>简易语法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;https://rosefinch-midsummer.github.io/book/file/the-dictators-handbook-pdfepub-free.pdf&#34;</span> <span class="nx">target</span><span class="o">=</span><span class="s2">&#34;_blank&#34;</span><span class="o">&gt;</span><span class="nx">PDF文件在线阅读</span><span class="o">&lt;</span><span class="err">/a&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34; https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.min.js&#34;</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>文件名最好用英语而不是汉语，便于解析。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230529140110.png"></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://rosefinch-midsummer.github.io/zh/tags/pdfjs/">Pdfjs</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://rosefinch-midsummer.github.io/zh/posts/life/10000%E5%B0%8F%E6%97%B6vs20%E5%B0%8F%E6%97%B6/">
+    <span class="title">« 上一頁</span>
+    <br>
+    <span>10000小时VS20小时</span>
+  </a>
+  <a class="next" href="https://rosefinch-midsummer.github.io/zh/posts/life/texstudio%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>TexStudio入门教程</span>
+  </a>
+</nav>
+
+  </footer>
+<div>    
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">评论</span>
+        <br/>
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://utteranc.es/client.js"
+            repo="Rosefinch-Midsummer/comments_of_blog" 
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <script>
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            const theme = document.body.className.includes("dark")
+            ? "github-light"
+            : "photon-dark";
+            const message = {
+            type: "set-theme",
+            theme: theme,
+            };
+            const utteranc = document.querySelector(".utterances-frame");
+            utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+        });
+    </script>
+</div>
+
+
+
+
+
+
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://rosefinch-midsummer.github.io/zh/">天漢帝國復興錄</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+  
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </span>
+  <span id="busuanzi_container_site_uv">
+    本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '複製';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已複製！';
+            setTimeout(() => {
+                copybutton.innerHTML = '複製';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+
+
+</body>
+
+</html>

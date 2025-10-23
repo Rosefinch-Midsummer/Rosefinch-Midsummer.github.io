@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>低代码平台 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0/</link>
+    <description>Recent content in 低代码平台 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 24 Mar 2025 23:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>低代码平台推荐</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Mon, 24 Mar 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/495262462&#34;&gt;几分钟内上线一个网站，这些「低代码」神器太赞了！&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/people/githubdaily&#34;&gt;作者GitHub Daily&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;正文&#34;&gt;正文&lt;/h1&gt;
+&lt;p&gt;几个月前，我曾给大家分享过 GitHub 上几个可以快速完成网站开发、上线的低代码平台。近期，我又陆陆续续挖掘到一些与此相关的优质项目，便想着重新整理、更新，让诸位平时在闲暇之余，也可以上手把玩。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

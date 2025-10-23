@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PNPM on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/pnpm/</link>
+    <description>Recent content in PNPM on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 24 May 2025 23:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/pnpm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>开源音乐播放器推荐——MusicFree和LxMusic</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%BC%80%E6%BA%90%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A8%E8%8D%90musicfree%E5%92%8Clxmusic/</link>
+      <pubDate>Sat, 24 May 2025 23:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%BC%80%E6%BA%90%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A8%E8%8D%90musicfree%E5%92%8Clxmusic/</guid>
+      <description>&lt;h1 id=&#34;发现你的专属音乐空间deep定制的开源音乐播放器musicfree&#34;&gt;发现你的专属音乐空间：Deep定制的开源音乐播放器——MusicFree&lt;/h1&gt;
+&lt;p&gt;在日益繁忙的生活中，音乐成为许多人不可或缺的精神伴侣。想要一款既自由又灵活的音乐播放器？推荐你试试&lt;strong&gt;MusicFree&lt;/strong&gt;——一款开源、免费、极具可定制的本地音乐播放器，特别适合喜欢DIY、追求隐私和高自由度的音乐爱好者。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Android on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/categories/android/</link>
+    <description>Recent content in Android on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 22 Sep 2025 21:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>不Root删除Android系统自带软件</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E4%B8%8Droot%E5%88%A0%E9%99%A4android%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Sat, 11 Nov 2023 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E4%B8%8Droot%E5%88%A0%E9%99%A4android%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%E8%BD%AF%E4%BB%B6/</guid>
+      <description>&lt;h1 id=&#34;adb工具下载及环境配置一看就会&#34;&gt;adb工具下载及环境配置（一看就会）&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/653371171&#34;&gt;文章来源&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1adb工具下载&#34;&gt;1、adb工具下载&lt;/h3&gt;
+&lt;p&gt;官网下载地址：&lt;a href=&#34;https://link.zhihu.com/?target=https%3A//developer.android.google.cn/studio/releases/platform-tools%3Fhl%3Dzh-cn&#34;&gt;SDK 平台工具版本说明 | Android 开发者 | Android Developers&lt;/a&gt;，选择想要安装的系统的哦！&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://pic1.zhimg.com/80/v2-be4ef22250904ebbf03c75635797ae0c_1440w.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;点击下载链接，勾选我已阅读并同意上述条款及条件并立即下载。将下载后的压缩包解压到指定目录，并来到这个目录下。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

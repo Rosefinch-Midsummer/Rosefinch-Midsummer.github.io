@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>量化金融——期权 | 天漢帝國復興錄</title>
+<meta name="keywords" content="期权定价, 量化">
+<meta name="description" content="导论及思维导图
+课时目标：学习目标：掌握期权的基本概念，期权定价的无套利定价原理和风险中性原理；理解欧式期权的平价公式；可以应用二叉树模型计算期权的价值。
+">
+<meta name="author" content="RM">
+<link rel="canonical" href="https://rosefinch-midsummer.github.io/zh/posts/life/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E6%9C%9F%E6%9D%83/">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://rosefinch-midsummer.github.io/img/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rosefinch-midsummer.github.io/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rosefinch-midsummer.github.io/img/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://rosefinch-midsummer.github.io/img/apple-touch-icon.png">
+<link rel="mask-icon" href="https://rosefinch-midsummer.github.io/img/android-chrome-192x192.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://rosefinch-midsummer.github.io/zh/posts/life/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E6%9C%9F%E6%9D%83/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous"> 
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script> 
+	document.addEventListener("DOMContentLoaded", function() { 
+		renderMathInElement(document.body, { 
+			
+			
+			delimiters: [ 
+				{left: '$$', right: '$$', display: true}, 
+				{left: '$', right: '$', display: false}, 
+				{left: '\\(', right: '\\)', display: false}, 
+				{left: '\\[', right: '\\]', display: true} 
+			], 
+			
+			throwOnError : false 
+		}); 
+	}); 
+</script>
+
+
+
+
+
+
+
+<meta property="og:url" content="https://rosefinch-midsummer.github.io/zh/posts/life/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E6%9C%9F%E6%9D%83/">
+  <meta property="og:site_name" content="天漢帝國復興錄">
+  <meta property="og:title" content="量化金融——期权">
+  <meta property="og:description" content="导论及思维导图 课时目标：学习目标：掌握期权的基本概念，期权定价的无套利定价原理和风险中性原理；理解欧式期权的平价公式；可以应用二叉树模型计算期权的价值。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-08T18:34:25+08:00">
+    <meta property="article:modified_time" content="2024-01-08T22:54:22+08:00">
+    <meta property="article:tag" content="期权定价">
+    <meta property="article:tag" content="量化">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="量化金融——期权">
+<meta name="twitter:description" content="导论及思维导图
+课时目标：学习目标：掌握期权的基本概念，期权定价的无套利定价原理和风险中性原理；理解欧式期权的平价公式；可以应用二叉树模型计算期权的价值。
+">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "📚文章",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "🏖生活",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/life/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "量化金融——期权",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/life/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E6%9C%9F%E6%9D%83/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "量化金融——期权",
+  "name": "量化金融——期权",
+  "description": "导论及思维导图 课时目标：学习目标：掌握期权的基本概念，期权定价的无套利定价原理和风险中性原理；理解欧式期权的平价公式；可以应用二叉树模型计算期权的价值。\n",
+  "keywords": [
+    "期权定价", "量化"
+  ],
+  "articleBody": "导论及思维导图 课时目标：学习目标：掌握期权的基本概念，期权定价的无套利定价原理和风险中性原理；理解欧式期权的平价公式；可以应用二叉树模型计算期权的价值。\n9.1 期权的基本概念 期权的基本概念：\n期权：买卖资产的权利。规定期限，约定价格，一定数量。 期权多头：期权买方、期权持有人，获得权利。 期权空头：期权卖方。根据买方要求，履行义务。 执行价格：买卖资产的价格即期权合约中标的资产的交易价格 期权费（期权价格）：为了获得权利，多头向空头支付的费用，这是合约本身的价格 期权的类型：\n看涨期权（call）：以执行价格买入标的资产的权利。例：在12月20日，以每股20元的价格，购买1万股A公司的股票。资产价格上涨越多，看涨期权的价值越大。 看跌期权（put）：以执行价格卖出标的资产的权利。例：在12月20日，以每股30元的价格，出售1万股B公司的股票。资产价格下跌越多，看跌期权的价值越大。 期权的行权方式：\n欧式期权：只能在到期日行使权利。 美式期权：可在到期前的任何日期执行期权。 注：美式期权的价值不低于相应欧式期权的价值。\n根据市场价格和执行价格的关系，期权可以划分为实值期权、虚值期权和平价期权。实值期权是市场价格大于执行价格的期权，虚值期权是市场价格小于执行价格的期权，平价期权是市场价格等于执行价格的期权。\n以看跌期权为例则结果相反。\n9.2 期权的回收和盈亏 期权的回收是指期权到期时能够带来的现金价值，通过减去支付的期权费得到盈亏。\n看涨期权多头的回收和盈亏取决于资产价格和执行价格之间的差额，如果资产价格上涨，期权会带来正的收益。\n而看跌期权多头的回收和盈亏取决于资产价格和执行价格之间的差额，如果资产价格下跌，期权会带来正的收益。\n通过计算回收和减去期权费的终值，可以得到期权的盈亏。盈亏图可以用来分析不同市场价格下的盈亏情况。\n9.3 欧式期权的平价关系 首先给出了一组符号，包括时间零点、期权合约的到期时间、无风险连续复利、标的资产的价格和执行价格。\n欧式期权的平价关系是指看涨期权的价格减去看跌期权的价格等于标的资产价格减去执行价格的现值。\n为了证明这个关系，构造了两个投资组合A和B，并分析了在期权合约到期的两种情况下它们的价值相等。根据无套利定价原理，组合A和组合B在当前时刻的价值也应该相等。因此，可以建立看涨期权和看跌期权之间的平价关系。\n当远期价格大于执行价格时，看涨期权更加值钱，而看跌期权相对便宜。\n9.4 美式期权的价格关系 对于欧式期权而言，看涨期权的价格与看跌期权的价格存在平价关系。但是对于美式期权而言，这种平价关系不存在。然而，美式看涨期权的价格与看跌期权的价格仍然具有一定的规律性。\n我们解释了为什么美式看涨期权不会被提前执行，以及美式看跌期权有可能被提前执行。在期权交易中，如果标的资产在期权合约到期之前不会产生收益，那么美式看涨期权和欧式看涨期权是等价的。对于美式期权而言，看涨期权的价格减去看跌期权的价格大于等于标的资产价格减去执行价格，小于等于标的资产价格减去执行价格的现值。如果标的资产有分红，那么可以将原来的价格关系中的标的资产替换为标的资产减去红利的现值，新的价格关系仍然成立。\n9.5 期权定价基本原理 在期权定价中，主要使用无套利定价法，它有不同的表现形式。其中一种是复制技术，通过构造一个资产组合，使其回收和期权的回收相等，从而得到期权的价值。另一种表现形式是风险中性定价法，将现实测度转化成风险中性测度，使用无风险利率来计算未来现金流的期望现值，简化计算过程。\n无套利定价原理：\n两个资产的终值相等，现值也必相等 复制技术：如果资产组合可以复制期权的回收，则期权的价值等于组合的价值 风险中性定价：在风险中性测度下，用无风险利率计算未来现金流的期望现值 通过一个例子解释了无套利定价法的基本原理，假设股票价格只有两种变化可能，根据股票价格的变化情况，构造一个资产组合，解出资产组合在时间零点的价值，即为期权的价值。\n另外，介绍了风险中性定价法，假设股票的期望收益率等于无风险利率，计算出股票价格上升和下跌的概率，进而计算出期权的期望值，并将其折现到时间零点，得到期权的价值。\n9.6 单步二叉树模型 单步二叉树模型是指在期权合约有效期内，股票价格只发生一次变化，即股价要么上升到110元，要么下降到90元。根据无套利定价法，构造一个无风险的资产组合，其中包含0.5个单位的股票和1个单位的看涨期权空头。根据组合的价值变化，可以计算出看涨期权的价值。通过解方程，得到看涨期权的价值为9.09元。\n9.7 单步二叉树模型 首先构造一个无风险的资产组合，包含w单位的股票和1单位的看涨期权空头。股票价格上升到uS或下降到dS后，组合的价值分别为wuS-fu和wdS-fd。根据无风险假设，组合的价值在股票价格上升和下降后保持不变。根据这个条件，可以得到一个方程，解出股票的数量w。根据无风险组合的价值不变，可以计算出股票的数量w。根据无风险假设，组合的收益率为无风险利率。根据这些条件，可以计算出期权的价格f。最后，介绍了计算u和d的方法，其中u=e的σ乘以根号T，d为u的倒数。的一般形式。\n例子：假设股票不支付红利，当前价格为10元，在3个月以后，股票价格要么是12元，要么是8元。该股票欧式看涨期权的期限为3个月，执行价格为11元，无风险连续复利为10%。计算该期权的价格。\nu=1.2，d=0.8\nf=0.55\n注意：风险中性概率不是现实世界中的概率\n计算u和d的一般方法（Cox， Ross 和 Robinstein， 1979）：\n$f=\\mathrm{e}^{-rT}\\left[pf_u+\\left(1-p\\right)f_d\\right]$\n$p=\\frac{\\mathrm{e}^{r^T}-d}{u-d}$\n$u=\\mathrm{e}^{\\sigma\\sqrt{T}}$\n$d=\\mathrm{e}^{-\\sigma\\sqrt{T}}$\n9.8 多步二叉树模型 多步二叉树模型是单步二叉树模型的推广，通过构造两步二叉树模型来说明。假设股票当前价格为100，上升为原来的1.1倍，下跌为原来的0.91倍。根据这个条件，构造了一个两步二叉树模型，股票价格有三种可能取值：121、100和83。如果给定欧式看涨期权执行价格为100，可以计算出对应的期权价值分别为21、0和0。通过加权平均和贴现，可以计算出期权在时间零点的价值。多步二叉树模型可以进一步推广到更多步骤，通过倒推每个点上的期权价值，最终可以计算出时间零点的期权价值。\n9.9 例题：欧式看涨期权的多步二叉树模型 本教学视频介绍了如何使用多步二叉树模型为欧式看涨期权进行定价。视频中通过一个例子来说明定价的过程。首先给出了股票当前的市场价格、股票价格的年波动率、无风险的连续复利以及期权的执行价格等已知条件。然后构造了一个五步的二叉树模型，计算了股票在未来第五个月末的六种可能取值。根据这些股票价格的未来可能取值，计算出了相应价格水平下期权的价值。接着使用加权平均和贴现的方法，逐步倒推计算出了期权在时间零点的价值为3.22元。教学视频通过红色和黑色的表示方式，清晰地展示了股票价格和期权价值的变化过程。\n例：欧式看涨期权的二叉树定价模型\n股票的当前市场价格为50元，不付红利（S=50) 股票价格的年波动率为20%($\\sigma=20%$) 无风险连续复利为5%（r=5%） 该股票5个月期的欧式看涨期权的执行价格为50元 求该期权的价值 （用五步二叉树） 使用二叉树模型计算欧式看涨期权的价格Python代码实现 股票的当前市场价格为100元，股票没有红利; 股票价格的年波动率为10%; 无风险连续复利为6%; 该股票2个月期的欧式看涨期权的执行价格为100元; 求该期权的价值（用2步二叉树模型）。\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 import numpy as np import matplotlib.pyplot as plt plt.rcParams['font.sans-serif'] = ['SimHei'] # 用来正常显示中文标签 plt.rcParams['axes.unicode_minus'] = False # 用来正常显示负号 # 参数设定 S0 = 100 # 当前股票价格 K = 100 # 执行价格 sigma = 0.10 # 波动率 r = 0.06 # 无风险利率 T = 2 / 12 # 期权期限（2个月） steps = 2 # 二叉树步数 # 计算u, d, p dt = T / steps u = np.exp(sigma * np.sqrt(dt)) # 上涨因子 d = np.exp(-sigma * np.sqrt(dt)) # 下跌因子 p = (np.exp(r * dt) - d) / (u - d) # 风险中性概率 # 计算股票价格树 stock_prices = np.zeros((steps + 1, steps + 1)) for i in range(steps + 1): for j in range(i + 1): stock_prices[j, i] = S0 * (u ** (i - j)) * (d ** j) # 计算期权价值树 option_values = np.zeros((steps + 1, steps + 1)) for j in range(steps + 1): option_values[j, steps] = max(0, stock_prices[j, steps] - K) # 欧式看涨期权 # 反向递推计算期权价值 for i in range(steps - 1, -1, -1): for j in range(i + 1): option_values[j, i] = np.exp(-r * dt) * (p * option_values[j, i + 1] + (1 - p) * option_values[j + 1, i + 1]) # 输出股票价格树和期权价值树 print(\"股票价格树：\") print(stock_prices) print(\"\\n期权价值树：\") print(option_values) # 绘制二叉树 def plot_tree(tree, title): fig, ax = plt.subplots() ax.set_title(title) ax.axis('off') for i in range(tree.shape[0]): for j in range(tree.shape[1]): if tree[i, j] != 0: ax.text(j, -i, f\"{tree[i, j]:.2f}\", ha='center', va='center', bbox=dict(boxstyle=\"round,pad=0.3\", edgecolor='black', facecolor='lightgrey')) plt.show() plot_tree(stock_prices, \"股票价格树\") plot_tree(option_values, \"期权价值树\") # 期权的现值 option_price = option_values[0, 0] print(f\"\\n该看涨期权的价值为: {option_price:.2f}\") 代码解释\n参数设定：根据题目设置股票当前价格、执行价格、波动率、无风险利率、期权期限和步数。 计算u, d, p：使用给定公式计算上涨因子u、下跌因子d和风险中性概率p。 构建股票价格树：使用双重循环填充股票价格树。 计算期权价值树：首先在最后一步计算期权价值，然后反向递推计算得到每个节点的期权价值。 绘制二叉树：使用Matplotlib绘制股票价格树和期权价值树。 输出期权价值：最后输出期权的现值。 运行上述代码后，会输出股票价格树和期权价值树，并在控制台打印出期权的价值。根据题目要求，最终的看涨期权价值为：\n1 该看涨期权的价值为: 1.98 使用二叉树模型计算欧式看跌期权的价格Python代码实现 股票的当前市场价格为100元，股票没有红利; 股票价格的年波动率为10%; 无风险连续复利为6%; 该股票2个月期的欧式看跌期权的执行价格为100元; 求该看跌期权的价值（用2步二叉树模型）。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 import numpy as np import matplotlib.pyplot as plt plt.rcParams['font.sans-serif'] = ['SimHei'] # 用来正常显示中文标签 plt.rcParams['axes.unicode_minus'] = False # 用来正常显示负号 # 参数设定 S0 = 100 # 当前股票价格 K = 100 # 执行价格 sigma = 0.10 # 波动率 r = 0.06 # 无风险利率 T = 2 / 12 # 期权期限（2个月） steps = 2 # 二叉树步数 # 计算u, d, p dt = T / steps u = np.exp(sigma * np.sqrt(dt)) # 上涨因子 d = np.exp(-sigma * np.sqrt(dt)) # 下跌因子 p = (np.exp(r * dt) - d) / (u - d) # 风险中性概率 # 计算股票价格树 stock_prices = np.zeros((steps + 1, steps + 1)) for i in range(steps + 1): for j in range(i + 1): stock_prices[j, i] = S0 * (u ** (i - j)) * (d ** j) # 计算看跌期权价值树 put_option_values = np.zeros((steps + 1, steps + 1)) for j in range(steps + 1): put_option_values[j, steps] = max(0, K - stock_prices[j, steps]) # 欧式看跌期权 # 反向递推计算期权价值 for i in range(steps - 1, -1, -1): for j in range(i + 1): put_option_values[j, i] = np.exp(-r * dt) * (p * put_option_values[j, i + 1] + (1 - p) * put_option_values[j + 1, i + 1]) # 输出股票价格树和看跌期权价值树 print(\"股票价格树：\") print(stock_prices) print(\"\\n看跌期权价值树：\") print(put_option_values) # 绘制二叉树 def plot_tree(tree, title): fig, ax = plt.subplots() ax.set_title(title) ax.axis('off') for i in range(tree.shape[0]): for j in range(tree.shape[1]): if tree[i, j] != 0: ax.text(j, -i, f\"{tree[i, j]:.2f}\", ha='center', va='center', bbox=dict(boxstyle=\"round,pad=0.3\", edgecolor='black', facecolor='lightgrey')) plt.show() plot_tree(stock_prices, \"股票价格树\") plot_tree(put_option_values, \"看跌期权价值树\") # 期权的现值 put_option_price = put_option_values[0, 0] print(f\"\\n该看跌期权的价值为: {put_option_price:.2f}\") 代码解释\n参数设定：与之前相同，根据题目设定股票当前价格、执行价格、波动率、无风险利率、期权期限和步数。 计算u, d, p：使用相同的公式计算上涨因子u、下跌因子d和风险中性概率p。 构建股票价格树：使用双重循环填充股票价格树。 计算看跌期权价值树：在最后一步计算看跌期权的价值，公式为 max(0, K - S)，然后反向递推计算得到每个节点的期权价值。 绘制二叉树：使用Matplotlib绘制股票价格树和看跌期权价值树。 输出期权价值：最后输出看跌期权的现值。 运行上述代码后，会输出股票价格树和看跌期权价值树，并在控制台打印出期权的价值。根据题目要求，最终的看跌期权价值将会被计算并输出。\n1 该看跌期权的价值为: 0.98 9.10 例题：美式看跌期权的多步二叉树模型 美式看涨期权不会被提前执行，所以美式看涨期权的价格等于欧式看涨期权价格。\n美式看跌期权可能会被提前执行，所以美式看跌期权的价格不等于欧式看跌期权价格。\n在这个教学视频中，我们学习了如何使用二叉树模型为美式看跌期权进行定价。首先，我们需要确定股票价格的变化过程，根据给定的股票价格、波动率和步长，可以计算出股票价格在每个时间点上的值。然后，根据期权合约的执行价格，可以计算出每个时间点上看跌期权的价值。在计算过程中，我们还考虑了期权的提前执行情况，如果股票价格低于执行价格，期权可以被提前执行，相应的价值会更高。通过递推计算，我们最终得到了美式看跌期权在时间零点的价值为2.27。\n例子：美式看跌期权的二叉树定价模型\n股票的当前市场价格为50元，无红利 年波动率为20% 无风险连续复利为5% 该股票5个月期的美式看跌期权的执行价格为50元 求该期权的价值（用五步二叉树） 9.11 Black-Scholes模型简介 Black-Scholes定价模型在期权定价中具有重要地位，涉及随机过程的理论和方法。在该模型中，欧式看涨期权的价格可以直接计算，与看跌期权的价格存在平价关系。计算欧式看涨期权价格的公式包括标的资产价格、执行价格、无风险利率、股价波动率和合约到期时间。通过计算d1和d2的值，可以得到标准正态分布函数在这两个点的取值。代入Black-Scholes定价公式，可以计算出欧式看涨期权的价格。根据平价关系，可以直接计算出看跌期权的价格。\n$C_\\text{欧}=S\\Phi(d_1)-K\\mathrm{e}^{-rT}\\Phi(d_2)$\n$d_1=\\frac{\\ln(S/K)+(r+\\sigma^2/2)T}{\\sigma\\sqrt{T}}$\n$d_2=\\frac{\\ln(S/K)+(r-\\sigma^2/2)T}{\\sigma\\sqrt{T}}=d_1-\\sigma\\sqrt{T}$\n例子：假设某种不支付红利股票的市场价格为20元，无风险利率为5%，该股票的年波动率为4%，求该股票执行价格为20元、期限为1年的欧式看涨期权和看跌期权的价格。\n$S=20、r = 5%、\\sigma= 4%、K =20、T=1$\n代入公式得$d_1=1.27,d_2=1.23$\n欧式看涨期权的价格$C_{\\mathbb{R}}=S\\Phi(d_1)-K\\mathrm{e}^{-rT}\\Phi(d_2)=20\\times0.8980-20\\mathrm{e}^{-0.05\\times1}\\times0.8907=1.0148$\n根据欧式期权的平价关系得欧式看跌期权价格$P_\\text{欧}=20\\times\\left(1-0.8907\\right)\\mathrm{e}^{-0.05\\times1}-20\\times\\left(1-0.8980\\right)=0.0394$\nB-S定价模型计算期权价值的Python实现 使用Black-Scholes模型计算欧式看涨期权的价格是一个经典的金融计算问题。下面是一个Python程序，它可以根据给定的参数计算欧式看涨期权的价格，并使用多维数组格式输出计算结果。我们还将绘制出计算过程中的每个阶段的值。\nPython代码实现：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 import numpy as np import matplotlib.pyplot as plt from scipy.stats import norm plt.rcParams['font.sans-serif'] = ['SimHei'] # 用来正常显示中文标签 plt.rcParams['axes.unicode_minus'] = False # 用来正常显示负号 # Black-Scholes定价模型函数 def black_scholes_call(S, K, T, r, sigma): # 计算d1和d2 d1 = (np.log(S / K) + (r + (sigma ** 2) / 2) * T) / (sigma * np.sqrt(T)) d2 = d1 - sigma * np.sqrt(T) # 计算欧式看涨期权价格 call_price = S * norm.cdf(d1) - K * np.exp(-r * T) * norm.cdf(d2) return call_price, d1, d2 # 参数设定 S = 20 # 当前股票价格 K = 20 # 执行价格 sigma = 0.04 # 波动率 r = 0.05 # 无风险利率 T = 1 # 期权期限（12个月） # 计算欧式看涨期权价格 call_price, d1, d2 = black_scholes_call(S, K, T, r, sigma) # 输出计算结果 print(f\"欧式看涨期权的价格: {call_price:.4f}\") print(f\"d1: {d1:.4f}, d2: {d2:.4f}\") # 为了展示过程，我们可以创建一个树状结构来显示每个阶段的值 # 这里我们只用一个简单的数组来表示阶段 steps = 2 call_prices = np.zeros((steps + 1, steps + 1)) # 填充最后一层的看涨期权价格 for j in range(steps + 1): call_prices[j, steps] = max(0, S - K) # 在最后一步，期权价值为 max(0, S - K) # 反向递推计算期权价值 for i in range(steps - 1, -1, -1): for j in range(i + 1): call_prices[j, i] = np.exp(-r * (T / steps)) * ( (0.5 * call_prices[j, i + 1] + 0.5 * call_prices[j + 1, i + 1]) # 假设等概率 ) # 输出每个阶段的值 print(\"\\n每个阶段的看涨期权价值：\") print(call_prices) # 绘制树状图 def plot_tree(tree, title): fig, ax = plt.subplots() ax.set_title(title) ax.axis('off') for i in range(tree.shape[0]): for j in range(tree.shape[1]): if tree[i, j] != 0: ax.text(j, -i, f\"{tree[i, j]:.2f}\", ha='center', va='center', bbox=dict(boxstyle=\"round,pad=0.3\", edgecolor='black', facecolor='lightgrey')) plt.show() plot_tree(call_prices, \"看涨期权价值树\") # 计算并输出看跌期权价格 put_price = K * np.exp(-r * T) - S + call_price print(f\"\\n欧式看跌期权的价格: {put_price:.4f}\") 代码解释\nBlack-Scholes定价模型函数：\nblack_scholes_call函数计算给定参数下的欧式看涨期权价格，并返回d1和d2的值。 参数设定：\n根据题目要求设定股票当前价格、执行价格、波动率、无风险利率和期权期限。 计算欧式看涨期权价格：\n调用black_scholes_call函数计算看涨期权价格，并输出结果。 创建树状结构：\n使用一个简单的数组来表示计算过程中的每个阶段的看涨期权价值。 反向递推计算期权价值：\n在树的最后一层填充看涨期权的价值，然后反向计算每个阶段的值。 绘制树状图：\n使用Matplotlib绘制看涨期权价值树。 计算并输出看跌期权价格：\n根据平价关系计算看跌期权价格并输出。 运行上述代码后，会输出欧式看涨期权的价格、d1和d2的值，以及每个阶段的看涨期权价值。最后，还会绘制出看涨期权价值树，并输出看跌期权的价格。\n具体输出结果如下所示：\n1 2 3 4 5 6 7 8 9 欧式看涨期权的价格: 1.0149 d1: 1.2700, d2: 1.2300 每个阶段的看涨期权价值： [[0. 0. 0.] [0. 0. 0.] [0. 0. 0.]] 欧式看跌期权的价格: 0.0395 ",
+  "wordCount" : "6917",
+  "inLanguage": "zh",
+  "datePublished": "2025-01-08T18:34:25+08:00",
+  "dateModified": "2024-01-08T22:54:22+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "RM"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://rosefinch-midsummer.github.io/zh/posts/life/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E6%9C%9F%E6%9D%83/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "天漢帝國復興錄",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://rosefinch-midsummer.github.io/img/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://rosefinch-midsummer.github.io/zh/" accesskey="h" title="天漢帝國復興錄 (Alt + H)">天漢帝國復興錄</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/" title="🏠主頁">
+                    <span>🏠主頁</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/posts" title="📚文章">
+                    <span>📚文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/archives" title="⏱時間軸">
+                    <span>⏱時間軸</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/categories" title="🧩分類">
+                    <span>🧩分類</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/tags" title="🔖標簽">
+                    <span>🔖標簽</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/about" title="🙋🏻‍♂️關于">
+                    <span>🙋🏻‍♂️關于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://rosefinch-midsummer.github.io/zh/">首頁</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/">📚文章</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/life/">🏖生活</a></div>
+    <h1 class="post-title">
+      量化金融——期权
+    </h1>
+    <div class="post-meta">
+    创建: 2025-01-08 |
+    更新: 2024-01-08 |
+    字数: 6917字 |
+    时长: 14分钟 |
+    RM
+
+
+</div>
+   
+<div  class="meta-item">&nbsp·&nbsp
+  <span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+</div>
+
+
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目錄</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%af%bc%e8%ae%ba%e5%8f%8a%e6%80%9d%e7%bb%b4%e5%af%bc%e5%9b%be" aria-label="导论及思维导图">导论及思维导图</a></li>
+                <li>
+                    <a href="#91-%e6%9c%9f%e6%9d%83%e7%9a%84%e5%9f%ba%e6%9c%ac%e6%a6%82%e5%bf%b5" aria-label="9.1 期权的基本概念">9.1 期权的基本概念</a></li>
+                <li>
+                    <a href="#92-%e6%9c%9f%e6%9d%83%e7%9a%84%e5%9b%9e%e6%94%b6%e5%92%8c%e7%9b%88%e4%ba%8f" aria-label="9.2 期权的回收和盈亏">9.2 期权的回收和盈亏</a></li>
+                <li>
+                    <a href="#93-%e6%ac%a7%e5%bc%8f%e6%9c%9f%e6%9d%83%e7%9a%84%e5%b9%b3%e4%bb%b7%e5%85%b3%e7%b3%bb" aria-label="9.3 欧式期权的平价关系">9.3 欧式期权的平价关系</a></li>
+                <li>
+                    <a href="#94-%e7%be%8e%e5%bc%8f%e6%9c%9f%e6%9d%83%e7%9a%84%e4%bb%b7%e6%a0%bc%e5%85%b3%e7%b3%bb" aria-label="9.4 美式期权的价格关系">9.4 美式期权的价格关系</a></li>
+                <li>
+                    <a href="#95-%e6%9c%9f%e6%9d%83%e5%ae%9a%e4%bb%b7%e5%9f%ba%e6%9c%ac%e5%8e%9f%e7%90%86" aria-label="9.5 期权定价基本原理">9.5 期权定价基本原理</a></li>
+                <li>
+                    <a href="#96-%e5%8d%95%e6%ad%a5%e4%ba%8c%e5%8f%89%e6%a0%91%e6%a8%a1%e5%9e%8b" aria-label="9.6 单步二叉树模型">9.6 单步二叉树模型</a></li>
+                <li>
+                    <a href="#97-%e5%8d%95%e6%ad%a5%e4%ba%8c%e5%8f%89%e6%a0%91%e6%a8%a1%e5%9e%8b" aria-label="9.7 单步二叉树模型">9.7 单步二叉树模型</a></li>
+                <li>
+                    <a href="#98-%e5%a4%9a%e6%ad%a5%e4%ba%8c%e5%8f%89%e6%a0%91%e6%a8%a1%e5%9e%8b" aria-label="9.8 多步二叉树模型">9.8 多步二叉树模型</a></li>
+                <li>
+                    <a href="#99-%e4%be%8b%e9%a2%98%e6%ac%a7%e5%bc%8f%e7%9c%8b%e6%b6%a8%e6%9c%9f%e6%9d%83%e7%9a%84%e5%a4%9a%e6%ad%a5%e4%ba%8c%e5%8f%89%e6%a0%91%e6%a8%a1%e5%9e%8b" aria-label="9.9 例题：欧式看涨期权的多步二叉树模型">9.9 例题：欧式看涨期权的多步二叉树模型</a></li>
+                <li>
+                    <a href="#%e4%bd%bf%e7%94%a8%e4%ba%8c%e5%8f%89%e6%a0%91%e6%a8%a1%e5%9e%8b%e8%ae%a1%e7%ae%97%e6%ac%a7%e5%bc%8f%e7%9c%8b%e6%b6%a8%e6%9c%9f%e6%9d%83%e7%9a%84%e4%bb%b7%e6%a0%bcpython%e4%bb%a3%e7%a0%81%e5%ae%9e%e7%8e%b0" aria-label="使用二叉树模型计算欧式看涨期权的价格Python代码实现">使用二叉树模型计算欧式看涨期权的价格Python代码实现</a></li>
+                <li>
+                    <a href="#%e4%bd%bf%e7%94%a8%e4%ba%8c%e5%8f%89%e6%a0%91%e6%a8%a1%e5%9e%8b%e8%ae%a1%e7%ae%97%e6%ac%a7%e5%bc%8f%e7%9c%8b%e8%b7%8c%e6%9c%9f%e6%9d%83%e7%9a%84%e4%bb%b7%e6%a0%bcpython%e4%bb%a3%e7%a0%81%e5%ae%9e%e7%8e%b0" aria-label="使用二叉树模型计算欧式看跌期权的价格Python代码实现">使用二叉树模型计算欧式看跌期权的价格Python代码实现</a></li>
+                <li>
+                    <a href="#910-%e4%be%8b%e9%a2%98%e7%be%8e%e5%bc%8f%e7%9c%8b%e8%b7%8c%e6%9c%9f%e6%9d%83%e7%9a%84%e5%a4%9a%e6%ad%a5%e4%ba%8c%e5%8f%89%e6%a0%91%e6%a8%a1%e5%9e%8b" aria-label="9.10 例题：美式看跌期权的多步二叉树模型">9.10 例题：美式看跌期权的多步二叉树模型</a></li>
+                <li>
+                    <a href="#911-black-scholes%e6%a8%a1%e5%9e%8b%e7%ae%80%e4%bb%8b" aria-label="9.11 Black-Scholes模型简介">9.11 Black-Scholes模型简介</a></li>
+                <li>
+                    <a href="#b-s%e5%ae%9a%e4%bb%b7%e6%a8%a1%e5%9e%8b%e8%ae%a1%e7%ae%97%e6%9c%9f%e6%9d%83%e4%bb%b7%e5%80%bc%e7%9a%84python%e5%ae%9e%e7%8e%b0" aria-label="B-S定价模型计算期权价值的Python实现">B-S定价模型计算期权价值的Python实现</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="导论及思维导图">导论及思维导图<a hidden class="anchor" aria-hidden="true" href="#导论及思维导图">#</a></h2>
+<p>课时目标：学习目标：掌握期权的基本概念，期权定价的无套利定价原理和风险中性原理；理解欧式期权的平价公式；可以应用二叉树模型计算期权的价值。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250105220925.png"></p>
+<h2 id="91-期权的基本概念">9.1 期权的基本概念<a hidden class="anchor" aria-hidden="true" href="#91-期权的基本概念">#</a></h2>
+<p>期权的基本概念：</p>
+<ul>
+<li>期权：买卖资产的权利。规定期限，约定价格，一定数量。</li>
+<li>期权多头：期权买方、期权持有人，获得权利。</li>
+<li>期权空头：期权卖方。根据买方要求，履行义务。</li>
+<li>执行价格：买卖资产的价格即期权合约中标的资产的交易价格</li>
+<li>期权费（期权价格）：为了获得权利，多头向空头支付的费用，这是合约本身的价格</li>
+</ul>
+<p>期权的类型：</p>
+<ul>
+<li>看涨期权（call）：以执行价格买入标的资产的权利。例：在12月20日，以每股20元的价格，购买1万股A公司的股票。资产价格上涨越多，看涨期权的价值越大。</li>
+<li>看跌期权（put）：以执行价格卖出标的资产的权利。例：在12月20日，以每股30元的价格，出售1万股B公司的股票。资产价格下跌越多，看跌期权的价值越大。</li>
+</ul>
+<p>期权的行权方式：</p>
+<ul>
+<li>欧式期权：只能在到期日行使权利。</li>
+<li>美式期权：可在到期前的任何日期执行期权。</li>
+</ul>
+<p>注：美式期权的价值不低于相应欧式期权的价值。</p>
+<p>根据市场价格和执行价格的关系，期权可以划分为实值期权、虚值期权和平价期权。实值期权是市场价格大于执行价格的期权，虚值期权是市场价格小于执行价格的期权，平价期权是市场价格等于执行价格的期权。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250104205504.png"></p>
+<p>以看跌期权为例则结果相反。</p>
+<h2 id="92-期权的回收和盈亏">9.2 期权的回收和盈亏<a hidden class="anchor" aria-hidden="true" href="#92-期权的回收和盈亏">#</a></h2>
+<p>期权的回收是指期权到期时能够带来的现金价值，通过减去支付的期权费得到盈亏。</p>
+<p>看涨期权多头的回收和盈亏取决于资产价格和执行价格之间的差额，如果资产价格上涨，期权会带来正的收益。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250104212957.png"></p>
+<p>而看跌期权多头的回收和盈亏取决于资产价格和执行价格之间的差额，如果资产价格下跌，期权会带来正的收益。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250104213424.png"></p>
+<p>通过计算回收和减去期权费的终值，可以得到期权的盈亏。盈亏图可以用来分析不同市场价格下的盈亏情况。</p>
+<h2 id="93-欧式期权的平价关系">9.3 欧式期权的平价关系<a hidden class="anchor" aria-hidden="true" href="#93-欧式期权的平价关系">#</a></h2>
+<p>首先给出了一组符号，包括时间零点、期权合约的到期时间、无风险连续复利、标的资产的价格和执行价格。</p>
+<p>欧式期权的平价关系是指看涨期权的价格减去看跌期权的价格等于标的资产价格减去执行价格的现值。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250104214907.png"></p>
+<p>为了证明这个关系，构造了两个投资组合A和B，并分析了在期权合约到期的两种情况下它们的价值相等。根据无套利定价原理，组合A和组合B在当前时刻的价值也应该相等。因此，可以建立看涨期权和看跌期权之间的平价关系。</p>
+<p>当远期价格大于执行价格时，看涨期权更加值钱，而看跌期权相对便宜。</p>
+<h2 id="94-美式期权的价格关系">9.4 美式期权的价格关系<a hidden class="anchor" aria-hidden="true" href="#94-美式期权的价格关系">#</a></h2>
+<p>对于欧式期权而言，看涨期权的价格与看跌期权的价格存在平价关系。但是对于美式期权而言，这种平价关系不存在。然而，美式看涨期权的价格与看跌期权的价格仍然具有一定的规律性。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250104215535.png"></p>
+<p>我们解释了为什么美式看涨期权不会被提前执行，以及美式看跌期权有可能被提前执行。在期权交易中，如果标的资产在期权合约到期之前不会产生收益，那么美式看涨期权和欧式看涨期权是等价的。对于美式期权而言，看涨期权的价格减去看跌期权的价格大于等于标的资产价格减去执行价格，小于等于标的资产价格减去执行价格的现值。如果标的资产有分红，那么可以将原来的价格关系中的标的资产替换为标的资产减去红利的现值，新的价格关系仍然成立。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250104215720.png"></p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250104215843.png"></p>
+<h2 id="95-期权定价基本原理">9.5 期权定价基本原理<a hidden class="anchor" aria-hidden="true" href="#95-期权定价基本原理">#</a></h2>
+<p>在期权定价中，主要使用无套利定价法，它有不同的表现形式。其中一种是复制技术，通过构造一个资产组合，使其回收和期权的回收相等，从而得到期权的价值。另一种表现形式是风险中性定价法，将现实测度转化成风险中性测度，使用无风险利率来计算未来现金流的期望现值，简化计算过程。</p>
+<p>无套利定价原理：</p>
+<ul>
+<li>两个资产的终值相等，现值也必相等</li>
+<li>复制技术：如果资产组合可以复制期权的回收，则期权的价值等于组合的价值</li>
+<li>风险中性定价：在风险中性测度下，用无风险利率计算未来现金流的期望现值</li>
+</ul>
+<p>通过一个例子解释了无套利定价法的基本原理，假设股票价格只有两种变化可能，根据股票价格的变化情况，构造一个资产组合，解出资产组合在时间零点的价值，即为期权的价值。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250104220610.png"></p>
+<p>另外，介绍了风险中性定价法，假设股票的期望收益率等于无风险利率，计算出股票价格上升和下跌的概率，进而计算出期权的期望值，并将其折现到时间零点，得到期权的价值。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250104221046.png"></p>
+<h2 id="96-单步二叉树模型">9.6 单步二叉树模型<a hidden class="anchor" aria-hidden="true" href="#96-单步二叉树模型">#</a></h2>
+<p>单步二叉树模型是指在期权合约有效期内，股票价格只发生一次变化，即股价要么上升到110元，要么下降到90元。根据无套利定价法，构造一个无风险的资产组合，其中包含0.5个单位的股票和1个单位的看涨期权空头。根据组合的价值变化，可以计算出看涨期权的价值。通过解方程，得到看涨期权的价值为9.09元。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250105205433.png"></p>
+<h2 id="97-单步二叉树模型">9.7 单步二叉树模型<a hidden class="anchor" aria-hidden="true" href="#97-单步二叉树模型">#</a></h2>
+<p>首先构造一个无风险的资产组合，包含w单位的股票和1单位的看涨期权空头。股票价格上升到uS或下降到dS后，组合的价值分别为wuS-fu和wdS-fd。根据无风险假设，组合的价值在股票价格上升和下降后保持不变。根据这个条件，可以得到一个方程，解出股票的数量w。根据无风险组合的价值不变，可以计算出股票的数量w。根据无风险假设，组合的收益率为无风险利率。根据这些条件，可以计算出期权的价格f。最后，介绍了计算u和d的方法，其中u=e的σ乘以根号T，d为u的倒数。的一般形式。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250105210656.png"></p>
+<p>例子：假设股票不支付红利，当前价格为10元，在3个月以后，股票价格要么是12元，要么是8元。该股票欧式看涨期权的期限为3个月，执行价格为11元，无风险连续复利为10%。计算该期权的价格。</p>
+<p>u=1.2，d=0.8</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250105211334.png"></p>
+<p>f=0.55</p>
+<p>注意：风险中性概率不是现实世界中的概率</p>
+<p>计算u和d的一般方法（Cox， Ross 和 Robinstein， 1979）：</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250105211850.png"></p>
+<p>$f=\mathrm{e}^{-rT}\left[pf_u+\left(1-p\right)f_d\right]$</p>
+<p>$p=\frac{\mathrm{e}^{r^T}-d}{u-d}$</p>
+<p>$u=\mathrm{e}^{\sigma\sqrt{T}}$</p>
+<p>$d=\mathrm{e}^{-\sigma\sqrt{T}}$</p>
+<h2 id="98-多步二叉树模型">9.8 多步二叉树模型<a hidden class="anchor" aria-hidden="true" href="#98-多步二叉树模型">#</a></h2>
+<p>多步二叉树模型是单步二叉树模型的推广，通过构造两步二叉树模型来说明。假设股票当前价格为100，上升为原来的1.1倍，下跌为原来的0.91倍。根据这个条件，构造了一个两步二叉树模型，股票价格有三种可能取值：121、100和83。如果给定欧式看涨期权执行价格为100，可以计算出对应的期权价值分别为21、0和0。通过加权平均和贴现，可以计算出期权在时间零点的价值。多步二叉树模型可以进一步推广到更多步骤，通过倒推每个点上的期权价值，最终可以计算出时间零点的期权价值。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250105213234.png"></p>
+<h2 id="99-例题欧式看涨期权的多步二叉树模型">9.9 例题：欧式看涨期权的多步二叉树模型<a hidden class="anchor" aria-hidden="true" href="#99-例题欧式看涨期权的多步二叉树模型">#</a></h2>
+<p>本教学视频介绍了如何使用多步二叉树模型为欧式看涨期权进行定价。视频中通过一个例子来说明定价的过程。首先给出了股票当前的市场价格、股票价格的年波动率、无风险的连续复利以及期权的执行价格等已知条件。然后构造了一个五步的二叉树模型，计算了股票在未来第五个月末的六种可能取值。根据这些股票价格的未来可能取值，计算出了相应价格水平下期权的价值。接着使用加权平均和贴现的方法，逐步倒推计算出了期权在时间零点的价值为3.22元。教学视频通过红色和黑色的表示方式，清晰地展示了股票价格和期权价值的变化过程。</p>
+<p>例：欧式看涨期权的二叉树定价模型</p>
+<ul>
+<li>股票的当前市场价格为50元，不付红利（S=50)</li>
+<li>股票价格的年波动率为20%($\sigma=20%$)</li>
+<li>无风险连续复利为5%（r=5%）</li>
+<li>该股票5个月期的欧式看涨期权的执行价格为50元</li>
+<li>求该期权的价值 （用五步二叉树）</li>
+</ul>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250105211850.png"></p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250105215005.png"></p>
+<h2 id="使用二叉树模型计算欧式看涨期权的价格python代码实现">使用二叉树模型计算欧式看涨期权的价格Python代码实现<a hidden class="anchor" aria-hidden="true" href="#使用二叉树模型计算欧式看涨期权的价格python代码实现">#</a></h2>
+<p>股票的当前市场价格为100元，股票没有红利;  股票价格的年波动率为10%; 无风险连续复利为6%; 该股票2个月期的欧式看涨期权的执行价格为100元; 求该期权的价值（用2步二叉树模型）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>  
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>  
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.sans-serif&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;SimHei&#39;</span><span class="p">]</span>  <span class="c1"># 用来正常显示中文标签  </span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.unicode_minus&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># 用来正常显示负号  </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 参数设定  </span>
+</span></span><span class="line"><span class="cl"><span class="n">S0</span> <span class="o">=</span> <span class="mi">100</span>  <span class="c1"># 当前股票价格  </span>
+</span></span><span class="line"><span class="cl"><span class="n">K</span> <span class="o">=</span> <span class="mi">100</span>   <span class="c1"># 执行价格  </span>
+</span></span><span class="line"><span class="cl"><span class="n">sigma</span> <span class="o">=</span> <span class="mf">0.10</span>  <span class="c1"># 波动率  </span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="mf">0.06</span>  <span class="c1"># 无风险利率  </span>
+</span></span><span class="line"><span class="cl"><span class="n">T</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">/</span> <span class="mi">12</span>  <span class="c1"># 期权期限（2个月）  </span>
+</span></span><span class="line"><span class="cl"><span class="n">steps</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># 二叉树步数  </span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1"># 计算u, d, p  </span>
+</span></span><span class="line"><span class="cl"><span class="n">dt</span> <span class="o">=</span> <span class="n">T</span> <span class="o">/</span> <span class="n">steps</span>  
+</span></span><span class="line"><span class="cl"><span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">sigma</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">dt</span><span class="p">))</span>  <span class="c1"># 上涨因子  </span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">sigma</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">dt</span><span class="p">))</span>  <span class="c1"># 下跌因子  </span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">r</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span> <span class="o">-</span> <span class="n">d</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">u</span> <span class="o">-</span> <span class="n">d</span><span class="p">)</span>  <span class="c1"># 风险中性概率  </span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1"># 计算股票价格树  </span>
+</span></span><span class="line"><span class="cl"><span class="n">stock_prices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>  
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">stock_prices</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">S0</span> <span class="o">*</span> <span class="p">(</span><span class="n">u</span> <span class="o">**</span> <span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">j</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">d</span> <span class="o">**</span> <span class="n">j</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1"># 计算期权价值树  </span>
+</span></span><span class="line"><span class="cl"><span class="n">option_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>  
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">option_values</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">steps</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">stock_prices</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">steps</span><span class="p">]</span> <span class="o">-</span> <span class="n">K</span><span class="p">)</span>  <span class="c1"># 欧式看涨期权  </span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1"># 反向递推计算期权价值  </span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">option_values</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">r</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">p</span> <span class="o">*</span> <span class="n">option_values</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">p</span><span class="p">)</span> <span class="o">*</span> <span class="n">option_values</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1"># 输出股票价格树和期权价值树  </span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;股票价格树：&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">stock_prices</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">期权价值树：&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">option_values</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1"># 绘制二叉树  </span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">plot_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">tree</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">                <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">tree</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s2">&#34;round,pad=0.3&#34;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;lightgrey&#39;</span><span class="p">))</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="n">plot_tree</span><span class="p">(</span><span class="n">stock_prices</span><span class="p">,</span> <span class="s2">&#34;股票价格树&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="n">plot_tree</span><span class="p">(</span><span class="n">option_values</span><span class="p">,</span> <span class="s2">&#34;期权价值树&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1"># 期权的现值  </span>
+</span></span><span class="line"><span class="cl"><span class="n">option_price</span> <span class="o">=</span> <span class="n">option_values</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>  
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">该看涨期权的价值为: </span><span class="si">{</span><span class="n">option_price</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>代码解释</p>
+<ol>
+<li><strong>参数设定</strong>：根据题目设置股票当前价格、执行价格、波动率、无风险利率、期权期限和步数。</li>
+<li><strong>计算u, d, p</strong>：使用给定公式计算上涨因子u、下跌因子d和风险中性概率p。</li>
+<li><strong>构建股票价格树</strong>：使用双重循环填充股票价格树。</li>
+<li><strong>计算期权价值树</strong>：首先在最后一步计算期权价值，然后反向递推计算得到每个节点的期权价值。</li>
+<li><strong>绘制二叉树</strong>：使用Matplotlib绘制股票价格树和期权价值树。</li>
+<li><strong>输出期权价值</strong>：最后输出期权的现值。</li>
+</ol>
+<p>运行上述代码后，会输出股票价格树和期权价值树，并在控制台打印出期权的价值。根据题目要求，最终的看涨期权价值为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">该看涨期权的价值为: 1.98
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="使用二叉树模型计算欧式看跌期权的价格python代码实现">使用二叉树模型计算欧式看跌期权的价格Python代码实现<a hidden class="anchor" aria-hidden="true" href="#使用二叉树模型计算欧式看跌期权的价格python代码实现">#</a></h2>
+<p>股票的当前市场价格为100元，股票没有红利;  股票价格的年波动率为10%; 无风险连续复利为6%; 该股票2个月期的欧式看跌期权的执行价格为100元; 求该看跌期权的价值（用2步二叉树模型）。 </p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.sans-serif&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;SimHei&#39;</span><span class="p">]</span>  <span class="c1"># 用来正常显示中文标签</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.unicode_minus&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># 用来正常显示负号</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 参数设定</span>
+</span></span><span class="line"><span class="cl"><span class="n">S0</span> <span class="o">=</span> <span class="mi">100</span>  <span class="c1"># 当前股票价格</span>
+</span></span><span class="line"><span class="cl"><span class="n">K</span> <span class="o">=</span> <span class="mi">100</span>   <span class="c1"># 执行价格</span>
+</span></span><span class="line"><span class="cl"><span class="n">sigma</span> <span class="o">=</span> <span class="mf">0.10</span>  <span class="c1"># 波动率</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="mf">0.06</span>  <span class="c1"># 无风险利率</span>
+</span></span><span class="line"><span class="cl"><span class="n">T</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">/</span> <span class="mi">12</span>  <span class="c1"># 期权期限（2个月）</span>
+</span></span><span class="line"><span class="cl"><span class="n">steps</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># 二叉树步数</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 计算u, d, p</span>
+</span></span><span class="line"><span class="cl"><span class="n">dt</span> <span class="o">=</span> <span class="n">T</span> <span class="o">/</span> <span class="n">steps</span>
+</span></span><span class="line"><span class="cl"><span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">sigma</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">dt</span><span class="p">))</span>  <span class="c1"># 上涨因子</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">sigma</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">dt</span><span class="p">))</span>  <span class="c1"># 下跌因子</span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">r</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span> <span class="o">-</span> <span class="n">d</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">u</span> <span class="o">-</span> <span class="n">d</span><span class="p">)</span>  <span class="c1"># 风险中性概率</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 计算股票价格树</span>
+</span></span><span class="line"><span class="cl"><span class="n">stock_prices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">stock_prices</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">S0</span> <span class="o">*</span> <span class="p">(</span><span class="n">u</span> <span class="o">**</span> <span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">j</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">d</span> <span class="o">**</span> <span class="n">j</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 计算看跌期权价值树</span>
+</span></span><span class="line"><span class="cl"><span class="n">put_option_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">put_option_values</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">steps</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">K</span> <span class="o">-</span> <span class="n">stock_prices</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">steps</span><span class="p">])</span>  <span class="c1"># 欧式看跌期权</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 反向递推计算期权价值</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">put_option_values</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">r</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">p</span> <span class="o">*</span> <span class="n">put_option_values</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">p</span><span class="p">)</span> <span class="o">*</span> <span class="n">put_option_values</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 输出股票价格树和看跌期权价值树</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;股票价格树：&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">stock_prices</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">看跌期权价值树：&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">put_option_values</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 绘制二叉树</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">plot_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">tree</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">tree</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s2">&#34;round,pad=0.3&#34;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;lightgrey&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">plot_tree</span><span class="p">(</span><span class="n">stock_prices</span><span class="p">,</span> <span class="s2">&#34;股票价格树&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_tree</span><span class="p">(</span><span class="n">put_option_values</span><span class="p">,</span> <span class="s2">&#34;看跌期权价值树&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 期权的现值</span>
+</span></span><span class="line"><span class="cl"><span class="n">put_option_price</span> <span class="o">=</span> <span class="n">put_option_values</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">该看跌期权的价值为: </span><span class="si">{</span><span class="n">put_option_price</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>代码解释</p>
+<ol>
+<li><strong>参数设定</strong>：与之前相同，根据题目设定股票当前价格、执行价格、波动率、无风险利率、期权期限和步数。</li>
+<li><strong>计算u, d, p</strong>：使用相同的公式计算上涨因子u、下跌因子d和风险中性概率p。</li>
+<li><strong>构建股票价格树</strong>：使用双重循环填充股票价格树。</li>
+<li><strong>计算看跌期权价值树</strong>：在最后一步计算看跌期权的价值，公式为 <code>max(0, K - S)</code>，然后反向递推计算得到每个节点的期权价值。</li>
+<li><strong>绘制二叉树</strong>：使用Matplotlib绘制股票价格树和看跌期权价值树。</li>
+<li><strong>输出期权价值</strong>：最后输出看跌期权的现值。</li>
+</ol>
+<p>运行上述代码后，会输出股票价格树和看跌期权价值树，并在控制台打印出期权的价值。根据题目要求，最终的看跌期权价值将会被计算并输出。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">该看跌期权的价值为: 0.98
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="910-例题美式看跌期权的多步二叉树模型">9.10 例题：美式看跌期权的多步二叉树模型<a hidden class="anchor" aria-hidden="true" href="#910-例题美式看跌期权的多步二叉树模型">#</a></h2>
+<p>美式看涨期权不会被提前执行，所以美式看涨期权的价格等于欧式看涨期权价格。</p>
+<p>美式看跌期权可能会被提前执行，所以美式看跌期权的价格不等于欧式看跌期权价格。</p>
+<p>在这个教学视频中，我们学习了如何使用二叉树模型为美式看跌期权进行定价。首先，我们需要确定股票价格的变化过程，根据给定的股票价格、波动率和步长，可以计算出股票价格在每个时间点上的值。然后，根据期权合约的执行价格，可以计算出每个时间点上看跌期权的价值。在计算过程中，我们还考虑了期权的提前执行情况，如果股票价格低于执行价格，期权可以被提前执行，相应的价值会更高。通过递推计算，我们最终得到了美式看跌期权在时间零点的价值为2.27。</p>
+<p>例子：美式看跌期权的二叉树定价模型</p>
+<ul>
+<li>股票的当前市场价格为50元，无红利</li>
+<li>年波动率为20%</li>
+<li>无风险连续复利为5%</li>
+<li>该股票5个月期的美式看跌期权的执行价格为50元</li>
+<li>求该期权的价值（用五步二叉树）</li>
+</ul>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250105215642.png"></p>
+<h2 id="911-black-scholes模型简介">9.11 Black-Scholes模型简介<a hidden class="anchor" aria-hidden="true" href="#911-black-scholes模型简介">#</a></h2>
+<p>Black-Scholes定价模型在期权定价中具有重要地位，涉及随机过程的理论和方法。在该模型中，欧式看涨期权的价格可以直接计算，与看跌期权的价格存在平价关系。计算欧式看涨期权价格的公式包括标的资产价格、执行价格、无风险利率、股价波动率和合约到期时间。通过计算d1和d2的值，可以得到标准正态分布函数在这两个点的取值。代入Black-Scholes定价公式，可以计算出欧式看涨期权的价格。根据平价关系，可以直接计算出看跌期权的价格。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250105220021.png"></p>
+<p>$C_\text{欧}=S\Phi(d_1)-K\mathrm{e}^{-rT}\Phi(d_2)$</p>
+<p>$d_1=\frac{\ln(S/K)+(r+\sigma^2/2)T}{\sigma\sqrt{T}}$</p>
+<p>$d_2=\frac{\ln(S/K)+(r-\sigma^2/2)T}{\sigma\sqrt{T}}=d_1-\sigma\sqrt{T}$</p>
+<p>例子：假设某种不支付红利股票的市场价格为20元，无风险利率为5%，该股票的年波动率为4%，求该股票执行价格为20元、期限为1年的欧式看涨期权和看跌期权的价格。</p>
+<p>$S=20、r = 5%、\sigma= 4%、K =20、T=1$</p>
+<p>代入公式得$d_1=1.27,d_2=1.23$</p>
+<p>欧式看涨期权的价格$C_{\mathbb{R}}=S\Phi(d_1)-K\mathrm{e}^{-rT}\Phi(d_2)=20\times0.8980-20\mathrm{e}^{-0.05\times1}\times0.8907=1.0148$</p>
+<p>根据欧式期权的平价关系得欧式看跌期权价格$P_\text{欧}=20\times\left(1-0.8907\right)\mathrm{e}^{-0.05\times1}-20\times\left(1-0.8980\right)=0.0394$</p>
+<h2 id="b-s定价模型计算期权价值的python实现">B-S定价模型计算期权价值的Python实现<a hidden class="anchor" aria-hidden="true" href="#b-s定价模型计算期权价值的python实现">#</a></h2>
+<p>使用Black-Scholes模型计算欧式看涨期权的价格是一个经典的金融计算问题。下面是一个Python程序，它可以根据给定的参数计算欧式看涨期权的价格，并使用多维数组格式输出计算结果。我们还将绘制出计算过程中的每个阶段的值。</p>
+<p>Python代码实现：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.sans-serif&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;SimHei&#39;</span><span class="p">]</span>  <span class="c1"># 用来正常显示中文标签</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.unicode_minus&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># 用来正常显示负号</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Black-Scholes定价模型函数</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">black_scholes_call</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">sigma</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 计算d1和d2</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d1</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">S</span> <span class="o">/</span> <span class="n">K</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="p">(</span><span class="n">sigma</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">T</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">sigma</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">T</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d2</span> <span class="o">=</span> <span class="n">d1</span> <span class="o">-</span> <span class="n">sigma</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 计算欧式看涨期权价格</span>
+</span></span><span class="line"><span class="cl">    <span class="n">call_price</span> <span class="o">=</span> <span class="n">S</span> <span class="o">*</span> <span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span> <span class="o">-</span> <span class="n">K</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">r</span> <span class="o">*</span> <span class="n">T</span><span class="p">)</span> <span class="o">*</span> <span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">d2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">call_price</span><span class="p">,</span> <span class="n">d1</span><span class="p">,</span> <span class="n">d2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 参数设定</span>
+</span></span><span class="line"><span class="cl"><span class="n">S</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># 当前股票价格</span>
+</span></span><span class="line"><span class="cl"><span class="n">K</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># 执行价格</span>
+</span></span><span class="line"><span class="cl"><span class="n">sigma</span> <span class="o">=</span> <span class="mf">0.04</span>  <span class="c1"># 波动率</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="mf">0.05</span>  <span class="c1"># 无风险利率</span>
+</span></span><span class="line"><span class="cl"><span class="n">T</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># 期权期限（12个月）</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 计算欧式看涨期权价格</span>
+</span></span><span class="line"><span class="cl"><span class="n">call_price</span><span class="p">,</span> <span class="n">d1</span><span class="p">,</span> <span class="n">d2</span> <span class="o">=</span> <span class="n">black_scholes_call</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">sigma</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 输出计算结果</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;欧式看涨期权的价格: </span><span class="si">{</span><span class="n">call_price</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;d1: </span><span class="si">{</span><span class="n">d1</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">, d2: </span><span class="si">{</span><span class="n">d2</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 为了展示过程，我们可以创建一个树状结构来显示每个阶段的值</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 这里我们只用一个简单的数组来表示阶段</span>
+</span></span><span class="line"><span class="cl"><span class="n">steps</span> <span class="o">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="n">call_prices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 填充最后一层的看涨期权价格</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">call_prices</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">steps</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">S</span> <span class="o">-</span> <span class="n">K</span><span class="p">)</span>  <span class="c1"># 在最后一步，期权价值为 max(0, S - K)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 反向递推计算期权价值</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call_prices</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">r</span> <span class="o">*</span> <span class="p">(</span><span class="n">T</span> <span class="o">/</span> <span class="n">steps</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">call_prices</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">call_prices</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>  <span class="c1"># 假设等概率</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 输出每个阶段的值</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">每个阶段的看涨期权价值：&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">call_prices</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 绘制树状图</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">plot_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">tree</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">tree</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s2">&#34;round,pad=0.3&#34;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;lightgrey&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">plot_tree</span><span class="p">(</span><span class="n">call_prices</span><span class="p">,</span> <span class="s2">&#34;看涨期权价值树&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 计算并输出看跌期权价格</span>
+</span></span><span class="line"><span class="cl"><span class="n">put_price</span> <span class="o">=</span> <span class="n">K</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">r</span> <span class="o">*</span> <span class="n">T</span><span class="p">)</span> <span class="o">-</span> <span class="n">S</span> <span class="o">+</span> <span class="n">call_price</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">欧式看跌期权的价格: </span><span class="si">{</span><span class="n">put_price</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>代码解释</p>
+<ol>
+<li>
+<p><strong>Black-Scholes定价模型函数</strong>：</p>
+<ul>
+<li><code>black_scholes_call</code>函数计算给定参数下的欧式看涨期权价格，并返回<code>d1</code>和<code>d2</code>的值。</li>
+</ul>
+</li>
+<li>
+<p><strong>参数设定</strong>：</p>
+<ul>
+<li>根据题目要求设定股票当前价格、执行价格、波动率、无风险利率和期权期限。</li>
+</ul>
+</li>
+<li>
+<p><strong>计算欧式看涨期权价格</strong>：</p>
+<ul>
+<li>调用<code>black_scholes_call</code>函数计算看涨期权价格，并输出结果。</li>
+</ul>
+</li>
+<li>
+<p><strong>创建树状结构</strong>：</p>
+<ul>
+<li>使用一个简单的数组来表示计算过程中的每个阶段的看涨期权价值。</li>
+</ul>
+</li>
+<li>
+<p><strong>反向递推计算期权价值</strong>：</p>
+<ul>
+<li>在树的最后一层填充看涨期权的价值，然后反向计算每个阶段的值。</li>
+</ul>
+</li>
+<li>
+<p><strong>绘制树状图</strong>：</p>
+<ul>
+<li>使用Matplotlib绘制看涨期权价值树。</li>
+</ul>
+</li>
+<li>
+<p><strong>计算并输出看跌期权价格</strong>：</p>
+<ul>
+<li>根据平价关系计算看跌期权价格并输出。</li>
+</ul>
+</li>
+</ol>
+<p>运行上述代码后，会输出欧式看涨期权的价格、<code>d1</code>和<code>d2</code>的值，以及每个阶段的看涨期权价值。最后，还会绘制出看涨期权价值树，并输出看跌期权的价格。</p>
+<p>具体输出结果如下所示：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">欧式看涨期权的价格: 1.0149
+</span></span><span class="line"><span class="cl">d1: 1.2700, d2: 1.2300
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">每个阶段的看涨期权价值：
+</span></span><span class="line"><span class="cl">[[0. 0. 0.]
+</span></span><span class="line"><span class="cl"> [0. 0. 0.]
+</span></span><span class="line"><span class="cl"> [0. 0. 0.]]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">欧式看跌期权的价格: 0.0395
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://rosefinch-midsummer.github.io/zh/tags/%E6%9C%9F%E6%9D%83%E5%AE%9A%E4%BB%B7/">期权定价</a></li>
+      <li><a href="https://rosefinch-midsummer.github.io/zh/tags/%E9%87%8F%E5%8C%96/">量化</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://rosefinch-midsummer.github.io/zh/posts/life/matlab2024a%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
+    <span class="title">« 上一頁</span>
+    <br>
+    <span>MatLab2024a安装教程</span>
+  </a>
+  <a class="next" href="https://rosefinch-midsummer.github.io/zh/posts/course/uibe%E8%B4%A7%E5%B8%81%E9%87%91%E8%9E%8D%E5%AD%A6/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>UIBE《货币金融学》</span>
+  </a>
+</nav>
+
+  </footer>
+<div>    
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">评论</span>
+        <br/>
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://utteranc.es/client.js"
+            repo="Rosefinch-Midsummer/comments_of_blog" 
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <script>
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            const theme = document.body.className.includes("dark")
+            ? "github-light"
+            : "photon-dark";
+            const message = {
+            type: "set-theme",
+            theme: theme,
+            };
+            const utteranc = document.querySelector(".utterances-frame");
+            utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+        });
+    </script>
+</div>
+
+
+
+
+
+
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://rosefinch-midsummer.github.io/zh/">天漢帝國復興錄</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+  
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </span>
+  <span id="busuanzi_container_site_uv">
+    本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '複製';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已複製！';
+            setTimeout(() => {
+                copybutton.innerHTML = '複製';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+
+
+</body>
+
+</html>

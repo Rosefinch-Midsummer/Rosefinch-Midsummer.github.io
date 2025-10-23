@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>云服务器 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+    <description>Recent content in 云服务器 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 11 Aug 2025 09:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>薅羊毛之AWS免费云主机</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E8%96%85%E7%BE%8A%E6%AF%9B%E4%B9%8Baws%E5%85%8D%E8%B4%B9%E4%BA%91%E4%B8%BB%E6%9C%BA/</link>
+      <pubDate>Fri, 22 Aug 2025 08:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E8%96%85%E7%BE%8A%E6%AF%9B%E4%B9%8Baws%E5%85%8D%E8%B4%B9%E4%BA%91%E4%B8%BB%E6%9C%BA/</guid>
+      <description>&lt;h1 id=&#34;薅羊毛之aws免费云主机&#34;&gt;薅羊毛之AWS免费云主机&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;注册好Amazon账号就看到了「零度解说」的视频，再不薅羊毛更待何时啊！&lt;/p&gt;
+&lt;p&gt;以前就想用宝塔或1Panel之类的管理工具，但是一直都没行动，这次使用了1Panel，挺方便的，还帮我安装了Docker。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

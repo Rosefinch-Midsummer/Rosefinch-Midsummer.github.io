@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>量化 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/%E9%87%8F%E5%8C%96/</link>
+    <description>Recent content in 量化 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 08 Jan 2024 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/%E9%87%8F%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>量化金融——期权</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E6%9C%9F%E6%9D%83/</link>
+      <pubDate>Wed, 08 Jan 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E6%9C%9F%E6%9D%83/</guid>
+      <description>&lt;h2 id=&#34;导论及思维导图&#34;&gt;导论及思维导图&lt;/h2&gt;
+&lt;p&gt;课时目标：学习目标：掌握期权的基本概念，期权定价的无套利定价原理和风险中性原理；理解欧式期权的平价公式；可以应用二叉树模型计算期权的价值。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost04/img20250105220925.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

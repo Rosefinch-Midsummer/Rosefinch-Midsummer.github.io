@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>TQU《高等代数》 | 天漢帝國復興錄</title>
+<meta name="keywords" content="高等代数">
+<meta name="description" content="前言
+北大丘维声教授清华高等代数课程1080P高清修复版(全151集)
+参考教材：蓝以中《高等代数简明教程》、丘维声《高等代数》
+文中代码主要是用包含线性代数的函数的numpy.linalg模块。使用这个模块，可以计算矩阵逆、求特征值、解线性方程组以及求解行列式等。">
+<meta name="author" content="RM">
+<link rel="canonical" href="https://rosefinch-midsummer.github.io/zh/posts/course/tqu%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://rosefinch-midsummer.github.io/img/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rosefinch-midsummer.github.io/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rosefinch-midsummer.github.io/img/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://rosefinch-midsummer.github.io/img/apple-touch-icon.png">
+<link rel="mask-icon" href="https://rosefinch-midsummer.github.io/img/android-chrome-192x192.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://rosefinch-midsummer.github.io/zh/posts/course/tqu%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<meta property="og:url" content="https://rosefinch-midsummer.github.io/zh/posts/course/tqu%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/">
+  <meta property="og:site_name" content="天漢帝國復興錄">
+  <meta property="og:title" content="TQU《高等代数》">
+  <meta property="og:description" content="前言 北大丘维声教授清华高等代数课程1080P高清修复版(全151集)
+参考教材：蓝以中《高等代数简明教程》、丘维声《高等代数》
+文中代码主要是用包含线性代数的函数的numpy.linalg模块。使用这个模块，可以计算矩阵逆、求特征值、解线性方程组以及求解行列式等。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-06-08T12:29:25+08:00">
+    <meta property="article:modified_time" content="2025-10-20T21:28:22+08:00">
+    <meta property="article:tag" content="高等代数">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TQU《高等代数》">
+<meta name="twitter:description" content="前言
+北大丘维声教授清华高等代数课程1080P高清修复版(全151集)
+参考教材：蓝以中《高等代数简明教程》、丘维声《高等代数》
+文中代码主要是用包含线性代数的函数的numpy.linalg模块。使用这个模块，可以计算矩阵逆、求特征值、解线性方程组以及求解行列式等。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "📚文章",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "🏫課程",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/course/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "TQU《高等代数》",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/course/tqu%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "TQU《高等代数》",
+  "name": "TQU《高等代数》",
+  "description": "前言 北大丘维声教授清华高等代数课程1080P高清修复版(全151集)\n参考教材：蓝以中《高等代数简明教程》、丘维声《高等代数》\n文中代码主要是用包含线性代数的函数的numpy.linalg模块。使用这个模块，可以计算矩阵逆、求特征值、解线性方程组以及求解行列式等。\n",
+  "keywords": [
+    "高等代数"
+  ],
+  "articleBody": "前言 北大丘维声教授清华高等代数课程1080P高清修复版(全151集)\n参考教材：蓝以中《高等代数简明教程》、丘维声《高等代数》\n文中代码主要是用包含线性代数的函数的numpy.linalg模块。使用这个模块，可以计算矩阵逆、求特征值、解线性方程组以及求解行列式等。\n第一章 代数学的经典课题 引言 §1 若干准备知识 1．复数的基本知识 2．数域的概念 3．集合论的若干概念 4．求和号与乘积号 5．充分必要条件 §2 一元高次代数方程的基础知识 1．高等代数的基本定理 2．根的基本性质 3．实数域上代数方程的根 §3 线性方程组 1．线性方程组概述 2．线性方程组的解法 numpy.linalg 中的 solve 函数可以求解形如 Ax = b 的线性方程组，其中 A 为矩阵，b 为一维或二维的数组，x 为未知变量。\n1 2 3 4 5 6 7 8 9 10 11 12 import numpy as np #创建矩阵和数组 A = np.mat('1 -2 1;0 2 -8;-4 5 9') b = np.array([0,8,-9]) #调用 solve 函数求解线性方程 x = np.linalg.solve(A,b) print(x) #out:[29. 16. 3] #使用 dot 函数检查求得的解是否正确 print(np.dot(A,x)) #out:[[0. 8. -9.]] 3．齐次线性方程组 第二章 向量空间与矩阵 §1 m维向量空间 1．向量组的线性相关与线性无关 2．向量组的秩 3．集合内的等价关系 §2 矩阵的秩 §3 线性方程组的理论课题 1．齐次线性方程组的基础解系 2．基础解系的求法 3．线性方程组的一般理论 §4 矩阵的运算 1．矩阵的加法和数乘 2．矩阵的乘法运算 np.dot()函数：对于秩为1的数组，执行对应位置相乘，然后再相加。对于秩不为1的二维数组，执行矩阵乘法运算。\n1 2 3 4 5 6 7 8 9 10 import numpy as np # 定义两个矩阵 a = np.array([[0,-3,0,3],[-2,-7,0,13],[0,-3,0,3], [-1,-4,0,7]]) print(a) b = np.array([[0,-3,0,3],[-2,-7,0,13],[0,-3,0,3], [-1,-4,0,7]]) print(b) # 计算矩阵乘积 c = np.dot(a, b) # 打印结果 print(c) 输出结果\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 [[ 0 -3 0 3] [-2 -7 0 13] [ 0 -3 0 3] [-1 -4 0 7]] [[ 0 -3 0 3] [-2 -7 0 13] [ 0 -3 0 3] [-1 -4 0 7]] [[ 3 9 0 -18] [ 1 3 0 -6] [ 3 9 0 -18] [ 1 3 0 -6]] 乘法符号运算：对数组执行对应位置相乘，对矩阵执行矩阵乘法运算\n1 2 3 4 import numpy as np a = np.array([[0,-3,0,3],[-2,-7,0,13],[0,-3,0,3],[-1,-4,0,7]]) a = np.mat(a) print(a*a) 输出结果\n1 2 3 4 [[ 3 9 0 -18] [ 1 3 0 -6] [ 3 9 0 -18] [ 1 3 0 -6]] np.multiply()函数：数组和矩阵对应位置相乘，输出与相乘数组/矩阵的大小一致\n1 2 3 4 5 6 7 8 9 import numpy as np a = np.array([[0,-3,0,3],[-2,-7,0,13],[0,-3,0,3],[-1,-4,0,7]]) a = np.mat(a) print(a) b = np.array([[0,-3,0,3],[-2,-7,0,13],[0,-3,0,3],[-1,-4,0,7]]) b = np.mat(b) print(b) c = np.multiply(a,b) print(c) 输出结果\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 [[ 0 -3 0 3] [-2 -7 0 13] [ 0 -3 0 3] [-1 -4 0 7]] [[ 0 -3 0 3] [-2 -7 0 13] [ 0 -3 0 3] [-1 -4 0 7]] [[ 0 9 0 9] [ 4 49 0 169] [ 0 9 0 9] [ 1 16 0 49]] 3．矩阵乘法的几何意义 4．矩阵乘法的基本性质 5．矩阵运算和秩的关系 §5 n阶方阵 1．数域上的n阶方阵 2．n阶初等矩阵 3．逆矩阵 4．几类特殊的n阶方阵 §6 分块矩阵 1．准对角矩阵 2．分块矩阵的秩 3．矩阵的分块求逆 第三章 行列式 §1 平行六面体的有向体积 §2 n阶方阵的行列式 1．行列式的定义 2．行列式的性质 3．行列式对任意行(列)的展开公式 4．行列式的其他重要性质 1 2 3 4 5 6 import numpy as np # 计算矩阵的行列式 F = np.mat(\"1 2;1 1\") # 使用det函数计算行列式 print(np.linalg.det(F)) # -1.0 §3行列式的初步应用 1．齐次线性方程组 2．逆矩阵 使用inv函数计算逆矩阵。\n1 2 3 4 import numpy as np A = np.mat('0 1 2;1 0 3;4 -3 8') inv = np.linalg.inv(A) print(inv) 输出结果：\n1 2 3 [[-4.5 7. -1.5] [-2. 4. -1. ] [ 1.5 -2. 0.5]] 使用numpy.linalg模块中的pinv函数求解广义逆矩阵。inv函数只接受方阵作为输入矩阵，而pinv函数则没有这个限制。\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 import numpy as np # 创建一个矩阵 Matrix = np.mat(\"4 11 14;8 7 -2\") # 使用pinv函数计算广义逆矩阵 pseudoinv = np.linalg.pinv(E) print(pseudoinv) #[[-0.00555556 0.07222222] # [ 0.02222222 0.04444444] # [ 0.05555556 -0.05555556]] # 将原矩阵和得到的广义逆矩阵相乘 print(Matrix*pseudoinv) #[[ 1.00000000e+00 -5.55111512e-16] # [ 0.00000000e+00 1.00000000e+00]] 3．矩阵乘积的行列式 4．矩阵的秩与行列式 §4行列式的完全展开式 §5 Laplace展开式与Binet—Cauchy公式 第四章 线性空间与线性变换 引言 §1 线性空间的基本概念 1．线性空间的定义和实例 2．线性空间的基本属性 3．线性空间的基本概念 4．基和维数 5．向量的坐标 6．基变换与坐标变换 7．Kn中的基变换 §2 子空间与商空间 1．子空间的基本概念 2．子空间的交与和 3．子空间的直和 4．商空间 §3 线性映射与线性变换 1．线性映射 2．线性空间的同构 3．线性映射的核、像集和余核 4．线性映射的运算 5．线性映射的矩阵 6．线性变换的基本概念 7．线性变换在不同基下的矩阵 §4 线性变换的特征值与特征向量 1．特征值与特征向量的定义 2．特征值与特征向量的计算法 numpy.linalg模块中，eigvals函数可以计算矩阵的特征值，而eig函数可以返回一个包含特征值和对应的特征向量的元组。\n1 2 3 4 5 6 7 import numpy as np #创建一个矩阵 Matrix = np.mat('3 -2;1 0') #调用eigvals函数求解特征值 eigenvalues = np.linalg.eigvals(Matrix) print(eigenvalues)#out:[2. 1.] 使用 eig 函数求解特征值和特征向量（该函数将返回一个元组，按列排放着特征值和对应的特征向量，其中第一列为特征值，第二列为特征向量）\n1 2 3 4 5 6 7 8 9 10 11 12 13 import numpy as np array = np.array([[1/2,1/2,1/2,1/2],[1/2,1/2,-1/2,-1/2],[-1/2,1/2,-1/2,1/2],[-1/2,1/2,1/2,-1/2]]) matrix = np.mat(array) eigenvalues,eigenvectors=np.linalg.eig(matrix) #传入两个变量 print(eigenvalues) print(eigenvectors) #使用 dot 函数验证求得的解是否正确‘ for i in range(len(eigenvalues)): print('left:',np.dot(matrix,eigenvectors[:,i])) print('right:',eigenvalues[i] * eigenvectors[:i]) 输出结果：\n1 2 3 4 5 6 7 8 9 [ 1.+0.j 0.+1.j 0.-1.j -1.+0.j] [[-7.07106781e-01+0.00000000e+00j 5.00000000e-01+3.72919427e-17j 5.00000000e-01-3.72919427e-17j -3.94864622e-17+0.00000000e+00j] [-7.07106781e-01+0.00000000e+00j -5.00000000e-01+0.00000000e+00j -5.00000000e-01-0.00000000e+00j 2.21595527e-16+0.00000000e+00j] [ 2.79683821e-16+0.00000000e+00j 1.91497458e-16+5.00000000e-01j 1.91497458e-16-5.00000000e-01j -7.07106781e-01+0.00000000e+00j] [ 1.69528880e-16+0.00000000e+00j 1.98242254e-16+5.00000000e-01j 1.98242254e-16-5.00000000e-01j 7.07106781e-01+0.00000000e+00j]] left: [[-7.07106781e-01+0.j] [-7.07106781e-01+0.j] [ 5.55111512e-17+0.j] [ 1.66533454e-16+0.j]] right: [] left: [[ 0.00000000e+00+5.00000000e-01j] [-3.88578059e-16-5.00000000e-01j] [-5.00000000e-01+1.11022302e-16j] [-5.00000000e-01-1.66533454e-16j]] right: [[-0.00000000e+00-7.07106781e-01j -3.72919427e-17+5.00000000e-01j 3.72919427e-17+5.00000000e-01j -0.00000000e+00-3.94864622e-17j]] left: [[ 0.00000000e+00-5.00000000e-01j] [-3.88578059e-16+5.00000000e-01j] [-5.00000000e-01-1.11022302e-16j] [-5.00000000e-01+1.66533454e-16j]] right: [[ 0.00000000e+00+7.07106781e-01j 3.72919427e-17-5.00000000e-01j -3.72919427e-17-5.00000000e-01j 0.00000000e+00+3.94864622e-17j] [ 0.00000000e+00+7.07106781e-01j 0.00000000e+00+5.00000000e-01j -0.00000000e+00+5.00000000e-01j 0.00000000e+00-2.21595527e-16j]] left: [[ 1.66533454e-16+0.j] [ 5.55111512e-17+0.j] [ 7.07106781e-01+0.j] [-7.07106781e-01+0.j]] right: [[ 7.07106781e-01-0.00000000e+00j -5.00000000e-01-3.72919427e-17j -5.00000000e-01+3.72919427e-17j 3.94864622e-17-0.00000000e+00j] [ 7.07106781e-01-0.00000000e+00j 5.00000000e-01-0.00000000e+00j 5.00000000e-01+0.00000000e+00j -2.21595527e-16+0.00000000e+00j] [-2.79683821e-16+0.00000000e+00j -1.91497458e-16-5.00000000e-01j -1.91497458e-16+5.00000000e-01j 7.07106781e-01-0.00000000e+00j]] 3．特征多项式的基本性质 4．具有对角形矩阵的线性变换 5．不变子空间 6．商空间中的诱导变换 第五章 双线性函数与二次型 §1 双线性函数 1．线性与双线性函数 2．双线性函数在不同基下的矩阵 3．对称双线性函数 §2 二次型 1．二次型的标准形 2．二次型标准形的计算方法 §3 实与复二次型的分类 1．复二次型的分类 2．实二次型的分类 §4 正定二次型 第六章 带度量的线性空间 1 欧几里得空间的定义和基本性质 SVD（Singular Value Decomposition，奇异值分解）是一种因子分解运算，将一个矩阵分解为3个矩阵的乘积。\nnumpy.linalg模块中的svd函数可以对矩阵进行奇异值分解。该函数返回3个矩阵——U、Singma和V，其中U和V是正交矩阵，Sigma包含输入矩阵的奇异值。\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 import numpy as np #分解矩阵 Matrix = np.mat('4 11 14;8 7 -2') #使用svd函数分解矩阵 U,Sigma,V = np.linalg.svd(Matrix, full_matrices=False) print(\"U:\",U) #U:[[-0.9486833 -0.31622777] #[-0.31622777 0.9486833 ]] print(\"Sigma:\",Sigma) #Sigma: [ 18.97366596 9.48683298] print (\"V\",V) #V [[-0.33333333 -0.66666667 -0.66666667] # [ 0.66666667 0.33333333 -0.66666667]] #使用diag函数生成完整的奇异值矩阵。将分解出的3个矩阵相乘 print(U * np.diag(Sigma) * V) #[[ 4. 11. 14.] # [ 8. 7. -2.]] 2 欧几里得空间中的特殊线性变换 3 酉空间 4 四维时空空间与辛空间 第七章 线性变换的Jordan标准形 1 幂零线性变换的Jordan标准形 2 一般线性变换的Jordan标准形 3 最小多项式 4 矩阵函数 第八章 有理整数环 1 有理整数环的基本概念 2 同余式 3 模m的剩余类环 第九章 一元多项式环 1 一元多项式环的基本理论 2 C，R，Q上多项式的因式分解 3 实系数多项式根的分布 4 单变早班有理函数域 第十章 多元多项式环 1 多元多项式环的基本概念 2 对称多项式 3 结式 第十一章 n维仿射空间与n维射影空间 1 n维仿射空间 2 n维射影空间 第十二章 张量积与外代数 1 多重线性映射 2 线性空间的张量积 3 张量 4 外代数 ",
+  "wordCount" : "2734",
+  "inLanguage": "zh",
+  "datePublished": "2023-06-08T12:29:25+08:00",
+  "dateModified": "2025-10-20T21:28:22+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "RM"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://rosefinch-midsummer.github.io/zh/posts/course/tqu%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "天漢帝國復興錄",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://rosefinch-midsummer.github.io/img/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://rosefinch-midsummer.github.io/zh/" accesskey="h" title="天漢帝國復興錄 (Alt + H)">天漢帝國復興錄</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/" title="🏠主頁">
+                    <span>🏠主頁</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/posts" title="📚文章">
+                    <span>📚文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/archives" title="⏱時間軸">
+                    <span>⏱時間軸</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/categories" title="🧩分類">
+                    <span>🧩分類</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/tags" title="🔖標簽">
+                    <span>🔖標簽</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/about" title="🙋🏻‍♂️關于">
+                    <span>🙋🏻‍♂️關于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://rosefinch-midsummer.github.io/zh/">首頁</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/">📚文章</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/course/">🏫課程</a></div>
+    <h1 class="post-title">
+      TQU《高等代数》
+    </h1>
+    <div class="post-meta">
+    创建: 2023-06-08 |
+    更新: 2025-10-20 |
+    字数: 2734字 |
+    时长: 6分钟 |
+    RM
+
+
+</div>
+   
+<div  class="meta-item">&nbsp·&nbsp
+  <span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+</div>
+
+
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目錄</span>
+        </summary>
+
+        <div class="inner"><ul><ul>
+                <li>
+                    <a href="#%e5%89%8d%e8%a8%80" aria-label="前言">前言</a></li></ul>
+                    
+                <li>
+                    <a href="#%e7%ac%ac%e4%b8%80%e7%ab%a0-%e4%bb%a3%e6%95%b0%e5%ad%a6%e7%9a%84%e7%bb%8f%e5%85%b8%e8%af%be%e9%a2%98" aria-label="第一章 代数学的经典课题">第一章 代数学的经典课题</a><ul>
+                        
+                <li>
+                    <a href="#%e5%bc%95%e8%a8%80" aria-label="引言">引言</a></li>
+                <li>
+                    <a href="#1-%e8%8b%a5%e5%b9%b2%e5%87%86%e5%a4%87%e7%9f%a5%e8%af%86" aria-label="§1 若干准备知识">§1 若干准备知识</a><ul>
+                        
+                <li>
+                    <a href="#1%e5%a4%8d%e6%95%b0%e7%9a%84%e5%9f%ba%e6%9c%ac%e7%9f%a5%e8%af%86" aria-label="1．复数的基本知识">1．复数的基本知识</a></li>
+                <li>
+                    <a href="#2%e6%95%b0%e5%9f%9f%e7%9a%84%e6%a6%82%e5%bf%b5" aria-label="2．数域的概念">2．数域的概念</a></li>
+                <li>
+                    <a href="#3%e9%9b%86%e5%90%88%e8%ae%ba%e7%9a%84%e8%8b%a5%e5%b9%b2%e6%a6%82%e5%bf%b5" aria-label="3．集合论的若干概念">3．集合论的若干概念</a></li>
+                <li>
+                    <a href="#4%e6%b1%82%e5%92%8c%e5%8f%b7%e4%b8%8e%e4%b9%98%e7%a7%af%e5%8f%b7" aria-label="4．求和号与乘积号">4．求和号与乘积号</a></li>
+                <li>
+                    <a href="#5%e5%85%85%e5%88%86%e5%bf%85%e8%a6%81%e6%9d%a1%e4%bb%b6" aria-label="5．充分必要条件">5．充分必要条件</a></li></ul>
+                </li>
+                <li>
+                    <a href="#2-%e4%b8%80%e5%85%83%e9%ab%98%e6%ac%a1%e4%bb%a3%e6%95%b0%e6%96%b9%e7%a8%8b%e7%9a%84%e5%9f%ba%e7%a1%80%e7%9f%a5%e8%af%86" aria-label="§2 一元高次代数方程的基础知识">§2 一元高次代数方程的基础知识</a><ul>
+                        
+                <li>
+                    <a href="#1%e9%ab%98%e7%ad%89%e4%bb%a3%e6%95%b0%e7%9a%84%e5%9f%ba%e6%9c%ac%e5%ae%9a%e7%90%86" aria-label="1．高等代数的基本定理">1．高等代数的基本定理</a></li>
+                <li>
+                    <a href="#2%e6%a0%b9%e7%9a%84%e5%9f%ba%e6%9c%ac%e6%80%a7%e8%b4%a8" aria-label="2．根的基本性质">2．根的基本性质</a></li>
+                <li>
+                    <a href="#3%e5%ae%9e%e6%95%b0%e5%9f%9f%e4%b8%8a%e4%bb%a3%e6%95%b0%e6%96%b9%e7%a8%8b%e7%9a%84%e6%a0%b9" aria-label="3．实数域上代数方程的根">3．实数域上代数方程的根</a></li></ul>
+                </li>
+                <li>
+                    <a href="#3-%e7%ba%bf%e6%80%a7%e6%96%b9%e7%a8%8b%e7%bb%84" aria-label="§3 线性方程组">§3 线性方程组</a><ul>
+                        
+                <li>
+                    <a href="#1%e7%ba%bf%e6%80%a7%e6%96%b9%e7%a8%8b%e7%bb%84%e6%a6%82%e8%bf%b0" aria-label="1．线性方程组概述">1．线性方程组概述</a></li>
+                <li>
+                    <a href="#2%e7%ba%bf%e6%80%a7%e6%96%b9%e7%a8%8b%e7%bb%84%e7%9a%84%e8%a7%a3%e6%b3%95" aria-label="2．线性方程组的解法">2．线性方程组的解法</a></li>
+                <li>
+                    <a href="#3%e9%bd%90%e6%ac%a1%e7%ba%bf%e6%80%a7%e6%96%b9%e7%a8%8b%e7%bb%84" aria-label="3．齐次线性方程组">3．齐次线性方程组</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#%e7%ac%ac%e4%ba%8c%e7%ab%a0-%e5%90%91%e9%87%8f%e7%a9%ba%e9%97%b4%e4%b8%8e%e7%9f%a9%e9%98%b5" aria-label="第二章 向量空间与矩阵">第二章 向量空间与矩阵</a><ul>
+                        
+                <li>
+                    <a href="#1-m%e7%bb%b4%e5%90%91%e9%87%8f%e7%a9%ba%e9%97%b4" aria-label="§1 m维向量空间">§1 m维向量空间</a><ul>
+                        
+                <li>
+                    <a href="#1%e5%90%91%e9%87%8f%e7%bb%84%e7%9a%84%e7%ba%bf%e6%80%a7%e7%9b%b8%e5%85%b3%e4%b8%8e%e7%ba%bf%e6%80%a7%e6%97%a0%e5%85%b3" aria-label="1．向量组的线性相关与线性无关">1．向量组的线性相关与线性无关</a></li>
+                <li>
+                    <a href="#2%e5%90%91%e9%87%8f%e7%bb%84%e7%9a%84%e7%a7%a9" aria-label="2．向量组的秩">2．向量组的秩</a></li>
+                <li>
+                    <a href="#3%e9%9b%86%e5%90%88%e5%86%85%e7%9a%84%e7%ad%89%e4%bb%b7%e5%85%b3%e7%b3%bb" aria-label="3．集合内的等价关系">3．集合内的等价关系</a></li></ul>
+                </li>
+                <li>
+                    <a href="#2-%e7%9f%a9%e9%98%b5%e7%9a%84%e7%a7%a9" aria-label="§2 矩阵的秩">§2 矩阵的秩</a></li>
+                <li>
+                    <a href="#3-%e7%ba%bf%e6%80%a7%e6%96%b9%e7%a8%8b%e7%bb%84%e7%9a%84%e7%90%86%e8%ae%ba%e8%af%be%e9%a2%98" aria-label="§3 线性方程组的理论课题">§3 线性方程组的理论课题</a><ul>
+                        
+                <li>
+                    <a href="#1%e9%bd%90%e6%ac%a1%e7%ba%bf%e6%80%a7%e6%96%b9%e7%a8%8b%e7%bb%84%e7%9a%84%e5%9f%ba%e7%a1%80%e8%a7%a3%e7%b3%bb" aria-label="1．齐次线性方程组的基础解系">1．齐次线性方程组的基础解系</a></li>
+                <li>
+                    <a href="#2%e5%9f%ba%e7%a1%80%e8%a7%a3%e7%b3%bb%e7%9a%84%e6%b1%82%e6%b3%95" aria-label="2．基础解系的求法">2．基础解系的求法</a></li>
+                <li>
+                    <a href="#3%e7%ba%bf%e6%80%a7%e6%96%b9%e7%a8%8b%e7%bb%84%e7%9a%84%e4%b8%80%e8%88%ac%e7%90%86%e8%ae%ba" aria-label="3．线性方程组的一般理论">3．线性方程组的一般理论</a></li></ul>
+                </li>
+                <li>
+                    <a href="#4-%e7%9f%a9%e9%98%b5%e7%9a%84%e8%bf%90%e7%ae%97" aria-label="§4 矩阵的运算">§4 矩阵的运算</a><ul>
+                        
+                <li>
+                    <a href="#1%e7%9f%a9%e9%98%b5%e7%9a%84%e5%8a%a0%e6%b3%95%e5%92%8c%e6%95%b0%e4%b9%98" aria-label="1．矩阵的加法和数乘">1．矩阵的加法和数乘</a></li>
+                <li>
+                    <a href="#2%e7%9f%a9%e9%98%b5%e7%9a%84%e4%b9%98%e6%b3%95%e8%bf%90%e7%ae%97" aria-label="2．矩阵的乘法运算">2．矩阵的乘法运算</a></li>
+                <li>
+                    <a href="#3%e7%9f%a9%e9%98%b5%e4%b9%98%e6%b3%95%e7%9a%84%e5%87%a0%e4%bd%95%e6%84%8f%e4%b9%89" aria-label="3．矩阵乘法的几何意义">3．矩阵乘法的几何意义</a></li>
+                <li>
+                    <a href="#4%e7%9f%a9%e9%98%b5%e4%b9%98%e6%b3%95%e7%9a%84%e5%9f%ba%e6%9c%ac%e6%80%a7%e8%b4%a8" aria-label="4．矩阵乘法的基本性质">4．矩阵乘法的基本性质</a></li>
+                <li>
+                    <a href="#5%e7%9f%a9%e9%98%b5%e8%bf%90%e7%ae%97%e5%92%8c%e7%a7%a9%e7%9a%84%e5%85%b3%e7%b3%bb" aria-label="5．矩阵运算和秩的关系">5．矩阵运算和秩的关系</a></li></ul>
+                </li>
+                <li>
+                    <a href="#5-n%e9%98%b6%e6%96%b9%e9%98%b5" aria-label="§5 n阶方阵">§5 n阶方阵</a><ul>
+                        
+                <li>
+                    <a href="#1%e6%95%b0%e5%9f%9f%e4%b8%8a%e7%9a%84n%e9%98%b6%e6%96%b9%e9%98%b5" aria-label="1．数域上的n阶方阵">1．数域上的n阶方阵</a></li>
+                <li>
+                    <a href="#2n%e9%98%b6%e5%88%9d%e7%ad%89%e7%9f%a9%e9%98%b5" aria-label="2．n阶初等矩阵">2．n阶初等矩阵</a></li>
+                <li>
+                    <a href="#3%e9%80%86%e7%9f%a9%e9%98%b5" aria-label="3．逆矩阵">3．逆矩阵</a></li>
+                <li>
+                    <a href="#4%e5%87%a0%e7%b1%bb%e7%89%b9%e6%ae%8a%e7%9a%84n%e9%98%b6%e6%96%b9%e9%98%b5" aria-label="4．几类特殊的n阶方阵">4．几类特殊的n阶方阵</a></li></ul>
+                </li>
+                <li>
+                    <a href="#6-%e5%88%86%e5%9d%97%e7%9f%a9%e9%98%b5" aria-label="§6 分块矩阵">§6 分块矩阵</a><ul>
+                        
+                <li>
+                    <a href="#1%e5%87%86%e5%af%b9%e8%a7%92%e7%9f%a9%e9%98%b5" aria-label="1．准对角矩阵">1．准对角矩阵</a></li>
+                <li>
+                    <a href="#2%e5%88%86%e5%9d%97%e7%9f%a9%e9%98%b5%e7%9a%84%e7%a7%a9" aria-label="2．分块矩阵的秩">2．分块矩阵的秩</a></li>
+                <li>
+                    <a href="#3%e7%9f%a9%e9%98%b5%e7%9a%84%e5%88%86%e5%9d%97%e6%b1%82%e9%80%86" aria-label="3．矩阵的分块求逆">3．矩阵的分块求逆</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#%e7%ac%ac%e4%b8%89%e7%ab%a0-%e8%a1%8c%e5%88%97%e5%bc%8f" aria-label="第三章 行列式">第三章 行列式</a><ul>
+                        
+                <li>
+                    <a href="#1-%e5%b9%b3%e8%a1%8c%e5%85%ad%e9%9d%a2%e4%bd%93%e7%9a%84%e6%9c%89%e5%90%91%e4%bd%93%e7%a7%af" aria-label="§1 平行六面体的有向体积">§1 平行六面体的有向体积</a></li>
+                <li>
+                    <a href="#2-n%e9%98%b6%e6%96%b9%e9%98%b5%e7%9a%84%e8%a1%8c%e5%88%97%e5%bc%8f" aria-label="§2 n阶方阵的行列式">§2 n阶方阵的行列式</a><ul>
+                        
+                <li>
+                    <a href="#1%e8%a1%8c%e5%88%97%e5%bc%8f%e7%9a%84%e5%ae%9a%e4%b9%89" aria-label="1．行列式的定义">1．行列式的定义</a></li>
+                <li>
+                    <a href="#2%e8%a1%8c%e5%88%97%e5%bc%8f%e7%9a%84%e6%80%a7%e8%b4%a8" aria-label="2．行列式的性质">2．行列式的性质</a></li>
+                <li>
+                    <a href="#3%e8%a1%8c%e5%88%97%e5%bc%8f%e5%af%b9%e4%bb%bb%e6%84%8f%e8%a1%8c%e5%88%97%e7%9a%84%e5%b1%95%e5%bc%80%e5%85%ac%e5%bc%8f" aria-label="3．行列式对任意行(列)的展开公式">3．行列式对任意行(列)的展开公式</a></li>
+                <li>
+                    <a href="#4%e8%a1%8c%e5%88%97%e5%bc%8f%e7%9a%84%e5%85%b6%e4%bb%96%e9%87%8d%e8%a6%81%e6%80%a7%e8%b4%a8" aria-label="4．行列式的其他重要性质">4．行列式的其他重要性质</a></li></ul>
+                </li>
+                <li>
+                    <a href="#3%e8%a1%8c%e5%88%97%e5%bc%8f%e7%9a%84%e5%88%9d%e6%ad%a5%e5%ba%94%e7%94%a8" aria-label="§3行列式的初步应用">§3行列式的初步应用</a><ul>
+                        
+                <li>
+                    <a href="#1%e9%bd%90%e6%ac%a1%e7%ba%bf%e6%80%a7%e6%96%b9%e7%a8%8b%e7%bb%84" aria-label="1．齐次线性方程组">1．齐次线性方程组</a></li>
+                <li>
+                    <a href="#2%e9%80%86%e7%9f%a9%e9%98%b5" aria-label="2．逆矩阵">2．逆矩阵</a></li>
+                <li>
+                    <a href="#3%e7%9f%a9%e9%98%b5%e4%b9%98%e7%a7%af%e7%9a%84%e8%a1%8c%e5%88%97%e5%bc%8f" aria-label="3．矩阵乘积的行列式">3．矩阵乘积的行列式</a></li>
+                <li>
+                    <a href="#4%e7%9f%a9%e9%98%b5%e7%9a%84%e7%a7%a9%e4%b8%8e%e8%a1%8c%e5%88%97%e5%bc%8f" aria-label="4．矩阵的秩与行列式">4．矩阵的秩与行列式</a></li></ul>
+                </li>
+                <li>
+                    <a href="#4%e8%a1%8c%e5%88%97%e5%bc%8f%e7%9a%84%e5%ae%8c%e5%85%a8%e5%b1%95%e5%bc%80%e5%bc%8f" aria-label="§4行列式的完全展开式">§4行列式的完全展开式</a></li>
+                <li>
+                    <a href="#5-laplace%e5%b1%95%e5%bc%80%e5%bc%8f%e4%b8%8ebinetcauchy%e5%85%ac%e5%bc%8f" aria-label="§5 Laplace展开式与Binet—Cauchy公式">§5 Laplace展开式与Binet—Cauchy公式</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e7%ac%ac%e5%9b%9b%e7%ab%a0-%e7%ba%bf%e6%80%a7%e7%a9%ba%e9%97%b4%e4%b8%8e%e7%ba%bf%e6%80%a7%e5%8f%98%e6%8d%a2" aria-label="第四章 线性空间与线性变换">第四章 线性空间与线性变换</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#%e5%bc%95%e8%a8%80-1" aria-label="引言">引言</a></li></ul>
+                    
+                <li>
+                    <a href="#1-%e7%ba%bf%e6%80%a7%e7%a9%ba%e9%97%b4%e7%9a%84%e5%9f%ba%e6%9c%ac%e6%a6%82%e5%bf%b5" aria-label="§1 线性空间的基本概念">§1 线性空间的基本概念</a><ul>
+                        
+                <li>
+                    <a href="#1%e7%ba%bf%e6%80%a7%e7%a9%ba%e9%97%b4%e7%9a%84%e5%ae%9a%e4%b9%89%e5%92%8c%e5%ae%9e%e4%be%8b" aria-label="1．线性空间的定义和实例">1．线性空间的定义和实例</a></li>
+                <li>
+                    <a href="#2%e7%ba%bf%e6%80%a7%e7%a9%ba%e9%97%b4%e7%9a%84%e5%9f%ba%e6%9c%ac%e5%b1%9e%e6%80%a7" aria-label="2．线性空间的基本属性">2．线性空间的基本属性</a></li>
+                <li>
+                    <a href="#3%e7%ba%bf%e6%80%a7%e7%a9%ba%e9%97%b4%e7%9a%84%e5%9f%ba%e6%9c%ac%e6%a6%82%e5%bf%b5" aria-label="3．线性空间的基本概念">3．线性空间的基本概念</a></li>
+                <li>
+                    <a href="#4%e5%9f%ba%e5%92%8c%e7%bb%b4%e6%95%b0" aria-label="4．基和维数">4．基和维数</a></li>
+                <li>
+                    <a href="#5%e5%90%91%e9%87%8f%e7%9a%84%e5%9d%90%e6%a0%87" aria-label="5．向量的坐标">5．向量的坐标</a></li>
+                <li>
+                    <a href="#6%e5%9f%ba%e5%8f%98%e6%8d%a2%e4%b8%8e%e5%9d%90%e6%a0%87%e5%8f%98%e6%8d%a2" aria-label="6．基变换与坐标变换">6．基变换与坐标变换</a></li>
+                <li>
+                    <a href="#7kn%e4%b8%ad%e7%9a%84%e5%9f%ba%e5%8f%98%e6%8d%a2" aria-label="7．Kn中的基变换">7．Kn中的基变换</a></li></ul>
+                </li>
+                <li>
+                    <a href="#2-%e5%ad%90%e7%a9%ba%e9%97%b4%e4%b8%8e%e5%95%86%e7%a9%ba%e9%97%b4" aria-label="§2 子空间与商空间">§2 子空间与商空间</a><ul>
+                        
+                <li>
+                    <a href="#1%e5%ad%90%e7%a9%ba%e9%97%b4%e7%9a%84%e5%9f%ba%e6%9c%ac%e6%a6%82%e5%bf%b5" aria-label="1．子空间的基本概念">1．子空间的基本概念</a></li>
+                <li>
+                    <a href="#2%e5%ad%90%e7%a9%ba%e9%97%b4%e7%9a%84%e4%ba%a4%e4%b8%8e%e5%92%8c" aria-label="2．子空间的交与和">2．子空间的交与和</a></li>
+                <li>
+                    <a href="#3%e5%ad%90%e7%a9%ba%e9%97%b4%e7%9a%84%e7%9b%b4%e5%92%8c" aria-label="3．子空间的直和">3．子空间的直和</a></li>
+                <li>
+                    <a href="#4%e5%95%86%e7%a9%ba%e9%97%b4" aria-label="4．商空间">4．商空间</a></li></ul>
+                </li>
+                <li>
+                    <a href="#3-%e7%ba%bf%e6%80%a7%e6%98%a0%e5%b0%84%e4%b8%8e%e7%ba%bf%e6%80%a7%e5%8f%98%e6%8d%a2" aria-label="§3 线性映射与线性变换">§3 线性映射与线性变换</a><ul>
+                        
+                <li>
+                    <a href="#1%e7%ba%bf%e6%80%a7%e6%98%a0%e5%b0%84" aria-label="1．线性映射">1．线性映射</a></li>
+                <li>
+                    <a href="#2%e7%ba%bf%e6%80%a7%e7%a9%ba%e9%97%b4%e7%9a%84%e5%90%8c%e6%9e%84" aria-label="2．线性空间的同构">2．线性空间的同构</a></li>
+                <li>
+                    <a href="#3%e7%ba%bf%e6%80%a7%e6%98%a0%e5%b0%84%e7%9a%84%e6%a0%b8%e5%83%8f%e9%9b%86%e5%92%8c%e4%bd%99%e6%a0%b8" aria-label="3．线性映射的核、像集和余核">3．线性映射的核、像集和余核</a></li>
+                <li>
+                    <a href="#4%e7%ba%bf%e6%80%a7%e6%98%a0%e5%b0%84%e7%9a%84%e8%bf%90%e7%ae%97" aria-label="4．线性映射的运算">4．线性映射的运算</a></li>
+                <li>
+                    <a href="#5%e7%ba%bf%e6%80%a7%e6%98%a0%e5%b0%84%e7%9a%84%e7%9f%a9%e9%98%b5" aria-label="5．线性映射的矩阵">5．线性映射的矩阵</a></li>
+                <li>
+                    <a href="#6%e7%ba%bf%e6%80%a7%e5%8f%98%e6%8d%a2%e7%9a%84%e5%9f%ba%e6%9c%ac%e6%a6%82%e5%bf%b5" aria-label="6．线性变换的基本概念">6．线性变换的基本概念</a></li>
+                <li>
+                    <a href="#7%e7%ba%bf%e6%80%a7%e5%8f%98%e6%8d%a2%e5%9c%a8%e4%b8%8d%e5%90%8c%e5%9f%ba%e4%b8%8b%e7%9a%84%e7%9f%a9%e9%98%b5" aria-label="7．线性变换在不同基下的矩阵">7．线性变换在不同基下的矩阵</a></li></ul>
+                </li>
+                <li>
+                    <a href="#4-%e7%ba%bf%e6%80%a7%e5%8f%98%e6%8d%a2%e7%9a%84%e7%89%b9%e5%be%81%e5%80%bc%e4%b8%8e%e7%89%b9%e5%be%81%e5%90%91%e9%87%8f" aria-label="§4 线性变换的特征值与特征向量">§4 线性变换的特征值与特征向量</a><ul>
+                        
+                <li>
+                    <a href="#1%e7%89%b9%e5%be%81%e5%80%bc%e4%b8%8e%e7%89%b9%e5%be%81%e5%90%91%e9%87%8f%e7%9a%84%e5%ae%9a%e4%b9%89" aria-label="1．特征值与特征向量的定义">1．特征值与特征向量的定义</a></li>
+                <li>
+                    <a href="#2%e7%89%b9%e5%be%81%e5%80%bc%e4%b8%8e%e7%89%b9%e5%be%81%e5%90%91%e9%87%8f%e7%9a%84%e8%ae%a1%e7%ae%97%e6%b3%95" aria-label="2．特征值与特征向量的计算法">2．特征值与特征向量的计算法</a></li>
+                <li>
+                    <a href="#3%e7%89%b9%e5%be%81%e5%a4%9a%e9%a1%b9%e5%bc%8f%e7%9a%84%e5%9f%ba%e6%9c%ac%e6%80%a7%e8%b4%a8" aria-label="3．特征多项式的基本性质">3．特征多项式的基本性质</a></li>
+                <li>
+                    <a href="#4%e5%85%b7%e6%9c%89%e5%af%b9%e8%a7%92%e5%bd%a2%e7%9f%a9%e9%98%b5%e7%9a%84%e7%ba%bf%e6%80%a7%e5%8f%98%e6%8d%a2" aria-label="4．具有对角形矩阵的线性变换">4．具有对角形矩阵的线性变换</a></li>
+                <li>
+                    <a href="#5%e4%b8%8d%e5%8f%98%e5%ad%90%e7%a9%ba%e9%97%b4" aria-label="5．不变子空间">5．不变子空间</a></li>
+                <li>
+                    <a href="#6%e5%95%86%e7%a9%ba%e9%97%b4%e4%b8%ad%e7%9a%84%e8%af%b1%e5%af%bc%e5%8f%98%e6%8d%a2" aria-label="6．商空间中的诱导变换">6．商空间中的诱导变换</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#%e7%ac%ac%e4%ba%94%e7%ab%a0-%e5%8f%8c%e7%ba%bf%e6%80%a7%e5%87%bd%e6%95%b0%e4%b8%8e%e4%ba%8c%e6%ac%a1%e5%9e%8b" aria-label="第五章 双线性函数与二次型">第五章 双线性函数与二次型</a><ul>
+                        
+                <li>
+                    <a href="#1-%e5%8f%8c%e7%ba%bf%e6%80%a7%e5%87%bd%e6%95%b0" aria-label="§1 双线性函数">§1 双线性函数</a><ul>
+                        
+                <li>
+                    <a href="#1%e7%ba%bf%e6%80%a7%e4%b8%8e%e5%8f%8c%e7%ba%bf%e6%80%a7%e5%87%bd%e6%95%b0" aria-label="1．线性与双线性函数">1．线性与双线性函数</a></li>
+                <li>
+                    <a href="#2%e5%8f%8c%e7%ba%bf%e6%80%a7%e5%87%bd%e6%95%b0%e5%9c%a8%e4%b8%8d%e5%90%8c%e5%9f%ba%e4%b8%8b%e7%9a%84%e7%9f%a9%e9%98%b5" aria-label="2．双线性函数在不同基下的矩阵">2．双线性函数在不同基下的矩阵</a></li>
+                <li>
+                    <a href="#3%e5%af%b9%e7%a7%b0%e5%8f%8c%e7%ba%bf%e6%80%a7%e5%87%bd%e6%95%b0" aria-label="3．对称双线性函数">3．对称双线性函数</a></li></ul>
+                </li>
+                <li>
+                    <a href="#2-%e4%ba%8c%e6%ac%a1%e5%9e%8b" aria-label="§2 二次型">§2 二次型</a><ul>
+                        
+                <li>
+                    <a href="#1%e4%ba%8c%e6%ac%a1%e5%9e%8b%e7%9a%84%e6%a0%87%e5%87%86%e5%bd%a2" aria-label="1．二次型的标准形">1．二次型的标准形</a></li>
+                <li>
+                    <a href="#2%e4%ba%8c%e6%ac%a1%e5%9e%8b%e6%a0%87%e5%87%86%e5%bd%a2%e7%9a%84%e8%ae%a1%e7%ae%97%e6%96%b9%e6%b3%95" aria-label="2．二次型标准形的计算方法">2．二次型标准形的计算方法</a></li></ul>
+                </li>
+                <li>
+                    <a href="#3-%e5%ae%9e%e4%b8%8e%e5%a4%8d%e4%ba%8c%e6%ac%a1%e5%9e%8b%e7%9a%84%e5%88%86%e7%b1%bb" aria-label="§3 实与复二次型的分类">§3 实与复二次型的分类</a><ul>
+                        
+                <li>
+                    <a href="#1%e5%a4%8d%e4%ba%8c%e6%ac%a1%e5%9e%8b%e7%9a%84%e5%88%86%e7%b1%bb" aria-label="1．复二次型的分类">1．复二次型的分类</a></li>
+                <li>
+                    <a href="#2%e5%ae%9e%e4%ba%8c%e6%ac%a1%e5%9e%8b%e7%9a%84%e5%88%86%e7%b1%bb" aria-label="2．实二次型的分类">2．实二次型的分类</a></li></ul>
+                </li>
+                <li>
+                    <a href="#4-%e6%ad%a3%e5%ae%9a%e4%ba%8c%e6%ac%a1%e5%9e%8b" aria-label="§4 正定二次型">§4 正定二次型</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e7%ac%ac%e5%85%ad%e7%ab%a0-%e5%b8%a6%e5%ba%a6%e9%87%8f%e7%9a%84%e7%ba%bf%e6%80%a7%e7%a9%ba%e9%97%b4" aria-label="第六章 带度量的线性空间">第六章 带度量的线性空间</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#1-%e6%ac%a7%e5%87%a0%e9%87%8c%e5%be%97%e7%a9%ba%e9%97%b4%e7%9a%84%e5%ae%9a%e4%b9%89%e5%92%8c%e5%9f%ba%e6%9c%ac%e6%80%a7%e8%b4%a8" aria-label="1 欧几里得空间的定义和基本性质">1 欧几里得空间的定义和基本性质</a></li>
+                <li>
+                    <a href="#2-%e6%ac%a7%e5%87%a0%e9%87%8c%e5%be%97%e7%a9%ba%e9%97%b4%e4%b8%ad%e7%9a%84%e7%89%b9%e6%ae%8a%e7%ba%bf%e6%80%a7%e5%8f%98%e6%8d%a2" aria-label="2 欧几里得空间中的特殊线性变换">2 欧几里得空间中的特殊线性变换</a></li>
+                <li>
+                    <a href="#3-%e9%85%89%e7%a9%ba%e9%97%b4" aria-label="3 酉空间">3 酉空间</a></li>
+                <li>
+                    <a href="#4-%e5%9b%9b%e7%bb%b4%e6%97%b6%e7%a9%ba%e7%a9%ba%e9%97%b4%e4%b8%8e%e8%be%9b%e7%a9%ba%e9%97%b4" aria-label="4 四维时空空间与辛空间">4 四维时空空间与辛空间</a></li></ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#%e7%ac%ac%e4%b8%83%e7%ab%a0-%e7%ba%bf%e6%80%a7%e5%8f%98%e6%8d%a2%e7%9a%84jordan%e6%a0%87%e5%87%86%e5%bd%a2" aria-label="第七章 线性变换的Jordan标准形">第七章 线性变换的Jordan标准形</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#1-%e5%b9%82%e9%9b%b6%e7%ba%bf%e6%80%a7%e5%8f%98%e6%8d%a2%e7%9a%84jordan%e6%a0%87%e5%87%86%e5%bd%a2" aria-label="1 幂零线性变换的Jordan标准形">1 幂零线性变换的Jordan标准形</a></li>
+                <li>
+                    <a href="#2-%e4%b8%80%e8%88%ac%e7%ba%bf%e6%80%a7%e5%8f%98%e6%8d%a2%e7%9a%84jordan%e6%a0%87%e5%87%86%e5%bd%a2" aria-label="2 一般线性变换的Jordan标准形">2 一般线性变换的Jordan标准形</a></li>
+                <li>
+                    <a href="#3-%e6%9c%80%e5%b0%8f%e5%a4%9a%e9%a1%b9%e5%bc%8f" aria-label="3 最小多项式">3 最小多项式</a></li>
+                <li>
+                    <a href="#4-%e7%9f%a9%e9%98%b5%e5%87%bd%e6%95%b0" aria-label="4 矩阵函数">4 矩阵函数</a></li></ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#%e7%ac%ac%e5%85%ab%e7%ab%a0-%e6%9c%89%e7%90%86%e6%95%b4%e6%95%b0%e7%8e%af" aria-label="第八章 有理整数环">第八章 有理整数环</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#1-%e6%9c%89%e7%90%86%e6%95%b4%e6%95%b0%e7%8e%af%e7%9a%84%e5%9f%ba%e6%9c%ac%e6%a6%82%e5%bf%b5" aria-label="1 有理整数环的基本概念">1 有理整数环的基本概念</a></li>
+                <li>
+                    <a href="#2-%e5%90%8c%e4%bd%99%e5%bc%8f" aria-label="2 同余式">2 同余式</a></li>
+                <li>
+                    <a href="#3-%e6%a8%a1m%e7%9a%84%e5%89%a9%e4%bd%99%e7%b1%bb%e7%8e%af" aria-label="3 模m的剩余类环">3 模m的剩余类环</a></li></ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#%e7%ac%ac%e4%b9%9d%e7%ab%a0-%e4%b8%80%e5%85%83%e5%a4%9a%e9%a1%b9%e5%bc%8f%e7%8e%af" aria-label="第九章 一元多项式环">第九章 一元多项式环</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#1-%e4%b8%80%e5%85%83%e5%a4%9a%e9%a1%b9%e5%bc%8f%e7%8e%af%e7%9a%84%e5%9f%ba%e6%9c%ac%e7%90%86%e8%ae%ba" aria-label="1 一元多项式环的基本理论">1 一元多项式环的基本理论</a></li>
+                <li>
+                    <a href="#2-crq%e4%b8%8a%e5%a4%9a%e9%a1%b9%e5%bc%8f%e7%9a%84%e5%9b%a0%e5%bc%8f%e5%88%86%e8%a7%a3" aria-label="2 C，R，Q上多项式的因式分解">2 C，R，Q上多项式的因式分解</a></li>
+                <li>
+                    <a href="#3-%e5%ae%9e%e7%b3%bb%e6%95%b0%e5%a4%9a%e9%a1%b9%e5%bc%8f%e6%a0%b9%e7%9a%84%e5%88%86%e5%b8%83" aria-label="3 实系数多项式根的分布">3 实系数多项式根的分布</a></li>
+                <li>
+                    <a href="#4-%e5%8d%95%e5%8f%98%e6%97%a9%e7%8f%ad%e6%9c%89%e7%90%86%e5%87%bd%e6%95%b0%e5%9f%9f" aria-label="4 单变早班有理函数域">4 单变早班有理函数域</a></li></ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#%e7%ac%ac%e5%8d%81%e7%ab%a0-%e5%a4%9a%e5%85%83%e5%a4%9a%e9%a1%b9%e5%bc%8f%e7%8e%af" aria-label="第十章 多元多项式环">第十章 多元多项式环</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#1-%e5%a4%9a%e5%85%83%e5%a4%9a%e9%a1%b9%e5%bc%8f%e7%8e%af%e7%9a%84%e5%9f%ba%e6%9c%ac%e6%a6%82%e5%bf%b5" aria-label="1 多元多项式环的基本概念">1 多元多项式环的基本概念</a></li>
+                <li>
+                    <a href="#2-%e5%af%b9%e7%a7%b0%e5%a4%9a%e9%a1%b9%e5%bc%8f" aria-label="2 对称多项式">2 对称多项式</a></li>
+                <li>
+                    <a href="#3-%e7%bb%93%e5%bc%8f" aria-label="3 结式">3 结式</a></li></ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#%e7%ac%ac%e5%8d%81%e4%b8%80%e7%ab%a0-n%e7%bb%b4%e4%bb%bf%e5%b0%84%e7%a9%ba%e9%97%b4%e4%b8%8en%e7%bb%b4%e5%b0%84%e5%bd%b1%e7%a9%ba%e9%97%b4" aria-label="第十一章 n维仿射空间与n维射影空间">第十一章 n维仿射空间与n维射影空间</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#1-n%e7%bb%b4%e4%bb%bf%e5%b0%84%e7%a9%ba%e9%97%b4" aria-label="1 n维仿射空间">1 n维仿射空间</a></li>
+                <li>
+                    <a href="#2-n%e7%bb%b4%e5%b0%84%e5%bd%b1%e7%a9%ba%e9%97%b4" aria-label="2 n维射影空间">2 n维射影空间</a></li></ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#%e7%ac%ac%e5%8d%81%e4%ba%8c%e7%ab%a0-%e5%bc%a0%e9%87%8f%e7%a7%af%e4%b8%8e%e5%a4%96%e4%bb%a3%e6%95%b0" aria-label="第十二章 张量积与外代数">第十二章 张量积与外代数</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#1-%e5%a4%9a%e9%87%8d%e7%ba%bf%e6%80%a7%e6%98%a0%e5%b0%84" aria-label="1 多重线性映射">1 多重线性映射</a></li>
+                <li>
+                    <a href="#2-%e7%ba%bf%e6%80%a7%e7%a9%ba%e9%97%b4%e7%9a%84%e5%bc%a0%e9%87%8f%e7%a7%af" aria-label="2 线性空间的张量积">2 线性空间的张量积</a></li>
+                <li>
+                    <a href="#3-%e5%bc%a0%e9%87%8f" aria-label="3 张量">3 张量</a></li>
+                <li>
+                    <a href="#4-%e5%a4%96%e4%bb%a3%e6%95%b0" aria-label="4 外代数">4 外代数</a>
+                </li>
+            </ul>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="前言">前言<a hidden class="anchor" aria-hidden="true" href="#前言">#</a></h2>
+<p><a href="https://www.bilibili.com/video/BV1wt41147Q1/">北大丘维声教授清华高等代数课程1080P高清修复版(全151集)</a></p>
+<p>参考教材：蓝以中《高等代数简明教程》、<a href="https://www.math.pku.edu.cn/teachers/anjp/Qiu_Weisheng_2.pdf">丘维声《高等代数》</a></p>
+<p>文中代码主要是用包含线性代数的函数的numpy.linalg模块。使用这个模块，可以计算矩阵逆、求特征值、解线性方程组以及求解行列式等。</p>
+<h1 id="第一章-代数学的经典课题">第一章 代数学的经典课题<a hidden class="anchor" aria-hidden="true" href="#第一章-代数学的经典课题">#</a></h1>
+<h2 id="引言">引言<a hidden class="anchor" aria-hidden="true" href="#引言">#</a></h2>
+<h2 id="1-若干准备知识">§1 若干准备知识<a hidden class="anchor" aria-hidden="true" href="#1-若干准备知识">#</a></h2>
+<h3 id="1复数的基本知识">1．复数的基本知识<a hidden class="anchor" aria-hidden="true" href="#1复数的基本知识">#</a></h3>
+<h3 id="2数域的概念">2．数域的概念<a hidden class="anchor" aria-hidden="true" href="#2数域的概念">#</a></h3>
+<h3 id="3集合论的若干概念">3．集合论的若干概念<a hidden class="anchor" aria-hidden="true" href="#3集合论的若干概念">#</a></h3>
+<h3 id="4求和号与乘积号">4．求和号与乘积号<a hidden class="anchor" aria-hidden="true" href="#4求和号与乘积号">#</a></h3>
+<h3 id="5充分必要条件">5．充分必要条件<a hidden class="anchor" aria-hidden="true" href="#5充分必要条件">#</a></h3>
+<h2 id="2-一元高次代数方程的基础知识">§2 一元高次代数方程的基础知识<a hidden class="anchor" aria-hidden="true" href="#2-一元高次代数方程的基础知识">#</a></h2>
+<h3 id="1高等代数的基本定理">1．高等代数的基本定理<a hidden class="anchor" aria-hidden="true" href="#1高等代数的基本定理">#</a></h3>
+<h3 id="2根的基本性质">2．根的基本性质<a hidden class="anchor" aria-hidden="true" href="#2根的基本性质">#</a></h3>
+<h3 id="3实数域上代数方程的根">3．实数域上代数方程的根<a hidden class="anchor" aria-hidden="true" href="#3实数域上代数方程的根">#</a></h3>
+<h2 id="3-线性方程组">§3 线性方程组<a hidden class="anchor" aria-hidden="true" href="#3-线性方程组">#</a></h2>
+<h3 id="1线性方程组概述">1．线性方程组概述<a hidden class="anchor" aria-hidden="true" href="#1线性方程组概述">#</a></h3>
+<h3 id="2线性方程组的解法">2．线性方程组的解法<a hidden class="anchor" aria-hidden="true" href="#2线性方程组的解法">#</a></h3>
+<p>numpy.linalg 中的 solve 函数可以求解形如 Ax = b 的线性方程组，其中 A 为矩阵，b 为一维或二维的数组，x 为未知变量。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#创建矩阵和数组</span>
+</span></span><span class="line"><span class="cl"><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="s1">&#39;1 -2 1;0 2 -8;-4 5 9&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="o">-</span><span class="mi">9</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#调用 solve 函数求解线性方程</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#out:[29. 16. 3]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#使用 dot 函数检查求得的解是否正确</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">x</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#out:[[0. 8. -9.]]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3齐次线性方程组">3．齐次线性方程组<a hidden class="anchor" aria-hidden="true" href="#3齐次线性方程组">#</a></h3>
+<h1 id="第二章-向量空间与矩阵">第二章 向量空间与矩阵<a hidden class="anchor" aria-hidden="true" href="#第二章-向量空间与矩阵">#</a></h1>
+<h2 id="1-m维向量空间">§1 m维向量空间<a hidden class="anchor" aria-hidden="true" href="#1-m维向量空间">#</a></h2>
+<h3 id="1向量组的线性相关与线性无关">1．向量组的线性相关与线性无关<a hidden class="anchor" aria-hidden="true" href="#1向量组的线性相关与线性无关">#</a></h3>
+<h3 id="2向量组的秩">2．向量组的秩<a hidden class="anchor" aria-hidden="true" href="#2向量组的秩">#</a></h3>
+<h3 id="3集合内的等价关系">3．集合内的等价关系<a hidden class="anchor" aria-hidden="true" href="#3集合内的等价关系">#</a></h3>
+<h2 id="2-矩阵的秩">§2 矩阵的秩<a hidden class="anchor" aria-hidden="true" href="#2-矩阵的秩">#</a></h2>
+<h2 id="3-线性方程组的理论课题">§3 线性方程组的理论课题<a hidden class="anchor" aria-hidden="true" href="#3-线性方程组的理论课题">#</a></h2>
+<h3 id="1齐次线性方程组的基础解系">1．齐次线性方程组的基础解系<a hidden class="anchor" aria-hidden="true" href="#1齐次线性方程组的基础解系">#</a></h3>
+<h3 id="2基础解系的求法">2．基础解系的求法<a hidden class="anchor" aria-hidden="true" href="#2基础解系的求法">#</a></h3>
+<h3 id="3线性方程组的一般理论">3．线性方程组的一般理论<a hidden class="anchor" aria-hidden="true" href="#3线性方程组的一般理论">#</a></h3>
+<h2 id="4-矩阵的运算">§4 矩阵的运算<a hidden class="anchor" aria-hidden="true" href="#4-矩阵的运算">#</a></h2>
+<h3 id="1矩阵的加法和数乘">1．矩阵的加法和数乘<a hidden class="anchor" aria-hidden="true" href="#1矩阵的加法和数乘">#</a></h3>
+<h3 id="2矩阵的乘法运算">2．矩阵的乘法运算<a hidden class="anchor" aria-hidden="true" href="#2矩阵的乘法运算">#</a></h3>
+<p>np.dot()函数：对于秩为1的数组，执行对应位置相乘，然后再相加。对于秩不为1的二维数组，执行矩阵乘法运算。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 定义两个矩阵</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">13</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">]])</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">13</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">]])</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 计算矩阵乘积</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 打印结果</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出结果</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">[[ 0 -3 0 3] 
+</span></span><span class="line"><span class="cl">[-2 -7 0 13] 
+</span></span><span class="line"><span class="cl">[ 0 -3 0 3] 
+</span></span><span class="line"><span class="cl">[-1 -4 0 7]] 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[[ 0 -3 0 3] 
+</span></span><span class="line"><span class="cl">[-2 -7 0 13] 
+</span></span><span class="line"><span class="cl">[ 0 -3 0 3] 
+</span></span><span class="line"><span class="cl">[-1 -4 0 7]] 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[[ 3 9 0 -18] 
+</span></span><span class="line"><span class="cl">[ 1 3 0 -6] 
+</span></span><span class="line"><span class="cl">[ 3 9 0 -18] 
+</span></span><span class="line"><span class="cl">[ 1 3 0 -6]]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>乘法符号运算：对数组执行对应位置相乘，对矩阵执行矩阵乘法运算</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">13</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">]])</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出结果</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">[[ 3 9 0 -18] 
+</span></span><span class="line"><span class="cl">[ 1 3 0 -6] 
+</span></span><span class="line"><span class="cl">[ 3 9 0 -18] 
+</span></span><span class="line"><span class="cl">[ 1 3 0 -6]]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>np.multiply()函数：数组和矩阵对应位置相乘，输出与相乘数组/矩阵的大小一致</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">13</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">]])</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">13</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">]])</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出结果</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">[[ 0 -3 0 3] 
+</span></span><span class="line"><span class="cl">[-2 -7 0 13] 
+</span></span><span class="line"><span class="cl">[ 0 -3 0 3] 
+</span></span><span class="line"><span class="cl">[-1 -4 0 7]] 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[[ 0 -3 0 3] 
+</span></span><span class="line"><span class="cl">[-2 -7 0 13] 
+</span></span><span class="line"><span class="cl">[ 0 -3 0 3] 
+</span></span><span class="line"><span class="cl">[-1 -4 0 7]] 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[[ 0 9 0 9] 
+</span></span><span class="line"><span class="cl">[ 4 49 0 169] 
+</span></span><span class="line"><span class="cl">[ 0 9 0 9] 
+</span></span><span class="line"><span class="cl">[ 1 16 0 49]]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3矩阵乘法的几何意义">3．矩阵乘法的几何意义<a hidden class="anchor" aria-hidden="true" href="#3矩阵乘法的几何意义">#</a></h3>
+<h3 id="4矩阵乘法的基本性质">4．矩阵乘法的基本性质<a hidden class="anchor" aria-hidden="true" href="#4矩阵乘法的基本性质">#</a></h3>
+<h3 id="5矩阵运算和秩的关系">5．矩阵运算和秩的关系<a hidden class="anchor" aria-hidden="true" href="#5矩阵运算和秩的关系">#</a></h3>
+<h2 id="5-n阶方阵">§5 n阶方阵<a hidden class="anchor" aria-hidden="true" href="#5-n阶方阵">#</a></h2>
+<h3 id="1数域上的n阶方阵">1．数域上的n阶方阵<a hidden class="anchor" aria-hidden="true" href="#1数域上的n阶方阵">#</a></h3>
+<h3 id="2n阶初等矩阵">2．n阶初等矩阵<a hidden class="anchor" aria-hidden="true" href="#2n阶初等矩阵">#</a></h3>
+<h3 id="3逆矩阵">3．逆矩阵<a hidden class="anchor" aria-hidden="true" href="#3逆矩阵">#</a></h3>
+<h3 id="4几类特殊的n阶方阵">4．几类特殊的n阶方阵<a hidden class="anchor" aria-hidden="true" href="#4几类特殊的n阶方阵">#</a></h3>
+<h2 id="6-分块矩阵">§6 分块矩阵<a hidden class="anchor" aria-hidden="true" href="#6-分块矩阵">#</a></h2>
+<h3 id="1准对角矩阵">1．准对角矩阵<a hidden class="anchor" aria-hidden="true" href="#1准对角矩阵">#</a></h3>
+<h3 id="2分块矩阵的秩">2．分块矩阵的秩<a hidden class="anchor" aria-hidden="true" href="#2分块矩阵的秩">#</a></h3>
+<h3 id="3矩阵的分块求逆">3．矩阵的分块求逆<a hidden class="anchor" aria-hidden="true" href="#3矩阵的分块求逆">#</a></h3>
+<h1 id="第三章-行列式">第三章 行列式<a hidden class="anchor" aria-hidden="true" href="#第三章-行列式">#</a></h1>
+<h2 id="1-平行六面体的有向体积">§1 平行六面体的有向体积<a hidden class="anchor" aria-hidden="true" href="#1-平行六面体的有向体积">#</a></h2>
+<h2 id="2-n阶方阵的行列式">§2 n阶方阵的行列式<a hidden class="anchor" aria-hidden="true" href="#2-n阶方阵的行列式">#</a></h2>
+<h3 id="1行列式的定义">1．行列式的定义<a hidden class="anchor" aria-hidden="true" href="#1行列式的定义">#</a></h3>
+<h3 id="2行列式的性质">2．行列式的性质<a hidden class="anchor" aria-hidden="true" href="#2行列式的性质">#</a></h3>
+<h3 id="3行列式对任意行列的展开公式">3．行列式对任意行(列)的展开公式<a hidden class="anchor" aria-hidden="true" href="#3行列式对任意行列的展开公式">#</a></h3>
+<h3 id="4行列式的其他重要性质">4．行列式的其他重要性质<a hidden class="anchor" aria-hidden="true" href="#4行列式的其他重要性质">#</a></h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 计算矩阵的行列式</span>
+</span></span><span class="line"><span class="cl"><span class="n">F</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="s2">&#34;1 2;1 1&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用det函数计算行列式</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">F</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># -1.0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="3行列式的初步应用">§3行列式的初步应用<a hidden class="anchor" aria-hidden="true" href="#3行列式的初步应用">#</a></h2>
+<h3 id="1齐次线性方程组">1．齐次线性方程组<a hidden class="anchor" aria-hidden="true" href="#1齐次线性方程组">#</a></h3>
+<h3 id="2逆矩阵">2．逆矩阵<a hidden class="anchor" aria-hidden="true" href="#2逆矩阵">#</a></h3>
+<p>使用inv函数计算逆矩阵。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="s1">&#39;0 1 2;1 0 3;4 -3 8&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">inv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">inv</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出结果：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">[[-4.5 7. -1.5] 
+</span></span><span class="line"><span class="cl">[-2. 4. -1. ] 
+</span></span><span class="line"><span class="cl">[ 1.5 -2. 0.5]]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用numpy.linalg模块中的pinv函数求解广义逆矩阵。inv函数只接受方阵作为输入矩阵，而pinv函数则没有这个限制。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 创建一个矩阵</span>
+</span></span><span class="line"><span class="cl"><span class="n">Matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="s2">&#34;4 11 14;8 7 -2&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用pinv函数计算广义逆矩阵</span>
+</span></span><span class="line"><span class="cl"><span class="n">pseudoinv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">pinv</span><span class="p">(</span><span class="n">E</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">pseudoinv</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#[[-0.00555556 0.07222222]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># [ 0.02222222 0.04444444]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># [ 0.05555556 -0.05555556]]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 将原矩阵和得到的广义逆矩阵相乘</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">Matrix</span><span class="o">*</span><span class="n">pseudoinv</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#[[ 1.00000000e+00 -5.55111512e-16]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># [ 0.00000000e+00 1.00000000e+00]]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3矩阵乘积的行列式">3．矩阵乘积的行列式<a hidden class="anchor" aria-hidden="true" href="#3矩阵乘积的行列式">#</a></h3>
+<h3 id="4矩阵的秩与行列式">4．矩阵的秩与行列式<a hidden class="anchor" aria-hidden="true" href="#4矩阵的秩与行列式">#</a></h3>
+<h2 id="4行列式的完全展开式">§4行列式的完全展开式<a hidden class="anchor" aria-hidden="true" href="#4行列式的完全展开式">#</a></h2>
+<h2 id="5-laplace展开式与binetcauchy公式">§5 Laplace展开式与Binet—Cauchy公式<a hidden class="anchor" aria-hidden="true" href="#5-laplace展开式与binetcauchy公式">#</a></h2>
+<h1 id="第四章-线性空间与线性变换">第四章 线性空间与线性变换<a hidden class="anchor" aria-hidden="true" href="#第四章-线性空间与线性变换">#</a></h1>
+<h3 id="引言-1">引言<a hidden class="anchor" aria-hidden="true" href="#引言-1">#</a></h3>
+<h2 id="1-线性空间的基本概念">§1 线性空间的基本概念<a hidden class="anchor" aria-hidden="true" href="#1-线性空间的基本概念">#</a></h2>
+<h3 id="1线性空间的定义和实例">1．线性空间的定义和实例<a hidden class="anchor" aria-hidden="true" href="#1线性空间的定义和实例">#</a></h3>
+<h3 id="2线性空间的基本属性">2．线性空间的基本属性<a hidden class="anchor" aria-hidden="true" href="#2线性空间的基本属性">#</a></h3>
+<h3 id="3线性空间的基本概念">3．线性空间的基本概念<a hidden class="anchor" aria-hidden="true" href="#3线性空间的基本概念">#</a></h3>
+<h3 id="4基和维数">4．基和维数<a hidden class="anchor" aria-hidden="true" href="#4基和维数">#</a></h3>
+<h3 id="5向量的坐标">5．向量的坐标<a hidden class="anchor" aria-hidden="true" href="#5向量的坐标">#</a></h3>
+<h3 id="6基变换与坐标变换">6．基变换与坐标变换<a hidden class="anchor" aria-hidden="true" href="#6基变换与坐标变换">#</a></h3>
+<h3 id="7kn中的基变换">7．Kn中的基变换<a hidden class="anchor" aria-hidden="true" href="#7kn中的基变换">#</a></h3>
+<h2 id="2-子空间与商空间">§2 子空间与商空间<a hidden class="anchor" aria-hidden="true" href="#2-子空间与商空间">#</a></h2>
+<h3 id="1子空间的基本概念">1．子空间的基本概念<a hidden class="anchor" aria-hidden="true" href="#1子空间的基本概念">#</a></h3>
+<h3 id="2子空间的交与和">2．子空间的交与和<a hidden class="anchor" aria-hidden="true" href="#2子空间的交与和">#</a></h3>
+<h3 id="3子空间的直和">3．子空间的直和<a hidden class="anchor" aria-hidden="true" href="#3子空间的直和">#</a></h3>
+<h3 id="4商空间">4．商空间<a hidden class="anchor" aria-hidden="true" href="#4商空间">#</a></h3>
+<h2 id="3-线性映射与线性变换">§3 线性映射与线性变换<a hidden class="anchor" aria-hidden="true" href="#3-线性映射与线性变换">#</a></h2>
+<h3 id="1线性映射">1．线性映射<a hidden class="anchor" aria-hidden="true" href="#1线性映射">#</a></h3>
+<h3 id="2线性空间的同构">2．线性空间的同构<a hidden class="anchor" aria-hidden="true" href="#2线性空间的同构">#</a></h3>
+<h3 id="3线性映射的核像集和余核">3．线性映射的核、像集和余核<a hidden class="anchor" aria-hidden="true" href="#3线性映射的核像集和余核">#</a></h3>
+<h3 id="4线性映射的运算">4．线性映射的运算<a hidden class="anchor" aria-hidden="true" href="#4线性映射的运算">#</a></h3>
+<h3 id="5线性映射的矩阵">5．线性映射的矩阵<a hidden class="anchor" aria-hidden="true" href="#5线性映射的矩阵">#</a></h3>
+<h3 id="6线性变换的基本概念">6．线性变换的基本概念<a hidden class="anchor" aria-hidden="true" href="#6线性变换的基本概念">#</a></h3>
+<h3 id="7线性变换在不同基下的矩阵">7．线性变换在不同基下的矩阵<a hidden class="anchor" aria-hidden="true" href="#7线性变换在不同基下的矩阵">#</a></h3>
+<h2 id="4-线性变换的特征值与特征向量">§4 线性变换的特征值与特征向量<a hidden class="anchor" aria-hidden="true" href="#4-线性变换的特征值与特征向量">#</a></h2>
+<h3 id="1特征值与特征向量的定义">1．特征值与特征向量的定义<a hidden class="anchor" aria-hidden="true" href="#1特征值与特征向量的定义">#</a></h3>
+<h3 id="2特征值与特征向量的计算法">2．特征值与特征向量的计算法<a hidden class="anchor" aria-hidden="true" href="#2特征值与特征向量的计算法">#</a></h3>
+<p>numpy.linalg模块中，eigvals函数可以计算矩阵的特征值，而eig函数可以返回一个包含特征值和对应的特征向量的元组。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#创建一个矩阵</span>
+</span></span><span class="line"><span class="cl"><span class="n">Matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="s1">&#39;3 -2;1 0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#调用eigvals函数求解特征值</span>
+</span></span><span class="line"><span class="cl"><span class="n">eigenvalues</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eigvals</span><span class="p">(</span><span class="n">Matrix</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">eigenvalues</span><span class="p">)</span><span class="c1">#out:[2. 1.]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用 eig 函数求解特征值和特征向量（该函数将返回一个元组，按列排放着特征值和对应的特征向量，其中第一列为特征值，第二列为特征向量）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],[</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],[</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">]])</span>
+</span></span><span class="line"><span class="cl"><span class="n">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">eigenvalues</span><span class="p">,</span><span class="n">eigenvectors</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span> <span class="c1">#传入两个变量</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">eigenvalues</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">eigenvectors</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#使用 dot 函数验证求得的解是否正确‘</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">eigenvalues</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;left:&#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span><span class="n">eigenvectors</span><span class="p">[:,</span><span class="n">i</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;right:&#39;</span><span class="p">,</span><span class="n">eigenvalues</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">eigenvectors</span><span class="p">[:</span><span class="n">i</span><span class="p">])</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出结果：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">[ 1.+0.j 0.+1.j 0.-1.j -1.+0.j] [[-7.07106781e-01+0.00000000e+00j 5.00000000e-01+3.72919427e-17j 5.00000000e-01-3.72919427e-17j -3.94864622e-17+0.00000000e+00j] [-7.07106781e-01+0.00000000e+00j -5.00000000e-01+0.00000000e+00j -5.00000000e-01-0.00000000e+00j 2.21595527e-16+0.00000000e+00j] [ 2.79683821e-16+0.00000000e+00j 1.91497458e-16+5.00000000e-01j 1.91497458e-16-5.00000000e-01j -7.07106781e-01+0.00000000e+00j] [ 1.69528880e-16+0.00000000e+00j 1.98242254e-16+5.00000000e-01j 1.98242254e-16-5.00000000e-01j 7.07106781e-01+0.00000000e+00j]] 
+</span></span><span class="line"><span class="cl">left: [[-7.07106781e-01+0.j] [-7.07106781e-01+0.j] [ 5.55111512e-17+0.j] [ 1.66533454e-16+0.j]] 
+</span></span><span class="line"><span class="cl">right: [] 
+</span></span><span class="line"><span class="cl">left: [[ 0.00000000e+00+5.00000000e-01j] [-3.88578059e-16-5.00000000e-01j] [-5.00000000e-01+1.11022302e-16j] [-5.00000000e-01-1.66533454e-16j]] 
+</span></span><span class="line"><span class="cl">right: [[-0.00000000e+00-7.07106781e-01j -3.72919427e-17+5.00000000e-01j 3.72919427e-17+5.00000000e-01j -0.00000000e+00-3.94864622e-17j]] 
+</span></span><span class="line"><span class="cl">left: [[ 0.00000000e+00-5.00000000e-01j] [-3.88578059e-16+5.00000000e-01j] [-5.00000000e-01-1.11022302e-16j] [-5.00000000e-01+1.66533454e-16j]] 
+</span></span><span class="line"><span class="cl">right: [[ 0.00000000e+00+7.07106781e-01j 3.72919427e-17-5.00000000e-01j -3.72919427e-17-5.00000000e-01j 0.00000000e+00+3.94864622e-17j] [ 0.00000000e+00+7.07106781e-01j 0.00000000e+00+5.00000000e-01j -0.00000000e+00+5.00000000e-01j 0.00000000e+00-2.21595527e-16j]] 
+</span></span><span class="line"><span class="cl">left: [[ 1.66533454e-16+0.j] [ 5.55111512e-17+0.j] [ 7.07106781e-01+0.j] [-7.07106781e-01+0.j]] 
+</span></span><span class="line"><span class="cl">right: [[ 7.07106781e-01-0.00000000e+00j -5.00000000e-01-3.72919427e-17j -5.00000000e-01+3.72919427e-17j 3.94864622e-17-0.00000000e+00j] [ 7.07106781e-01-0.00000000e+00j 5.00000000e-01-0.00000000e+00j 5.00000000e-01+0.00000000e+00j -2.21595527e-16+0.00000000e+00j] [-2.79683821e-16+0.00000000e+00j -1.91497458e-16-5.00000000e-01j -1.91497458e-16+5.00000000e-01j 7.07106781e-01-0.00000000e+00j]]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3特征多项式的基本性质">3．特征多项式的基本性质<a hidden class="anchor" aria-hidden="true" href="#3特征多项式的基本性质">#</a></h3>
+<h3 id="4具有对角形矩阵的线性变换">4．具有对角形矩阵的线性变换<a hidden class="anchor" aria-hidden="true" href="#4具有对角形矩阵的线性变换">#</a></h3>
+<h3 id="5不变子空间">5．不变子空间<a hidden class="anchor" aria-hidden="true" href="#5不变子空间">#</a></h3>
+<h3 id="6商空间中的诱导变换">6．商空间中的诱导变换<a hidden class="anchor" aria-hidden="true" href="#6商空间中的诱导变换">#</a></h3>
+<h1 id="第五章-双线性函数与二次型">第五章 双线性函数与二次型<a hidden class="anchor" aria-hidden="true" href="#第五章-双线性函数与二次型">#</a></h1>
+<h2 id="1-双线性函数">§1 双线性函数<a hidden class="anchor" aria-hidden="true" href="#1-双线性函数">#</a></h2>
+<h3 id="1线性与双线性函数">1．线性与双线性函数<a hidden class="anchor" aria-hidden="true" href="#1线性与双线性函数">#</a></h3>
+<h3 id="2双线性函数在不同基下的矩阵">2．双线性函数在不同基下的矩阵<a hidden class="anchor" aria-hidden="true" href="#2双线性函数在不同基下的矩阵">#</a></h3>
+<h3 id="3对称双线性函数">3．对称双线性函数<a hidden class="anchor" aria-hidden="true" href="#3对称双线性函数">#</a></h3>
+<h2 id="2-二次型">§2 二次型<a hidden class="anchor" aria-hidden="true" href="#2-二次型">#</a></h2>
+<h3 id="1二次型的标准形">1．二次型的标准形<a hidden class="anchor" aria-hidden="true" href="#1二次型的标准形">#</a></h3>
+<h3 id="2二次型标准形的计算方法">2．二次型标准形的计算方法<a hidden class="anchor" aria-hidden="true" href="#2二次型标准形的计算方法">#</a></h3>
+<h2 id="3-实与复二次型的分类">§3 实与复二次型的分类<a hidden class="anchor" aria-hidden="true" href="#3-实与复二次型的分类">#</a></h2>
+<h3 id="1复二次型的分类">1．复二次型的分类<a hidden class="anchor" aria-hidden="true" href="#1复二次型的分类">#</a></h3>
+<h3 id="2实二次型的分类">2．实二次型的分类<a hidden class="anchor" aria-hidden="true" href="#2实二次型的分类">#</a></h3>
+<h2 id="4-正定二次型">§4 正定二次型<a hidden class="anchor" aria-hidden="true" href="#4-正定二次型">#</a></h2>
+<h1 id="第六章-带度量的线性空间">第六章 带度量的线性空间<a hidden class="anchor" aria-hidden="true" href="#第六章-带度量的线性空间">#</a></h1>
+<h3 id="1-欧几里得空间的定义和基本性质">1 欧几里得空间的定义和基本性质<a hidden class="anchor" aria-hidden="true" href="#1-欧几里得空间的定义和基本性质">#</a></h3>
+<p>SVD（Singular Value Decomposition，奇异值分解）是一种因子分解运算，将一个矩阵分解为3个矩阵的乘积。</p>
+<p>numpy.linalg模块中的svd函数可以对矩阵进行奇异值分解。该函数返回3个矩阵——U、Singma和V，其中U和V是正交矩阵，Sigma包含输入矩阵的奇异值。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#分解矩阵</span>
+</span></span><span class="line"><span class="cl"><span class="n">Matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="s1">&#39;4 11 14;8 7 -2&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#使用svd函数分解矩阵</span>
+</span></span><span class="line"><span class="cl"><span class="n">U</span><span class="p">,</span><span class="n">Sigma</span><span class="p">,</span><span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">svd</span><span class="p">(</span><span class="n">Matrix</span><span class="p">,</span> <span class="n">full_matrices</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;U:&#34;</span><span class="p">,</span><span class="n">U</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#U:[[-0.9486833 -0.31622777]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#[-0.31622777 0.9486833 ]]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Sigma:&#34;</span><span class="p">,</span><span class="n">Sigma</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#Sigma: [ 18.97366596 9.48683298]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;V&#34;</span><span class="p">,</span><span class="n">V</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#V [[-0.33333333 -0.66666667 -0.66666667]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># [ 0.66666667 0.33333333 -0.66666667]]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#使用diag函数生成完整的奇异值矩阵。将分解出的3个矩阵相乘</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">U</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">Sigma</span><span class="p">)</span> <span class="o">*</span> <span class="n">V</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#[[ 4. 11. 14.]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># [ 8. 7. -2.]]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="2-欧几里得空间中的特殊线性变换">2 欧几里得空间中的特殊线性变换<a hidden class="anchor" aria-hidden="true" href="#2-欧几里得空间中的特殊线性变换">#</a></h3>
+<h3 id="3-酉空间">3 酉空间<a hidden class="anchor" aria-hidden="true" href="#3-酉空间">#</a></h3>
+<h3 id="4-四维时空空间与辛空间">4 四维时空空间与辛空间<a hidden class="anchor" aria-hidden="true" href="#4-四维时空空间与辛空间">#</a></h3>
+<h1 id="第七章-线性变换的jordan标准形">第七章 线性变换的Jordan标准形<a hidden class="anchor" aria-hidden="true" href="#第七章-线性变换的jordan标准形">#</a></h1>
+<h3 id="1-幂零线性变换的jordan标准形">1 幂零线性变换的Jordan标准形<a hidden class="anchor" aria-hidden="true" href="#1-幂零线性变换的jordan标准形">#</a></h3>
+<h3 id="2-一般线性变换的jordan标准形">2 一般线性变换的Jordan标准形<a hidden class="anchor" aria-hidden="true" href="#2-一般线性变换的jordan标准形">#</a></h3>
+<h3 id="3-最小多项式">3 最小多项式<a hidden class="anchor" aria-hidden="true" href="#3-最小多项式">#</a></h3>
+<h3 id="4-矩阵函数">4 矩阵函数<a hidden class="anchor" aria-hidden="true" href="#4-矩阵函数">#</a></h3>
+<h1 id="第八章-有理整数环">第八章 有理整数环<a hidden class="anchor" aria-hidden="true" href="#第八章-有理整数环">#</a></h1>
+<h3 id="1-有理整数环的基本概念">1 有理整数环的基本概念<a hidden class="anchor" aria-hidden="true" href="#1-有理整数环的基本概念">#</a></h3>
+<h3 id="2-同余式">2 同余式<a hidden class="anchor" aria-hidden="true" href="#2-同余式">#</a></h3>
+<h3 id="3-模m的剩余类环">3 模m的剩余类环<a hidden class="anchor" aria-hidden="true" href="#3-模m的剩余类环">#</a></h3>
+<h1 id="第九章-一元多项式环">第九章 一元多项式环<a hidden class="anchor" aria-hidden="true" href="#第九章-一元多项式环">#</a></h1>
+<h3 id="1-一元多项式环的基本理论">1 一元多项式环的基本理论<a hidden class="anchor" aria-hidden="true" href="#1-一元多项式环的基本理论">#</a></h3>
+<h3 id="2-crq上多项式的因式分解">2 C，R，Q上多项式的因式分解<a hidden class="anchor" aria-hidden="true" href="#2-crq上多项式的因式分解">#</a></h3>
+<h3 id="3-实系数多项式根的分布">3 实系数多项式根的分布<a hidden class="anchor" aria-hidden="true" href="#3-实系数多项式根的分布">#</a></h3>
+<h3 id="4-单变早班有理函数域">4 单变早班有理函数域<a hidden class="anchor" aria-hidden="true" href="#4-单变早班有理函数域">#</a></h3>
+<h1 id="第十章-多元多项式环">第十章 多元多项式环<a hidden class="anchor" aria-hidden="true" href="#第十章-多元多项式环">#</a></h1>
+<h3 id="1-多元多项式环的基本概念">1 多元多项式环的基本概念<a hidden class="anchor" aria-hidden="true" href="#1-多元多项式环的基本概念">#</a></h3>
+<h3 id="2-对称多项式">2 对称多项式<a hidden class="anchor" aria-hidden="true" href="#2-对称多项式">#</a></h3>
+<h3 id="3-结式">3 结式<a hidden class="anchor" aria-hidden="true" href="#3-结式">#</a></h3>
+<h1 id="第十一章-n维仿射空间与n维射影空间">第十一章 n维仿射空间与n维射影空间<a hidden class="anchor" aria-hidden="true" href="#第十一章-n维仿射空间与n维射影空间">#</a></h1>
+<h3 id="1-n维仿射空间">1 n维仿射空间<a hidden class="anchor" aria-hidden="true" href="#1-n维仿射空间">#</a></h3>
+<h3 id="2-n维射影空间">2 n维射影空间<a hidden class="anchor" aria-hidden="true" href="#2-n维射影空间">#</a></h3>
+<h1 id="第十二章-张量积与外代数">第十二章 张量积与外代数<a hidden class="anchor" aria-hidden="true" href="#第十二章-张量积与外代数">#</a></h1>
+<h3 id="1-多重线性映射">1 多重线性映射<a hidden class="anchor" aria-hidden="true" href="#1-多重线性映射">#</a></h3>
+<h3 id="2-线性空间的张量积">2 线性空间的张量积<a hidden class="anchor" aria-hidden="true" href="#2-线性空间的张量积">#</a></h3>
+<h3 id="3-张量">3 张量<a hidden class="anchor" aria-hidden="true" href="#3-张量">#</a></h3>
+<h3 id="4-外代数">4 外代数<a hidden class="anchor" aria-hidden="true" href="#4-外代数">#</a></h3>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://rosefinch-midsummer.github.io/zh/tags/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/">高等代数</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://rosefinch-midsummer.github.io/zh/posts/course/tqu%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">
+    <span class="title">« 上一頁</span>
+    <br>
+    <span>TQU《大学物理》</span>
+  </a>
+  <a class="next" href="https://rosefinch-midsummer.github.io/zh/posts/life/10000%E5%B0%8F%E6%97%B6vs20%E5%B0%8F%E6%97%B6/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>10000小时VS20小时</span>
+  </a>
+</nav>
+
+  </footer>
+<div>    
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">评论</span>
+        <br/>
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://utteranc.es/client.js"
+            repo="Rosefinch-Midsummer/comments_of_blog" 
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <script>
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            const theme = document.body.className.includes("dark")
+            ? "github-light"
+            : "photon-dark";
+            const message = {
+            type: "set-theme",
+            theme: theme,
+            };
+            const utteranc = document.querySelector(".utterances-frame");
+            utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+        });
+    </script>
+</div>
+
+
+
+
+
+
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://rosefinch-midsummer.github.io/zh/">天漢帝國復興錄</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+  
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </span>
+  <span id="busuanzi_container_site_uv">
+    本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '複製';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已複製！';
+            setTimeout(() => {
+                copybutton.innerHTML = '複製';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>图床 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/%E5%9B%BE%E5%BA%8A/</link>
+    <description>Recent content in 图床 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 22 Sep 2025 21:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/%E5%9B%BE%E5%BA%8A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare-R2对象存储搭建高速免费图床指南</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/cloudflare-r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%90%AD%E5%BB%BA%E9%AB%98%E9%80%9F%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Fri, 16 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/cloudflare-r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%90%AD%E5%BB%BA%E9%AB%98%E9%80%9F%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;h1 id=&#34;cloudflare-r2对象存储搭建高速免费图床指南&#34;&gt;Cloudflare R2对象存储搭建高速免费图床指南&lt;/h1&gt;
+&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;最近打算搭建一个图片画廊。之前使用 GitHub 作为图床，但速度较慢。&lt;/p&gt;
+&lt;p&gt;这次尝试用 Cloudflare R2 搭建图床，并通过 &lt;code&gt;picgo-plugin-s3&lt;/code&gt; 插件实现图片上传。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Github加PicGo构建图床教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/github%E5%8A%A0picgo%E6%9E%84%E5%BB%BA%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Fri, 05 May 2023 23:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/github%E5%8A%A0picgo%E6%9E%84%E5%BB%BA%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/maluyelang/p/17253594.html&#34;&gt;参考文章来源&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;在github上创建新仓库&#34;&gt;在GitHub上创建新仓库&lt;/h2&gt;
+&lt;p&gt;先在Github创建一个新仓库，用于存放图片，仓库必须是public的，否则存储的图片不能正常访问。&lt;/p&gt;
+&lt;h2 id=&#34;安装并配置picgo&#34;&gt;安装并配置PicGo&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Molunerfinn/PicGo&#34;&gt;PicGo-github&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;如果尚未安装，安装并打开 PicGo。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击左侧菜单栏上的“图床设置”。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

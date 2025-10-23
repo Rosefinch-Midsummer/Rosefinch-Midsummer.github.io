@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>GUI.for_Clash使用指南和免费v2ray节点订阅 | 天漢帝國復興錄</title>
+<meta name="keywords" content="Clash, V2Ray">
+<meta name="description" content="GUI.for_Clash使用指南和免费v2ray节点订阅
+GUI.for.Clash：颜值与功能兼备的Clash图形界面客户端
+随着互联网的发展，网络安全和隐私保护越来越受重视。作为一款强大的代理工具，Clash在科学上网和网络访问控制中扮演了重要角色。然而，Clash基于命令行的操作不够直观，对普通用户而言有一定门槛。为此，GUI.for.Clash借助现代技术，打造了一个美观且功能丰富的图形界面客户端，让用户轻松管理代理配置，提升使用体验。">
+<meta name="author" content="RM">
+<link rel="canonical" href="https://rosefinch-midsummer.github.io/zh/posts/toolkit/gui.for_clash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E5%85%8D%E8%B4%B9v2ray%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85/">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://rosefinch-midsummer.github.io/img/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rosefinch-midsummer.github.io/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rosefinch-midsummer.github.io/img/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://rosefinch-midsummer.github.io/img/apple-touch-icon.png">
+<link rel="mask-icon" href="https://rosefinch-midsummer.github.io/img/android-chrome-192x192.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://rosefinch-midsummer.github.io/zh/posts/toolkit/gui.for_clash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E5%85%8D%E8%B4%B9v2ray%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous"> 
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script> 
+	document.addEventListener("DOMContentLoaded", function() { 
+		renderMathInElement(document.body, { 
+			
+			
+			delimiters: [ 
+				{left: '$$', right: '$$', display: true}, 
+				{left: '$', right: '$', display: false}, 
+				{left: '\\(', right: '\\)', display: false}, 
+				{left: '\\[', right: '\\]', display: true} 
+			], 
+			
+			throwOnError : false 
+		}); 
+	}); 
+</script>
+
+
+
+
+
+
+
+<meta property="og:url" content="https://rosefinch-midsummer.github.io/zh/posts/toolkit/gui.for_clash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E5%85%8D%E8%B4%B9v2ray%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85/">
+  <meta property="og:site_name" content="天漢帝國復興錄">
+  <meta property="og:title" content="GUI.for_Clash使用指南和免费v2ray节点订阅">
+  <meta property="og:description" content="GUI.for_Clash使用指南和免费v2ray节点订阅 GUI.for.Clash：颜值与功能兼备的Clash图形界面客户端 随着互联网的发展，网络安全和隐私保护越来越受重视。作为一款强大的代理工具，Clash在科学上网和网络访问控制中扮演了重要角色。然而，Clash基于命令行的操作不够直观，对普通用户而言有一定门槛。为此，GUI.for.Clash借助现代技术，打造了一个美观且功能丰富的图形界面客户端，让用户轻松管理代理配置，提升使用体验。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-10T22:34:25+08:00">
+    <meta property="article:modified_time" content="2025-06-10T23:54:22+08:00">
+    <meta property="article:tag" content="Clash">
+    <meta property="article:tag" content="V2Ray">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GUI.for_Clash使用指南和免费v2ray节点订阅">
+<meta name="twitter:description" content="GUI.for_Clash使用指南和免费v2ray节点订阅
+GUI.for.Clash：颜值与功能兼备的Clash图形界面客户端
+随着互联网的发展，网络安全和隐私保护越来越受重视。作为一款强大的代理工具，Clash在科学上网和网络访问控制中扮演了重要角色。然而，Clash基于命令行的操作不够直观，对普通用户而言有一定门槛。为此，GUI.for.Clash借助现代技术，打造了一个美观且功能丰富的图形界面客户端，让用户轻松管理代理配置，提升使用体验。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "📚文章",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "🧰百寶箱",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/toolkit/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "GUI.for_Clash使用指南和免费v2ray节点订阅",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/toolkit/gui.for_clash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E5%85%8D%E8%B4%B9v2ray%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "GUI.for_Clash使用指南和免费v2ray节点订阅",
+  "name": "GUI.for_Clash使用指南和免费v2ray节点订阅",
+  "description": "GUI.for_Clash使用指南和免费v2ray节点订阅 GUI.for.Clash：颜值与功能兼备的Clash图形界面客户端 随着互联网的发展，网络安全和隐私保护越来越受重视。作为一款强大的代理工具，Clash在科学上网和网络访问控制中扮演了重要角色。然而，Clash基于命令行的操作不够直观，对普通用户而言有一定门槛。为此，GUI.for.Clash借助现代技术，打造了一个美观且功能丰富的图形界面客户端，让用户轻松管理代理配置，提升使用体验。\n",
+  "keywords": [
+    "Clash", "V2Ray"
+  ],
+  "articleBody": "GUI.for_Clash使用指南和免费v2ray节点订阅 GUI.for.Clash：颜值与功能兼备的Clash图形界面客户端 随着互联网的发展，网络安全和隐私保护越来越受重视。作为一款强大的代理工具，Clash在科学上网和网络访问控制中扮演了重要角色。然而，Clash基于命令行的操作不够直观，对普通用户而言有一定门槛。为此，GUI.for.Clash借助现代技术，打造了一个美观且功能丰富的图形界面客户端，让用户轻松管理代理配置，提升使用体验。\n点击查看原文\n什么是Clash？ Clash 是一款支持多种协议（如Vmess、Shadowsocks、Trojan）的代理工具，常用于突破网络限制，实现自由访问。它能灵活管理多路代理流量和规则，但命令行操作复杂，对非专业用户不够友好。\nGUI.for.Clash正是为改善这一点应运而生，通过简单易用的界面让每个人都能轻松享受Clash带来的便利。\n界面预览 应用特点 1. 配置管理 用户可在界面中轻松创建、编辑和保存代理配置文件，快速适应不同网络环境和使用需求。\n2. 订阅管理 支持导入订阅链接，自动下载并更新代理节点，保证代理资源的实时有效。\n3. 规则组管理 自定义规则组，实现精细化流量控制和访问权限设置。\n4. 插件系统 支持多种插件扩展，增强软件功能，满足更多高级需求。\n5. 计划任务系统 可设置自动化定时任务，如定时更新配置文件和订阅，实现无人值守管理。\n6. 多平台支持 兼容Windows、macOS和Linux等主流操作系统，满足不同用户的使用环境。\n7. 开源社区支持 基于开源项目，拥有活跃的社区，持续维护和丰富功能，用户可参与协作。\n简单安装与使用教程 下面带你快速上手GUI.for.Clash，即使是新手也能轻松配置代理环境。\n第一步：下载软件 访问GUI.for.Clash官方页面（示例链接），下载对应操作系统的安装包。\n第二步：下载内核 打开软件，进入“设置”中的“内核”页面。程序自动检测本地内核文件，若无内核，可点击“更新”按钮下载。注意下载可能需要科学上网环境。下载完成后，内核版本信息会准确显示，并支持切换不同分支。\n第三步：导入节点 进入“概览”页面，点击“快速开始”按钮，输入你的订阅链接。软件自动下载订阅文件，获取节点信息，并生成相关配置文件实现自动关联。\n第四步：启动内核 确认节点导入无误后，点击“启动内核”按钮启动代理。默认情况下，GUI不修改系统代理设置，需手动开启系统代理或在设置中启用“自动配置系统代理”。\n如果想启用更底层的TUN模式，需要用管理员权限运行。注意，TUN模式和通常的系统代理不可同时开启。\n使用提示与注意事项 订阅下载依赖科学上网环境，请确保网络畅通 代理配置改动后，建议重启内核确保生效 定时任务功能可帮助自动更新，减少手动维护 遇到问题可参与GitHub社区讨论，获取帮助和反馈 总结 GUI.for.Clash将Clash的强大功能与优秀的用户界面完美结合，极大降低了代理配置和管理的难度。无论是新手还是有经验的用户，都能通过友好的界面轻松实现科学上网与流量控制。多平台支持与丰富的插件、计划任务让软件更具灵活性，适合多种使用场景。\n带上它，让你的网络连接既安全又高效，体验自由自在的上网感觉！\n周润发公益免费v2ray节点订阅 每日自动更新 周润发公益免费v2ray节点订阅、翻墙、免费翻墙、免费科学上网、免费节点、免费梯子、免费ss/v2ray/trojan节点、蓝灯、谷歌商店、翻墙梯子、v2ray节点、免费节点、免费v2ray节点、最新公益免费v2ray节点订阅地址、免费v2ray节点每日更新、免费v2ray/clash/singbox节点\n翻墙、免费翻墙、免费科学上网、免费节点、免费梯子、免费ss/v2ray/trojan节点、蓝灯、谷歌商店、翻墙梯子\n所有v2ray免费节点都爬取自网络，请勿用于非法用途。电报地址：v2ray免费节点每日更新 – Telegram\n名称 操作系统 地址 SingBox Mac/Linux/Android/Ios https://sing-box.sagernet.org/clients/ FlClash Mac/Linux/Windows/Android https://github.com/chen08209/FlClash Clash Verge Mac/Linux/Windows https://github.com/clash-verge-rev/clash-verge-rev Clash Meta Android Android https://github.com/MetaCubeX/ClashMetaForAndroid ClashX Meta Mac https://github.com/MetaCubeX/ClashX.Meta V2RayN Windows https://github.com/2dust/v2rayN V2RayNG Android https://github.com/2dust/v2rayNG V2RayU Mac https://github.com/yanue/V2rayU 节点导入方法 base64格式的订阅需要使用这样的方法进行使用！\nCTRL+A网页全选，CTRL+C复制，右键点击任务栏v2rayN客户端图标，左键点击从剪贴板批量导入URL，即可一键导入所有v2ray节点\n无需代理更新节点订阅 yaml格式的订阅 1 https://d.zrf.me/vless-all base64格式的订阅（可直接订阅） 1 https://d.zrf.me/vless-base64 带分流规则的mihomo订阅 1 https://d.zrf.me/vless-mihomo 节点更新订阅 yaml格式的订阅 1 https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/all.yaml base64格式的订阅（需要使用上方节点导入方法） 1 https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/base64.txt 带分流规则的mihomo订阅 1 https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml 致谢 CM大佬\n",
+  "wordCount" : "1849",
+  "inLanguage": "zh",
+  "datePublished": "2025-06-10T22:34:25+08:00",
+  "dateModified": "2025-06-10T23:54:22+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "RM"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://rosefinch-midsummer.github.io/zh/posts/toolkit/gui.for_clash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E5%85%8D%E8%B4%B9v2ray%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "天漢帝國復興錄",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://rosefinch-midsummer.github.io/img/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://rosefinch-midsummer.github.io/zh/" accesskey="h" title="天漢帝國復興錄 (Alt + H)">天漢帝國復興錄</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/" title="🏠主頁">
+                    <span>🏠主頁</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/posts" title="📚文章">
+                    <span>📚文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/archives" title="⏱時間軸">
+                    <span>⏱時間軸</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/categories" title="🧩分類">
+                    <span>🧩分類</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/tags" title="🔖標簽">
+                    <span>🔖標簽</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/about" title="🙋🏻‍♂️關于">
+                    <span>🙋🏻‍♂️關于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://rosefinch-midsummer.github.io/zh/">首頁</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/">📚文章</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/toolkit/">🧰百寶箱</a></div>
+    <h1 class="post-title">
+      GUI.for_Clash使用指南和免费v2ray节点订阅
+    </h1>
+    <div class="post-meta">
+    创建: 2025-06-10 |
+    更新: 2025-06-10 |
+    字数: 1849字 |
+    时长: 4分钟 |
+    RM
+
+
+</div>
+   
+<div  class="meta-item">&nbsp·&nbsp
+  <span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+</div>
+
+
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目錄</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#guifor_clash%e4%bd%bf%e7%94%a8%e6%8c%87%e5%8d%97%e5%92%8c%e5%85%8d%e8%b4%b9v2ray%e8%8a%82%e7%82%b9%e8%ae%a2%e9%98%85" aria-label="GUI.for_Clash使用指南和免费v2ray节点订阅">GUI.for_Clash使用指南和免费v2ray节点订阅</a></li>
+                <li>
+                    <a href="#guiforclash%e9%a2%9c%e5%80%bc%e4%b8%8e%e5%8a%9f%e8%83%bd%e5%85%bc%e5%a4%87%e7%9a%84clash%e5%9b%be%e5%bd%a2%e7%95%8c%e9%9d%a2%e5%ae%a2%e6%88%b7%e7%ab%af" aria-label="GUI.for.Clash：颜值与功能兼备的Clash图形界面客户端">GUI.for.Clash：颜值与功能兼备的Clash图形界面客户端</a><ul>
+                        
+                <li>
+                    <a href="#%e4%bb%80%e4%b9%88%e6%98%afclash" aria-label="什么是Clash？">什么是Clash？</a></li>
+                <li>
+                    <a href="#%e7%95%8c%e9%9d%a2%e9%a2%84%e8%a7%88" aria-label="界面预览">界面预览</a></li>
+                <li>
+                    <a href="#%e5%ba%94%e7%94%a8%e7%89%b9%e7%82%b9" aria-label="应用特点">应用特点</a><ul>
+                        
+                <li>
+                    <a href="#1-%e9%85%8d%e7%bd%ae%e7%ae%a1%e7%90%86" aria-label="1. 配置管理">1. 配置管理</a></li>
+                <li>
+                    <a href="#2-%e8%ae%a2%e9%98%85%e7%ae%a1%e7%90%86" aria-label="2. 订阅管理">2. 订阅管理</a></li>
+                <li>
+                    <a href="#3-%e8%a7%84%e5%88%99%e7%bb%84%e7%ae%a1%e7%90%86" aria-label="3. 规则组管理">3. 规则组管理</a></li>
+                <li>
+                    <a href="#4-%e6%8f%92%e4%bb%b6%e7%b3%bb%e7%bb%9f" aria-label="4. 插件系统">4. 插件系统</a></li>
+                <li>
+                    <a href="#5-%e8%ae%a1%e5%88%92%e4%bb%bb%e5%8a%a1%e7%b3%bb%e7%bb%9f" aria-label="5. 计划任务系统">5. 计划任务系统</a></li>
+                <li>
+                    <a href="#6-%e5%a4%9a%e5%b9%b3%e5%8f%b0%e6%94%af%e6%8c%81" aria-label="6. 多平台支持">6. 多平台支持</a></li>
+                <li>
+                    <a href="#7-%e5%bc%80%e6%ba%90%e7%a4%be%e5%8c%ba%e6%94%af%e6%8c%81" aria-label="7. 开源社区支持">7. 开源社区支持</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e7%ae%80%e5%8d%95%e5%ae%89%e8%a3%85%e4%b8%8e%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b" aria-label="简单安装与使用教程">简单安装与使用教程</a><ul>
+                        
+                <li>
+                    <a href="#%e7%ac%ac%e4%b8%80%e6%ad%a5%e4%b8%8b%e8%bd%bd%e8%bd%af%e4%bb%b6" aria-label="第一步：下载软件">第一步：下载软件</a></li>
+                <li>
+                    <a href="#%e7%ac%ac%e4%ba%8c%e6%ad%a5%e4%b8%8b%e8%bd%bd%e5%86%85%e6%a0%b8" aria-label="第二步：下载内核">第二步：下载内核</a></li>
+                <li>
+                    <a href="#%e7%ac%ac%e4%b8%89%e6%ad%a5%e5%af%bc%e5%85%a5%e8%8a%82%e7%82%b9" aria-label="第三步：导入节点">第三步：导入节点</a></li>
+                <li>
+                    <a href="#%e7%ac%ac%e5%9b%9b%e6%ad%a5%e5%90%af%e5%8a%a8%e5%86%85%e6%a0%b8" aria-label="第四步：启动内核">第四步：启动内核</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%bd%bf%e7%94%a8%e6%8f%90%e7%a4%ba%e4%b8%8e%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9" aria-label="使用提示与注意事项">使用提示与注意事项</a></li>
+                <li>
+                    <a href="#%e6%80%bb%e7%bb%93" aria-label="总结">总结</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%91%a8%e6%b6%a6%e5%8f%91%e5%85%ac%e7%9b%8a%e5%85%8d%e8%b4%b9v2ray%e8%8a%82%e7%82%b9%e8%ae%a2%e9%98%85-%e6%af%8f%e6%97%a5%e8%87%aa%e5%8a%a8%e6%9b%b4%e6%96%b0" aria-label="周润发公益免费v2ray节点订阅 每日自动更新">周润发公益免费v2ray节点订阅 每日自动更新</a><ul>
+                        
+                <li>
+                    <a href="#%e8%8a%82%e7%82%b9%e5%af%bc%e5%85%a5%e6%96%b9%e6%b3%95" aria-label="节点导入方法">节点导入方法</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e6%97%a0%e9%9c%80%e4%bb%a3%e7%90%86%e6%9b%b4%e6%96%b0%e8%8a%82%e7%82%b9%e8%ae%a2%e9%98%85" aria-label="无需代理更新节点订阅">无需代理更新节点订阅</a><ul>
+                        
+                <li>
+                    <a href="#yaml%e6%a0%bc%e5%bc%8f%e7%9a%84%e8%ae%a2%e9%98%85" aria-label="yaml格式的订阅">yaml格式的订阅</a></li>
+                <li>
+                    <a href="#base64%e6%a0%bc%e5%bc%8f%e7%9a%84%e8%ae%a2%e9%98%85%e5%8f%af%e7%9b%b4%e6%8e%a5%e8%ae%a2%e9%98%85" aria-label="base64格式的订阅（可直接订阅）">base64格式的订阅（可直接订阅）</a></li>
+                <li>
+                    <a href="#%e5%b8%a6%e5%88%86%e6%b5%81%e8%a7%84%e5%88%99%e7%9a%84mihomo%e8%ae%a2%e9%98%85" aria-label="带分流规则的mihomo订阅">带分流规则的mihomo订阅</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e8%8a%82%e7%82%b9%e6%9b%b4%e6%96%b0%e8%ae%a2%e9%98%85" aria-label="节点更新订阅">节点更新订阅</a><ul>
+                        
+                <li>
+                    <a href="#yaml%e6%a0%bc%e5%bc%8f%e7%9a%84%e8%ae%a2%e9%98%85-1" aria-label="yaml格式的订阅">yaml格式的订阅</a></li>
+                <li>
+                    <a href="#base64%e6%a0%bc%e5%bc%8f%e7%9a%84%e8%ae%a2%e9%98%85%e9%9c%80%e8%a6%81%e4%bd%bf%e7%94%a8%e4%b8%8a%e6%96%b9%e8%8a%82%e7%82%b9%e5%af%bc%e5%85%a5%e6%96%b9%e6%b3%95" aria-label="base64格式的订阅（需要使用上方节点导入方法）">base64格式的订阅（需要使用上方节点导入方法）</a></li>
+                <li>
+                    <a href="#%e5%b8%a6%e5%88%86%e6%b5%81%e8%a7%84%e5%88%99%e7%9a%84mihomo%e8%ae%a2%e9%98%85-1" aria-label="带分流规则的mihomo订阅">带分流规则的mihomo订阅</a></li>
+                <li>
+                    <a href="#%e8%87%b4%e8%b0%a2" aria-label="致谢">致谢</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="guifor_clash使用指南和免费v2ray节点订阅">GUI.for_Clash使用指南和免费v2ray节点订阅<a hidden class="anchor" aria-hidden="true" href="#guifor_clash使用指南和免费v2ray节点订阅">#</a></h1>
+<h1 id="guiforclash颜值与功能兼备的clash图形界面客户端">GUI.for.Clash：颜值与功能兼备的Clash图形界面客户端<a hidden class="anchor" aria-hidden="true" href="#guiforclash颜值与功能兼备的clash图形界面客户端">#</a></h1>
+<p>随着互联网的发展，网络安全和隐私保护越来越受重视。作为一款强大的代理工具，Clash在科学上网和网络访问控制中扮演了重要角色。然而，Clash基于命令行的操作不够直观，对普通用户而言有一定门槛。为此，<strong>GUI.for.Clash</strong>借助现代技术，打造了一个美观且功能丰富的图形界面客户端，让用户轻松管理代理配置，提升使用体验。</p>
+<p><a href="https://blog.aizrf.com/p/GUI-for-Clash/">点击查看原文</a></p>
+<hr>
+<h2 id="什么是clash">什么是Clash？<a hidden class="anchor" aria-hidden="true" href="#什么是clash">#</a></h2>
+<p>Clash 是一款支持多种协议（如Vmess、Shadowsocks、Trojan）的代理工具，常用于突破网络限制，实现自由访问。它能灵活管理多路代理流量和规则，但命令行操作复杂，对非专业用户不够友好。</p>
+<p>GUI.for.Clash正是为改善这一点应运而生，通过简单易用的界面让每个人都能轻松享受Clash带来的便利。</p>
+<hr>
+<h2 id="界面预览">界面预览<a hidden class="anchor" aria-hidden="true" href="#界面预览">#</a></h2>
+<p><img alt="w" loading="lazy" src="https://img.zrf.me/20250109202306938.png"></p>
+<p><img alt="a" loading="lazy" src="https://img.zrf.me/20250109202316314.png"></p>
+<hr>
+<h2 id="应用特点">应用特点<a hidden class="anchor" aria-hidden="true" href="#应用特点">#</a></h2>
+<h3 id="1-配置管理">1. 配置管理<a hidden class="anchor" aria-hidden="true" href="#1-配置管理">#</a></h3>
+<p>用户可在界面中轻松创建、编辑和保存代理配置文件，快速适应不同网络环境和使用需求。</p>
+<h3 id="2-订阅管理">2. 订阅管理<a hidden class="anchor" aria-hidden="true" href="#2-订阅管理">#</a></h3>
+<p>支持导入订阅链接，自动下载并更新代理节点，保证代理资源的实时有效。</p>
+<h3 id="3-规则组管理">3. 规则组管理<a hidden class="anchor" aria-hidden="true" href="#3-规则组管理">#</a></h3>
+<p>自定义规则组，实现精细化流量控制和访问权限设置。</p>
+<h3 id="4-插件系统">4. 插件系统<a hidden class="anchor" aria-hidden="true" href="#4-插件系统">#</a></h3>
+<p>支持多种插件扩展，增强软件功能，满足更多高级需求。</p>
+<h3 id="5-计划任务系统">5. 计划任务系统<a hidden class="anchor" aria-hidden="true" href="#5-计划任务系统">#</a></h3>
+<p>可设置自动化定时任务，如定时更新配置文件和订阅，实现无人值守管理。</p>
+<h3 id="6-多平台支持">6. 多平台支持<a hidden class="anchor" aria-hidden="true" href="#6-多平台支持">#</a></h3>
+<p>兼容Windows、macOS和Linux等主流操作系统，满足不同用户的使用环境。</p>
+<h3 id="7-开源社区支持">7. 开源社区支持<a hidden class="anchor" aria-hidden="true" href="#7-开源社区支持">#</a></h3>
+<p>基于开源项目，拥有活跃的社区，持续维护和丰富功能，用户可参与协作。</p>
+<hr>
+<h2 id="简单安装与使用教程">简单安装与使用教程<a hidden class="anchor" aria-hidden="true" href="#简单安装与使用教程">#</a></h2>
+<p>下面带你快速上手GUI.for.Clash，即使是新手也能轻松配置代理环境。</p>
+<h3 id="第一步下载软件">第一步：下载软件<a hidden class="anchor" aria-hidden="true" href="#第一步下载软件">#</a></h3>
+<p>访问<a href="https://github.com/AstroNvim/GUIfClash">GUI.for.Clash官方页面</a>（示例链接），下载对应操作系统的安装包。</p>
+<h3 id="第二步下载内核">第二步：下载内核<a hidden class="anchor" aria-hidden="true" href="#第二步下载内核">#</a></h3>
+<p>打开软件，进入“设置”中的“内核”页面。程序自动检测本地内核文件，若无内核，可点击“更新”按钮下载。注意下载可能需要科学上网环境。下载完成后，内核版本信息会准确显示，并支持切换不同分支。</p>
+<h3 id="第三步导入节点">第三步：导入节点<a hidden class="anchor" aria-hidden="true" href="#第三步导入节点">#</a></h3>
+<p>进入“概览”页面，点击“快速开始”按钮，输入你的订阅链接。软件自动下载订阅文件，获取节点信息，并生成相关配置文件实现自动关联。</p>
+<h3 id="第四步启动内核">第四步：启动内核<a hidden class="anchor" aria-hidden="true" href="#第四步启动内核">#</a></h3>
+<p>确认节点导入无误后，点击“启动内核”按钮启动代理。默认情况下，GUI不修改系统代理设置，需手动开启系统代理或在设置中启用“自动配置系统代理”。</p>
+<p>如果想启用更底层的TUN模式，需要用管理员权限运行。注意，TUN模式和通常的系统代理不可同时开启。</p>
+<hr>
+<h2 id="使用提示与注意事项">使用提示与注意事项<a hidden class="anchor" aria-hidden="true" href="#使用提示与注意事项">#</a></h2>
+<ul>
+<li>订阅下载依赖科学上网环境，请确保网络畅通</li>
+<li>代理配置改动后，建议重启内核确保生效</li>
+<li>定时任务功能可帮助自动更新，减少手动维护</li>
+<li>遇到问题可参与GitHub社区讨论，获取帮助和反馈</li>
+</ul>
+<hr>
+<h2 id="总结">总结<a hidden class="anchor" aria-hidden="true" href="#总结">#</a></h2>
+<p>GUI.for.Clash将Clash的强大功能与优秀的用户界面完美结合，极大降低了代理配置和管理的难度。无论是新手还是有经验的用户，都能通过友好的界面轻松实现科学上网与流量控制。多平台支持与丰富的插件、计划任务让软件更具灵活性，适合多种使用场景。</p>
+<p>带上它，让你的网络连接既安全又高效，体验自由自在的上网感觉！</p>
+<h1 id="周润发公益免费v2ray节点订阅-每日自动更新">周润发公益免费v2ray节点订阅 每日自动更新<a hidden class="anchor" aria-hidden="true" href="#周润发公益免费v2ray节点订阅-每日自动更新">#</a></h1>
+<p><a href="https://github.com/shaoyouvip/free">周润发公益免费v2ray节点订阅、翻墙、免费翻墙、免费科学上网、免费节点、免费梯子、免费ss/v2ray/trojan节点、蓝灯、谷歌商店、翻墙梯子、v2ray节点、免费节点、免费v2ray节点、最新公益免费v2ray节点订阅地址、免费v2ray节点每日更新、免费v2ray/clash/singbox节点</a></p>
+<p>翻墙、免费翻墙、免费科学上网、免费节点、免费梯子、免费ss/v2ray/trojan节点、蓝灯、谷歌商店、翻墙梯子</p>
+<blockquote>
+<p>所有v2ray免费节点都爬取自网络，请勿用于非法用途。电报地址：<a href="https://d.aizrf.com/tgq">v2ray免费节点每日更新 – Telegram</a></p></blockquote>
+<table>
+  <thead>
+      <tr>
+          <th>名称</th>
+          <th>操作系统</th>
+          <th>地址</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>SingBox</td>
+          <td>Mac/Linux/Android/Ios</td>
+          <td><a href="https://sing-box.sagernet.org/clients/">https://sing-box.sagernet.org/clients/</a></td>
+      </tr>
+      <tr>
+          <td>FlClash</td>
+          <td>Mac/Linux/Windows/Android</td>
+          <td><a href="https://github.com/chen08209/FlClash">https://github.com/chen08209/FlClash</a></td>
+      </tr>
+      <tr>
+          <td>Clash Verge</td>
+          <td>Mac/Linux/Windows</td>
+          <td><a href="https://github.com/clash-verge-rev/clash-verge-rev">https://github.com/clash-verge-rev/clash-verge-rev</a></td>
+      </tr>
+      <tr>
+          <td>Clash Meta Android</td>
+          <td>Android</td>
+          <td><a href="https://github.com/MetaCubeX/ClashMetaForAndroid">https://github.com/MetaCubeX/ClashMetaForAndroid</a></td>
+      </tr>
+      <tr>
+          <td>ClashX Meta</td>
+          <td>Mac</td>
+          <td><a href="https://github.com/MetaCubeX/ClashX.Meta">https://github.com/MetaCubeX/ClashX.Meta</a></td>
+      </tr>
+      <tr>
+          <td>V2RayN</td>
+          <td>Windows</td>
+          <td><a href="https://github.com/2dust/v2rayN">https://github.com/2dust/v2rayN</a></td>
+      </tr>
+      <tr>
+          <td>V2RayNG</td>
+          <td>Android</td>
+          <td><a href="https://github.com/2dust/v2rayNG">https://github.com/2dust/v2rayNG</a></td>
+      </tr>
+      <tr>
+          <td>V2RayU</td>
+          <td>Mac</td>
+          <td><a href="https://github.com/yanue/V2rayU">https://github.com/yanue/V2rayU</a></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="节点导入方法">节点导入方法<a hidden class="anchor" aria-hidden="true" href="#节点导入方法">#</a></h2>
+<blockquote>
+<p>base64格式的订阅需要使用这样的方法进行使用！</p>
+<p>CTRL+A网页全选，CTRL+C复制，右键点击任务栏v2rayN客户端图标，左键点击从剪贴板批量导入URL，即可一键导入所有v2ray节点</p></blockquote>
+<h1 id="无需代理更新节点订阅">无需代理更新节点订阅<a hidden class="anchor" aria-hidden="true" href="#无需代理更新节点订阅">#</a></h1>
+<h2 id="yaml格式的订阅">yaml格式的订阅<a hidden class="anchor" aria-hidden="true" href="#yaml格式的订阅">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://d.zrf.me/vless-all
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="base64格式的订阅可直接订阅">base64格式的订阅（可直接订阅）<a hidden class="anchor" aria-hidden="true" href="#base64格式的订阅可直接订阅">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://d.zrf.me/vless-base64
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="带分流规则的mihomo订阅">带分流规则的mihomo订阅<a hidden class="anchor" aria-hidden="true" href="#带分流规则的mihomo订阅">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://d.zrf.me/vless-mihomo
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="节点更新订阅">节点更新订阅<a hidden class="anchor" aria-hidden="true" href="#节点更新订阅">#</a></h1>
+<h2 id="yaml格式的订阅-1">yaml格式的订阅<a hidden class="anchor" aria-hidden="true" href="#yaml格式的订阅-1">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/all.yaml
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="base64格式的订阅需要使用上方节点导入方法">base64格式的订阅（需要使用上方节点导入方法）<a hidden class="anchor" aria-hidden="true" href="#base64格式的订阅需要使用上方节点导入方法">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/base64.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="带分流规则的mihomo订阅-1">带分流规则的mihomo订阅<a hidden class="anchor" aria-hidden="true" href="#带分流规则的mihomo订阅-1">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="致谢">致谢<a hidden class="anchor" aria-hidden="true" href="#致谢">#</a></h2>
+<p><a href="https://d.aizrf.com/github-cmliu">CM大佬</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://rosefinch-midsummer.github.io/zh/tags/clash/">Clash</a></li>
+      <li><a href="https://rosefinch-midsummer.github.io/zh/tags/v2ray/">V2Ray</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://rosefinch-midsummer.github.io/zh/posts/life/%E5%89%8D%E5%8F%B0%E5%90%8E%E5%8F%B0%E4%B8%AD%E5%8F%B0%E7%AD%89%E6%A6%82%E5%BF%B5%E5%8C%BA%E5%88%86/">
+    <span class="title">« 上一頁</span>
+    <br>
+    <span>前台后台中台等概念区分</span>
+  </a>
+  <a class="next" href="https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E5%9F%BA%E4%BA%8Ecloudflare%E5%B9%B3%E5%8F%B0%E7%9A%84%E7%B2%BE%E5%93%81%E5%AF%BC%E8%88%AA%E7%BD%91%E7%AB%99%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>基于Cloudflare平台的精品导航网站开源项目</span>
+  </a>
+</nav>
+
+  </footer>
+<div>    
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">评论</span>
+        <br/>
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://utteranc.es/client.js"
+            repo="Rosefinch-Midsummer/comments_of_blog" 
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <script>
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            const theme = document.body.className.includes("dark")
+            ? "github-light"
+            : "photon-dark";
+            const message = {
+            type: "set-theme",
+            theme: theme,
+            };
+            const utteranc = document.querySelector(".utterances-frame");
+            utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+        });
+    </script>
+</div>
+
+
+
+
+
+
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://rosefinch-midsummer.github.io/zh/">天漢帝國復興錄</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+  
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </span>
+  <span id="busuanzi_container_site_uv">
+    本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '複製';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已複製！';
+            setTimeout(() => {
+                copybutton.innerHTML = '複製';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+
+
+</body>
+
+</html>

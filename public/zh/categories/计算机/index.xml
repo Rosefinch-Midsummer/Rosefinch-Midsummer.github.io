@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>计算机 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+    <description>Recent content in 计算机 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 23 Oct 2025 12:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《新兴的认知神经科学及相关技术》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E6%96%B0%E5%85%B4%E7%9A%84%E8%AE%A4%E7%9F%A5%E7%A5%9E%E7%BB%8F%E7%A7%91%E5%AD%A6%E5%8F%8A%E7%9B%B8%E5%85%B3%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Tue, 16 Sep 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/book/%E6%96%B0%E5%85%B4%E7%9A%84%E8%AE%A4%E7%9F%A5%E7%A5%9E%E7%BB%8F%E7%A7%91%E5%AD%A6%E5%8F%8A%E7%9B%B8%E5%85%B3%E6%8A%80%E6%9C%AF/</guid>
+      <description>&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;本书整体而言价值不大，关注度也低。&lt;/p&gt;
+&lt;p&gt;封面上的生物科技引领下一轮军事革命让我对这本书燃起了兴趣。本书貌似是一个系列中的一本书，整个系列有四本书：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>薅羊毛之AWS免费云主机</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E8%96%85%E7%BE%8A%E6%AF%9B%E4%B9%8Baws%E5%85%8D%E8%B4%B9%E4%BA%91%E4%B8%BB%E6%9C%BA/</link>
+      <pubDate>Fri, 22 Aug 2025 08:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E8%96%85%E7%BE%8A%E6%AF%9B%E4%B9%8Baws%E5%85%8D%E8%B4%B9%E4%BA%91%E4%B8%BB%E6%9C%BA/</guid>
+      <description>&lt;h1 id=&#34;薅羊毛之aws免费云主机&#34;&gt;薅羊毛之AWS免费云主机&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;注册好Amazon账号就看到了「零度解说」的视频，再不薅羊毛更待何时啊！&lt;/p&gt;
+&lt;p&gt;以前就想用宝塔或1Panel之类的管理工具，但是一直都没行动，这次使用了1Panel，挺方便的，还帮我安装了Docker。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>《区块链&#43;：从全球50个案例看区块链的技术生态、通证经济和社区自治》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E5%8C%BA%E5%9D%97%E9%93%BE&#43;%E4%BB%8E%E5%85%A8%E7%90%8350%E4%B8%AA%E6%A1%88%E4%BE%8B%E7%9C%8B%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%8A%80%E6%9C%AF%E7%94%9F%E6%80%81%E9%80%9A%E8%AF%81%E7%BB%8F%E6%B5%8E%E5%92%8C%E7%A4%BE%E5%8C%BA%E8%87%AA%E6%B2%BB/</link>
+      <pubDate>Sun, 10 Aug 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/book/%E5%8C%BA%E5%9D%97%E9%93%BE&#43;%E4%BB%8E%E5%85%A8%E7%90%8350%E4%B8%AA%E6%A1%88%E4%BE%8B%E7%9C%8B%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%8A%80%E6%9C%AF%E7%94%9F%E6%80%81%E9%80%9A%E8%AF%81%E7%BB%8F%E6%B5%8E%E5%92%8C%E7%A4%BE%E5%8C%BA%E8%87%AA%E6%B2%BB/</guid>
+      <description>&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;这本书系统梳理了区块链技术的多种应用方向，为我提供了许多启发性的思路。不过，目前能够真正落地并产生广泛影响的应用仍然较为稀少。&lt;/p&gt;
+&lt;p&gt;我首先从区块链的不可篡改属性出发思考应用场景，因此我想过本书中提到的绝大部分应用方向——通过链上记录关键数据可提升可追溯性与信任机制。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Markdown 转海报编辑器系列</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/markdown%E8%BD%AC%E6%B5%B7%E6%8A%A5%E7%BC%96%E8%BE%91%E5%99%A8%E7%B3%BB%E5%88%97/</link>
+      <pubDate>Thu, 07 Aug 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/markdown%E8%BD%AC%E6%B5%B7%E6%8A%A5%E7%BC%96%E8%BE%91%E5%99%A8%E7%B3%BB%E5%88%97/</guid>
+      <description>&lt;h1 id=&#34;md2card基于markdown文档生成精美知识卡片&#34;&gt;MD2Card：基于Markdown文档生成精美知识卡片&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/horses/article/details/148693390&#34;&gt;MD2Card：基于Markdown文档生成精美知识卡片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://md2card.cn/zh&#34;&gt;MD2Card&lt;/a&gt; 是一个免费易用的 Markdown 转知识卡片工具，支持多种精美风格、长文自动拆分、一键导出图片，无论是学习笔记、知识整理还是内容分享，都能轻松搞定。&lt;/p&gt;
+&lt;h2 id=&#34;卡片风格&#34;&gt;卡片风格&lt;/h2&gt;
+&lt;p&gt;MD2Card 支持温暖柔和、玻璃拟态、简约高级灰、梦幻渐变、波普艺术、赛博朋克、清新自然等 20+ 主题风格。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows11提示应用程序无法正常启动0xc0000142解决办法</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/windows11%E6%8F%90%E7%A4%BA%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E5%90%AF%E5%8A%A80xc0000142%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+      <pubDate>Mon, 30 Jun 2025 08:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/windows11%E6%8F%90%E7%A4%BA%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E5%90%AF%E5%8A%A80xc0000142%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+      <description>&lt;h1 id=&#34;win10win11提示应用程序无法正常启动0xc0000142解决办法&#34;&gt;Win10/Win11提示应用程序无法正常启动0xc0000142解决办法&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近下了不少游戏，但是老是遇到应用程序无法正常启动(0xc0000142)报错提示，最常见的问题其实是使用了中文路径。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://knowledge.ipason.com/ipKnowledge/knowledgedetail.html/1761&#34;&gt;Win10/Win11提示应用程序无法正常启动0xc0000142怎么解决？&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Win10/Win系统开机或打开程序时遇到应用程序无法正常启动(0xc0000142)报错提示，这是怎么回事儿呢？下面我们一起来看下原因和解决办法吧。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GUI.for_Clash使用指南和免费v2ray节点订阅</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/gui.for_clash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E5%85%8D%E8%B4%B9v2ray%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85/</link>
+      <pubDate>Tue, 10 Jun 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/gui.for_clash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%92%8C%E5%85%8D%E8%B4%B9v2ray%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85/</guid>
+      <description>&lt;h1 id=&#34;guifor_clash使用指南和免费v2ray节点订阅&#34;&gt;GUI.for_Clash使用指南和免费v2ray节点订阅&lt;/h1&gt;
+&lt;h1 id=&#34;guiforclash颜值与功能兼备的clash图形界面客户端&#34;&gt;GUI.for.Clash：颜值与功能兼备的Clash图形界面客户端&lt;/h1&gt;
+&lt;p&gt;随着互联网的发展，网络安全和隐私保护越来越受重视。作为一款强大的代理工具，Clash在科学上网和网络访问控制中扮演了重要角色。然而，Clash基于命令行的操作不够直观，对普通用户而言有一定门槛。为此，&lt;strong&gt;GUI.for.Clash&lt;/strong&gt;借助现代技术，打造了一个美观且功能丰富的图形界面客户端，让用户轻松管理代理配置，提升使用体验。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python虚拟环境管理工具UV和JupyterNotebook联动</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7uv%E5%92%8Cjupyternotebook%E8%81%94%E5%8A%A8/</link>
+      <pubDate>Fri, 23 May 2025 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7uv%E5%92%8Cjupyternotebook%E8%81%94%E5%8A%A8/</guid>
+      <description>&lt;h1 id=&#34;python虚拟环境管理新利器uv全解析&#34;&gt;Python虚拟环境管理新利器——uv全解析&lt;/h1&gt;
+&lt;p&gt;Python项目开发中，虚拟环境和依赖管理一直是让人头疼的话题。今天给大家介绍一个极致高速、功能强大的Python包和项目管理工具——&lt;strong&gt;uv&lt;/strong&gt;，它由Rust语言编写，是由著名的&lt;a href=&#34;https://astral.sh/&#34;&gt;Astral&lt;/a&gt;团队打造，同时也是性能爆棚的&lt;a href=&#34;https://github.com/astral-sh/ruff&#34;&gt;代码检查工具Ruff&lt;/a&gt;的作者开发。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloudflare-R2对象存储搭建高速免费图床指南</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/cloudflare-r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%90%AD%E5%BB%BA%E9%AB%98%E9%80%9F%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Fri, 16 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/cloudflare-r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%90%AD%E5%BB%BA%E9%AB%98%E9%80%9F%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;h1 id=&#34;cloudflare-r2对象存储搭建高速免费图床指南&#34;&gt;Cloudflare R2对象存储搭建高速免费图床指南&lt;/h1&gt;
+&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;最近打算搭建一个图片画廊。之前使用 GitHub 作为图床，但速度较慢。&lt;/p&gt;
+&lt;p&gt;这次尝试用 Cloudflare R2 搭建图床，并通过 &lt;code&gt;picgo-plugin-s3&lt;/code&gt; 插件实现图片上传。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DeeplearningAI《Knowledge-Graphs-for-RAG》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/course/deeplearningaiknowledge-graphs-for-rag/</link>
+      <pubDate>Thu, 15 May 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/course/deeplearningaiknowledge-graphs-for-rag/</guid>
+      <description>&lt;h1 id=&#34;knowledge-graphs-for-rag&#34;&gt;Knowledge Graphs for RAG&lt;/h1&gt;
+&lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;
+&lt;p&gt;This article is a study note for the course &lt;a href=&#34;https://www.deeplearning.ai/short-courses/knowledge-graphs-rag/&#34;&gt;https://www.deeplearning.ai/short-courses/knowledge-graphs-rag/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://i-blog.csdnimg.cn/direct/e9463f6769ef43bda3fc01f21907229b.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;what-youll-learn-in-this-course&#34;&gt;What you’ll learn in this course&lt;/h3&gt;
+&lt;p&gt;Knowledge graphs are used in development to structure complex data relationships, drive intelligent search functionality, and build powerful AI applications that can reason over different data types. Knowledge graphs can connect data from both structured and unstructured sources (databases, documents, etc.), providing an intuitive and flexible way to model complex, real-world scenarios.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI编程工具指北</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/ai%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E6%8C%87%E5%8C%97/</link>
+      <pubDate>Wed, 30 Apr 2025 21:29:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/ai%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E6%8C%87%E5%8C%97/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;虽然我平时最常用的是字节跳动出品的Trae，但在某种意义上，我也是最早使用Cursor的用户之一。&lt;/p&gt;
+&lt;p&gt;待我有空的时候，就打算开发一个基于Trae的Custom Agents Rules Generator，模拟类似的AI编程体验。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>低代码平台推荐</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Mon, 24 Mar 2025 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/495262462&#34;&gt;几分钟内上线一个网站，这些「低代码」神器太赞了！&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/people/githubdaily&#34;&gt;作者GitHub Daily&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;正文&#34;&gt;正文&lt;/h1&gt;
+&lt;p&gt;几个月前，我曾给大家分享过 GitHub 上几个可以快速完成网站开发、上线的低代码平台。近期，我又陆陆续续挖掘到一些与此相关的优质项目，便想着重新整理、更新，让诸位平时在闲暇之余，也可以上手把玩。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MarkItDown完全指南</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/markitdown%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Tue, 04 Feb 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/markitdown%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;h1 id=&#34;markitdown完全指南微软ai驱动的全能文档转换工具-支持pdfoffice文档图片音频等多种格式转换可集成openai等ai模型实现智能描述&#34;&gt;MarkItDown完全指南：微软AI驱动的全能文档转换工具: 支持PDF、Office文档、图片、音频等多种格式转换,可集成OpenAI等AI模型实现智能描述&lt;/h1&gt;
+&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://stable-learn.com/zh/markitdown_use_guide/&#34;&gt;文章来源&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/microsoft/markitdown&#34;&gt;MarkItDown&lt;/a&gt; 是微软开源的一款强大的文档转换工具，可以将PDF、Office文档、图片等多种格式文件转换为Markdown格式。它还支持集成AI模型来智能处理图片描述。本文将详细介绍如何安装和使用这个工具。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows系统PE盘制作教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/windows%E7%B3%BB%E7%BB%9Fpe%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sat, 23 Nov 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/windows%E7%B3%BB%E7%BB%9Fpe%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;由于电脑C盘烧了，我为了把数据导出来折腾了好久，最后成功使用PE盘把最关键的资料拷贝出来。这里记录一下相关的工具。&lt;/p&gt;
+&lt;h2 id=&#34;winpe系统&#34;&gt;WinPE系统&lt;/h2&gt;
+&lt;p&gt;WinPE系统，是轻量级的Windows操作系统，可以安装到U盘里面。当电脑系统无法进入或崩溃时，可以作为紧急启动方式，对计算机进行系统重装或配置操作。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>魔法上网工具推荐</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Sat, 16 Mar 2024 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;收集一波工具，防止失联。。&lt;/p&gt;
+&lt;p&gt;不推荐用机场，国内的都不可信。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.fanqiangzhe.com/post/free-vpn-guide/&#34;&gt;免费VPN：推荐及指南（2024最新免费VPN）&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;免费vpn为什么免费&#34;&gt;免费VPN为什么免费？&lt;/h2&gt;
+&lt;p&gt;大家都听说过这句话：“天下没有免费的午餐”。就VPN来说，提供VPN服务需要很高的成本：架设、维护VPN服务器需要花钱、支付VPN用户的流量也需要花钱。那么为什么还有人愿意提供免费VPN呢？总结一下，免费VPN存在大概有以下几个原因：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>普林斯顿大学《算法》第四版 IDEA 运行环境的搭建</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E6%99%AE%E6%9E%97%E6%96%AF%E9%A1%BF%E5%A4%A7%E5%AD%A6%E7%AE%97%E6%B3%95%E7%AC%AC%E5%9B%9B%E7%89%88idea%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Mon, 26 Feb 2024 19:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E6%99%AE%E6%9E%97%E6%96%AF%E9%A1%BF%E5%A4%A7%E5%AD%A6%E7%AE%97%E6%B3%95%E7%AC%AC%E5%9B%9B%E7%89%88idea%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/</guid>
+      <description>&lt;h1 id=&#34;普林斯顿大学算法第四版-idea-运行环境的搭建&#34;&gt;普林斯顿大学《算法》第四版 IDEA 运行环境的搭建&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/junhong1995/p/7769006.html&#34;&gt;《算法》第四版 IDEA 运行环境的搭建&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;环境的搭建分以下几个步骤:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java 运行环境的搭建&lt;/li&gt;
+&lt;li&gt;IDEA 的安装与破解&lt;/li&gt;
+&lt;li&gt;《算法》 运行库的下载与配置&lt;/li&gt;
+&lt;li&gt;IDEA 工程的创建以及在IDEA中使用命令行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;前两个步骤就不写了，网上的教程一大把。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>一条命令即可激活Windows10和Office365</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/%E4%B8%80%E6%9D%A1%E5%91%BD%E4%BB%A4%E5%8D%B3%E5%8F%AF%E6%BF%80%E6%B4%BBwindows10%E5%92%8Coffice365/</link>
+      <pubDate>Mon, 09 Oct 2023 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E4%B8%80%E6%9D%A1%E5%91%BD%E4%BB%A4%E5%8D%B3%E5%8F%AF%E6%BF%80%E6%B4%BBwindows10%E5%92%8Coffice365/</guid>
+      <description>&lt;h1 id=&#34;一条命令即可激活windows10和office365&#34;&gt;一条命令即可激活Windows10和Office365&lt;/h1&gt;
+&lt;h2 id=&#34;简易步骤&#34;&gt;简易步骤&lt;/h2&gt;
+&lt;p&gt;1.windows+R&lt;/p&gt;
+&lt;p&gt;2.输入powershell 回车&lt;/p&gt;
+&lt;p&gt;3.输入 &lt;code&gt;irm https://massgrave.dev/get |iex&lt;/code&gt; 自动下载激活脚本&lt;/p&gt;
+&lt;p&gt;4.输入数字“1”选择永久激活即可&lt;/p&gt;
+&lt;h2 id=&#34;详细步骤&#34;&gt;详细步骤&lt;/h2&gt;
+&lt;p&gt;windows中按快捷键windows+R键调出运行框&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bilibili《ComputerCrashCourse》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/course/bilibilicomputercrashcourse/</link>
+      <pubDate>Thu, 28 Sep 2023 22:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/course/bilibilicomputercrashcourse/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/av21376839/&#34;&gt;Bilibili视频&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulI&#34;&gt;Youtube 原视频&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/1c7/crash-course-computer-science-chinese&#34;&gt;GitHub笔记&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-计算机早期历史-early-computing&#34;&gt;1. 计算机早期历史-Early Computing&lt;/h2&gt;
+&lt;p&gt;提到的设备：算盘 → 步进计算器 → 差分机 → 分析机 → 打孔卡片制表机&lt;br&gt;
+提到的人名：Charles Babbage, Ada Lovelace&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>《用Python学数学》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E7%94%A8python%E5%AD%A6%E6%95%B0%E5%AD%A6/</link>
+      <pubDate>Sat, 02 Sep 2023 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/book/%E7%94%A8python%E5%AD%A6%E6%95%B0%E5%AD%A6/</guid>
+      <description>&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;这里介绍用Python来解决数学问题深化自己的计算思维，帮我自己成为数据格致家。&lt;/p&gt;
+&lt;p&gt;读这本书主要是想实现元胞自动机，这个以前很想实现，但是一直拖延到了现在才行动，哎！本来打算暑假更完的，但没空更，先挖坑，以后再填。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

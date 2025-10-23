@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>文献管理工具——Zotero教程 | 天漢帝國復興錄</title>
+<meta name="keywords" content="zotero, 文献管理工具">
+<meta name="description" content="简介
+文献管理工具 Zotero 介绍
+Zotero是一款自由及开放源代码的文献管理软件，用以管理书目信息及相关材料。其最著名的特性是作为浏览器插件、在线同步、与文档编辑软件如Microsoft Word、LibreOffice、OpenOffice.org Writer、NeoOffice等集成，可生成文内引用、生成页面脚注或文后的参考文献。日常使用中还可以搭配上海交大相关人员维护的 SJTUThesis LaTeX 模版。">
+<meta name="author" content="RM">
+<link rel="canonical" href="https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7zotero%E6%95%99%E7%A8%8B/">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://rosefinch-midsummer.github.io/img/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rosefinch-midsummer.github.io/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rosefinch-midsummer.github.io/img/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://rosefinch-midsummer.github.io/img/apple-touch-icon.png">
+<link rel="mask-icon" href="https://rosefinch-midsummer.github.io/img/android-chrome-192x192.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7zotero%E6%95%99%E7%A8%8B/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<meta property="og:url" content="https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7zotero%E6%95%99%E7%A8%8B/">
+  <meta property="og:site_name" content="天漢帝國復興錄">
+  <meta property="og:title" content="文献管理工具——Zotero教程">
+  <meta property="og:description" content="简介 文献管理工具 Zotero 介绍
+Zotero是一款自由及开放源代码的文献管理软件，用以管理书目信息及相关材料。其最著名的特性是作为浏览器插件、在线同步、与文档编辑软件如Microsoft Word、LibreOffice、OpenOffice.org Writer、NeoOffice等集成，可生成文内引用、生成页面脚注或文后的参考文献。日常使用中还可以搭配上海交大相关人员维护的 SJTUThesis LaTeX 模版。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-05-26T18:34:25+08:00">
+    <meta property="article:modified_time" content="2025-09-22T21:54:22+08:00">
+    <meta property="article:tag" content="Zotero">
+    <meta property="article:tag" content="文献管理工具">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="文献管理工具——Zotero教程">
+<meta name="twitter:description" content="简介
+文献管理工具 Zotero 介绍
+Zotero是一款自由及开放源代码的文献管理软件，用以管理书目信息及相关材料。其最著名的特性是作为浏览器插件、在线同步、与文档编辑软件如Microsoft Word、LibreOffice、OpenOffice.org Writer、NeoOffice等集成，可生成文内引用、生成页面脚注或文后的参考文献。日常使用中还可以搭配上海交大相关人员维护的 SJTUThesis LaTeX 模版。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "📚文章",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "🧰百寶箱",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/toolkit/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "文献管理工具——Zotero教程",
+      "item": "https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7zotero%E6%95%99%E7%A8%8B/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "文献管理工具——Zotero教程",
+  "name": "文献管理工具——Zotero教程",
+  "description": "简介 文献管理工具 Zotero 介绍\nZotero是一款自由及开放源代码的文献管理软件，用以管理书目信息及相关材料。其最著名的特性是作为浏览器插件、在线同步、与文档编辑软件如Microsoft Word、LibreOffice、OpenOffice.org Writer、NeoOffice等集成，可生成文内引用、生成页面脚注或文后的参考文献。日常使用中还可以搭配上海交大相关人员维护的 SJTUThesis LaTeX 模版。\n",
+  "keywords": [
+    "zotero", "文献管理工具"
+  ],
+  "articleBody": "简介 文献管理工具 Zotero 介绍\nZotero是一款自由及开放源代码的文献管理软件，用以管理书目信息及相关材料。其最著名的特性是作为浏览器插件、在线同步、与文档编辑软件如Microsoft Word、LibreOffice、OpenOffice.org Writer、NeoOffice等集成，可生成文内引用、生成页面脚注或文后的参考文献。日常使用中还可以搭配上海交大相关人员维护的 SJTUThesis LaTeX 模版。\n与其它工具的对比 目前市面上的可选工具有 Mendeley、Endnote、 Papers等，不过这些工具都价格不菲。而Zotero开源免费，比较方便新手开始文献管理之路。再好的软件也只是一个工具，用好用熟练就是最好的。适合自己才是最好的。\n软件安装 官网\n按照指引步骤安装即可。然后注册一个 zotero 账号。\n需要注意的是，zotero 免费空间只有300MB，需要我们用WebDAV的方式如坚果云来扩充空间。\n官网上还有浏览器插件 Zotero Connector 。这个插件可以在打开 zotero 的情况下在浏览器上保存文献条目到软件内。\n插件安装 进入 zotero 软件菜单栏中点击工具选择附加组件， 将下载好的.xpi 插件源文件拖放到此窗口 。\n很多都是发布在 github 仓库的开源插件，readme 文件有具体功能介绍和使用方法，进入 release 界面就能下载最新版本。\n常用插件下载：\nBetter BibTex 配合 Latex 文献引用 Jasminum茉莉花中文支持插件 Zotero PDF Translate 翻译插件 ZotFile pdf 管理插件 Delitem 删除条目的同时删除附件 Mdnotes 设置模板生成 markdown 笔记框架 Zotero Tag 标签管理 更多插件参考官网插件列表\n超有用的zotero笔记：桃不一的帮助文档 Zotero 中文社区\n常用功能介绍 文献导入 单个pdf 文件直接拖拽到软件内就能保存到数据库，亦可以用浏览器内 zotero connector 插件保存到软件内。\n文献导出 导出 pdf 附件，按住 ctrl 多次点击，或 ctrl+A 多选，右键可以导出选中所有 pdf 到指定文件夹。\n附件管理 设置 zotfile 插件，自定义重命名附件名称，便于查看 pdf 文档。 添加笔记，简要文字可以添加自带笔记附件，作为文献条目的附件。丰富图文的笔记可以借助 mdnotes 插件设置 markdown 模板，然后每一个文件就可以通过模板生成 markdown 笔记框架。配合开源软件 MarkText 管理，可以无缝生成博客笔记。 自定义附件和文献库数据保存位置。【编辑】–【首选项】–【高级】–【文件和文件夹】。通过自定义数据文件夹位置，可以传到网盘将文件夹备份。恢复数据，再放到自定义位置就好。 划词翻译 安装好了翻译插件，在内置 pdf 阅读器界面，点开右边侧栏，就可以实现划词翻译。\n利用坚果云保存同步文件 坚果云官网\n# Zotero+坚果云实现文献管理\n# 如何在Zotero中设置webdav连接到坚果云？\n登录后点击右上角用户名旁边的下拉箭头，选择账户信息，点击“安全选项”，添加应用zotero(注意一定要小写！)，这里的应用密码我们后面会用到。\n打开zotero然后点击【编辑】再点击【首选项】\n打开【同步】，Zotero同步服务器里登录的是你的Zotero账号和密码，在下面的文件同步里选择使用【WebDav】\n在这里填写你的坚果云的服务器地址：https://dav.jianguoyun.com/dav/，用户名是坚果云账号，密码是一开始设置的应用密码（非坚果云账号登录密码），设置好后选择ok即可。\n回到首页，点击右边的绿色的圈就可以同步更新，如果是第一次设置，会提示在坚果云里自动创建一个名叫：zotero的文件夹，用于存放同步更新的文件。\n备注：如果在坚果云里新建了一个文件夹，想将文件放在那个文件夹里的话，那么在填写服务器地址时，需要添加对应的文件夹名字（建议文件夹用英文或数字命名），例如work，那么服务器地址填写如下:\n如此设置后，就是在work下新建zotero文件夹。\n后记 工具虽好，也得常用啊！同步数据后发现多年前读过的论文居然这么多——致敬我曾经荒诞又自负的青春岁月！\n",
+  "wordCount" : "1522",
+  "inLanguage": "zh",
+  "datePublished": "2023-05-26T18:34:25+08:00",
+  "dateModified": "2025-09-22T21:54:22+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "RM"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://rosefinch-midsummer.github.io/zh/posts/toolkit/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7zotero%E6%95%99%E7%A8%8B/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "天漢帝國復興錄",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://rosefinch-midsummer.github.io/img/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://rosefinch-midsummer.github.io/zh/" accesskey="h" title="天漢帝國復興錄 (Alt + H)">天漢帝國復興錄</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/" title="🏠主頁">
+                    <span>🏠主頁</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/posts" title="📚文章">
+                    <span>📚文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/archives" title="⏱時間軸">
+                    <span>⏱時間軸</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/categories" title="🧩分類">
+                    <span>🧩分類</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/tags" title="🔖標簽">
+                    <span>🔖標簽</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosefinch-midsummer.github.io/zh/about" title="🙋🏻‍♂️關于">
+                    <span>🙋🏻‍♂️關于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://rosefinch-midsummer.github.io/zh/">首頁</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/">📚文章</a>&nbsp;»&nbsp;<a href="https://rosefinch-midsummer.github.io/zh/posts/toolkit/">🧰百寶箱</a></div>
+    <h1 class="post-title">
+      文献管理工具——Zotero教程
+    </h1>
+    <div class="post-meta">
+    创建: 2023-05-26 |
+    更新: 2025-09-22 |
+    字数: 1522字 |
+    时长: 4分钟 |
+    RM
+
+
+</div>
+   
+<div  class="meta-item">&nbsp·&nbsp
+  <span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+</div>
+
+
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目錄</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e7%ae%80%e4%bb%8b" aria-label="简介">简介</a></li>
+                <li>
+                    <a href="#%e4%b8%8e%e5%85%b6%e5%ae%83%e5%b7%a5%e5%85%b7%e7%9a%84%e5%af%b9%e6%af%94" aria-label="与其它工具的对比">与其它工具的对比</a></li>
+                <li>
+                    <a href="#%e8%bd%af%e4%bb%b6%e5%ae%89%e8%a3%85" aria-label="软件安装">软件安装</a></li>
+                <li>
+                    <a href="#%e6%8f%92%e4%bb%b6%e5%ae%89%e8%a3%85" aria-label="插件安装">插件安装</a></li>
+                <li>
+                    <a href="#%e5%b8%b8%e7%94%a8%e5%8a%9f%e8%83%bd%e4%bb%8b%e7%bb%8d" aria-label="常用功能介绍">常用功能介绍</a><ul>
+                        
+                <li>
+                    <a href="#%e6%96%87%e7%8c%ae%e5%af%bc%e5%85%a5" aria-label="文献导入">文献导入</a></li>
+                <li>
+                    <a href="#%e6%96%87%e7%8c%ae%e5%af%bc%e5%87%ba" aria-label="文献导出">文献导出</a></li>
+                <li>
+                    <a href="#%e9%99%84%e4%bb%b6%e7%ae%a1%e7%90%86" aria-label="附件管理">附件管理</a></li>
+                <li>
+                    <a href="#%e5%88%92%e8%af%8d%e7%bf%bb%e8%af%91" aria-label="划词翻译">划词翻译</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%88%a9%e7%94%a8%e5%9d%9a%e6%9e%9c%e4%ba%91%e4%bf%9d%e5%ad%98%e5%90%8c%e6%ad%a5%e6%96%87%e4%bb%b6" aria-label="利用坚果云保存同步文件">利用坚果云保存同步文件</a></li>
+                <li>
+                    <a href="#%e5%90%8e%e8%ae%b0" aria-label="后记">后记</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="简介">简介<a hidden class="anchor" aria-hidden="true" href="#简介">#</a></h2>
+<p><a href="https://blog.hjroyal.top/posts/tools/2020-09-zotero/">文献管理工具 Zotero 介绍</a></p>
+<p>Zotero是一款自由及开放源代码的文献管理软件，用以管理书目信息及相关材料。其最著名的特性是作为浏览器插件、在线同步、与文档编辑软件如Microsoft Word、LibreOffice、OpenOffice.org Writer、NeoOffice等集成，可生成文内引用、生成页面脚注或文后的参考文献。日常使用中还可以搭配上海交大相关人员维护的<a href="https://github.com/sjtug/SJTUThesis"> SJTUThesis LaTeX 模版</a>。</p>
+<h2 id="与其它工具的对比">与其它工具的对比<a hidden class="anchor" aria-hidden="true" href="#与其它工具的对比">#</a></h2>
+<p>目前市面上的可选工具有 Mendeley、Endnote、 Papers等，不过这些工具都价格不菲。而Zotero开源免费，比较方便新手开始文献管理之路。再好的软件也只是一个工具，用好用熟练就是最好的。适合自己才是最好的。</p>
+<h2 id="软件安装">软件安装<a hidden class="anchor" aria-hidden="true" href="#软件安装">#</a></h2>
+<p><a href="https://www.zotero.org/">官网</a></p>
+<p>按照指引步骤安装即可。然后注册一个 zotero 账号。</p>
+<p>需要注意的是，zotero 免费空间只有300MB，需要我们用WebDAV的方式如坚果云来扩充空间。</p>
+<p>官网上还有浏览器插件 Zotero Connector 。这个插件可以在打开 zotero 的情况下在浏览器上保存文献条目到软件内。</p>
+<h2 id="插件安装">插件安装<a hidden class="anchor" aria-hidden="true" href="#插件安装">#</a></h2>
+<p>进入 zotero 软件菜单栏中点击工具选择附加组件， 将下载好的.xpi 插件源文件拖放到此窗口 。</p>
+<p>很多都是发布在 github 仓库的开源插件，readme 文件有具体功能介绍和使用方法，进入 release 界面就能下载最新版本。</p>
+<p>常用插件下载：</p>
+<ul>
+<li><a href="https://github.com/retorquere/zotero-better-bibtex">Better BibTex</a> 配合 Latex 文献引用</li>
+<li><a href="https://github.com/l0o0/jasminum">Jasminum</a>茉莉花中文支持插件</li>
+<li><a href="https://github.com/windingwind/zotero-pdf-translate">Zotero PDF Translate</a> 翻译插件</li>
+<li><a href="http://zotfile.com/">ZotFile</a> pdf 管理插件</li>
+<li><a href="https://github.com/redleafnew/delitemwithatt">Delitem</a> 删除条目的同时删除附件</li>
+<li><a href="https://github.com/argenos/zotero-mdnotes">Mdnotes</a> 设置模板生成 markdown 笔记框架</li>
+<li><a href="https://github.com/windingwind/zotero-tag#readme">Zotero Tag</a> 标签管理</li>
+</ul>
+<p>更多插件参考<a href="https://www.zotero.org/support/plugins">官网插件列表</a></p>
+<p>超有用的zotero笔记：<a href="https://www.wolai.com/tduPkfFr6iPVkd8UpdmZLJ">桃不一的帮助文档 </a></p>
+<p><a href="https://zotero-chinese.gitee.io/zotero-plugins">Zotero 中文社区</a></p>
+<h2 id="常用功能介绍">常用功能介绍<a hidden class="anchor" aria-hidden="true" href="#常用功能介绍">#</a></h2>
+<h3 id="文献导入">文献导入<a hidden class="anchor" aria-hidden="true" href="#文献导入">#</a></h3>
+<p>单个pdf 文件直接拖拽到软件内就能保存到数据库，亦可以用浏览器内 zotero connector 插件保存到软件内。</p>
+<h3 id="文献导出">文献导出<a hidden class="anchor" aria-hidden="true" href="#文献导出">#</a></h3>
+<p>导出 pdf 附件，按住 ctrl 多次点击，或 ctrl+A 多选，右键可以导出选中所有 pdf 到指定文件夹。</p>
+<h3 id="附件管理">附件管理<a hidden class="anchor" aria-hidden="true" href="#附件管理">#</a></h3>
+<ul>
+<li>设置 zotfile 插件，自定义重命名附件名称，便于查看 pdf 文档。</li>
+<li>添加笔记，简要文字可以添加自带笔记附件，作为文献条目的附件。丰富图文的笔记可以借助 mdnotes 插件设置 markdown 模板，然后每一个文件就可以通过模板生成 markdown 笔记框架。配合开源软件 <a href="https://github.com/marktext/marktext">MarkText</a> 管理，可以无缝生成博客笔记。</li>
+<li>自定义附件和文献库数据保存位置。【编辑】–【首选项】–【高级】–【文件和文件夹】。通过自定义数据文件夹位置，可以传到网盘将文件夹备份。恢复数据，再放到自定义位置就好。</li>
+</ul>
+<h3 id="划词翻译">划词翻译<a hidden class="anchor" aria-hidden="true" href="#划词翻译">#</a></h3>
+<p>安装好了翻译插件，在内置 pdf 阅读器界面，点开右边侧栏，就可以实现划词翻译。</p>
+<h2 id="利用坚果云保存同步文件">利用坚果云保存同步文件<a hidden class="anchor" aria-hidden="true" href="#利用坚果云保存同步文件">#</a></h2>
+<p><a href="https://www.jianguoyun.com/">坚果云官网</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/413147687"># Zotero+坚果云实现文献管理</a></p>
+<p><a href="https://help.jianguoyun.com/?p=3168"># 如何在Zotero中设置webdav连接到坚果云？</a></p>
+<p>登录后点击右上角用户名旁边的下拉箭头，选择账户信息，点击“安全选项”，添加应用zotero(注意一定要小写！)，这里的应用密码我们后面会用到。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230526225241.png"></p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230526225307.png"></p>
+<p>打开zotero然后点击【编辑】再点击【首选项】</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230526181749.png"></p>
+<p>打开【同步】，<strong>Zotero同步服务器</strong>里登录的是你的Zotero账号和密码，在下面的<strong>文件同步</strong>里选择使用【WebDav】</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230526230029.png"></p>
+<p>在这里填写你的坚果云的服务器地址：https://dav.jianguoyun.com/dav/，用户名是坚果云账号，密码是一开始设置的应用密码（非坚果云账号登录密码），设置好后选择ok即可。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230526230119.png"></p>
+<p>回到首页，点击右边的绿色的圈就可以同步更新，如果是第一次设置，会提示在坚果云里自动创建一个名叫：zotero的文件夹，用于存放同步更新的文件。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230526230201.png"></p>
+<p><strong>备注</strong>：如果在坚果云里新建了一个文件夹，想将文件放在那个文件夹里的话，那么在填写服务器地址时，需要添加对应的文件夹名字（建议文件夹用英文或数字命名），例如work，那么服务器地址填写如下:</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230526230233.png">
+如此设置后，就是在work下新建zotero文件夹。</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230526230320.png"></p>
+<h2 id="后记">后记<a hidden class="anchor" aria-hidden="true" href="#后记">#</a></h2>
+<p>工具虽好，也得常用啊！同步数据后发现多年前读过的论文居然这么多——致敬我曾经荒诞又自负的青春岁月！</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost01/img/20230526181842.png"></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://rosefinch-midsummer.github.io/zh/tags/zotero/">Zotero</a></li>
+      <li><a href="https://rosefinch-midsummer.github.io/zh/tags/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">文献管理工具</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://rosefinch-midsummer.github.io/zh/posts/course/tqu%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/">
+    <span class="title">« 上一頁</span>
+    <br>
+    <span>TQU《数学分析》</span>
+  </a>
+  <a class="next" href="https://rosefinch-midsummer.github.io/zh/posts/book/%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>《聪明的投资者》</span>
+  </a>
+</nav>
+
+  </footer>
+<div>    
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">评论</span>
+        <br/>
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://utteranc.es/client.js"
+            repo="Rosefinch-Midsummer/comments_of_blog" 
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <script>
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            const theme = document.body.className.includes("dark")
+            ? "github-light"
+            : "photon-dark";
+            const message = {
+            type: "set-theme",
+            theme: theme,
+            };
+            const utteranc = document.querySelector(".utterances-frame");
+            utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+        });
+    </script>
+</div>
+
+
+
+
+
+
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://rosefinch-midsummer.github.io/zh/">天漢帝國復興錄</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+  
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </span>
+  <span id="busuanzi_container_site_uv">
+    本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '複製';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已複製！';
+            setTimeout(() => {
+                copybutton.innerHTML = '複製';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+
+
+</body>
+
+</html>
