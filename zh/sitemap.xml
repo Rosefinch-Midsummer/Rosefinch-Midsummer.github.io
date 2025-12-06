@@ -2,10 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rosefinch-midsummer.github.io/zh/posts/book/%E9%AB%98%E8%83%BD%E6%95%88%E7%B1%BB%E8%84%91%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E4%B8%8E%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84/</loc>
-    <lastmod>2025-12-06T22:54:22+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/posts/book/</loc>
+    <loc>https://rosefinch-midsummer.github.io/zh/posts/course/</loc>
     <lastmod>2025-12-06T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/</loc>
@@ -14,22 +11,40 @@
     <loc>https://rosefinch-midsummer.github.io/zh/categories/</loc>
     <lastmod>2025-12-06T22:54:22+08:00</lastmod>
   </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/categories/neuroscience/</loc>
+    <loc>https://rosefinch-midsummer.github.io/zh/tags/cs50/</loc>
+    <lastmod>2025-12-06T22:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/tags/harvard/</loc>
+    <lastmod>2025-12-06T22:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/posts/course/harvardcs50-this-is-cs50x/</loc>
     <lastmod>2025-12-06T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/tags/</loc>
     <lastmod>2025-12-06T22:54:22+08:00</lastmod>
   </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2025-12-06T22:54:22+08:00</lastmod>
-  </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
     <lastmod>2025-12-06T22:54:22+08:00</lastmod>
   </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/tags/%E7%B1%BB%E8%84%91%E6%99%BA%E8%83%BD/</loc>
+    <loc>https://rosefinch-midsummer.github.io/zh/</loc>
     <lastmod>2025-12-06T22:54:22+08:00</lastmod>
   </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/</loc>
+    <loc>https://rosefinch-midsummer.github.io/zh/categories/%E5%9C%A8%E7%BA%BF%E8%AF%BE%E7%A8%8B/</loc>
+    <lastmod>2025-12-06T22:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/posts/book/%E9%AB%98%E8%83%BD%E6%95%88%E7%B1%BB%E8%84%91%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E4%B8%8E%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84/</loc>
+    <lastmod>2025-12-06T22:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/posts/book/</loc>
+    <lastmod>2025-12-06T22:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/categories/neuroscience/</loc>
+    <lastmod>2025-12-06T22:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2025-12-06T22:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/tags/%E7%B1%BB%E8%84%91%E6%99%BA%E8%83%BD/</loc>
     <lastmod>2025-12-06T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/pastime/</loc>
@@ -68,16 +83,10 @@
     <loc>https://rosefinch-midsummer.github.io/zh/tags/%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6/</loc>
     <lastmod>2025-12-01T22:54:22+08:00</lastmod>
   </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/posts/course/</loc>
-    <lastmod>2025-11-30T22:54:22+08:00</lastmod>
-  </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/course/ustc%E9%83%AD%E5%85%89%E7%81%BF%E9%99%A2%E5%A3%AB%E5%BC%95%E5%AF%BC%E6%82%A8%E8%B5%B0%E8%BF%9B%E9%87%8F%E5%AD%90%E4%B8%96%E7%95%8C/</loc>
     <lastmod>2025-11-30T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/</loc>
-    <lastmod>2025-11-30T22:54:22+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/categories/%E5%9C%A8%E7%BA%BF%E8%AF%BE%E7%A8%8B/</loc>
     <lastmod>2025-11-30T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/categories/%E7%94%B5%E8%A7%86%E5%89%A7/</loc>

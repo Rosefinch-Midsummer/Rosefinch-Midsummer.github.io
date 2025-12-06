@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Harvard on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/tags/harvard/</link>
+    <description>Recent content in Harvard on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 06 Dec 2025 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/tags/harvard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Harvard《CS50: This is CS50x》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/course/harvardcs50-this-is-cs50x/</link>
+      <pubDate>Sat, 06 Dec 2025 19:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/course/harvardcs50-this-is-cs50x/</guid>
+      <description>&lt;h1 id=&#34;课程简介&#34;&gt;课程简介&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;所属大学：Harvard&lt;/li&gt;
+&lt;li&gt;先修要求：无&lt;/li&gt;
+&lt;li&gt;编程语言：C, Python, SQL, HTML, CSS, JavaScript&lt;/li&gt;
+&lt;li&gt;课程难度：🌟🌟&lt;/li&gt;
+&lt;li&gt;预计学时：20 小时&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;连续多年被哈佛大学学生评为最受欢迎的公选课程。Malan 教授上课非常有激情，撕黄页讲二分法的场面让人记忆犹新（笑）。但因为它的入门以及全校公选的属性，课程内容难度比较温和，但是课程作业质量非常高而且全部免费开源，非常适合小白入门，或者大佬休闲。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

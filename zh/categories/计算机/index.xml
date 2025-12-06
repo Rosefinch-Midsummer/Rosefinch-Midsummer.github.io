@@ -9,6 +9,21 @@
     <lastBuildDate>Sat, 06 Dec 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Harvard《CS50: This is CS50x》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/course/harvardcs50-this-is-cs50x/</link>
+      <pubDate>Sat, 06 Dec 2025 19:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/course/harvardcs50-this-is-cs50x/</guid>
+      <description>&lt;h1 id=&#34;课程简介&#34;&gt;课程简介&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;所属大学：Harvard&lt;/li&gt;
+&lt;li&gt;先修要求：无&lt;/li&gt;
+&lt;li&gt;编程语言：C, Python, SQL, HTML, CSS, JavaScript&lt;/li&gt;
+&lt;li&gt;课程难度：🌟🌟&lt;/li&gt;
+&lt;li&gt;预计学时：20 小时&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;连续多年被哈佛大学学生评为最受欢迎的公选课程。Malan 教授上课非常有激情，撕黄页讲二分法的场面让人记忆犹新（笑）。但因为它的入门以及全校公选的属性，课程内容难度比较温和，但是课程作业质量非常高而且全部免费开源，非常适合小白入门，或者大佬休闲。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>《高能效类脑智能：算法与体系架构》</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E9%AB%98%E8%83%BD%E6%95%88%E7%B1%BB%E8%84%91%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E4%B8%8E%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84/</link>
       <pubDate>Sat, 06 Dec 2025 18:34:25 +0800</pubDate>

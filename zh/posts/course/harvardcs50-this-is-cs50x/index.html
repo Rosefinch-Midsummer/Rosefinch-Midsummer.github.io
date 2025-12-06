@@ -1,0 +1,761 @@
+<!doctype html><html lang=zh dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Harvard《CS50: This is CS50x》 | 天漢帝國復興錄</title><meta name=keywords content="Harvard,CS50"><meta name=description content="课程简介
+
+所属大学：Harvard
+先修要求：无
+编程语言：C, Python, SQL, HTML, CSS, JavaScript
+课程难度：🌟🌟
+预计学时：20 小时
+
+连续多年被哈佛大学学生评为最受欢迎的公选课程。Malan 教授上课非常有激情，撕黄页讲二分法的场面让人记忆犹新（笑）。但因为它的入门以及全校公选的属性，课程内容难度比较温和，但是课程作业质量非常高而且全部免费开源，非常适合小白入门，或者大佬休闲。"><meta name=author content="RM"><link rel=canonical href=https://rosefinch-midsummer.github.io/zh/posts/course/harvardcs50-this-is-cs50x/><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><meta name=referrer content="no-referrer-when-downgrade"><link crossorigin=anonymous href=/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css integrity="sha256-IhHKMWS+eDACT2qtKzouUghDpk+PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as=style><link rel=icon href=https://rosefinch-midsummer.github.io/img/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://rosefinch-midsummer.github.io/img/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://rosefinch-midsummer.github.io/img/favicon-32x32.png><link rel=apple-touch-icon href=https://rosefinch-midsummer.github.io/img/apple-touch-icon.png><link rel=mask-icon href=https://rosefinch-midsummer.github.io/img/android-chrome-192x192.png><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=zh href=https://rosefinch-midsummer.github.io/zh/posts/course/harvardcs50-this-is-cs50x/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://rosefinch-midsummer.github.io/zh/posts/course/harvardcs50-this-is-cs50x/"><meta property="og:site_name" content="天漢帝國復興錄"><meta property="og:title" content="Harvard《CS50: This is CS50x》"><meta property="og:description" content="课程简介 所属大学：Harvard 先修要求：无 编程语言：C, Python, SQL, HTML, CSS, JavaScript 课程难度：🌟🌟 预计学时：20 小时 连续多年被哈佛大学学生评为最受欢迎的公选课程。Malan 教授上课非常有激情，撕黄页讲二分法的场面让人记忆犹新（笑）。但因为它的入门以及全校公选的属性，课程内容难度比较温和，但是课程作业质量非常高而且全部免费开源，非常适合小白入门，或者大佬休闲。"><meta property="og:locale" content="zh"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-12-06T19:34:25+08:00"><meta property="article:modified_time" content="2025-12-06T22:54:22+08:00"><meta property="article:tag" content="Harvard"><meta property="article:tag" content="CS50"><meta name=twitter:card content="summary"><meta name=twitter:title content="Harvard《CS50: This is CS50x》"><meta name=twitter:description content="课程简介
+
+所属大学：Harvard
+先修要求：无
+编程语言：C, Python, SQL, HTML, CSS, JavaScript
+课程难度：🌟🌟
+预计学时：20 小时
+
+连续多年被哈佛大学学生评为最受欢迎的公选课程。Malan 教授上课非常有激情，撕黄页讲二分法的场面让人记忆犹新（笑）。但因为它的入门以及全校公选的属性，课程内容难度比较温和，但是课程作业质量非常高而且全部免费开源，非常适合小白入门，或者大佬休闲。"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"📚文章","item":"https://rosefinch-midsummer.github.io/zh/posts/"},{"@type":"ListItem","position":2,"name":"🏫課程","item":"https://rosefinch-midsummer.github.io/zh/posts/course/"},{"@type":"ListItem","position":3,"name":"Harvard《CS50: This is CS50x》","item":"https://rosefinch-midsummer.github.io/zh/posts/course/harvardcs50-this-is-cs50x/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Harvard《CS50: This is CS50x》","name":"Harvard《CS50: This is CS50x》","description":"课程简介 所属大学：Harvard 先修要求：无 编程语言：C, Python, SQL, HTML, CSS, JavaScript 课程难度：🌟🌟 预计学时：20 小时 连续多年被哈佛大学学生评为最受欢迎的公选课程。Malan 教授上课非常有激情，撕黄页讲二分法的场面让人记忆犹新（笑）。但因为它的入门以及全校公选的属性，课程内容难度比较温和，但是课程作业质量非常高而且全部免费开源，非常适合小白入门，或者大佬休闲。\n","keywords":["Harvard","CS50"],"articleBody":"课程简介 所属大学：Harvard 先修要求：无 编程语言：C, Python, SQL, HTML, CSS, JavaScript 课程难度：🌟🌟 预计学时：20 小时 连续多年被哈佛大学学生评为最受欢迎的公选课程。Malan 教授上课非常有激情，撕黄页讲二分法的场面让人记忆犹新（笑）。但因为它的入门以及全校公选的属性，课程内容难度比较温和，但是课程作业质量非常高而且全部免费开源，非常适合小白入门，或者大佬休闲。\n课程资源 课程网站：2025, 2024, 2023, 2022 课程视频：原版参考课程网站，也可以在 B 站找到中文字幕版。 课程教材：无 课程作业：参考课程网站。 资源汇总 @mancuoj 在学习这门课中用到的所有资源和作业实现都汇总在 mancuoj/CS50x - GitHub 中。\n@figuretu 将有价值的提问讨论以及相关学习资源整理在共享文档 CS50 - 资源总目录 中。\nNotes C——Command-Line Arguments Command-line arguments are those arguments that are passed to your program at the command line. For example, all those statements you typed after clang are considered command line arguments. You can use these arguments in your own programs!\nIn your terminal window, type code greet.c and write code as follows:\n1 2 3 4 5 6 7 8 9 10 // Uses get_string #include #include int main(void) { string answer = get_string(\"What's your name? \"); printf(\"hello, %s\\n\", answer); } Notice that this says hello to the user.\nStill, would it not be nice to be able to take arguments before the program even runs? Modify your code as follows:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 // Prints a command-line argument #include #include int main(int argc, string argv[]) { if (argc == 2) { printf(\"hello, %s\\n\", argv[1]); } else { printf(\"hello, world\\n\"); } } Notice that this program knows both argc, the number of command line arguments, and argv, which is an array of the characters passed as arguments at the command line.\nTherefore, using the syntax of this program, executing ./greet David would result in the program saying hello, David.\nYou can print each of the command-line arguments with the following:\n1 2 3 4 5 6 7 8 9 10 11 12 // Prints command-line arguments #include #include int main(int argc, string argv[]) { for (int i = 0; i \u003c argc; i++) { printf(\"%s\\n\", argv[i]); } } C——Exit Status When a program ends, a special exit code is provided to the computer.\nWhen a program exits without error, a status code of 0 is provided to the computer. Often, when an error occurs that results in the program ending, a status of 1 is provided by the computer.\nYou could write a program as follows that illustrates this by typing code status.c and writing code as follows:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 // Returns explicit value from main #include #include int main(int argc, string argv[]) { if (argc != 2) { printf(\"Missing command-line argument\\n\"); return 1; } printf(\"hello, %s\\n\", argv[1]); return 0; } Notice that if you fail to provide ./status David, you will get an exit status of 1. However, if you do provide ./status David, you will get an exit status of 0.\nYou can type echo $? in the terminal to see the exit status of the last run command.\nYou can imagine how you might use portions of the above program to check if a user provided the correct number of command-line arguments.\nCopying and malloc A common need in programming is to copy one string to another.\nIn your terminal window, type code copy.c and write code as follows:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 // Capitalizes a string #include #include #include #include int main(void) { // Get a string string s = get_string(\"s: \"); // Copy string's address string t = s; // Capitalize first letter in string t[0] = toupper(t[0]); // Print string twice printf(\"s: %s\\n\", s); printf(\"t: %s\\n\", t); } Notice that string t = s copies the address of s to t. This does not accomplish what we are desiring. The string is not copied – only the address is. Further, notice the inclusion of ctype.h.\nYou can visualize the above code as follows:\nNotice that s and t are still pointing at the same blocks of memory. This is not an authentic copy of a string. Instead, these are two pointers pointing at the same string.\nBefore we address this challenge, it’s important to ensure that we don’t experience a segmentation fault through our code, where we attempt to copy string s to string t, where string t does not exist. We can employ the strlen function as follows to assist with that:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 // Capitalizes a string, checking length first #include #include #include #include int main(void) { // Get a string string s = get_string(\"s: \"); // Copy string's address string t = s; // Capitalize first letter in string if (strlen(t) \u003e 0) { t[0] = toupper(t[0]); } // Print string twice printf(\"s: %s\\n\", s); printf(\"t: %s\\n\", t); } Notice that strlen is used to make sure string t exists. If it does not, nothing will be copied.\nTo be able to make an authentic copy of the string, we will need to introduce two new building blocks. First, malloc allows you, the programmer, to allocate a block of a specific size of memory. Second, free allows you to tell the compiler to free up that block of memory you previously allocated.\nWe can modify our code to create an authentic copy of our string as follows:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 // Capitalizes a copy of a string #include #include #include #include #include int main(void) { // Get a string char *s = get_string(\"s: \"); // Allocate memory for another string char *t = malloc(strlen(s) + 1); // Copy string into memory, including '\\0' for (int i = 0; i \u003c= strlen(s); i++) { t[i] = s[i]; } // Capitalize copy t[0] = toupper(t[0]); // Print strings printf(\"s: %s\\n\", s); printf(\"t: %s\\n\", t); } Notice that malloc(strlen(s) + 1) creates a block of memory that is the length of the string s plus one. This allows for the inclusion of the null \\0 character in our final copied string. Then, the for loop walks through the string s and assigns each value to that same location on the string t.\nIt turns out that our code is inefficient. Modify your code as follows:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 // Capitalizes a copy of a string, defining n in loop too #include #include #include #include #include int main(void) { // Get a string char *s = get_string(\"s: \"); // Allocate memory for another string char *t = malloc(strlen(s) + 1); // Copy string into memory, including '\\0' for (int i = 0, n = strlen(s); i \u003c= n; i++) { t[i] = s[i]; } // Capitalize copy t[0] = toupper(t[0]); // Print strings printf(\"s: %s\\n\", s); printf(\"t: %s\\n\", t); } Notice that n = strlen(s) is defined now in the left-hand side of the for loop. It’s best not to call unneeded functions in the middle condition of the for loop, as it will run over and over again. When moving n = strlen(s) to the left-hand side, the function strlen only runs once.\nThe C Language has a built-in function to copy strings called strcpy. It can be implemented as follows:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 // Capitalizes a copy of a string using strcpy #include #include #include #include #include int main(void) { // Get a string char *s = get_string(\"s: \"); // Allocate memory for another string char *t = malloc(strlen(s) + 1); // Copy string into memory strcpy(t, s); // Capitalize copy t[0] = toupper(t[0]); // Print strings printf(\"s: %s\\n\", s); printf(\"t: %s\\n\", t); } Notice that strcpy does the same work that our for loop previously did.\nBoth get_string and malloc return NULL, a special value in memory, in the event that something goes wrong. You can write code that can check for this NULL condition as follows:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 // Capitalizes a copy of a string without memory errors #include #include #include #include #include int main(void) { // Get a string char *s = get_string(\"s: \"); if (s == NULL) { return 1; } // Allocate memory for another string char *t = malloc(strlen(s) + 1); if (t == NULL) { return 1; } // Copy string into memory strcpy(t, s); // Capitalize copy if (strlen(t) \u003e 0) { t[0] = toupper(t[0]); } // Print strings printf(\"s: %s\\n\", s); printf(\"t: %s\\n\", t); // Free memory free(t); return 0; } Notice that if the string obtained is of length 0 or malloc fails, NULL is returned. Further, notice that free lets the computer know you are done with this block of memory you created via malloc.\nValgrind Valgrind is a tool that can check to see if there are memory-related issues with your programs wherein you utilized malloc. Specifically, it checks to see if you free all the memory you allocated.\nConsider the following code for memory.c:\n1 2 3 4 5 6 7 8 9 10 11 12 // Demonstrates memory errors via valgrind #include #include int main(void) { int *x = malloc(3 * sizeof(int)); x[1] = 72; x[2] = 73; x[3] = 33; } Notice that running this program does not cause any errors. While malloc is used to allocate enough memory for an array, the code fails to free that allocated memory.\nIf you type make memory followed by valgrind ./memory, you will get a report from valgrind that will report where memory has been lost as a result of your program. One error that valgrind reveals is that we attempted to assign the value of 33 at the 4th position of the array, where we only allocated an array of size 3. Another error is that we never freed x.\nYou can modify your code to free the memory of x as follows:\n1 2 3 4 5 6 7 8 9 10 11 12 13 // Demonstrates memory errors via valgrind #include #include int main(void) { int *x = malloc(3 * sizeof(int)); x[1] = 72; x[2] = 73; x[3] = 33; free(x); } Notice that running valgrind again now results in no memory leaks.\nGarbage Values When you ask the compiler for a block of memory, there is no guarantee that this memory will be empty.\nIt’s very possible that the memory you allocated was previously utilized by the computer. Accordingly, you may see junk or garbage values. This is a result of you getting a block of memory but not initializing it. For example, consider the following code for garbage.c:\n1 2 3 4 5 6 7 8 9 10 11 #include #include int main(void) { int scores[1024]; for (int i = 0; i \u003c 1024; i++) { printf(\"%i\\n\", scores[i]); } } Notice that running this code will allocate 1024 locations in memory for your array, but the for loop will likely show that not all values therein are 0. It’s always best practice to be aware of the potential for garbage values when you do not initialize blocks of memory to some other value like zero or otherwise.\nTries Tries are another form of data structure. Tries are trees of arrays.\nTries are always searchable in constant time.\nOne downside to Tries is that they tend to take up a large amount of memory. Notice that we need 26 ×4 =104 nodes just to store Toad!\nToad would be stored as follows:\nTom would then be stored as follows:\nThis structure offers a search time of 𝑂⁡(1).\nThe downside of this structure is how many resources are required to use it.\nPython——Command-Line Arguments As with C, you can also utilize command-line arguments. Consider the following code:\n1 2 3 4 5 6 7 8 # Prints a command-line argument from sys import argv if len(argv) == 2: print(f\"hello, {argv[1]}\") else: print(\"hello, world\") Notice that argv[1] is printed using a formatted string, noted by the f present in the print statement.\nYou can learn more about the sys library in the Python documentation\nPython——Exit Status The sys library also has built-in methods. We can use sys.exit(i) to exit the program with a specific exit code:\n1 2 3 4 5 6 7 8 9 10 # Exits with explicit value, importing sys import sys if len(sys.argv) != 2: print(\"Missing command-line argument\") sys.exit(1) print(f\"hello, {sys.argv[1]}\") sys.exit(0) Notice that dot-notation is used to utilize the built-in functions of sys.\nRelational Databases Google, X, and Meta all use relational databases to store their information at scale.\nRelational databases store data in rows and columns in structures called tables.\nSQL allows for four types of commands:\n1 2 3 4 Create Read Update Delete These four operations are affectionately called CRUD.\nWe can create a database with the SQL syntax CREATE TABLE table (column type, ...);. But where do you run this command?\nsqlite3 is a type of SQL database that has the core features required for this course.\nWe can create a SQL database at the terminal by typing sqlite3 favorites.db. Upon being prompted, we will agree that we want to create favorites.db by pressing y.\nYou will notice a different prompt as we are now using a program called sqlite.\nWe can put sqlite into csv mode by typing .mode csv. Then, we can import our data from our csv file by typing .import favorites.csv favorites. It seems that nothing has happened!\nWe can type .schema to see the structure of the database.\nYou can read items from a table using the syntax SELECT columns FROM table.\nFor example, you can type SELECT * FROM favorites; which will print every row in favorites.\nYou can get a subset of the data using the command SELECT language FROM favorites;.\nSQL supports many commands to access data, including:\n1 2 3 4 5 6 7 AVG COUNT DISTINCT LOWER MAX MIN UPPER For example, you can type SELECT COUNT(*) FROM favorites;. Further, you can type SELECT DISTINCT language FROM favorites; to get a list of the individual languages within the database. You could even type SELECT COUNT(DISTINCT language) FROM favorites; to get a count of those.\nSQL offers additional commands we can utilize in our queries:\n1 2 3 4 5 WHERE -- adding a Boolean expression to filter our data LIKE -- filtering responses more loosely ORDER BY -- ordering responses LIMIT -- limiting the number of responses GROUP BY -- grouping responses together Notice that we use -- to write a comment in SQL.\nSQL Injection Attacks Now, still considering the code above, you might be wondering what the ? question marks do above. One of the problems that can arise in real-world applications of SQL is what is called an injection attack. An injection attack is where a malicious actor could input malicious SQL code.\nFor example, consider a login screen as follows:\nWithout the proper protections in our own code, a bad actor could run malicious code. Consider the following:\n1 rows = db.execute(\"SELECT COUNT(*) FROM users WHERE username = ? AND password = ?\", username, password) Notice that because the ? is in place, validation can be run on favorite before it is blindly accepted by the query.\nYou never want to utilize formatted strings in queries as above or blindly trust the user’s input.\nUtilizing the CS50 Library, the library will sanitize and remove any potentially malicious characters.\nhttp-server Up until this point, all HTML you saw was pre-written and static.\nIn the past, when you visited a page, the browser downloaded an HTML page, and you were able to view it. These are considered static pages, in that what is programmed in the HTML is exactly what the user sees and downloads client-side to their internet browser.\nDynamic pages refer to the ability of Python and similar languages to create HTML on-the-fly. Accordingly, you can have web pages that are generated server-side by code based upon the input or behavior of users.\nYou have used http-server in the past to serve your web pages. Today, we are going to utilize a new server that can parse out a web address and perform actions based on the URL provided.\nFurther, last week, you saw URLs as follows:\n1 https://www.example.com/folder/file.html Notice that file.html is an HTML file inside a folder called folder at example.com.\nCookies and Session app.py is considered a controller. A view is considered what the users see. A model is how data is stored and manipulated. Together, this is referred to as MVC (model, view, controller).\nWhile the prior implementation of froshims is useful from an administrative standpoint, where a back-office administrator could add and remove individuals from the database, one can imagine how this code is not safe to implement on a public server.\nFor one, bad actors could make decisions on behalf of other users by hitting the deregister button – effectively deleting their recorded answer from the server.\nWeb services like Google use login credentials to ensure users only have access to the right data.\nWe can actually implement this itself using cookies. Cookies are small files that are stored on your computer such that your computer can communicate with the server and effectively say, “I’m an authorized user that has already logged in.” This authorization through this cookie is called a session.\nCookies may be stored as follows:\n1 2 3 GET / HTTP/2 Host: accounts.google.com Cookie: session=value Here, a session id is stored with a particular value representing that session.\nIn the simplest form, we can implement this by creating a folder called login and then adding the following files.\nFirst, create a file called requirements.txt that reads as follows:\n1 2 Flask Flask-Session Notice that in addition to Flask, we also include Flask-Session, which is required to support login sessions.\nSecond, in a templates folder, create a file called layout.html that appears as follows:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 \u003c!DOCTYPE html\u003e login {% block body %}{% endblock %} Notice this provides a very simple layout with a title and a body.\nThird, create a file in the templates folder called index.html that appears as follows:\n1 2 3 4 5 6 7 8 9 10 11 {% extends \"layout.html\" %} {% block body %} {% if name -%} You are logged in as {{ name }}. \u003ca href=\"/logout\"\u003eLog out\u003c/a\u003e. {%- else -%} You are not logged in. \u003ca href=\"/login\"\u003eLog in\u003c/a\u003e. {%- endif %} {% endblock %} Notice that this file looks to see if session[\"name\"] exists (elaborated further in app.py below). If it does, it will display a welcome message. If not, it will recommend you browse to a page to log in.\nFourth, create a file called login.html and add the following code:\n1 2 3 4 5 6 7 8 9 10 {% extends \"layout.html\" %} {% block body %} \u003cform action=\"/login\" method=\"post\"\u003e \u003cinput autocomplete=\"off\" autofocus name=\"name\" placeholder=\"Name\" type=\"text\"\u003e \u003cbutton type=\"submit\"\u003eLog In\u003c/button\u003e \u003c/form\u003e {% endblock %} Notice this is the layout of a basic login page.\nFinally, create a file called app.py and write code as follows:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 from flask import Flask, redirect, render_template, request, session from flask_session import Session # Configure app app = Flask(__name__) # Configure session app.config[\"SESSION_PERMANENT\"] = False app.config[\"SESSION_TYPE\"] = \"filesystem\" Session(app) @app.route(\"/\") def index(): return render_template(\"index.html\", name=session.get(\"name\")) @app.route(\"/login\", methods=[\"GET\", \"POST\"]) def login(): if request.method == \"POST\": session[\"name\"] = request.form.get(\"name\") return redirect(\"/\") return render_template(\"login.html\") @app.route(\"/logout\") def logout(): session.clear() return redirect(\"/\") Notice the modified imports at the top of the file, including session, which will allow you to support sessions. Most importantly, notice how session[\"name\"] is used in the login and logout routes. The login route will assign the login name provided and assign it to session[\"name\"]. However, in the logout route, the logging out is implemented by clearing the value of session.\nThe session abstraction allows you to ensure only a specific user has access to specific data and features in our application. It allows you to ensure that no one acts on behalf of another user, for good or bad!\nIf you wish, you can download our implementation of login.\nYou can read more about sessions in the Flask documentation.\n","wordCount":"3857","inLanguage":"zh","datePublished":"2025-12-06T19:34:25+08:00","dateModified":"2025-12-06T22:54:22+08:00","author":{"@type":"Person","name":"RM"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://rosefinch-midsummer.github.io/zh/posts/course/harvardcs50-this-is-cs50x/"},"publisher":{"@type":"Organization","name":"天漢帝國復興錄","logo":{"@type":"ImageObject","url":"https://rosefinch-midsummer.github.io/img/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://rosefinch-midsummer.github.io/zh/ accesskey=h title="天漢帝國復興錄 (Alt + H)">天漢帝國復興錄</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://rosefinch-midsummer.github.io/zh/ title=🏠主頁><span>🏠主頁</span></a></li><li><a href=https://rosefinch-midsummer.github.io/zh/posts title=📚文章><span>📚文章</span></a></li><li><a href=https://rosefinch-midsummer.github.io/zh/search title="🔍搜索 (Alt + /)" accesskey=/><span>🔍搜索</span></a></li><li><a href=https://rosefinch-midsummer.github.io/zh/archives title=⏱時間軸><span>⏱時間軸</span></a></li><li><a href=https://rosefinch-midsummer.github.io/zh/categories title=🧩分類><span>🧩分類</span></a></li><li><a href=https://rosefinch-midsummer.github.io/zh/tags title=🔖標簽><span>🔖標簽</span></a></li><li><a href=https://rosefinch-midsummer.github.io/zh/about title=🙋🏻‍♂️關于><span>🙋🏻‍♂️關于</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://rosefinch-midsummer.github.io/zh/>首頁</a>&nbsp;»&nbsp;<a href=https://rosefinch-midsummer.github.io/zh/posts/>📚文章</a>&nbsp;»&nbsp;<a href=https://rosefinch-midsummer.github.io/zh/posts/course/>🏫課程</a></div><h1 class=post-title>Harvard《CS50: This is CS50x》</h1><div class=post-meta>创建: 2025-12-06 |
+更新: 2025-12-06 |
+字数: 3857字 |
+时长: 8分钟 |
+RM</div><div class=meta-item>&nbsp·&nbsp
+<span id=busuanzi_container_page_pv>本文阅读量<span id=busuanzi_value_page_pv></span>次</span></div></header><div class=toc><details open><summary accesskey=c title="(Alt + C)"><span class=details>目錄</span></summary><div class=inner><ul><li><a href=#%e8%af%be%e7%a8%8b%e7%ae%80%e4%bb%8b aria-label=课程简介>课程简介</a></li><li><a href=#%e8%af%be%e7%a8%8b%e8%b5%84%e6%ba%90 aria-label=课程资源>课程资源</a></li><li><a href=#%e8%b5%84%e6%ba%90%e6%b1%87%e6%80%bb aria-label=资源汇总>资源汇总</a></li><li><a href=#notes aria-label=Notes>Notes</a><ul><li><a href=#ccommand-line-arguments aria-label="C——Command-Line Arguments">C——Command-Line Arguments</a></li><li><a href=#cexit-status aria-label="C——Exit Status">C——Exit Status</a></li><li><a href=#copying-and-malloc aria-label="Copying and malloc">Copying and malloc</a></li><li><a href=#valgrind aria-label=Valgrind>Valgrind</a></li><li><a href=#garbage-values aria-label="Garbage Values">Garbage Values</a></li><li><a href=#tries aria-label=Tries>Tries</a></li><li><a href=#pythoncommand-line-arguments aria-label="Python——Command-Line Arguments">Python——Command-Line Arguments</a></li><li><a href=#pythonexit-status aria-label="Python——Exit Status">Python——Exit Status</a></li><li><a href=#relational-databases aria-label="Relational Databases">Relational Databases</a></li><li><a href=#sql-injection-attacks aria-label="SQL Injection Attacks">SQL Injection Attacks</a></li><li><a href=#http-server aria-label=http-server>http-server</a></li><li><a href=#cookies-and-session aria-label="Cookies and Session">Cookies and Session</a></li></ul></li></ul></div></details></div><div class=post-content><h1 id=课程简介>课程简介<a hidden class=anchor aria-hidden=true href=#课程简介>#</a></h1><ul><li>所属大学：Harvard</li><li>先修要求：无</li><li>编程语言：C, Python, SQL, HTML, CSS, JavaScript</li><li>课程难度：🌟🌟</li><li>预计学时：20 小时</li></ul><p>连续多年被哈佛大学学生评为最受欢迎的公选课程。Malan 教授上课非常有激情，撕黄页讲二分法的场面让人记忆犹新（笑）。但因为它的入门以及全校公选的属性，课程内容难度比较温和，但是课程作业质量非常高而且全部免费开源，非常适合小白入门，或者大佬休闲。</p><h1 id=课程资源>课程资源<a hidden class=anchor aria-hidden=true href=#课程资源>#</a></h1><ul><li>课程网站：<a href=https://cs50.harvard.edu/x/2025/>2025</a>, <a href=https://cs50.harvard.edu/x/2024/>2024</a>, <a href=https://cs50.harvard.edu/x/2023/>2023</a>, <a href=https://cs50.harvard.edu/x/2022/>2022</a></li><li>课程视频：原版参考课程网站，也可以在 B 站找到<a href="https://www.bilibili.com/video/BV1HW4y1A7Yi/?spm_id_from=333.999.0.0&amp;vd_source=a4d76d1247665a7e7bec15d15fd12349">中文字幕版</a>。</li><li>课程教材：无</li><li>课程作业：参考课程网站。</li></ul><h1 id=资源汇总>资源汇总<a hidden class=anchor aria-hidden=true href=#资源汇总>#</a></h1><p>@mancuoj 在学习这门课中用到的所有资源和作业实现都汇总在 <a href=https://github.com/mancuoj/CS50x>mancuoj/CS50x - GitHub</a> 中。</p><p>@figuretu 将有价值的提问讨论以及相关学习资源整理在共享文档 <a href=https://uufyjevghz.feishu.cn/docx/DP78d2U5TosTOTx9QCbcjp8GnBh>CS50 - 资源总目录</a> 中。</p><h1 id=notes>Notes<a hidden class=anchor aria-hidden=true href=#notes>#</a></h1><h2 id=ccommand-line-arguments><a href=https://cs50.harvard.edu/x/notes/2/#command-line-arguments>C——Command-Line Arguments</a><a hidden class=anchor aria-hidden=true href=#ccommand-line-arguments>#</a></h2><ul><li><p><code>Command-line arguments</code> are those arguments that are passed to your program at the command line. For example, all those statements you typed after <code>clang</code> are considered command line arguments. You can use these arguments in your own programs!</p></li><li><p>In your terminal window, type <code>code greet.c</code> and write code as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// Uses get_string
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cs50.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>string</span> <span class=n>answer</span> <span class=o>=</span> <span class=nf>get_string</span><span class=p>(</span><span class=s>&#34;What&#39;s your name? &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;hello, %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>answer</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that this says <code>hello</code> to the user.</p></li><li><p>Still, would it not be nice to be able to take arguments before the program even runs? Modify your code as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// Prints a command-line argument
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cs50.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>int</span> <span class=n>argc</span><span class=p>,</span> <span class=n>string</span> <span class=n>argv</span><span class=p>[])</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>argc</span> <span class=o>==</span> <span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;hello, %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>argv</span><span class=p>[</span><span class=mi>1</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;hello, world</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that this program knows both <code>argc</code>, the number of command line arguments, and <code>argv</code>, which is an array of the characters passed as arguments at the command line.</p></li><li><p>Therefore, using the syntax of this program, executing <code>./greet David</code> would result in the program saying <code>hello, David</code>.</p></li><li><p>You can print each of the command-line arguments with the following:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// Prints command-line arguments
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cs50.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>int</span> <span class=n>argc</span><span class=p>,</span> <span class=n>string</span> <span class=n>argv</span><span class=p>[])</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>argc</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;%s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>argv</span><span class=p>[</span><span class=n>i</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div></li></ul><h2 id=cexit-status><a href=https://cs50.harvard.edu/x/notes/2/#exit-status>C——Exit Status</a><a hidden class=anchor aria-hidden=true href=#cexit-status>#</a></h2><ul><li><p>When a program ends, a special exit code is provided to the computer.</p></li><li><p>When a program exits without error, a status code of <code>0</code> is provided to the computer. Often, when an error occurs that results in the program ending, a status of <code>1</code> is provided by the computer.</p></li><li><p>You could write a program as follows that illustrates this by typing <code>code status.c</code> and writing code as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// Returns explicit value from main
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cs50.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>int</span> <span class=n>argc</span><span class=p>,</span> <span class=n>string</span> <span class=n>argv</span><span class=p>[])</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>argc</span> <span class=o>!=</span> <span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;Missing command-line argument</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;hello, %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>argv</span><span class=p>[</span><span class=mi>1</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that if you fail to provide <code>./status David</code>, you will get an exit status of <code>1</code>. However, if you do provide <code>./status David</code>, you will get an exit status of <code>0</code>.</p></li><li><p>You can type <code>echo $?</code> in the terminal to see the exit status of the last run command.</p></li><li><p>You can imagine how you might use portions of the above program to check if a user provided the correct number of command-line arguments.</p></li></ul><h2 id=copying-and-malloc><a href=https://cs50.harvard.edu/x/notes/4/#copying-and-malloc>Copying and malloc</a><a hidden class=anchor aria-hidden=true href=#copying-and-malloc>#</a></h2><ul><li><p>A common need in programming is to copy one string to another.</p></li><li><p>In your terminal window, type <code>code copy.c</code> and write code as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// Capitalizes a string
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cs50.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;ctype.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;string.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Get a string
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>string</span> <span class=n>s</span> <span class=o>=</span> <span class=nf>get_string</span><span class=p>(</span><span class=s>&#34;s: &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Copy string&#39;s address
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>string</span> <span class=n>t</span> <span class=o>=</span> <span class=n>s</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Capitalize first letter in string
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>t</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=nf>toupper</span><span class=p>(</span><span class=n>t</span><span class=p>[</span><span class=mi>0</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Print string twice
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;s: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>s</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;t: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>t</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that <code>string t = s</code> copies the address of <code>s</code> to <code>t</code>. This does not accomplish what we are desiring. The string is not copied – only the address is. Further, notice the inclusion of <code>ctype.h</code>.</p></li><li><p>You can visualize the above code as follows:</p><p><img alt="two pointers pointing at the same memory location with a string" loading=lazy src=https://cs50.harvard.edu/x/notes/4/cs50Week4Slide124.png title="two strings"></p><p>Notice that <code>s</code> and <code>t</code> are still pointing at the same blocks of memory. This is not an authentic copy of a string. Instead, these are two pointers pointing at the same string.</p></li><li><p>Before we address this challenge, it’s important to ensure that we don’t experience a <em>segmentation fault</em> through our code, where we attempt to copy <code>string s</code> to <code>string t</code>, where <code>string t</code> does not exist. We can employ the <code>strlen</code> function as follows to assist with that:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// Capitalizes a string, checking length first
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cs50.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;ctype.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;string.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Get a string
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>string</span> <span class=n>s</span> <span class=o>=</span> <span class=nf>get_string</span><span class=p>(</span><span class=s>&#34;s: &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Copy string&#39;s address
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>string</span> <span class=n>t</span> <span class=o>=</span> <span class=n>s</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Capitalize first letter in string
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>if</span> <span class=p>(</span><span class=nf>strlen</span><span class=p>(</span><span class=n>t</span><span class=p>)</span> <span class=o>&gt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>t</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=nf>toupper</span><span class=p>(</span><span class=n>t</span><span class=p>[</span><span class=mi>0</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Print string twice
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;s: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>s</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;t: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>t</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that <code>strlen</code> is used to make sure <code>string t</code> exists. If it does not, nothing will be copied.</p></li><li><p>To be able to make an authentic copy of the string, we will need to introduce two new building blocks. First, <code>malloc</code> allows you, the programmer, to allocate a block of a specific size of memory. Second, <code>free</code> allows you to tell the compiler to <em>free up</em> that block of memory you previously allocated.</p></li><li><p>We can modify our code to create an authentic copy of our string as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// Capitalizes a copy of a string
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cs50.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;ctype.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdlib.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;string.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Get a string
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>char</span> <span class=o>*</span><span class=n>s</span> <span class=o>=</span> <span class=nf>get_string</span><span class=p>(</span><span class=s>&#34;s: &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Allocate memory for another string
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>char</span> <span class=o>*</span><span class=n>t</span> <span class=o>=</span> <span class=nf>malloc</span><span class=p>(</span><span class=nf>strlen</span><span class=p>(</span><span class=n>s</span><span class=p>)</span> <span class=o>+</span> <span class=mi>1</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Copy string into memory, including &#39;\0&#39;
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;=</span> <span class=nf>strlen</span><span class=p>(</span><span class=n>s</span><span class=p>);</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>t</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=n>s</span><span class=p>[</span><span class=n>i</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Capitalize copy
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>t</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=nf>toupper</span><span class=p>(</span><span class=n>t</span><span class=p>[</span><span class=mi>0</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Print strings
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;s: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>s</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;t: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>t</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that <code>malloc(strlen(s) + 1)</code> creates a block of memory that is the length of the string <code>s</code> plus one. This allows for the inclusion of the <em>null</em> <code>\0</code> character in our final copied string. Then, the <code>for</code> loop walks through the string <code>s</code> and assigns each value to that same location on the string <code>t</code>.</p></li><li><p>It turns out that our code is inefficient. Modify your code as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// Capitalizes a copy of a string, defining n in loop too
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cs50.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;ctype.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdlib.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;string.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Get a string
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>char</span> <span class=o>*</span><span class=n>s</span> <span class=o>=</span> <span class=nf>get_string</span><span class=p>(</span><span class=s>&#34;s: &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Allocate memory for another string
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>char</span> <span class=o>*</span><span class=n>t</span> <span class=o>=</span> <span class=nf>malloc</span><span class=p>(</span><span class=nf>strlen</span><span class=p>(</span><span class=n>s</span><span class=p>)</span> <span class=o>+</span> <span class=mi>1</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Copy string into memory, including &#39;\0&#39;
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span> <span class=n>n</span> <span class=o>=</span> <span class=nf>strlen</span><span class=p>(</span><span class=n>s</span><span class=p>);</span> <span class=n>i</span> <span class=o>&lt;=</span> <span class=n>n</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>t</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=n>s</span><span class=p>[</span><span class=n>i</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Capitalize copy
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>t</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=nf>toupper</span><span class=p>(</span><span class=n>t</span><span class=p>[</span><span class=mi>0</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Print strings
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;s: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>s</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;t: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>t</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that <code>n = strlen(s)</code> is defined now in the left-hand side of the <code>for loop</code>. It’s best not to call unneeded functions in the middle condition of the <code>for</code> loop, as it will run over and over again. When moving <code>n = strlen(s)</code> to the left-hand side, the function <code>strlen</code> only runs once.</p></li><li><p>The <code>C</code> Language has a built-in function to copy strings called <code>strcpy</code>. It can be implemented as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// Capitalizes a copy of a string using strcpy
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cs50.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;ctype.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdlib.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;string.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Get a string
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>char</span> <span class=o>*</span><span class=n>s</span> <span class=o>=</span> <span class=nf>get_string</span><span class=p>(</span><span class=s>&#34;s: &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Allocate memory for another string
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>char</span> <span class=o>*</span><span class=n>t</span> <span class=o>=</span> <span class=nf>malloc</span><span class=p>(</span><span class=nf>strlen</span><span class=p>(</span><span class=n>s</span><span class=p>)</span> <span class=o>+</span> <span class=mi>1</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Copy string into memory
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nf>strcpy</span><span class=p>(</span><span class=n>t</span><span class=p>,</span> <span class=n>s</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Capitalize copy
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>t</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=nf>toupper</span><span class=p>(</span><span class=n>t</span><span class=p>[</span><span class=mi>0</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Print strings
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;s: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>s</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;t: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>t</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that <code>strcpy</code> does the same work that our <code>for</code> loop previously did.</p></li><li><p>Both <code>get_string</code> and <code>malloc</code> return <code>NULL</code>, a special value in memory, in the event that something goes wrong. You can write code that can check for this <code>NULL</code> condition as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// Capitalizes a copy of a string without memory errors
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cs50.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;ctype.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdlib.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;string.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Get a string
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>char</span> <span class=o>*</span><span class=n>s</span> <span class=o>=</span> <span class=nf>get_string</span><span class=p>(</span><span class=s>&#34;s: &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>s</span> <span class=o>==</span> <span class=nb>NULL</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Allocate memory for another string
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>char</span> <span class=o>*</span><span class=n>t</span> <span class=o>=</span> <span class=nf>malloc</span><span class=p>(</span><span class=nf>strlen</span><span class=p>(</span><span class=n>s</span><span class=p>)</span> <span class=o>+</span> <span class=mi>1</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>t</span> <span class=o>==</span> <span class=nb>NULL</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Copy string into memory
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nf>strcpy</span><span class=p>(</span><span class=n>t</span><span class=p>,</span> <span class=n>s</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Capitalize copy
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>if</span> <span class=p>(</span><span class=nf>strlen</span><span class=p>(</span><span class=n>t</span><span class=p>)</span> <span class=o>&gt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>t</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=nf>toupper</span><span class=p>(</span><span class=n>t</span><span class=p>[</span><span class=mi>0</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Print strings
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;s: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>s</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;t: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>t</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Free memory
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nf>free</span><span class=p>(</span><span class=n>t</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that if the string obtained is of length <code>0</code> or malloc fails, <code>NULL</code> is returned. Further, notice that <code>free</code> lets the computer know you are done with this block of memory you created via <code>malloc</code>.</p></li></ul><h2 id=valgrind><a href=https://cs50.harvard.edu/x/notes/4/#valgrind>Valgrind</a><a hidden class=anchor aria-hidden=true href=#valgrind>#</a></h2><ul><li><p><em>Valgrind</em> is a tool that can check to see if there are memory-related issues with your programs wherein you utilized <code>malloc</code>. Specifically, it checks to see if you <code>free</code> all the memory you allocated.</p></li><li><p>Consider the following code for <code>memory.c</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// Demonstrates memory errors via valgrind
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdlib.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=o>*</span><span class=n>x</span> <span class=o>=</span> <span class=nf>malloc</span><span class=p>(</span><span class=mi>3</span> <span class=o>*</span> <span class=k>sizeof</span><span class=p>(</span><span class=kt>int</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>x</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>=</span> <span class=mi>72</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>x</span><span class=p>[</span><span class=mi>2</span><span class=p>]</span> <span class=o>=</span> <span class=mi>73</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>x</span><span class=p>[</span><span class=mi>3</span><span class=p>]</span> <span class=o>=</span> <span class=mi>33</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that running this program does not cause any errors. While <code>malloc</code> is used to allocate enough memory for an array, the code fails to <code>free</code> that allocated memory.</p></li><li><p>If you type <code>make memory</code> followed by <code>valgrind ./memory</code>, you will get a report from valgrind that will report where memory has been lost as a result of your program. One error that valgrind reveals is that we attempted to assign the value of <code>33</code> at the 4th position of the array, where we only allocated an array of size <code>3</code>. Another error is that we never freed <code>x</code>.</p></li><li><p>You can modify your code to free the memory of <code>x</code> as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// Demonstrates memory errors via valgrind
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdlib.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=o>*</span><span class=n>x</span> <span class=o>=</span> <span class=nf>malloc</span><span class=p>(</span><span class=mi>3</span> <span class=o>*</span> <span class=k>sizeof</span><span class=p>(</span><span class=kt>int</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>x</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>=</span> <span class=mi>72</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>x</span><span class=p>[</span><span class=mi>2</span><span class=p>]</span> <span class=o>=</span> <span class=mi>73</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>x</span><span class=p>[</span><span class=mi>3</span><span class=p>]</span> <span class=o>=</span> <span class=mi>33</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nf>free</span><span class=p>(</span><span class=n>x</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that running valgrind again now results in no memory leaks.</p></li></ul><h2 id=garbage-values><a href=https://cs50.harvard.edu/x/notes/4/#garbage-values>Garbage Values</a><a hidden class=anchor aria-hidden=true href=#garbage-values>#</a></h2><ul><li><p>When you ask the compiler for a block of memory, there is no guarantee that this memory will be empty.</p></li><li><p>It’s very possible that the memory you allocated was previously utilized by the computer. Accordingly, you may see <em>junk</em> or <em>garbage values</em>. This is a result of you getting a block of memory but not initializing it. For example, consider the following code for <code>garbage.c</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdlib.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>scores</span><span class=p>[</span><span class=mi>1024</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=mi>1024</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;%i</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>scores</span><span class=p>[</span><span class=n>i</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that running this code will allocate <code>1024</code> locations in memory for your array, but the <code>for</code> loop will likely show that not all values therein are <code>0</code>. It’s always best practice to be aware of the potential for garbage values when you do not initialize blocks of memory to some other value like zero or otherwise.</p></li></ul><h2 id=tries><a href=https://cs50.harvard.edu/x/notes/5/#tries>Tries</a><a hidden class=anchor aria-hidden=true href=#tries>#</a></h2><ul><li><p><em>Tries</em> are another form of data structure. Tries are trees of arrays.</p></li><li><p><em>Tries</em> are always searchable in constant time.</p></li><li><p>One downside to <em>Tries</em> is that they tend to take up a large amount of memory. Notice that we need 26 ×4 =104 <code>node</code>s just to store <em>Toad</em>!</p></li><li><p><em>Toad</em> would be stored as follows:</p><p><img alt="toad being spelled with one letter at a time where one letter is associated with one list T from one list O from another and so on" loading=lazy src=https://cs50.harvard.edu/x/notes/5/cs50Week5Slide207.png title=tries></p></li><li><p><em>Tom</em> would then be stored as follows:</p><p><img alt="toad being spelled with one letter at a time where one letter is associated with one list T from one list O from another and so on and tom being spelled similarly where toad and tom share a two common letters T and O" loading=lazy src=https://cs50.harvard.edu/x/notes/5/cs50Week5Slide209.png title=tries></p></li><li><p>This structure offers a search time of 𝑂⁡(1).</p></li><li><p>The downside of this structure is how many resources are required to use it.</p></li></ul><h2 id=pythoncommand-line-arguments><a href=https://cs50.harvard.edu/x/notes/6/#command-line-arguments>Python——Command-Line Arguments</a><a hidden class=anchor aria-hidden=true href=#pythoncommand-line-arguments>#</a></h2><ul><li><p>As with C, you can also utilize command-line arguments. Consider the following code:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl># Prints a command-line argument
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>from sys import argv
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>if len(argv) == 2:
+</span></span><span class=line><span class=cl>    print(f&#34;hello, {argv[1]}&#34;)
+</span></span><span class=line><span class=cl>else:
+</span></span><span class=line><span class=cl>    print(&#34;hello, world&#34;)
+</span></span></code></pre></td></tr></table></div></div><p>Notice that <code>argv[1]</code> is printed using a <em>formatted string</em>, noted by the <code>f</code> present in the <code>print</code> statement.</p></li><li><p>You can learn more about the <code>sys</code> library in the <a href=https://docs.python.org/3/library/sys.html>Python documentation</a></p></li></ul><h2 id=pythonexit-status><a href=https://cs50.harvard.edu/x/notes/6/#exit-status>Python——Exit Status</a><a hidden class=anchor aria-hidden=true href=#pythonexit-status>#</a></h2><ul><li><p>The <code>sys</code> library also has built-in methods. We can use <code>sys.exit(i)</code> to exit the program with a specific exit code:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl># Exits with explicit value, importing sys
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import sys
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>if len(sys.argv) != 2:
+</span></span><span class=line><span class=cl>    print(&#34;Missing command-line argument&#34;)
+</span></span><span class=line><span class=cl>    sys.exit(1)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>print(f&#34;hello, {sys.argv[1]}&#34;)
+</span></span><span class=line><span class=cl>sys.exit(0)
+</span></span></code></pre></td></tr></table></div></div><p>Notice that dot-notation is used to utilize the built-in functions of <code>sys</code>.</p></li></ul><h2 id=relational-databases><a href=https://cs50.harvard.edu/x/notes/7/#relational-databases>Relational Databases</a><a hidden class=anchor aria-hidden=true href=#relational-databases>#</a></h2><ul><li><p>Google, X, and Meta all use relational databases to store their information at scale.</p></li><li><p>Relational databases store data in rows and columns in structures called <em>tables</em>.</p></li><li><p>SQL allows for four types of commands:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>  Create
+</span></span><span class=line><span class=cl>  Read
+</span></span><span class=line><span class=cl>  Update
+</span></span><span class=line><span class=cl>  Delete
+</span></span></code></pre></td></tr></table></div></div></li><li><p>These four operations are affectionately called <em>CRUD</em>.</p></li><li><p>We can create a database with the SQL syntax <code>CREATE TABLE table (column type, ...);</code>. But where do you run this command?</p></li><li><p><code>sqlite3</code> is a type of SQL database that has the core features required for this course.</p></li><li><p>We can create a SQL database at the terminal by typing <code>sqlite3 favorites.db</code>. Upon being prompted, we will agree that we want to create <code>favorites.db</code> by pressing <code>y</code>.</p></li><li><p>You will notice a different prompt as we are now using a program called <code>sqlite</code>.</p></li><li><p>We can put <code>sqlite</code> into <code>csv</code> mode by typing <code>.mode csv</code>. Then, we can import our data from our <code>csv</code> file by typing <code>.import favorites.csv favorites</code>. It seems that nothing has happened!</p></li><li><p>We can type <code>.schema</code> to see the structure of the database.</p></li><li><p>You can read items from a table using the syntax <code>SELECT columns FROM table</code>.</p></li><li><p>For example, you can type <code>SELECT * FROM favorites;</code> which will print every row in <code>favorites</code>.</p></li><li><p>You can get a subset of the data using the command <code>SELECT language FROM favorites;</code>.</p></li><li><p>SQL supports many commands to access data, including:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-SQL data-lang=SQL><span class=line><span class=cl><span class=w>  </span><span class=k>AVG</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=k>COUNT</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=k>DISTINCT</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=k>LOWER</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=k>MAX</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=k>MIN</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=k>UPPER</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div></li><li><p>For example, you can type <code>SELECT COUNT(*) FROM favorites;</code>. Further, you can type <code>SELECT DISTINCT language FROM favorites;</code> to get a list of the individual languages within the database. You could even type <code>SELECT COUNT(DISTINCT language) FROM favorites;</code> to get a count of those.</p></li><li><p>SQL offers additional commands we can utilize in our queries:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>  WHERE       -- adding a Boolean expression to filter our data
+</span></span><span class=line><span class=cl>  LIKE        -- filtering responses more loosely
+</span></span><span class=line><span class=cl>  ORDER BY    -- ordering responses
+</span></span><span class=line><span class=cl>  LIMIT       -- limiting the number of responses
+</span></span><span class=line><span class=cl>  GROUP BY    -- grouping responses together
+</span></span></code></pre></td></tr></table></div></div><p>Notice that we use <code>--</code> to write a comment in SQL.</p></li></ul><h2 id=sql-injection-attacks><a href=https://cs50.harvard.edu/x/notes/7/#sql-injection-attacks>SQL Injection Attacks</a><a hidden class=anchor aria-hidden=true href=#sql-injection-attacks>#</a></h2><ul><li><p>Now, still considering the code above, you might be wondering what the <code>?</code> question marks do above. One of the problems that can arise in real-world applications of SQL is what is called an <em>injection attack</em>. An injection attack is where a malicious actor could input malicious SQL code.</p></li><li><p>For example, consider a login screen as follows:</p><p><img alt="harvard key login screen with username and password fields" loading=lazy src=https://cs50.harvard.edu/x/notes/7/cs50Week7Slide051.png title="harvard key login screen"></p></li><li><p>Without the proper protections in our own code, a bad actor could run malicious code. Consider the following:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>rows = db.execute(&#34;SELECT COUNT(*) FROM users WHERE username = ? AND password = ?&#34;, username, password)
+</span></span></code></pre></td></tr></table></div></div><p>Notice that because the <code>?</code> is in place, validation can be run on <code>favorite</code> before it is blindly accepted by the query.</p></li><li><p>You never want to utilize formatted strings in queries as above or blindly trust the user’s input.</p></li><li><p>Utilizing the CS50 Library, the library will <em>sanitize</em> and remove any potentially malicious characters.</p></li></ul><h2 id=http-server><a href=https://cs50.harvard.edu/x/notes/9/#http-server>http-server</a><a hidden class=anchor aria-hidden=true href=#http-server>#</a></h2><ul><li><p>Up until this point, all HTML you saw was pre-written and static.</p></li><li><p>In the past, when you visited a page, the browser downloaded an HTML page, and you were able to view it. These are considered <em>static</em> pages, in that what is programmed in the HTML is exactly what the user sees and downloads <em>client-side</em> to their internet browser.</p></li><li><p>Dynamic pages refer to the ability of Python and similar languages to create HTML on-the-fly. Accordingly, you can have web pages that are generated <em>server-side</em> by code based upon the input or behavior of users.</p></li><li><p>You have used <code>http-server</code> in the past to serve your web pages. Today, we are going to utilize a new server that can parse out a web address and perform actions based on the URL provided.</p></li><li><p>Further, last week, you saw URLs as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>https://www.example.com/folder/file.html
+</span></span></code></pre></td></tr></table></div></div><p>Notice that <code>file.html</code> is an HTML file inside a folder called <code>folder</code> at <code>example.com</code>.</p></li></ul><h2 id=cookies-and-session><a href=https://cs50.harvard.edu/x/notes/9/#cookies-and-session>Cookies and Session</a><a hidden class=anchor aria-hidden=true href=#cookies-and-session>#</a></h2><ul><li><p><code>app.py</code> is considered a <em>controller</em>. A <em>view</em> is considered what the users see. A <em>model</em> is how data is stored and manipulated. Together, this is referred to as <em>MVC</em> (model, view, controller).</p></li><li><p>While the prior implementation of <code>froshims</code> is useful from an administrative standpoint, where a back-office administrator could add and remove individuals from the database, one can imagine how this code is not safe to implement on a public server.</p></li><li><p>For one, bad actors could make decisions on behalf of other users by hitting the deregister button – effectively deleting their recorded answer from the server.</p></li><li><p>Web services like Google use login credentials to ensure users only have access to the right data.</p></li><li><p>We can actually implement this itself using <em>cookies</em>. Cookies are small files that are stored on your computer such that your computer can communicate with the server and effectively say, “I’m an authorized user that has already logged in.” This authorization through this cookie is called a <em>session</em>.</p></li><li><p>Cookies may be stored as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>GET / HTTP/2
+</span></span><span class=line><span class=cl>Host: accounts.google.com
+</span></span><span class=line><span class=cl>Cookie: session=value
+</span></span></code></pre></td></tr></table></div></div><p>Here, a <code>session</code> id is stored with a particular <code>value</code> representing that session.</p></li><li><p>In the simplest form, we can implement this by creating a folder called <code>login</code> and then adding the following files.</p></li><li><p>First, create a file called <code>requirements.txt</code> that reads as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Flask
+</span></span><span class=line><span class=cl>Flask-Session
+</span></span></code></pre></td></tr></table></div></div><p>Notice that in addition to <code>Flask</code>, we also include <code>Flask-Session</code>, which is required to support login sessions.</p></li><li><p>Second, in a <code>templates</code> folder, create a file called <code>layout.html</code> that appears as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>&lt;html lang=&#34;en&#34;&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    &lt;head&gt;
+</span></span><span class=line><span class=cl>        &lt;meta name=&#34;viewport&#34; content=&#34;initial-scale=1, width=device-width&#34;&gt;
+</span></span><span class=line><span class=cl>        &lt;title&gt;login&lt;/title&gt;
+</span></span><span class=line><span class=cl>    &lt;/head&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    &lt;body&gt;
+</span></span><span class=line><span class=cl>        {% block body %}{% endblock %}
+</span></span><span class=line><span class=cl>    &lt;/body&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span></code></pre></td></tr></table></div></div><p>Notice this provides a very simple layout with a title and a body.</p></li><li><p>Third, create a file in the <code>templates</code> folder called <code>index.html</code> that appears as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=p>{</span><span class=o>%</span> <span class=k>extends</span> <span class=s2>&#34;layout.html&#34;</span> <span class=o>%</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>{</span><span class=o>%</span> <span class=n>block</span> <span class=n>body</span> <span class=o>%</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=p>{</span><span class=o>%</span> <span class=k>if</span> <span class=n>name</span> <span class=o>-%</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=n>You</span> <span class=n>are</span> <span class=n>logged</span> <span class=ow>in</span> <span class=n>as</span> <span class=p>{{</span> <span class=n>name</span> <span class=p>}}</span><span class=o>.</span> <span class=o>&lt;</span><span class=n>a</span> <span class=n>href</span><span class=o>=</span><span class=s2>&#34;/logout&#34;</span><span class=o>&gt;</span><span class=n>Log</span> <span class=n>out</span><span class=o>&lt;/</span><span class=n>a</span><span class=o>&gt;.</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span><span class=o>%-</span> <span class=k>else</span> <span class=o>-%</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=n>You</span> <span class=n>are</span> <span class=ow>not</span> <span class=n>logged</span> <span class=ow>in</span><span class=o>.</span> <span class=o>&lt;</span><span class=n>a</span> <span class=n>href</span><span class=o>=</span><span class=s2>&#34;/login&#34;</span><span class=o>&gt;</span><span class=n>Log</span> <span class=ow>in</span><span class=o>&lt;/</span><span class=n>a</span><span class=o>&gt;.</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span><span class=o>%-</span> <span class=n>endif</span> <span class=o>%</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>{</span><span class=o>%</span> <span class=n>endblock</span> <span class=o>%</span><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice that this file looks to see if <code>session["name"]</code> exists (elaborated further in <code>app.py</code> below). If it does, it will display a welcome message. If not, it will recommend you browse to a page to log in.</p></li><li><p>Fourth, create a file called <code>login.html</code> and add the following code:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=p>{</span><span class=o>%</span> <span class=k>extends</span> <span class=s2>&#34;layout.html&#34;</span> <span class=o>%</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>{</span><span class=o>%</span> <span class=n>block</span> <span class=n>body</span> <span class=o>%</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=n>form</span> <span class=n>action</span><span class=o>=</span><span class=s2>&#34;/login&#34;</span> <span class=n>method</span><span class=o>=</span><span class=s2>&#34;post&#34;</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=n>input</span> <span class=n>autocomplete</span><span class=o>=</span><span class=s2>&#34;off&#34;</span> <span class=n>autofocus</span> <span class=n>name</span><span class=o>=</span><span class=s2>&#34;name&#34;</span> <span class=n>placeholder</span><span class=o>=</span><span class=s2>&#34;Name&#34;</span> <span class=n>type</span><span class=o>=</span><span class=s2>&#34;text&#34;</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=n>button</span> <span class=n>type</span><span class=o>=</span><span class=s2>&#34;submit&#34;</span><span class=o>&gt;</span><span class=n>Log</span> <span class=n>In</span><span class=o>&lt;/</span><span class=n>button</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;/</span><span class=n>form</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>{</span><span class=o>%</span> <span class=n>endblock</span> <span class=o>%</span><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Notice this is the layout of a basic login page.</p></li><li><p>Finally, create a file called <code>app.py</code> and write code as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>from flask import Flask, redirect, render_template, request, session
+</span></span><span class=line><span class=cl>from flask_session import Session
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl># Configure app
+</span></span><span class=line><span class=cl>app = Flask(__name__)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl># Configure session
+</span></span><span class=line><span class=cl>app.config[&#34;SESSION_PERMANENT&#34;] = False
+</span></span><span class=line><span class=cl>app.config[&#34;SESSION_TYPE&#34;] = &#34;filesystem&#34;
+</span></span><span class=line><span class=cl>Session(app)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>@app.route(&#34;/&#34;)
+</span></span><span class=line><span class=cl>def index():
+</span></span><span class=line><span class=cl>    return render_template(&#34;index.html&#34;, name=session.get(&#34;name&#34;))
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>@app.route(&#34;/login&#34;, methods=[&#34;GET&#34;, &#34;POST&#34;])
+</span></span><span class=line><span class=cl>def login():
+</span></span><span class=line><span class=cl>    if request.method == &#34;POST&#34;:
+</span></span><span class=line><span class=cl>        session[&#34;name&#34;] = request.form.get(&#34;name&#34;)
+</span></span><span class=line><span class=cl>        return redirect(&#34;/&#34;)
+</span></span><span class=line><span class=cl>    return render_template(&#34;login.html&#34;)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>@app.route(&#34;/logout&#34;)
+</span></span><span class=line><span class=cl>def logout():
+</span></span><span class=line><span class=cl>    session.clear()
+</span></span><span class=line><span class=cl>    return redirect(&#34;/&#34;)
+</span></span></code></pre></td></tr></table></div></div><p>Notice the modified <em>imports</em> at the top of the file, including <code>session</code>, which will allow you to support sessions. Most importantly, notice how <code>session["name"]</code> is used in the <code>login</code> and <code>logout</code> routes. The <code>login</code> route will assign the login name provided and assign it to <code>session["name"]</code>. However, in the <code>logout</code> route, the logging out is implemented by clearing the value of <code>session</code>.</p></li><li><p>The <code>session</code> abstraction allows you to ensure only a specific user has access to specific data and features in our application. It allows you to ensure that no one acts on behalf of another user, for good or bad!</p></li><li><p>If you wish, you can download <a href=https://cdn.cs50.net/2024/fall/lectures/9/src9/login/>our implementation</a> of <code>login</code>.</p></li><li><p>You can read more about sessions in the <a href=https://flask.palletsprojects.com/en/stable/api/#flask.session>Flask documentation</a>.</p></li></ul></div><footer class=post-footer><ul class=post-tags><li><a href=https://rosefinch-midsummer.github.io/zh/tags/harvard/>Harvard</a></li><li><a href=https://rosefinch-midsummer.github.io/zh/tags/cs50/>CS50</a></li></ul><nav class=paginav><a class=next href=https://rosefinch-midsummer.github.io/zh/posts/book/%E9%AB%98%E8%83%BD%E6%95%88%E7%B1%BB%E8%84%91%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E4%B8%8E%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84/><span class=title>下一頁 »</span><br><span>《高能效类脑智能：算法与体系架构》</span></a></nav></footer><div><div class=pagination__title><span class=pagination__title-h style=font-size:20px>评论</span><br></div><div id=tcomment></div><script src=https://utteranc.es/client.js repo=Rosefinch-Midsummer/comments_of_blog issue-term=title theme=github-light crossorigin=anonymous async></script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.body.className.includes("dark")?"github-light":"photon-dark",t={type:"set-theme",theme:e},n=document.querySelector(".utterances-frame");n.contentWindow.postMessage(t,"https://utteranc.es")})</script></div></article></main><footer class=footer><span>&copy; 2025 <a href=https://rosefinch-midsummer.github.io/zh/>天漢帝國復興錄</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span><div class=busuanzi-footer><span id=busuanzi_container_site_pv>本站总访问量<span id=busuanzi_value_site_pv></span>次
+</span><span id=busuanzi_container_site_uv>本站访客数<span id=busuanzi_value_site_uv></span>人次</span></div></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="複製";function s(){t.innerHTML="已複製！",setTimeout(()=>{t.innerHTML="複製"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
