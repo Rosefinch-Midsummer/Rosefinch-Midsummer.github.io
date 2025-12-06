@@ -6,8 +6,19 @@
     <description>Recent content in 计算机 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 30 Nov 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Dec 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《高能效类脑智能：算法与体系架构》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E9%AB%98%E8%83%BD%E6%95%88%E7%B1%BB%E8%84%91%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E4%B8%8E%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84/</link>
+      <pubDate>Sat, 06 Dec 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/book/%E9%AB%98%E8%83%BD%E6%95%88%E7%B1%BB%E8%84%91%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E4%B8%8E%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84/</guid>
+      <description>&lt;h1 id=&#34;高能效类脑智能算法与体系架构&#34;&gt;《高能效类脑智能：算法与体系架构》&lt;/h1&gt;
+&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;本书非常推荐阅读，虽然这个领域看起来还是个天坑。&lt;/p&gt;
+&lt;p&gt;书中把感知机称为第一代人工神经网络，以深度学习为基础的人工神经网络为第二代，而脉冲神经网络是第三代人工神经网络。书中还给出了人工神经网络和脉冲神经网络的三点区别：编码方式、记忆和时间相关性。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>USTC《郭光灿院士引导您走进量子世界——从薛定谔猫到量子计算机》</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/course/ustc%E9%83%AD%E5%85%89%E7%81%BF%E9%99%A2%E5%A3%AB%E5%BC%95%E5%AF%BC%E6%82%A8%E8%B5%B0%E8%BF%9B%E9%87%8F%E5%AD%90%E4%B8%96%E7%95%8C/</link>
