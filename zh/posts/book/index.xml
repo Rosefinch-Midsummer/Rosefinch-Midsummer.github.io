@@ -6,8 +6,18 @@
     <description>Recent content in 📕閱讀 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 11 Dec 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/posts/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《群体智能机器人：原理、建模与应用》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E7%BE%A4%E4%BD%93%E6%99%BA%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8E%9F%E7%90%86%E5%BB%BA%E6%A8%A1%E4%B8%8E%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Fri, 12 Dec 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/book/%E7%BE%A4%E4%BD%93%E6%99%BA%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8E%9F%E7%90%86%E5%BB%BA%E6%A8%A1%E4%B8%8E%E5%BA%94%E7%94%A8/</guid>
+      <description>&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;书中区分了多智能体系统和群体智能的区别，后者有涌现现象——能实现「1+1&amp;gt;2」。&lt;/p&gt;
+&lt;p&gt;书中提到了图灵论文中的斑图，也提到了自组织、反馈等系统学词汇。书中还区分了投票模型和多数规则，这有助于解释「贤均从众」的原则。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>《深度学习与大模型基础》</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/</link>
