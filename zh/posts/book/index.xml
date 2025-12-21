@@ -4,10 +4,23 @@
     <title>📕閱讀 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/posts/book/</link>
     <description>Recent content in 📕閱讀 on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.152.2</generator>
-    <language>zh</language>
-    <lastBuildDate>Wed, 17 Dec 2025 22:54:22 +0800</lastBuildDate>
+    <generator>Hugo -- 0.153.1</generator>
+    <language>zh-cn#en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/posts/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《神经计算建模实战：基于BrainPy》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E7%A5%9E%E7%BB%8F%E8%AE%A1%E7%AE%97%E5%BB%BA%E6%A8%A1%E5%AE%9E%E6%88%98%E5%9F%BA%E4%BA%8Ebrainpy/</link>
+      <pubDate>Sun, 21 Dec 2025 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/book/%E7%A5%9E%E7%BB%8F%E8%AE%A1%E7%AE%97%E5%BB%BA%E6%A8%A1%E5%AE%9E%E6%88%98%E5%9F%BA%E4%BA%8Ebrainpy/</guid>
+      <description>&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;本书值得做神经计算方向的人阅读。&lt;/p&gt;
+&lt;p&gt;因为本书内容比较硬核，这里只贴章节小结。&lt;/p&gt;
+&lt;p&gt;相关代码链接如下所示：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/c-xy17/NeuralModeling&#34;&gt;《神经计算建模实战》代码&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/brainpy/1st-neural-modeling-and-programming-course&#34;&gt;First Training Course on Neural Modeling and Programming (第一届神经计算建模及编程培训班)&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>《第二性》</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E7%AC%AC%E4%BA%8C%E6%80%A7/</link>
