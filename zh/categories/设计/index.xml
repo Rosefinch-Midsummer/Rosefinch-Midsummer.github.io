@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>设计 on 天漢帝國復興錄</title>
+    <link>https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%BE%E8%AE%A1/</link>
+    <description>Recent content in 设计 on 天漢帝國復興錄</description>
+    <generator>Hugo -- 0.153.1</generator>
+    <language>zh-cn#en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 22:54:22 +0800</lastBuildDate>
+    <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《游戏系统设计探秘》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E6%B8%B8%E6%88%8F%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%8E%A2%E7%A7%98/</link>
+      <pubDate>Sun, 21 Dec 2025 21:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/book/%E6%B8%B8%E6%88%8F%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%8E%A2%E7%A7%98/</guid>
+      <description>&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;这本书是讲游戏策划相关的工作，不过作者的叫法是游戏系统设计。&lt;/p&gt;
+&lt;p&gt;整体来看，这本书就是入门书。对我设计游戏没有什么参考价值。&lt;/p&gt;
+&lt;p&gt;作者的父母是玩《龙与地下城》认识的。作者用Excel做游戏策划的一些事情。我觉得这两件事比较有趣。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
