@@ -6,8 +6,27 @@
     <description>Recent content in 🏫課程 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>zh-cn#en-us</language>
-    <lastBuildDate>Sat, 06 Dec 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 26 Dec 2025 14:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/posts/course/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MIT6.050J: Information theory and Entropy</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/course/mitinformation-theory-and-entropy/</link>
+      <pubDate>Fri, 26 Dec 2025 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/course/mitinformation-theory-and-entropy/</guid>
+      <description>&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;本课程内容还是挺丰富的，就是最后的量子信息部分内容不全。考虑到时代因素，这点是可以理解的。&lt;/p&gt;
+&lt;h2 id=&#34;课程简介&#34;&gt;课程简介&lt;/h2&gt;
+&lt;p&gt;MIT6.050J: Information theory and Entropy&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;所属大学：MIT&lt;/li&gt;
+&lt;li&gt;先修要求：无&lt;/li&gt;
+&lt;li&gt;编程语言：无&lt;/li&gt;
+&lt;li&gt;课程难度：🌟🌟🌟&lt;/li&gt;
+&lt;li&gt;预计学时：100 小时&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;MIT 面向大一新生的信息论入门课程，Penfield 教授专门为这门课写了一本&lt;a href=&#34;https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-050j-information-and-entropy-spring-2008/syllabus/MIT6_050JS08_textbook.pdf&#34;&gt;教材&lt;/a&gt;作为课程 notes，内容深入浅出，生动有趣。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Harvard《CS50: This is CS50x》</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/course/harvardcs50-this-is-cs50x/</link>
