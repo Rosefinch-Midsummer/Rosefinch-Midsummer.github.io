@@ -4,10 +4,26 @@
     <title>天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/</link>
     <description>Recent content on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.153.2</generator>
+    <generator>Hugo -- 0.153.5</generator>
     <language>zh-cn#en-us</language>
-    <lastBuildDate>Fri, 26 Dec 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 30 Dec 2025 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《DevOps实践指南》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/book/devops%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Tue, 30 Dec 2025 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/book/devops%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;书中提到了DevOps三要义：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;流动&lt;/li&gt;
+&lt;li&gt;反馈&lt;/li&gt;
+&lt;li&gt;持续学习与探索&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;持续学习这块还提到了「学习型组织的概念」。&lt;/p&gt;
+&lt;p&gt;书中也提到了康威定律，这在软件工程中还挺常见的。按照百度百科的说法，康威定律是马尔文康威1967提出的：“设计系统的架构受制于产生这些设计的组织的沟通结构。”通俗的来讲：产品必然是其（人员）组织沟通结构的缩影。康威定律可总结为四个定律：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>《厌女》</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E5%8E%8C%E5%A5%B3/</link>
