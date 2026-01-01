@@ -4,9 +4,9 @@
     <title>🏖生活 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/posts/life/</link>
     <description>Recent content in 🏖生活 on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.153.5</generator>
+    <generator>Hugo -- 0.154.0</generator>
     <language>zh-cn#en-us</language>
-    <lastBuildDate>Wed, 31 Dec 2025 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jan 2026 11:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/posts/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>常见的人格和职业风格测试</title>
@@ -184,6 +184,15 @@
       <guid>https://rosefinch-midsummer.github.io/zh/posts/life/%E5%9B%9B%E5%AD%A3%E6%98%9F%E7%A9%BA/</guid>
       <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
 &lt;p&gt;原本关于四季星空的内容写在关于流星雨的博文中，但由于后来纠正错误并补充了许多新内容，为了避免那篇博文变得过于繁琐，我特地新建了这篇博文，专门介绍四季星空。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kaggle自定义数据文件教程</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/life/kaggle%E8%87%AA%E5%AE%9A%E4%B9%89%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Mon, 28 Apr 2025 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/life/kaggle%E8%87%AA%E5%AE%9A%E4%B9%89%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;h3 id=&#34;什么是kaggle&#34;&gt;什么是Kaggle？&lt;/h3&gt;
+&lt;p&gt;Kaggle是全球领先的数据科学竞赛平台，提供丰富的数据集和强大的在线笔记本环境，让用户能够在云端进行数据分析、模型训练和分享。Kaggle不仅支持公开数据集，也允许用户上传自定义数据，方便进行个性化实验。&lt;/p&gt;</description>
     </item>
     <item>
       <title>西元2025年流星雨时间和天文应用推荐</title>
