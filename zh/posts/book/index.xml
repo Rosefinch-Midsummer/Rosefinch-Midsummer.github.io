@@ -4,10 +4,112 @@
     <title>📕閱讀 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/posts/book/</link>
     <description>Recent content in 📕閱讀 on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.154.3</generator>
+    <generator>Hugo -- 0.154.4</generator>
     <language>zh-cn#en-us</language>
-    <lastBuildDate>Sat, 10 Jan 2026 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 12:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/posts/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《数字图像处理与深度学习技术应用》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8A%80%E6%9C%AF%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Sun, 11 Jan 2026 12:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/book/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8A%80%E6%9C%AF%E5%BA%94%E7%94%A8/</guid>
+      <description>&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;这本书编得很不好，有不少错误之处（一看就是学生搞出来的烂书），但作为速通手册，还是可以阅读一下的。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/index.html&#34;&gt;OpenCV 模块——官网&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d1/dfb/intro.html&#34;&gt;简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d9/df8/tutorial_root.html&#34;&gt;OpenCV 教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d6/d00/tutorial_py_root.html&#34;&gt;OpenCV-Python 教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d5/d10/tutorial_js_root.html&#34;&gt;OpenCV.js 教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d3/d81/tutorial_contrib_root.html&#34;&gt;contrib 模块教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d3/d2d/faq.html&#34;&gt;常见问题解答&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d0/de3/citelist.html&#34;&gt;参考文献&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;主模块
+&lt;ul&gt;
+&lt;li&gt;core. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d0/de1/group__core.html&#34;&gt;核心功能&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;imgproc. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d7/dbd/group__imgproc.html&#34;&gt;图像处理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;imgcodecs. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d4/da8/group__imgcodecs.html&#34;&gt;图像文件读写&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;videoio. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dd/de7/group__videoio.html&#34;&gt;视频 I/O&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;highgui. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d7/dfc/group__highgui.html&#34;&gt;高级 GUI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;video. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d7/de9/group__video.html&#34;&gt;视频分析&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;calib3d. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d9/d0c/group__calib3d.html&#34;&gt;相机标定与 3D 重建&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;features2d. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/da/d9b/group__features2d.html&#34;&gt;2D 特征框架&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;objdetect. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d5/d54/group__objdetect.html&#34;&gt;目标检测&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;dnn. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d6/d0f/group__dnn.html&#34;&gt;深度神经网络模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ml. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dd/ded/group__ml.html&#34;&gt;机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;flann. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dc/de5/group__flann.html&#34;&gt;多维空间中的聚类与搜索&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;photo. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d1/d0d/group__photo.html&#34;&gt;计算摄影&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;stitching. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d1/d46/group__stitching.html&#34;&gt;图像拼接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;gapi. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d0/d1e/gapi.html&#34;&gt;图 API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;扩展模块
+&lt;ul&gt;
+&lt;li&gt;alphamat. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d4/d40/group__alphamat.html&#34;&gt;Alpha 抠图&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;aruco. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d9/d6a/group__aruco.html&#34;&gt;Aruco 标记，模块功能已移至 objdetect 模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;bgsegm. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d2/d55/group__bgsegm.html&#34;&gt;改进的背景-前景分割方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;bioinspired. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dd/deb/group__bioinspired.html&#34;&gt;受生物启发的视觉模型和衍生工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cannops. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d6/df4/group__cannops.html&#34;&gt;Ascend 加速的计算机视觉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ccalib. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d3/ddc/group__ccalib.html&#34;&gt;用于 3D 重建的自定义标定图案&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cudaarithm. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d5/d8e/group__cudaarithm.html&#34;&gt;矩阵运算&lt;/a&gt;Cudaarithm。矩阵运算&lt;/li&gt;
+&lt;li&gt;cudabgsegm. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d6/d17/group__cudabgsegm.html&#34;&gt;背景分割&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cudacodec. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d0/d61/group__cudacodec.html&#34;&gt;视频编码/解码&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cudafeatures2d. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d6/d1d/group__cudafeatures2d.html&#34;&gt;特征检测与描述&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cudafilters. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dc/d66/group__cudafilters.html&#34;&gt;图像滤波&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cudaimgproc. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d0/d05/group__cudaimgproc.html&#34;&gt;图像处理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cudalegacy. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d5/dc3/group__cudalegacy.html&#34;&gt;遗留支持&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cudaobjdetect. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d9/d3f/group__cudaobjdetect.html&#34;&gt;目标检测&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cudaoptflow. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d7/d3f/group__cudaoptflow.html&#34;&gt;光流&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cudastereo. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dd/d47/group__cudastereo.html&#34;&gt;立体匹配&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cudawarping. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/db/d29/group__cudawarping.html&#34;&gt;图像形变&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cudev. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/df/dfc/group__cudev.html&#34;&gt;设备层&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cvv. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/df/dff/group__cvv.html&#34;&gt;用于计算机视觉程序交互式视觉调试的 GUI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;datasets. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d8/d00/group__datasets.html&#34;&gt;处理不同数据集的框架&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;dnn_objdetect. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d5/df6/group__dnn__objdetect.html&#34;&gt;用于目标检测的 DNN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;dnn_superres. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d9/de0/group__dnn__superres.html&#34;&gt;用于超分辨率的 DNN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;dpm. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d9/d12/group__dpm.html&#34;&gt;可变形部件模型&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;face. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/db/d7c/group__face.html&#34;&gt;人脸分析&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fastcv. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dc/db8/group__fastcv.html&#34;&gt;FastCV 硬件加速函数的模块封装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;freetype. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d4/dfc/group__freetype.html&#34;&gt;使用 freetype/harfbuzz 绘制 UTF-8 字符串&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fuzzy. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/df/d5b/group__fuzzy.html&#34;&gt;基于模糊数学的图像处理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;hdf. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/db/d77/group__hdf.html&#34;&gt;分层数据格式 I/O 例程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;hfs. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dc/d29/group__hfs.html&#34;&gt;用于高效图像分割的分层特征选择&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;img_hash. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d4/d93/group__img__hash.html&#34;&gt;该模块提供了不同图像哈希算法的实现。&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;intensity_transform. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dc/dfe/group__intensity__transform.html&#34;&gt;该模块提供了用于调整图像对比度的强度变换算法的实现。&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;julia. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d7/d44/group__julia.html&#34;&gt;OpenCV 的 Julia 绑定&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;line_descriptor. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dc/ddd/group__line__descriptor.html&#34;&gt;从图像中提取的线的二进制描述符&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;mcc. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dd/d19/group__mcc.html&#34;&gt;Macbeth 色卡模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;optflow. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d2/d84/group__optflow.html&#34;&gt;光流算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ovis. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d2/d17/group__ovis.html&#34;&gt;OGRE 3D 可视化器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;phase_unwrapping. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/df/d3a/group__phase__unwrapping.html&#34;&gt;相位展开 API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;plot. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/db/dfe/group__plot.html&#34;&gt;Mat 数据的绘图函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;quality. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dc/d20/group__quality.html&#34;&gt;图像质量分析 (IQA) API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;rapid. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d4/dc4/group__rapid.html&#34;&gt;基于轮廓的 3D 对象跟踪&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;reg. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/db/d61/group__reg.html&#34;&gt;图像配准&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;rgbd. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d2/d3a/group__rgbd.html&#34;&gt;RGB-D 处理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;saliency. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d8/d65/group__saliency.html&#34;&gt;显著性 API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;sfm. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d8/d8c/group__sfm.html&#34;&gt;运动恢复结构&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;shape. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d1/d85/group__shape.html&#34;&gt;形状距离与匹配&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;signal. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d2/d1f/group__signal.html&#34;&gt;信号处理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;stereo. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dd/d86/group__stereo.html&#34;&gt;立体匹配算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;structured_light. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d1/d90/group__structured__light.html&#34;&gt;结构光 API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;superres. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d7/d0a/group__superres.html&#34;&gt;超分辨率&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;surface_matching. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d9/d25/group__surface__matching.html&#34;&gt;表面匹配&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;text. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d4/d61/group__text.html&#34;&gt;场景文本检测与识别&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;tracking. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d9/df8/group__tracking.html&#34;&gt;跟踪 API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;videostab. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d5/d50/group__videostab.html&#34;&gt;视频稳定&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;viz. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d1/d19/group__viz.html&#34;&gt;3D 可视化器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;wechat_qrcode. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/dd/d63/group__wechat__qrcode.html&#34;&gt;微信 QR 码检测器，用于检测和解析 QR 码。&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;xfeatures2d. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d1/db4/group__xfeatures2d.html&#34;&gt;额外的 2D 特征框架&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ximgproc. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/df/d2d/group__ximgproc.html&#34;&gt;扩展图像处理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;xobjdetect. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/d4/d54/group__xobjdetect.html&#34;&gt;扩展目标检测&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;xphoto. &lt;a href=&#34;https://docs.opencv.ac.cn/4.13.0/de/daa/group__xphoto.html&#34;&gt;额外的照片处理算法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;OpenCV（Open Source Computer Vision Library）是一个开源的计算机视觉和机器学习软件库。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>《这世界既残酷也温柔》</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E8%BF%99%E4%B8%96%E7%95%8C%E6%97%A2%E6%AE%8B%E9%85%B7%E4%B9%9F%E6%B8%A9%E6%9F%94/</link>
