@@ -6,8 +6,25 @@
     <description>Recent content in 📕閱讀 on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.154.5</generator>
     <language>zh-cn#en-us</language>
-    <lastBuildDate>Mon, 12 Jan 2026 22:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jan 2026 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/posts/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《量子图像处理及其关键技术》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E9%87%8F%E5%AD%90%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%8F%8A%E5%85%B6%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Tue, 13 Jan 2026 18:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/book/%E9%87%8F%E5%AD%90%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%8F%8A%E5%85%B6%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF/</guid>
+      <description>&lt;h1 id=&#34;概论&#34;&gt;概论&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;严格来说，我没有读懂这本书，因为我只懂得量子计算的皮毛。&lt;/p&gt;
+&lt;h2 id=&#34;书籍简介&#34;&gt;书籍简介&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://setsailtowardstianhan.ip-ddns.com/blog/283f62b678e06bda70061a44d3ab9d3b.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;作　者：	马鸿洋 邱田会 王淑梅 田艳兵 史鹏&lt;/p&gt;
+&lt;p&gt;出版社：	人民邮电出版社&lt;/p&gt;
+&lt;p&gt;ISBN：	9787115633941&lt;/p&gt;
+&lt;p&gt;出版时间：	2024-08-01&lt;/p&gt;
+&lt;h2 id=&#34;内容简介&#34;&gt;内容简介&lt;/h2&gt;
+&lt;p&gt;本书系统阐述了量子图像处理及其关键技术。本书内容共分9章，分别介绍了量子图像处理的研究意义和背景与现状、量子图像表示模型、量子图像处理算法、量子图像恢复、量子图像加密、量子水印、量子图像边缘检测、量子图像的分类识别、量子图像仿真实现。本书旨在为量子图像处理领域的科研人员提供具有较强实用性的参考，可作为物理和计算机专业开设量子计算相关课程的教学参考书，也可作为量子计算与量子图像处理的短期专题讲座培训用书。本书结构清晰、内容翔实，对初次接触量子图像处理领域的研究人员，特别是非物理专业的科研技术人员具有一定的参考价值。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>《卡片笔记写作法》</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E5%8D%A1%E7%89%87%E7%AC%94%E8%AE%B0%E5%86%99%E4%BD%9C%E6%B3%95/</link>
