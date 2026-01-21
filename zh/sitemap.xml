@@ -2,31 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rosefinch-midsummer.github.io/zh/posts/book/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%80%E8%AF%BE/</loc>
-    <lastmod>2026-01-21T12:54:22+08:00</lastmod>
+    <loc>https://rosefinch-midsummer.github.io/zh/posts/book/%E7%A7%8D%E6%97%8F%E4%B8%8E%E6%96%87%E5%8C%96/</loc>
+    <lastmod>2026-01-21T15:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/book/</loc>
-    <lastmod>2026-01-21T12:54:22+08:00</lastmod>
+    <lastmod>2026-01-21T15:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/</loc>
-    <lastmod>2026-01-21T12:54:22+08:00</lastmod>
+    <lastmod>2026-01-21T15:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/categories/</loc>
-    <lastmod>2026-01-21T12:54:22+08:00</lastmod>
+    <lastmod>2026-01-21T15:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/tags/</loc>
-    <lastmod>2026-01-21T12:54:22+08:00</lastmod>
+    <lastmod>2026-01-21T15:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2026-01-21T15:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/</loc>
+    <lastmod>2026-01-21T15:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/tags/%E6%89%98%E9%A9%AC%E6%96%AF%E7%B4%A2%E7%BB%B4%E5%B0%94/</loc>
+    <lastmod>2026-01-21T15:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/tags/%E6%96%87%E5%8C%96/</loc>
+    <lastmod>2026-01-21T15:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/tags/%E6%96%87%E5%8C%96%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89/</loc>
+    <lastmod>2026-01-21T15:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/posts/book/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%80%E8%AF%BE/</loc>
     <lastmod>2026-01-21T12:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/tags/%E5%8F%AF%E8%AE%A1%E7%AE%97%E6%80%A7/</loc>
     <lastmod>2026-01-21T12:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/tags/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/</loc>
-    <lastmod>2026-01-21T12:54:22+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/</loc>
     <lastmod>2026-01-21T12:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/book/6%E4%B8%AA%E6%9C%88%E5%AD%A6%E4%BC%9A%E4%BB%BB%E4%BD%95%E4%B8%80%E7%A7%8D%E5%A4%96%E8%AF%AD/</loc>
@@ -171,9 +183,6 @@
     <lastmod>2025-12-26T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/categories/%E7%A4%BE%E4%BC%9A%E5%AD%A6/</loc>
-    <lastmod>2025-12-26T22:54:22+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/tags/%E6%96%87%E5%8C%96%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89/</loc>
     <lastmod>2025-12-26T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/course/</loc>
@@ -931,9 +940,6 @@
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/book/%E7%BE%8E%E5%9B%BD%E7%A7%8D%E6%97%8F%E7%AE%80%E5%8F%B2/</loc>
     <lastmod>2025-08-25T22:54:22+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/tags/%E6%89%98%E9%A9%AC%E6%96%AF%E7%B4%A2%E7%BB%B4%E5%B0%94/</loc>
-    <lastmod>2025-10-23T13:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/tags/%E7%A7%8D%E6%97%8F/</loc>
     <lastmod>2025-08-25T22:54:22+08:00</lastmod>
@@ -1842,9 +1848,6 @@
     <lastmod>2025-10-23T12:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/categories/%E5%AE%8B%E6%9C%9D/</loc>
-    <lastmod>2025-10-23T12:54:22+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/tags/%E6%96%87%E5%8C%96/</loc>
     <lastmod>2025-10-23T12:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/life/jupyter-notebook%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE/</loc>
