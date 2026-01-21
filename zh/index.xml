@@ -6,8 +6,65 @@
     <description>Recent content on 天漢帝國復興錄</description>
     <generator>Hugo -- 0.154.5</generator>
     <language>zh-cn#en-us</language>
-    <lastBuildDate>Wed, 21 Jan 2026 18:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 21 Jan 2026 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>遊戲《文字遊戲》</title>
+      <link>https://rosefinch-midsummer.github.io/zh/posts/pastime/%E6%B8%B8%E6%88%8F%E6%96%87%E5%AD%97%E9%81%8A%E6%88%B2/</link>
+      <pubDate>Wed, 21 Jan 2026 20:34:25 +0800</pubDate>
+      <guid>https://rosefinch-midsummer.github.io/zh/posts/pastime/%E6%B8%B8%E6%88%8F%E6%96%87%E5%AD%97%E9%81%8A%E6%88%B2/</guid>
+      <description>&lt;h1 id=&#34;遊戲文字遊戲&#34;&gt;遊戲《文字遊戲》&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;本作對於漢字的應用令人贊嘆！&lt;/p&gt;
+&lt;p&gt;此外，本作是通過Godot Engine製作的遊戲，這讓我這個只學了開頭的人很不好意思~&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wordgame.cc/#wall&#34;&gt;《文字遊戲》官網&lt;/a&gt;&lt;/p&gt;
+&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+    &lt;style type=&#34;text/css&#34;&gt;
+        .bilibili_shortcodes {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 66%;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+        }
+        .bilibili_shortcodes iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+    &lt;/style&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&#34;bilibili_shortcodes&#34;&gt;
+    &lt;iframe
+            src=&#34;https://player.bilibili.com/player.html?bvid=BV1ta411z7qz&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0&#34;
+            scrolling=&#34;no&#34;
+            border=&#34;0&#34;
+            frameborder=&#34;no&#34;
+            framespacing=&#34;0&#34;
+            allowfullscreen=&#34;true&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+
+
+
+
+&lt;h2 id=&#34;簡介&#34;&gt;簡介&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;w&#34; loading=&#34;lazy&#34; src=&#34;https://images.ali213.net/picfile/pic/2021/11/01/2021110142500591.jpg&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>《孔门理财学》</title>
       <link>https://rosefinch-midsummer.github.io/zh/posts/book/%E5%AD%94%E9%97%A8%E7%90%86%E8%B4%A2%E5%AD%A6/</link>
