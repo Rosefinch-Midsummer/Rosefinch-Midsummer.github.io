@@ -2,14 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rosefinch-midsummer.github.io/zh/posts/course/</loc>
+    <lastmod>2026-01-27T17:54:22+08:00</lastmod>
+  </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/</loc>
-    <lastmod>2026-01-24T22:54:22+08:00</lastmod>
+    <lastmod>2026-01-27T17:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/categories/</loc>
-    <lastmod>2026-01-24T22:54:22+08:00</lastmod>
+    <lastmod>2026-01-27T17:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/tags/</loc>
-    <lastmod>2026-01-24T22:54:22+08:00</lastmod>
+    <lastmod>2026-01-27T17:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/posts/course/yaleuniversity%E5%8D%9A%E5%BC%88%E8%AE%BA/</loc>
+    <lastmod>2026-01-27T17:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/</loc>
+    <lastmod>2026-01-27T17:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2026-01-27T17:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/</loc>
+    <lastmod>2026-01-27T17:54:22+08:00</lastmod>
+  </url><url>
+    <loc>https://rosefinch-midsummer.github.io/zh/categories/%E5%9C%A8%E7%BA%BF%E8%AF%BE%E7%A8%8B/</loc>
+    <lastmod>2026-01-27T17:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/pastime/</loc>
     <lastmod>2026-01-24T22:54:22+08:00</lastmod>
@@ -18,9 +36,6 @@
     <lastmod>2026-01-24T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/tags/%E6%81%8B%E7%88%B1/</loc>
-    <lastmod>2026-01-24T22:54:22+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/</loc>
     <lastmod>2026-01-24T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/categories/%E6%B8%B8%E6%88%8F/</loc>
@@ -42,9 +57,6 @@
     <lastmod>2026-01-24T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/book/</loc>
-    <lastmod>2026-01-24T22:54:22+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2026-01-24T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/tags/%E7%94%9F%E5%AD%98%E6%89%8B%E5%86%8C/</loc>
@@ -233,9 +245,6 @@
     <loc>https://rosefinch-midsummer.github.io/zh/categories/%E7%A4%BE%E4%BC%9A%E5%AD%A6/</loc>
     <lastmod>2025-12-26T22:54:22+08:00</lastmod>
   </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/posts/course/</loc>
-    <lastmod>2025-12-26T14:54:22+08:00</lastmod>
-  </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/tags/infomation-theory/</loc>
     <lastmod>2025-12-26T14:54:22+08:00</lastmod>
   </url><url>
@@ -243,9 +252,6 @@
     <lastmod>2025-12-26T14:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/course/mitinformation-theory-and-entropy/</loc>
-    <lastmod>2025-12-26T14:54:22+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/categories/%E5%9C%A8%E7%BA%BF%E8%AF%BE%E7%A8%8B/</loc>
     <lastmod>2025-12-26T14:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/book/%E5%A4%A9%E5%AD%A6%E5%A4%96%E5%8F%B2/</loc>
@@ -1293,9 +1299,6 @@
     <lastmod>2025-03-08T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/posts/book/%E5%90%88%E4%BD%9C%E7%9A%84%E8%BF%9B%E5%8C%96/</loc>
-    <lastmod>2025-02-20T22:54:22+08:00</lastmod>
-  </url><url>
-    <loc>https://rosefinch-midsummer.github.io/zh/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/</loc>
     <lastmod>2025-02-20T22:54:22+08:00</lastmod>
   </url><url>
     <loc>https://rosefinch-midsummer.github.io/zh/tags/%E5%90%88%E4%BD%9C/</loc>
