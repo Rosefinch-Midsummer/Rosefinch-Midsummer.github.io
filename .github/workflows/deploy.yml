@@ -22,7 +22,6 @@ jobs:
         with:
           ref: main
           submodules: true
-          fetch_depth: 1
 
       - name: Get Theme
         run: git submodule update --init --recursive
@@ -34,6 +33,7 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
+          extended: true
 
       - name: Build
         run: hugo --theme=PaperMod --buildDrafts --gc --minify
