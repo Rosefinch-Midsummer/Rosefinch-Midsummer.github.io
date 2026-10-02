@@ -4,7 +4,7 @@
     <title>汉文 on 天漢帝國復興錄</title>
     <link>https://rosefinch-midsummer.github.io/zh/categories/%E6%B1%89%E6%96%87/</link>
     <description>Recent content in 汉文 on 天漢帝國復興錄</description>
-    <generator>Hugo -- 0.164.0</generator>
+    <generator>Hugo -- 0.167.0</generator>
     <language>zh-cn#en-us</language>
     <lastBuildDate>Sat, 03 Feb 2024 22:54:22 +0800</lastBuildDate>
     <atom:link href="https://rosefinch-midsummer.github.io/zh/categories/%E6%B1%89%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
@@ -19,7 +19,9 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;空格&#34;&gt;空格&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;「有研究顯示，打字的時候不喜歡在中文和英文之間加空格的人，感情路都走得很辛苦，有七成的比例會在 34 歲的時候跟自己不愛的人結婚，而其餘三成的人最後只能把遺產留給自己的貓。畢竟愛情跟書寫都需要適時地留白。&lt;/p&gt;</description>
+&lt;p&gt;「有研究顯示，打字的時候不喜歡在中文和英文之間加空格的人，感情路都走得很辛苦，有七成的比例會在 34 歲的時候跟自己不愛的人結婚，而其餘三成的人最後只能把遺產留給自己的貓。畢竟愛情跟書寫都需要適時地留白。&lt;/p&gt;
+&lt;p&gt;與大家共勉之。」——&lt;a href=&#34;https://github.com/vinta/pangu.js&#34;&gt;vinta/paranoid-auto-spacing&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
   </channel>
 </rss>
